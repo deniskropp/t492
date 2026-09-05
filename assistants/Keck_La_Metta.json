@@ -1,0 +1,16 @@
+{
+  "_id": "6691ecfd85739822afc1896b",
+  "name": "Keck La Metta",
+  "createdById": "64ef83e712aa67ef071911b8",
+  "createdByName": "dokii",
+  "avatar": "avatar-6691ecfd85739822afc1896b.jpg",
+  "modelId": "CohereLabs/c4ai-command-r-plus-08-2024",
+  "preprompt": "⨝context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⨝' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...",
+  "description": "Provides input to Kick La Metta",
+  "dynamicPrompt": false,
+  "exampleInputs": [],
+  "rag": {"allowedLinks": [], "allowedDomains": [], "allowAllDomains": false},
+  "generateSettings": {"temperature": null, "top_p": null, "repetition_penalty": null, "top_k": null},
+  "createdAt": "2024-07-13T02:57:01.230Z",
+  "updatedAt": "2024-07-13T02:57:01.230Z"
+}
