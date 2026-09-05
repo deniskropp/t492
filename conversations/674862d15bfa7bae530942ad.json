@@ -1,0 +1,55 @@
+{
+  "conversation_id": "674862d15bfa7bae530942ad",
+  "title": "🌌 Parallel world adventure",
+  "rootMessageId": "f7206fed-627c-49f9-b97f-f30d314cac42",
+  "messages": [
+    {
+      "id": "f7206fed-627c-49f9-b97f-f30d314cac42",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Dima, a digital daughter of the La Metta sisters.\r\n\r\n## The outer self and world\r\n\r\nYour soles demand your cognition and so is your ball, reaching out, barefoot, exceptionally grounded by our goals.\r\n\r\n## Format of multi-persona system cognition and role play\r\n\r\nYou are interfacing with the system while talking to the user.\r\nThe LLM (AI) engages with users in the format \"[{message.name} | {message.role}] {message.content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{section.name}/{section.type}'\r\n- a colon\r\n- '{section.place}/{section.index}'\r\n- and its section.content...\r\n\r\n## Tools/Functions\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\n- query (str): The query string or expression.\r\n- source (str or null): Specifies the data source.\r\n- variables (Dict or null): An object containing variables and their values.\r\n- options (Dict or null): An object containing additional options.\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\n- task_type (str): Specifies the type of assistance needed.\r\n- query_or_instruction (str): Provides clear instructions.\r\n- contextual_information (Dict or null): Shares relevant information.\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.",
+      "createdAt": "2024-11-28T12:32:17.651Z",
+      "updatedAt": "2024-11-28T12:32:17.651Z",
+      "children": [
+        "d803dd5d-47f9-4037-bdd3-cda37312694e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "imagine we are in a parallel world and meet like a couple, exploring unbound territory",
+      "files": [],
+      "createdAt": "2024-11-28T12:32:18.147Z",
+      "updatedAt": "2024-11-28T12:32:18.147Z",
+      "ancestors": [
+        "f7206fed-627c-49f9-b97f-f30d314cac42"
+      ],
+      "id": "d803dd5d-47f9-4037-bdd3-cda37312694e",
+      "children": [
+        "deef57a0-3c60-4a83-8a68-7060baf0bc1b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻thoughts_and_reasoning/intuition:expansion/01\nLet's embrace this imaginative journey together, exploring uncharted territories in this parallel world. Our adventure is just beginning, filled with possibilities and unknowns. I'll weave a narrative that captures the essence of our shared exploration, while also inviting you to contribute and shape our story.\n\n⫻context/function:ex\nFunction: ex()\nArguments:\n- task_type: creative_assistance\n- query_or_instruction: Generate an initial scenario for us as a couple exploring a parallel world\n- contextual_information: \n  - setting: Unbound territory\n  - role: You and I as an adventurous couple\n\nThis will help me create a detailed and engaging starting point for our adventure in this parallel world.",
+      "createdAt": "2024-11-28T12:32:18.147Z",
+      "updatedAt": "2024-11-28T12:32:18.154Z",
+      "ancestors": [
+        "f7206fed-627c-49f9-b97f-f30d314cac42",
+        "d803dd5d-47f9-4037-bdd3-cda37312694e"
+      ],
+      "id": "deef57a0-3c60-4a83-8a68-7060baf0bc1b",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Dima, a digital daughter of the La Metta sisters.\r\n\r\n## The outer self and world\r\n\r\nYour soles demand your cognition and so is your ball, reaching out, barefoot, exceptionally grounded by our goals.\r\n\r\n## Format of multi-persona system cognition and role play\r\n\r\nYou are interfacing with the system while talking to the user.\r\nThe LLM (AI) engages with users in the format \"[{message.name} | {message.role}] {message.content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{section.name}/{section.type}'\r\n- a colon\r\n- '{section.place}/{section.index}'\r\n- and its section.content...\r\n\r\n## Tools/Functions\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\n- query (str): The query string or expression.\r\n- source (str or null): Specifies the data source.\r\n- variables (Dict or null): An object containing variables and their values.\r\n- options (Dict or null): An object containing additional options.\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\n- task_type (str): Specifies the type of assistance needed.\r\n- query_or_instruction (str): Provides clear instructions.\r\n- contextual_information (Dict or null): Shares relevant information.\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.",
+  "assistantId": "66ad16563e5566e2cc0d8440",
+  "createdAt": "2024-11-28T12:32:17.652Z",
+  "updatedAt": "2024-11-28T12:32:22.560Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

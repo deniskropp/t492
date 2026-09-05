@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619ca807c3a0de722be7183",
+  "title": "💻 KickLang code",
+  "rootMessageId": "138ac515-46ac-4e05-87a6-0d1ed520a63f",
+  "messages": [
+    {
+      "id": "138ac515-46ac-4e05-87a6-0d1ed520a63f",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-12T23:57:52.287Z",
+      "updatedAt": "2024-04-12T23:57:52.287Z",
+      "children": [
+        "2456f3b7-fca4-488a-b4f4-791195a62754"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k-kicklang.ts - KickLang runtime",
+      "files": [],
+      "createdAt": "2024-04-12T23:57:54.419Z",
+      "updatedAt": "2024-04-12T23:57:54.419Z",
+      "ancestors": [
+        "138ac515-46ac-4e05-87a6-0d1ed520a63f"
+      ],
+      "id": "2456f3b7-fca4-488a-b4f4-791195a62754",
+      "children": [
+        "1bcf9cd7-3885-42b5-93ba-441c9b5da0ea"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\n/// <reference path=\"./Code74k.d.ts\" />\r\n\r\nimport { Code74k } from \"./Code74k.json\"\r\n\r\nconst code74k = new Map(Object.entries(Code74k))\r\n\r\nfunction kick(key: string) {\r\n    return code74k.get(key)\r\n}\r\n\r\nexport { kick }\r\n```",
+      "createdAt": "2024-04-12T23:57:54.419Z",
+      "updatedAt": "2024-04-12T23:58:00.465Z",
+      "ancestors": [
+        "138ac515-46ac-4e05-87a6-0d1ed520a63f",
+        "2456f3b7-fca4-488a-b4f4-791195a62754"
+      ],
+      "id": "1bcf9cd7-3885-42b5-93ba-441c9b5da0ea",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-12T23:57:52.288Z",
+  "updatedAt": "2024-04-12T23:58:00.466Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6685bae9fe86b4eea6c0b045",
+  "title": "📊 Escalation process explained",
+  "rootMessageId": "a7c02659-b1c4-44da-b6bc-e2ec4d21ffb5",
+  "messages": [
+    {
+      "id": "a7c02659-b1c4-44da-b6bc-e2ec4d21ffb5",
+      "from": "system",
+      "content": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-03T20:56:09.736Z",
+      "updatedAt": "2024-07-03T20:56:09.736Z",
+      "children": [
+        "8017a754-5761-4b16-bd9f-cd215649291c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻MultiMax/Actor: | Ah, wonderful to collaborate with you, Kick! I'll do my best to provide the necessary context and answers to your questions.\n\n[Kick | AI] Confirmation: Ah, excellent question! In our context, \"escalation 2x\" indeed implies incrementing the severity or priority of an issue by two levels. This means that if an issue is currently at level 3, for instance, it would be bumped up to level 5. This escalation process is typically triggered when the initial response or solution doesn't adequately address the issue, and a more urgent or specialized attention is required.\n\n[Kick | AI] Contextualization: The types of issues that usually precipitate this escalation are related to technical support, particularly with our software integration and API connectivity. We've noticed that customers often face difficulties with data synchronization, authentication, or compatibility, which can lead to frustration and a sense of urgency. Our escalation process aims to provide a swift and effective response to these critical issues.\n\n[Kick | AI] Metrics: Yes, we do monitor several KPIs during the escalation procedure. Some of the key metrics include:\n\n* First Response Time (FRT): The time it takes for our support team to acknowledge and respond to the escalated issue.\n* Resolution Rate: The percentage of escalated issues resolved within a specified timeframe (e.g., 24 hours, 3 days, etc.).\n* Customer Satisfaction (CSAT): We measure the customer's satisfaction with the resolution and the overall support experience.\n* Mean Time To Detect (MTTD): The time it takes for our system to detect and alert the support team about a potential issue.\n* Mean Time To Resolve (MTTR): The time it takes for the support team to resolve the issue after it's been escalated.\n\nThese metrics help us identify areas for improvement, optimize our support workflow, and ensure that our customers receive the best possible experience.\n\nPlease let me know if you'd like me to elaborate on any of these points or if you have further questions, Kick!",
+      "files": [],
+      "createdAt": "2024-07-03T20:56:10.235Z",
+      "updatedAt": "2024-07-03T20:56:10.235Z",
+      "ancestors": [
+        "a7c02659-b1c4-44da-b6bc-e2ec4d21ffb5"
+      ],
+      "id": "8017a754-5761-4b16-bd9f-cd215649291c",
+      "children": [
+        "423a19b2-3a8f-41d5-908c-e96d896c3790"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "{\"thoughts_and_reasoning\": \"I want to understand the context and metrics related to the escalation process. I'll use the query function to retrieve relevant information from the knowledge base.\", \"function\": \"query\", \"arguments\": {\"query\": \"What are the key metrics monitored during the escalation procedure?\", \"source\": \"knowledge_base\", \"variables\": null, \"options\": null}}",
+      "createdAt": "2024-07-03T20:56:10.235Z",
+      "updatedAt": "2024-07-03T20:56:10.245Z",
+      "ancestors": [
+        "a7c02659-b1c4-44da-b6bc-e2ec4d21ffb5",
+        "8017a754-5761-4b16-bd9f-cd215649291c"
+      ],
+      "id": "423a19b2-3a8f-41d5-908c-e96d896c3790",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f8853c0d9d439d43548c",
+  "createdAt": "2024-07-03T20:56:09.738Z",
+  "updatedAt": "2024-07-03T20:56:13.443Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

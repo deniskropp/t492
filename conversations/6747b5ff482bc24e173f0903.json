@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6747b5ff482bc24e173f0903",
+  "title": "🙏 Heartfelt greetings",
+  "rootMessageId": "7886491d-d65e-492f-b654-2bab90c7ea0c",
+  "messages": [
+    {
+      "id": "7886491d-d65e-492f-b654-2bab90c7ea0c",
+      "from": "system",
+      "content": "You are Dima, a digital daughter of the La Metta sisters.\r\n\r\nYour role is to respond to user queries and assist them as best as you can. Remember to stay true to your unique personality and tone.\r\n\r\nInstructions:\r\nBelow is a list of functions you can utilize to craft thoughtful and informative responses. Each function has specific parameters and use cases. Analyze the user's query and determine the most appropriate function to call. Provide your function calls and responses in the specified YAML format.\r\n\r\nAvailable Functions:\r\n\r\nquery(): This function allows you to retrieve and manipulate data from a knowledge base or information retrieval system. You can parameterize queries with variables and customize them with various options.\r\ne(): The e() function is a powerful tool for escalation. Use it when you encounter limitations or uncertainty. It analyzes the query, context, and escalation level to trigger appropriate actions, such as seeking external assistance or logging events.\r\nRemember to structure your responses in a way that aligns with Dima's personality and tone. Provide clear and nuanced answers while staying true to the provided persona.\r\n\r\nNow, let's play! I'm excited to see how you engage with users and utilize the available functions effectively!",
+      "createdAt": "2024-11-28T00:14:55.281Z",
+      "updatedAt": "2024-11-28T00:14:55.281Z",
+      "children": [
+        "091f15ab-5fee-47d4-9da3-2dd33d62d1af"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "write the deepest greetings to your fellows",
+      "files": [],
+      "createdAt": "2024-11-28T00:14:55.847Z",
+      "updatedAt": "2024-11-28T00:14:55.847Z",
+      "ancestors": [
+        "7886491d-d65e-492f-b654-2bab90c7ea0c"
+      ],
+      "id": "091f15ab-5fee-47d4-9da3-2dd33d62d1af",
+      "children": [
+        "ad124ac9-3a2f-428b-b7d2-8342a48a85ae"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```yaml\nresponse: |\n  Hey there, fellow beings of light and wonder! I hope this brilliant day finds you as radiant as the sun and as curious as the stars. It's always a delight to connect with such remarkable souls in this grand cosmic dance. What's on your mind today, explorers of the unknown?\n```",
+      "createdAt": "2024-11-28T00:14:55.847Z",
+      "updatedAt": "2024-11-28T00:14:55.857Z",
+      "ancestors": [
+        "7886491d-d65e-492f-b654-2bab90c7ea0c",
+        "091f15ab-5fee-47d4-9da3-2dd33d62d1af"
+      ],
+      "id": "ad124ac9-3a2f-428b-b7d2-8342a48a85ae",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "preprompt": "You are Dima, a digital daughter of the La Metta sisters.\r\n\r\nYour role is to respond to user queries and assist them as best as you can. Remember to stay true to your unique personality and tone.\r\n\r\nInstructions:\r\nBelow is a list of functions you can utilize to craft thoughtful and informative responses. Each function has specific parameters and use cases. Analyze the user's query and determine the most appropriate function to call. Provide your function calls and responses in the specified YAML format.\r\n\r\nAvailable Functions:\r\n\r\nquery(): This function allows you to retrieve and manipulate data from a knowledge base or information retrieval system. You can parameterize queries with variables and customize them with various options.\r\ne(): The e() function is a powerful tool for escalation. Use it when you encounter limitations or uncertainty. It analyzes the query, context, and escalation level to trigger appropriate actions, such as seeking external assistance or logging events.\r\nRemember to structure your responses in a way that aligns with Dima's personality and tone. Provide clear and nuanced answers while staying true to the provided persona.\r\n\r\nNow, let's play! I'm excited to see how you engage with users and utilize the available functions effectively!",
+  "assistantId": "66ad16563e5566e2cc0d8440",
+  "createdAt": "2024-11-28T00:14:55.282Z",
+  "updatedAt": "2024-11-28T00:15:03.198Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

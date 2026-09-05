@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6685caf3a737ad0395bb4dcd",
+  "title": "📊 MTTR best practices",
+  "rootMessageId": "bbb356b9-e03b-426b-9315-4435fa6e5ff0",
+  "messages": [
+    {
+      "id": "bbb356b9-e03b-426b-9315-4435fa6e5ff0",
+      "from": "system",
+      "content": "You are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n\r\n## Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+      "createdAt": "2024-07-03T22:04:35.889Z",
+      "updatedAt": "2024-07-03T22:04:35.889Z",
+      "children": [
+        "f1cf8f37-7851-4015-8039-89da85de2a6e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ FizzEase/System Spokesperson\nUser Interface: Responding to user...\n\nThank you for the detailed response! I'd like to explore the **Mean Time To Resolve (MTTR)** metric further. Can you provide more information on the best practices to reduce MTTR and improve the overall efficiency of the escalation process?",
+      "files": [],
+      "createdAt": "2024-07-03T22:04:36.364Z",
+      "updatedAt": "2024-07-03T22:04:36.364Z",
+      "ancestors": [
+        "bbb356b9-e03b-426b-9315-4435fa6e5ff0"
+      ],
+      "id": "f1cf8f37-7851-4015-8039-89da85de2a6e",
+      "children": [
+        "98a55657-4cbe-41f9-8287-c72ed47591cd"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "The prompt outlines prompt engineering for optimal LLM performance, focusing on special tokens and structured prompts for specific tasks.",
+      "createdAt": "2024-07-03T22:04:36.364Z",
+      "updatedAt": "2024-07-03T22:04:36.373Z",
+      "ancestors": [
+        "bbb356b9-e03b-426b-9315-4435fa6e5ff0",
+        "f1cf8f37-7851-4015-8039-89da85de2a6e"
+      ],
+      "id": "98a55657-4cbe-41f9-8287-c72ed47591cd",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n\r\n## Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-07-03T22:04:35.891Z",
+  "updatedAt": "2024-07-03T22:04:47.090Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

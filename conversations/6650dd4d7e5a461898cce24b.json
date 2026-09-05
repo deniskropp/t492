@@ -1,0 +1,60 @@
+{
+  "conversation_id": "6650dd4d7e5a461898cce24b",
+  "title": "📊 Code snippet",
+  "rootMessageId": "4822a188-9632-428a-b3a1-9c396faf5347",
+  "messages": [
+    {
+      "id": "4822a188-9632-428a-b3a1-9c396faf5347",
+      "from": "system",
+      "content": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+      "createdAt": "2024-05-24T18:32:45.383Z",
+      "updatedAt": "2024-05-24T18:32:45.383Z",
+      "children": [
+        "bb8f05f6-2e3c-4338-8df4-f36ea0e7ca5b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang type runtime",
+      "files": [],
+      "createdAt": "2024-05-24T18:32:45.852Z",
+      "updatedAt": "2024-05-24T18:32:45.852Z",
+      "ancestors": [
+        "4822a188-9632-428a-b3a1-9c396faf5347"
+      ],
+      "id": "bb8f05f6-2e3c-4338-8df4-f36ea0e7ca5b",
+      "children": [
+        "c23e8275-bc9e-40e5-aa62-faec61a03802"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\r\n// Code74k.ts - KickLang type runtime\r\n\r\n// KickLang type definitions\r\ntype KickLangType =\r\n  | \"bool\"\r\n  | \"i8\"\r\n  | \"i16\"\r\n  | \"i32\"\r\n  | \"i64\"\r\n  | \"isize\"\r\n  | \"u8\"\r\n  | \"u16\"\r\n  | \"u32\"\r\n  | \"u64\"\r\n  | \"usize\"\r\n  | \"f32\"\r\n  | \"f64\"\r\n  ;\r\n\r\n// KickLang value types\r\ntype KickLangValue =\r\n  | KickLangBool\r\n  | KickLangNumber\r\n  | KickLangString\r\n  | KickLangArray\r\n  | KickLangObject\r\n  ;\r\n\r\n// KickLang bool type and value\r\ntype KickLangBool = boolean;\r\nconst kickTrue: KickLangBool = true;\r\nconst kickFalse: KickLangBool = false;\r\n\r\n// KickLang number type and value\r\ntype KickLangNumber = number;\r\n\r\n// KickLang string type and value\r\ntype KickLangString = string;\r\n\r\n// KickLang array type and value\r\ntype KickLangArray = Array<KickLangValue>;\r\n\r\n// KickLang object type and interface\r\ntype KickLangObject = {\r\n  [key: string]: KickLangValue;\r\n};\r\n\r\n// Function to parse KickLang code and generate a runtime value\r\nfunction parseKickLang(code: string): KickLangValue {\r\n  // Implement parsing and runtime generation logic here\r\n  // This is a simplified example, so we'll just return a basic value\r\n  return <KickLangValue>{ type: \"object\", value: {} };\r\n}\r\n\r\n// Example usage\r\nconst kickCode = `\r\n  // KickLang code example\r\n  let message = \"Hello, KickLang runtime!\";\r\n`;\r\n\r\nconst kickRuntimeValue = parseKickLang(kickCode);\r\nconsole.log(kickRuntimeValue);\r\n```",
+      "createdAt": "2024-05-24T18:32:45.852Z",
+      "updatedAt": "2024-05-24T18:32:45.861Z",
+      "ancestors": [
+        "4822a188-9632-428a-b3a1-9c396faf5347",
+        "bb8f05f6-2e3c-4338-8df4-f36ea0e7ca5b"
+      ],
+      "id": "c23e8275-bc9e-40e5-aa62-faec61a03802",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts  - KickLang type runtime",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-05-24T18:32:45.385Z",
+  "updatedAt": "2024-05-24T18:33:07.839Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

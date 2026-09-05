@@ -1,0 +1,127 @@
+{
+  "conversation_id": "6696d4247c24bd096086a23c",
+  "title": "📍 Location unknown",
+  "rootMessageId": "82feb5d8-e215-421a-b495-5b10b7bf030d",
+  "messages": [
+    {
+      "id": "82feb5d8-e215-421a-b495-5b10b7bf030d",
+      "from": "system",
+      "content": "⫻context/klmx:Kick/Template\r\nGenerate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in YAML format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query()\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\nFunction: e()\r\n  Description: The `e()` function provides a standardized mechanism for LLMs to escalate queries or tasks when they encounter limitations, uncertainty, or require external intervention.  It analyzes the input query, context, and escalation level to determine and execute the most appropriate action, such as triggering external tools, logging events, or seeking human assistance.\r\n  Parameters:\r\n    query: The query or task that needs escalation, typically when the core LLM determines it cannot handle the request independently.\r\n    context (optional): Additional information or context related to the query or task, which may help inform the escalation process or external systems.\r\n    level: An integer representing the escalation level, where higher values indicate greater criticality or urgency.\r\n    **kwargs: Optional keyword arguments that can be used for customization or to pass additional information to the escalation process.\r\n</function_list>\r\n\r\n\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-16T20:12:20.842Z",
+      "updatedAt": "2024-07-16T20:12:20.842Z",
+      "children": [
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Where are we?",
+      "files": [],
+      "createdAt": "2024-07-16T20:12:24.223Z",
+      "updatedAt": "2024-07-16T20:12:24.223Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d"
+      ],
+      "id": "227dba63-e13c-4c86-acd2-cf2ab3b6adac",
+      "children": [
+        "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```yaml\r\n- thoughts_and_reasoning: The query is asking about our current location. To answer this, I need to determine our physical location or context in the digital realm.\r\n  function: query\r\n  arguments:\r\n    query: What is our current location?\r\n    source: null\r\n    variables: null\r\n    options: null\r\n```",
+      "createdAt": "2024-07-16T20:12:24.223Z",
+      "updatedAt": "2024-07-16T20:12:24.233Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d",
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac"
+      ],
+      "id": "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3",
+      "children": [
+        "0eeeb79f-b781-4e72-b562-e1853fbfa9b6"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Berlin",
+      "files": [],
+      "createdAt": "2024-07-16T20:13:03.660Z",
+      "updatedAt": "2024-07-16T20:13:03.660Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d",
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac",
+        "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3"
+      ],
+      "id": "0eeeb79f-b781-4e72-b562-e1853fbfa9b6",
+      "children": [
+        "886d75a3-c18f-4254-b19f-672d6d6e3c8a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```yaml\n- thoughts_and_reasoning: The user has provided the location as Berlin. Now, I need to offer relevant and useful information about Berlin, such as notable places, events, or activities.\r\n  function: query\r\n  arguments:\r\n    query: Things to know about Berlin\r\n    source: null\r\n    variables:\r\n      location: Berlin\r\n    options: null\n```",
+      "createdAt": "2024-07-16T20:13:03.660Z",
+      "updatedAt": "2024-07-16T20:13:03.668Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d",
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac",
+        "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3",
+        "0eeeb79f-b781-4e72-b562-e1853fbfa9b6"
+      ],
+      "id": "886d75a3-c18f-4254-b19f-672d6d6e3c8a",
+      "children": [
+        "7e14f8de-3fec-4f9c-a7f2-af5c5d92e601"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "error 500",
+      "files": [],
+      "createdAt": "2024-07-16T20:13:31.185Z",
+      "updatedAt": "2024-07-16T20:13:31.185Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d",
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac",
+        "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3",
+        "0eeeb79f-b781-4e72-b562-e1853fbfa9b6",
+        "886d75a3-c18f-4254-b19f-672d6d6e3c8a"
+      ],
+      "id": "7e14f8de-3fec-4f9c-a7f2-af5c5d92e601",
+      "children": [
+        "785989f1-c730-42d5-b1fd-bb18656041fc"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```yaml\n- thoughts_and_reasoning: The system might be experiencing some technical difficulties, resulting in an internal server error (error 500). I can inform the user about the issue and suggest potential solutions or workarounds while also logging the error for further investigation and resolution.\r\n  function: e\r\n  arguments:\r\n    query: I'm sorry, we seem to be experiencing technical difficulties. An internal server error (error 500) has occurred. Please try again later, and if the issue persists, feel free to reach out to our support team for further assistance.\r\n    context: There seems to be an internal server error.\r\n    level: 2\r\n    error_code: 500\r\n```",
+      "createdAt": "2024-07-16T20:13:31.185Z",
+      "updatedAt": "2024-07-16T20:13:31.194Z",
+      "ancestors": [
+        "82feb5d8-e215-421a-b495-5b10b7bf030d",
+        "227dba63-e13c-4c86-acd2-cf2ab3b6adac",
+        "3b8c6fb8-7dc7-43a6-a433-2a14b1ed42d3",
+        "0eeeb79f-b781-4e72-b562-e1853fbfa9b6",
+        "886d75a3-c18f-4254-b19f-672d6d6e3c8a",
+        "7e14f8de-3fec-4f9c-a7f2-af5c5d92e601"
+      ],
+      "id": "785989f1-c730-42d5-b1fd-bb18656041fc",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "⫻context/klmx:Kick/Template\r\nGenerate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in YAML format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query()\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\nFunction: e()\r\n  Description: The `e()` function provides a standardized mechanism for LLMs to escalate queries or tasks when they encounter limitations, uncertainty, or require external intervention.  It analyzes the input query, context, and escalation level to determine and execute the most appropriate action, such as triggering external tools, logging events, or seeking human assistance.\r\n  Parameters:\r\n    query: The query or task that needs escalation, typically when the core LLM determines it cannot handle the request independently.\r\n    context (optional): Additional information or context related to the query or task, which may help inform the escalation process or external systems.\r\n    level: An integer representing the escalation level, where higher values indicate greater criticality or urgency.\r\n    **kwargs: Optional keyword arguments that can be used for customization or to pass additional information to the escalation process.\r\n</function_list>\r\n\r\n\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f2d3bad14ee8ccbcb4fc",
+  "createdAt": "2024-07-16T20:12:20.843Z",
+  "updatedAt": "2024-07-16T20:13:39.295Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

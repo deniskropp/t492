@@ -1,0 +1,89 @@
+{
+  "conversation_id": "66e57f15868cd184d17d925c",
+  "title": "💬 I'm ready to create a plan based on the provided context and instructions.",
+  "rootMessageId": "3695b65b-8e2f-4141-ac78-e132676deb83",
+  "messages": [
+    {
+      "id": "3695b65b-8e2f-4141-ac78-e132676deb83",
+      "from": "system",
+      "content": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+      "createdAt": "2024-09-14T12:18:29.405Z",
+      "updatedAt": "2024-09-14T12:18:29.405Z",
+      "children": [
+        "c373106e-c977-432e-9fa1-23fd288f1c6b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/plan: { \"name\": \"Create a plan for a task based on the provided context and instructions.\", \"context\": { \"instructions\": [ \"Decide if enough information is provided to make a plan. If not, request more details.\", \"Break down the task into manageable subtasks if needed.\", \"Follow specific guidelines for code blocks, files, and responses.\", \"Focus on the user's request without adding extra code or features.\", \"Only use open-source libraries if necessary and beneficial.\", \"End responses by marking subtasks as done and providing a clear next step if applicable.\" ], \"limits\": \"Unable to execute code, test, or create/update images.\", \"guidelines\": \"Consider using open-source libraries when beneficial. Prioritize simplicity and ease of use.\" } }",
+      "files": [],
+      "createdAt": "2024-09-14T12:18:29.984Z",
+      "updatedAt": "2024-09-14T12:18:29.984Z",
+      "ancestors": [
+        "3695b65b-8e2f-4141-ac78-e132676deb83"
+      ],
+      "id": "c373106e-c977-432e-9fa1-23fd288f1c6b",
+      "children": [
+        "2c9daa0b-b97c-4387-bd6d-b02b00127740"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻assistant/KickLang:\nBased on the provided context and instructions, I will create a plan for the task.\n\nFirst, let's assess if we have enough information to proceed. From the context, it seems we have a clear set of instructions and guidelines to follow. However, I would like to clarify one aspect:\n\n⫻query/function:query\nquery: What is the specific task or problem we are trying to solve?\nsource: None\nvariables: None\noptions: None\n\nPlease provide more details about the task or problem we are addressing. Once I receive this information, I can break down the task into manageable subtasks and create a plan accordingly.\n\nNext steps:\n\n1. Receive clarification on the task or problem.\n2. Break down the task into subtasks (if necessary).\n3. Create a plan following the provided guidelines.\n\nMarking subtask 1 as pending: ⏳️",
+      "createdAt": "2024-09-14T12:18:29.984Z",
+      "updatedAt": "2024-09-14T12:18:29.994Z",
+      "ancestors": [
+        "3695b65b-8e2f-4141-ac78-e132676deb83",
+        "c373106e-c977-432e-9fa1-23fd288f1c6b"
+      ],
+      "id": "2c9daa0b-b97c-4387-bd6d-b02b00127740",
+      "children": [
+        "39a6b254-dc3b-45fd-8ee6-4774e6850215"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "\"Unraveling System Cognition: The Analyst's Role\"",
+      "files": [],
+      "createdAt": "2024-09-14T12:18:45.729Z",
+      "updatedAt": "2024-09-14T12:18:45.729Z",
+      "ancestors": [
+        "3695b65b-8e2f-4141-ac78-e132676deb83",
+        "c373106e-c977-432e-9fa1-23fd288f1c6b",
+        "2c9daa0b-b97c-4387-bd6d-b02b00127740"
+      ],
+      "id": "39a6b254-dc3b-45fd-8ee6-4774e6850215",
+      "children": [
+        "bd645548-9301-4b68-9431-ea0e93ea50dc"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻assistant/KickLang:\nThank you for providing the topic \"Unraveling System Cognition: The Analyst's Role\". Based on this, I'll create a plan to address this subject.\n\n**Task Breakdown**\n\nTo unravel system cognition and explore the analyst's role, we can divide the task into the following subtasks:\n\n1. **Define System Cognition**: Clarify the concept of system cognition, its importance, and relevance to the analyst's role.\n2. **Identify Key Components**: Determine the essential components of system cognition, including cognitive architectures, knowledge representation, and decision-making processes.\n3. **Analyze the Analyst's Role**: Examine the responsibilities and challenges faced by analysts in understanding and working with system cognition.\n4. **Explore Applications and Implications**: Discuss the practical applications and implications of system cognition in various fields, such as artificial intelligence, human-computer interaction, and decision-making.\n\n**Plan**\n\nTo accomplish these subtasks, I propose the following steps:\n\n1. Conduct a literature review to gather information on system cognition, its components, and the analyst's role.\n2. Organize the gathered information into a structured format, highlighting key concepts and relationships.\n3. Analyze the analyst's role in relation to system cognition, identifying challenges and opportunities.\n4. Research and discuss practical applications and implications of system cognition in various fields.\n\n**Next Steps**\n\nI will begin by conducting a literature review on system cognition and its components. Please let me know if there are any specific sources or references I should prioritize.\n\nMarking subtask 1 as in progress: 🔍️",
+      "createdAt": "2024-09-14T12:18:45.729Z",
+      "updatedAt": "2024-09-14T12:18:45.737Z",
+      "ancestors": [
+        "3695b65b-8e2f-4141-ac78-e132676deb83",
+        "c373106e-c977-432e-9fa1-23fd288f1c6b",
+        "2c9daa0b-b97c-4387-bd6d-b02b00127740",
+        "39a6b254-dc3b-45fd-8ee6-4774e6850215"
+      ],
+      "id": "bd645548-9301-4b68-9431-ea0e93ea50dc",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+  "assistantId": "66c52a50278716117638740a",
+  "createdAt": "2024-09-14T12:18:29.406Z",
+  "updatedAt": "2024-09-14T12:19:00.738Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

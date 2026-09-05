@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6691f1a98ae7a2183306c045",
+  "title": "📝 Reverse string",
+  "rootMessageId": "da4a5d03-17e4-474e-ae17-805ae4f12907",
+  "messages": [
+    {
+      "id": "da4a5d03-17e4-474e-ae17-805ae4f12907",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+      "createdAt": "2024-07-13T03:16:57.901Z",
+      "updatedAt": "2024-07-13T03:16:57.901Z",
+      "children": [
+        "f8108e70-58ad-42e2-a1f8-7fde71230e23"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/tsx:\na function that takes a string and reverses it",
+      "files": [],
+      "createdAt": "2024-07-13T03:16:58.369Z",
+      "updatedAt": "2024-07-13T03:16:58.369Z",
+      "ancestors": [
+        "da4a5d03-17e4-474e-ae17-805ae4f12907"
+      ],
+      "id": "f8108e70-58ad-42e2-a1f8-7fde71230e23",
+      "children": [
+        "8ed93fbe-178b-447e-a231-3e387fd34f0a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```tsx\r\nimport React from 'react';\r\n\r\n// We define a function that takes a string as an argument and returns its reverse\r\nconst reverseString = (str: string): string => {\r\n  // We split the string into an array of characters\r\n  const charArray = str.split('');\r\n  // Then we reverse the array\r\n  const reversedArray = charArray.reverse();\r\n  // And finally, we join the array back into a string and return it\r\n  return reversedArray.join('');\r\n};\r\n\r\n// Example usage:\r\nconst originalString = 'Hello, world!';\r\nconst reversedString = reverseString(originalString);\r\nconsole.log(reversedString); // This will log: '!dlrow ,olleH'\r\n\r\n// We can also use this function in a React component:\r\nconst App: React.FC = () => {\r\n  const [input, setInput] = React.useState('');\r\n  const [reversed, setReversed] = React.useState('');\r\n\r\n  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {\r\n    setInput(event.target.value);\r\n    setReversed(reverseString(event.target.value));\r\n  };\r\n\r\n  return (\r\n    <div>\r\n      <input type=\"text\" value={input} onChange={handleInputChange} />\r\n      <p>Reversed: {reversed}</p>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default App;\r\n```",
+      "createdAt": "2024-07-13T03:16:58.369Z",
+      "updatedAt": "2024-07-13T03:16:58.378Z",
+      "ancestors": [
+        "da4a5d03-17e4-474e-ae17-805ae4f12907",
+        "f8108e70-58ad-42e2-a1f8-7fde71230e23"
+      ],
+      "id": "8ed93fbe-178b-447e-a231-3e387fd34f0a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-07-13T03:16:57.902Z",
+  "updatedAt": "2024-07-13T03:17:10.208Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

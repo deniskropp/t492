@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619ca460125ea183fc61f52",
+  "title": "💻 TypeScript code for KickLang interfaces",
+  "rootMessageId": "2bfefe88-0d8e-46b5-9407-4b168ec7de9a",
+  "messages": [
+    {
+      "id": "2bfefe88-0d8e-46b5-9407-4b168ec7de9a",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-12T23:56:54.230Z",
+      "updatedAt": "2024-04-12T23:56:54.230Z",
+      "children": [
+        "7720be8f-1ec9-4de3-9dfb-de25743f9488"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - KickLang interfaces",
+      "files": [],
+      "createdAt": "2024-04-12T23:56:55.845Z",
+      "updatedAt": "2024-04-12T23:56:55.845Z",
+      "ancestors": [
+        "2bfefe88-0d8e-46b5-9407-4b168ec7de9a"
+      ],
+      "id": "7720be8f-1ec9-4de3-9dfb-de25743f9488",
+      "children": [
+        "d4eec1a9-f6ae-4f40-aa59-20cf3f87c91c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\r\n/// <reference path=\"Code74k.d.ts\" />\r\n\r\nlet Code74k: { [key: string]: string } = {};\r\n\r\nCode74k.get = (key: string): string => {\r\n    return Code74k[key];\r\n};\r\n\r\nCode74k.set = (key: string, value: string): void => {\r\n    Code74k[key] = value;\r\n};\r\n\r\nCode74k.keys = (): string[] => {\r\n    return Object.keys(Code74k);\r\n};\r\n\r\nCode74k.values = (): string[] => {\r\n    return Object.values(Code74k);\r\n};\r\n\r\nCode74k.entries = (): Code74k[] => {\r\n    return Object.entries(Code74k).map(([key, value]): Code74k => ({ key, value }));\r\n};\r\n\r\nCode74k.clear = (): void => {\r\n    for (let key of Code74k.keys()) {\r\n        delete Code74k[key];\r\n    }\r\n};\r\n\r\nCode74k.size = (): number => {\r\n    return Code74k.keys().length;\r\n};\r\n\r\nCode74k.delete = (key: string): boolean => {\r\n    if (Code74k.has(key)) {\r\n        delete Code74k[key];\r\n        return true;\r\n    }\r\n    return false;\r\n};\r\n\r\nCode74k.has = (key: string): boolean => {\r\n    return Code74k.keys().includes(key);\r\n};\r\n\r\nCode74k.update = (key: string, updater: (currentValue: string) => string): boolean => {\r\n    if (Code74k.has(key)) {\r\n        Code74k.set(key, updater(Code74k.get(key)));\r\n        return true;\r\n    }\r\n    return false;\r\n};```",
+      "createdAt": "2024-04-12T23:56:55.845Z",
+      "updatedAt": "2024-04-12T23:57:08.978Z",
+      "ancestors": [
+        "2bfefe88-0d8e-46b5-9407-4b168ec7de9a",
+        "7720be8f-1ec9-4de3-9dfb-de25743f9488"
+      ],
+      "id": "d4eec1a9-f6ae-4f40-aa59-20cf3f87c91c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-12T23:56:54.232Z",
+  "updatedAt": "2024-04-12T23:57:08.981Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

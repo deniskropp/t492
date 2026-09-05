@@ -1,0 +1,27 @@
+{
+  "conversation_id": "64ef8a63e8bf5b698fdb49b5",
+  "title": "Nodejs voice app creation.",
+  "messages": [
+    {
+      "content": "text-to-speech in nodejs",
+      "from": "user",
+      "id": "98ff2426-7045-4883-a22c-e22bac0ff3d6",
+      "createdAt": "2023-08-30T18:29:13.609Z",
+      "updatedAt": "2023-08-30T18:29:13.609Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "There are several libraries available in Node.js that provide text-to-speech functionality. Here are a few popular ones:\n\n1. `say`: This is a simple command-line utility that uses the Mac OS X speech synthesizer to convert text into spoken words. It can be installed using npm by running the command `npm install -g say`. Once installed, you can use it like this: `say \"Hello World!\"`\n2. `node-tts`: This is a Node.js module that provides an interface to the eSpeak speech synthesizer. You can install it using npm by running the command `npm install tts`. Once installed, you can use it like this: `var tts = require('tts'); var voice = new tts.Voice(); voice.speak(\"Hello World!\", function(err) { console.log(\"Done!\"); });`\n3. `flite`: This is another Node.js module that provides text-to-speech functionality using the Festival speech synthesizer. You can install it using npm by running the command `npm install flite`. Once installed, you can use it like this: `const flite = require('flite'); const voice = new flite.Voice(); voice.speak(\"Hello World!\", function(err) { console.log(\"Done!\"); });`\n4. `google-text-to-speech`: This is a Node.js wrapper around the Google Text-to-Speech API. You can install it using npm by running the command `npm install google-text-to-speech`. Once installed, you can use it like this: `const gTTS = require('google-text-to-speech'); const voice = new gTTS.Voice({ languageCode: 'en', name: 'en-US-Standard-A' }); voice.speak(\"Hello World!\", function(err) { console.log(\"Done!\"); });`\n\nThese are just a few examples of the many text-to-speech modules available for Node.js. Each one has its own strengths and weaknesses, so you may need to experiment with different options to find the one that works best for your needs.",
+      "webSearchId": "64ef8a6478811cbbe50d1d6d",
+      "id": "ee230bdb-bac3-4da8-b324-4296bd60d6c1",
+      "createdAt": "2023-08-30T18:29:26.185Z",
+      "updatedAt": "2023-08-30T18:29:26.185Z",
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "createdAt": "2023-08-30T18:28:51.895Z",
+  "updatedAt": "2023-08-30T18:29:26.273Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

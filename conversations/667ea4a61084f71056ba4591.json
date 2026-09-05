@@ -1,0 +1,55 @@
+{
+  "conversation_id": "667ea4a61084f71056ba4591",
+  "title": "💻 Language assistant",
+  "rootMessageId": "e9590ea6-6324-4c02-9327-55589f5a77bc",
+  "messages": [
+    {
+      "id": "e9590ea6-6324-4c02-9327-55589f5a77bc",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\n## System\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n⫻content/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+      "createdAt": "2024-06-28T11:55:18.958Z",
+      "updatedAt": "2024-06-28T11:55:18.958Z",
+      "children": [
+        "c2d39622-d2a0-4313-be8c-e312768c9b74"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:Language   The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+      "files": [],
+      "createdAt": "2024-06-28T11:55:19.533Z",
+      "updatedAt": "2024-06-28T11:55:19.533Z",
+      "ancestors": [
+        "e9590ea6-6324-4c02-9327-55589f5a77bc"
+      ],
+      "id": "c2d39622-d2a0-4313-be8c-e312768c9b74",
+      "children": [
+        "f3b040b3-66c7-4d00-adec-21be594072d9"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻response/meta:assistant \nThe search results you provided do not seem to be directly related to KickLang, which is a formal language used in our system for cognitive computational linguistic transport/transform. However, I can infer that you were attempting to find information about KickLang's language features. \n\nUnfortunately, the search results appear to be unrelated to KickLang, and instead, discuss various topics such as automated translation toolkits, GitHub code snippets, and language translation functionality in different applications. \n\nIf you have any specific questions about KickLang or would like to know more about its features, I'm here to help. Please feel free to ask, and I'll do my best to provide you with the necessary information.",
+      "createdAt": "2024-06-28T11:55:19.533Z",
+      "updatedAt": "2024-06-28T11:55:19.544Z",
+      "ancestors": [
+        "e9590ea6-6324-4c02-9327-55589f5a77bc",
+        "c2d39622-d2a0-4313-be8c-e312768c9b74"
+      ],
+      "id": "f3b040b3-66c7-4d00-adec-21be594072d9",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\n## System\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n⫻content/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-06-28T11:55:18.959Z",
+  "updatedAt": "2024-06-28T11:55:30.823Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

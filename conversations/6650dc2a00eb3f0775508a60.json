@@ -1,0 +1,60 @@
+{
+  "conversation_id": "6650dc2a00eb3f0775508a60",
+  "title": "📊 Code snippet",
+  "rootMessageId": "3e0e82d7-733c-4394-8ed5-2497e739988e",
+  "messages": [
+    {
+      "id": "3e0e82d7-733c-4394-8ed5-2497e739988e",
+      "from": "system",
+      "content": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+      "createdAt": "2024-05-24T18:27:54.090Z",
+      "updatedAt": "2024-05-24T18:27:54.090Z",
+      "children": [
+        "8076714f-7dcf-4b27-8d32-30899fc6f3ae"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-05-24T18:27:54.555Z",
+      "updatedAt": "2024-05-24T18:27:54.555Z",
+      "ancestors": [
+        "3e0e82d7-733c-4394-8ed5-2497e739988e"
+      ],
+      "id": "8076714f-7dcf-4b27-8d32-30899fc6f3ae",
+      "children": [
+        "3b23cc7c-efad-4e8f-88d0-e86d8ac6425c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[{{Code74k.ts - KickLang}}] \n\nnamespace Code74k {\r\n\r\nexport enum NodeType {\r\n    Entity,\r\n    Relation,\r\n    Attribute,\r\n    Literal,\r\n    Category,\r\n    Context,\r\n    Constraint,\r\n    Logic,\r\n    Math,\r\n    Set,\r\n    Text,\r\n    Time,\r\n    Graph,\r\n    Map,\r\n    Meta,\r\n    Program,\r\n    Query,\r\n    Schema,\r\n    Script,\r\n    UI,\r\n    User,\r\n    // ... add more as needed\r\n}\r\n\r\nexport enum EdgeType {\r\n    IsA,\r\n    PartOf,\r\n    RelatedTo,\r\n    HasA,\r\n    // ... add more as needed\r\n}\r\n\r\nexport enum DataType {\r\n    String,\r\n    Number,\r\n    Boolean,\r\n    Date,\r\n    Object,\r\n    Array,\r\n    Null,\r\n    // ... add more as needed\r\n}\r\n\r\nexport interface Node {\r\n    id: string;\r\n    type: NodeType;\r\n    name: string;\r\n    description?: string;\r\n    properties: { [key: string]: any };\r\n    incoming: Edge[];\r\n    outgoing: Edge[];\r\n}\r\n\r\nexport interface Edge {\r\n    id: string;\r\n    type: EdgeType;\r\n    source: string;\r\n    target: string;\r\n    properties: { [key: string]: any };\r\n}\r\n\r\nexport interface Graph {\r\n    nodes: Node[];\r\n    edges: Edge[];\r\n    metadata: { [key: string]: any };\r\n}\r\n\r\n} // namespace Code74k",
+      "createdAt": "2024-05-24T18:27:54.555Z",
+      "updatedAt": "2024-05-24T18:27:54.562Z",
+      "ancestors": [
+        "3e0e82d7-733c-4394-8ed5-2497e739988e",
+        "8076714f-7dcf-4b27-8d32-30899fc6f3ae"
+      ],
+      "id": "3b23cc7c-efad-4e8f-88d0-e86d8ac6425c",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts  - KickLang types",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-05-24T18:27:54.091Z",
+  "updatedAt": "2024-05-24T18:28:12.200Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

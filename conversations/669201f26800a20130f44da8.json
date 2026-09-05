@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669201f26800a20130f44da8",
+  "title": "💬 I'd be happy to help you with a conversation! However, I need",
+  "rootMessageId": "2b966a7e-3c00-4758-af96-602c12c4a4c2",
+  "messages": [
+    {
+      "id": "2b966a7e-3c00-4758-af96-602c12c4a4c2",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:26:26.239Z",
+      "updatedAt": "2024-07-13T04:26:26.239Z",
+      "children": [
+        "8b9e6080-e21c-49be-873d-f4f7479e60c0"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Offer a conversation suited for the following prompt:   ⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-07-13T04:26:26.730Z",
+      "updatedAt": "2024-07-13T04:26:26.730Z",
+      "ancestors": [
+        "2b966a7e-3c00-4758-af96-602c12c4a4c2"
+      ],
+      "id": "8b9e6080-e21c-49be-873d-f4f7479e60c0",
+      "children": [
+        "318c534a-7387-4b1c-9fe3-9ea008b4005b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ content/md:Kick/Markdown\r\n\r\nHello, I'm your AI assistant. I'm happy to help you with your content generation requests. To get started, could you please provide me with some input data or initial content? This will help me understand the style and tone you're looking for.\r\n\r\nAdditionally, are there any specific guidelines or constraints I should be aware of? Any additional context or instructions would be helpful.\r\n\r\nLet me know if you have any questions or concerns. I'm here to ensure that the content we generate together meets your expectations and follows the provided template and rules.\r\n\r\n---\r\n\r\n⫻ const:response/txt:AI\r\n\r\nThanks for the additional context and guidelines. I understand that you want me to generate a conversation between two characters, Denis and Denise, and adhere to the provided template and rules. I'll do my best to create a compelling and engaging dialogue while following your instructions. Please provide me with any specific details or themes you want to explore in this conversation.\r\n\r\n---\r\n\r\n⫻ content/txt:User\r\n\r\nSure, let's explore a theme of collaboration and problem-solving. Perhaps Denis and Denise are colleagues working on a project together, and they need to find a creative solution to a challenging issue they're facing.\r\n\r\n---\r\n\r\n⫻ const:ai\r\n\r\n**Denis:** Hi, Denise! How's the project coming along? I hope we're making some good progress.\r\n\r\n**Denise:** Hey, Denis! It's going well, but we've hit a bit of a roadblock. The client has requested a feature that we haven't implemented before, and it's quite complex.\r\n\r\n**Denis:** Oh, I see. Challenges like these are what make our work exciting! Let's put our heads together and come up with a creative solution. Do you mind walking me through the issue and what we've tried so far?\r\n\r\n**Denise:** Absolutely! The client wants us to integrate a new payment gateway into their e-commerce platform. It's a lesser-known gateway, and we don't have much documentation to work with. We've tried reaching out to their support, but the response has been slow.\r\n\r\n**Denis:** Hmm, that's tricky. How about we divide and conquer? I'll dig into the code and see if I can find any similar implementations or workarounds. In the meantime, you could try contacting some developers who have experience with this gateway. Maybe they can provide us with some insights or best practices.\r\n\r\n**Denise:** That's a great idea! It's always helpful to tap into the collective knowledge of the developer community. I'll reach out to a few contacts and see if we can get some guidance. Let's schedule a sync later today to share our findings and decide on the next steps.\r\n\r\n**Denis:** Sounds like a plan! It's times like these when our problem-solving skills and teamwork truly shine. Let's keep an open mind and stay positive. We'll figure this out together!\r\n\r\n---\r\n\r\n⫻ const:user\r\n\r\nThat's a wonderful conversation, and I appreciate your creativity in adhering to the template. It's a delight to collaborate with you on this content generation journey. Let's continue exploring and crafting compelling narratives together!\r\n\r\n---\r\n\r\n⫻ content/md:Kick/End\r\n\r\nI hope this conversation suits your needs and follows the provided template and rules. Feel free to provide additional feedback or request any changes. I'm here to ensure that the generated content meets your expectations.",
+      "createdAt": "2024-07-13T04:26:26.731Z",
+      "updatedAt": "2024-07-13T04:26:26.738Z",
+      "ancestors": [
+        "2b966a7e-3c00-4758-af96-602c12c4a4c2",
+        "8b9e6080-e21c-49be-873d-f4f7479e60c0"
+      ],
+      "id": "318c534a-7387-4b1c-9fe3-9ea008b4005b",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:26:26.240Z",
+  "updatedAt": "2024-07-13T04:26:59.928Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

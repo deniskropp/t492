@@ -1,0 +1,54 @@
+{
+  "conversation_id": "660f2473e9ae0d8aae4bb6da",
+  "title": "🌐 Artec Course Overview",
+  "rootMessageId": "8c939ade-d6bd-4239-8b82-3a11dcfe9f80",
+  "messages": [
+    {
+      "id": "8c939ade-d6bd-4239-8b82-3a11dcfe9f80",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T22:06:43.054Z",
+      "updatedAt": "2024-04-04T22:06:43.054Z",
+      "children": [
+        "9393a305-3016-463e-b878-407e917cb15d"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering\nTarget audience:\n- students (after highschool)\n- staff (freelance or unemployed)\nAreas of interest:\n- art\n- media\n- systems",
+      "files": [],
+      "createdAt": "2024-04-04T22:06:43.513Z",
+      "updatedAt": "2024-04-04T22:06:43.513Z",
+      "ancestors": [
+        "8c939ade-d6bd-4239-8b82-3a11dcfe9f80"
+      ],
+      "id": "9393a305-3016-463e-b878-407e917cb15d",
+      "children": [
+        "e26ece73-096c-4f1f-99c2-7e7a186bae88"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, here's a sample markdown content generated based on the given rules:\n\n⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering\nTarget audience:\n- students (after highschool)\n- staff (freelance or unemployed)\nAreas of interest:\n- art\n- media\n- systems\n\n⫻const:artec-education-modules\n[\"2D Game Design\", \"3D Design und Druck\", \"Foto und Film Bearbeitung / Erstellung\", \"Medientechnologie\", \"TypeScript Einleitung\", \"Prompt Engineering\"]\n\n",
+      "createdAt": "2024-04-04T22:06:43.513Z",
+      "updatedAt": "2024-04-04T22:06:43.513Z",
+      "ancestors": [
+        "8c939ade-d6bd-4239-8b82-3a11dcfe9f80",
+        "9393a305-3016-463e-b878-407e917cb15d"
+      ],
+      "id": "e26ece73-096c-4f1f-99c2-7e7a186bae88",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "⫻TASK\r\n\r\nGenerate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-04T22:06:43.056Z",
+  "updatedAt": "2024-04-04T22:06:59.651Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

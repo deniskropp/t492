@@ -1,0 +1,127 @@
+{
+  "conversation_id": "669a617ebc73aceca4d254b6",
+  "title": "📊 AI coding agent summary",
+  "rootMessageId": "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+  "messages": [
+    {
+      "id": "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n## The outer self and world\r\n\r\n### Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+      "createdAt": "2024-07-19T12:52:14.025Z",
+      "updatedAt": "2024-07-19T12:52:14.025Z",
+      "children": [
+        "626c64ab-4820-44e8-8b77-d09f43381a5e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "<h1 align=\"center\"> \n  <a href=\"https://plandex.ai\"> \n   <picture> \n     <source media=\"(prefers-color-scheme: dark)\" srcset=\"images/plandex-logo-dark.png\"/> \n     <source media=\"(prefers-color-scheme: light)\" srcset=\"images/plandex-logo-light.png\"/> \n     <img width=\"400\" src=\"images/plandex-logo-dark-bg.png\"/> \n  </a> \n  <br /> \n </h1> \n <br /> \n  \n <div align=\"center\"> \n  \n <p align=\"center\"> \n   <!-- Call to Action Links --> \n   <a href=\"#install\"> \n     <b>30-Second Install</b> \n   </a> \n    ·  \n   <!-- <a href=\"https://plandex.ai\"> \n     <b>Website</b> \n   </a> \n    ·  --> \n   <a href=\"https://docs.plandex.ai/\"> \n     <b>Docs</b> \n   </a> \n    ·  \n   <a href=\"#more-examples-\"> \n     <b>Examples</b> \n   </a> \n    ·  \n   <a href=\"https://docs.plandex.ai/hosting/self-hosting\"> \n     <b>Self-Hosting</b> \n   </a> \n    <!-- ·  \n   <a href=\"./guides/DEVELOPMENT.md\"> \n     <b>Development</b> \n   </a> --> \n   <!--  ·  \n   <a href=\"https://discord.gg/plandex-ai\"> \n     <b>Discord</b> \n   </a>   \n    ·  \n   <a href=\"#weekly-office-hours-\"> \n     <b>Office Hours</b> \n   </a>   \n   --> \n </p> \n  \n <br> \n  \n [![Discord Follow](https://dcbadge.vercel.app/api/server/plandex-ai?style=flat)](https://discord.gg/plandex-ai) \n [![GitHub Repo stars](https://img.shields.io/github/stars/plandex-ai/plandex?style=social)](https://github.com/plandex-ai/plandex) \n [![Twitter Follow](https://img.shields.io/twitter/follow/PlandexAI?style=social)](https://twitter.com/PlandexAI) \n  \n </div> \n  \n <p align=\"center\"> \n   <!-- Badges --> \n <a href=\"https://github.com/plandex-ai/plandex/pulls\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\" /></a> <a href=\"https://github.com/plandex-ai/plandex/releases?q=cli\"><img src=\"https://img.shields.io/github/v/release/plandex-ai/plandex?filter=cli*\" alt=\"Release\" /></a> \n <a href=\"https://github.com/plandex-ai/plandex/releases?q=server\"><img src=\"https://img.shields.io/github/v/release/plandex-ai/plandex?filter=server*\" alt=\"Release\" /></a> \n  \n   <!-- <a href=\"https://github.com/your_username/your_project/issues\"> \n     <img src=\"https://img.shields.io/github/issues-closed/your_username/your_project.svg\" alt=\"Issues Closed\" /> \n   </a> --> \n  \n </p> \n  \n <br /> \n  \n <div align=\"center\"> \n <a href=\"https://trendshift.io/repositories/8994\" target=\"_blank\"><img src=\"https://trendshift.io/api/badge/repositories/8994\" alt=\"plandex-ai%2Fplandex | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/></a> \n </div> \n  \n <br> \n  \n <h3 align=\"center\">AI driven development in your terminal.<br/>Build entire features and apps with a robust workflow.</h3> \n  \n <br/> \n <br/> \n  \n <!-- Vimeo link is nicer on mobile than embedded video... downside is it navigates to vimeo in same tab (no way to add target=_blank) --> \n <!-- https://github.com/plandex-ai/plandex/assets/545350/c2ee3bcd-1512-493f-bdd5-e3a4ca534a36 --> \n  \n <a href=\"https://player.vimeo.com/video/926634577\"> \n   <img src=\"images/plandex-intro-vimeo.png\" alt=\"Plandex intro video\" width=\"100%\"/> \n </a> \n  \n <br/> \n <br/> \n  \n ## More examples  🎥 \n  \n <h4>👉  <a href=\"https://www.youtube.com/watch?v=0ULjQx25S_Y\">Building Pong in C/OpenGL with GPT-4o and Plandex</a></h4> \n  \n <h4>👉  <a href=\"https://www.youtube.com/watch?v=rnlepfh7TN4\">Fixing a tricky real-world bug in 5 minutes with Claude Opus 3 and Plandex</a></h4> \n  \n <br/> \n  \n ## Learn more about Plandex  🧐 \n  \n - [Overview](#overview-) \n - [Install](#install) \n - [Get started](#get-started-) \n - [Docs](https://docs.plandex.ai/) \n - [Build complex software](#build-complex-software-with-llms-) \n - [Why Plandex?](#why-plandex-) \n - [Roadmap](#roadmap-%EF%B8%8F) \n - [Discussion and discord](#discussion-and-discord-) \n - [Contributors](#contributors-) \n <br/> \n  \n ## Overview  📚 \n  \n <p>Churn through your backlog, work with unfamiliar technologies, get unstuck, and <strong>spend less time on the boring stuff.</strong></p> \n  \n <p>Plandex is a <strong>reliable and developer-friendly</strong> AI coding agent in your terminal. It can plan out and complete <strong>large tasks</strong> that span many files and steps.</p> \n  \n <p>Designed for <strong>real-world use-cases</strong>, Plandex can help you build a new app quickly, add new features to an existing codebase, write tests and scripts, understand code, and fix bugs. </p> \n  \n <br/> \n  \n ## Install  📥 \n  \n ```bash \n curl -sL https://plandex.ai/install.sh | bash \n ``` \n  \n **Note:** Windows is supported via [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). Plandex only works correctly on Windows in the WSL shell. It doesn't work in the Windows CMD prompt or PowerShell. \n  \n [More installation options.](https://docs.plandex.ai/install) \n  \n <br/> \n  \n ## Get started  🚀 \n  \n Plandex uses OpenAI by default. If you don't have an OpenAI account, first [sign up here.](https://platform.openai.com/signup) \n  \n Then [generate an API key here](https://platform.openai.com/account/api-keys) and `export` it. \n  \n ```bash \n export OPENAI_API_KEY=... \n ``` \n  \n  \n Now `cd` into your **project's directory.** Make a new directory first with `mkdir your-project-dir` if you're starting on a new project. \n  \n ```bash \n cd your-project-dir \n ``` \n  \n  \n Then **start your first plan** with `plandex new`. \n  \n ```bash \n plandex new \n ``` \n  \n  \n Load any relevant files, directories, directory layouts, urls, or images **into the LLM's context** with `plandex load`. \n  \n ```bash \n plandex load some-file.ts another-file.ts \n plandex load src/components -r # load a whole directory \n plandex load src --tree # load a directory layout (file names only) \n plandex load src/**/*.ts # load files matching a glob pattern \n plandex load https://raw.githubusercontent.com/plandex-ai/plandex/main/README.md # load the text content of a url \n plandex load images/mockup.png # load an image \n ``` \n  \n  \n Now **send your prompt.** You can pass it in as a file: \n  \n ```bash \n plandex tell -f prompt.txt \n ``` \n  \n  \n Write it in vim: \n  \n ```bash \n plandex tell # tell with no arguments opens vim so you can write your prompt there \n ``` \n  \n  \n Or pass it inline (use enter for line breaks): \n  \n ```bash \n plandex tell \"add a new line chart showing the number of foobars over time to components/charts.tsx\" \n ``` \n  \n Plandex will make a plan for your task and then implement that plan in code. **The changes won't yet be applied to your project files.** Instead, they'll accumulate in Plandex's sandbox. \n  \n To learn about reviewing changes, iterating on the plan, and applying changes to your project, **[continue with the full quickstart.](https://docs.plandex.ai/quick-start#review-the-changes)** \n  \n <br/> \n  \n ## Docs  🛠️ \n  \n ### [👉  Full documentation.](https://docs.plandex.ai/) \n  \n  \n <br/> \n  \n ## Build complex software with LLMs  🌟 \n  \n ⚡️  Changes are accumulated in a protected sandbox so that you can review them before automatically applying them to your project files. Built-in version control allows you to easily go backwards and try a different approach. Branches allow you to try multiple approaches and compare the results. \n  \n 📑  Manage context efficiently in the terminal. Easily add files or entire directories to context, and keep them updated automatically as you work so that models always have the latest state of your project. \n  \n 🧠  By default, Plandex relies on the OpenAI API and requires an `OPENAI_API_KEY` environment variable. You can also use it with a wide range of other models, including Anthropic Claude, Google Gemini, Mixtral, Llama and many more via OpenRouter.ai, Together.ai, or any other OpenAI-compatible provider. \n  \n ✅  Plandex supports Mac, Linux, FreeBSD, and Windows. It runs from a single binary with no dependencies. \n  \n <br/> \n  \n ## Why Plandex?  🤔 \n  \n 🏗️  Go beyond autocomplete to build complex functionality with AI.<br> \n 🚫  Stop the mouse-centered, copy-pasting madness of coding with ChatGPT.<br> \n ⚡️  Ensure the model always has the latest versions of files in context.<br> \n 🪙  Retain granular control over what's in the model's context and how many tokens you're using.<br> \n ⏪  Rewind, iterate, and retry as needed until you get your prompt just right.<br> \n 🌱  Explore multiple approaches with branches.<br> \n 🔀  Run tasks in the background or work on multiple tasks in parallel.<br> \n 🎛️  Try different models and temperatures, then compare results.<br> \n  \n <br/> \n ",
+      "files": [],
+      "createdAt": "2024-07-19T12:52:15.299Z",
+      "updatedAt": "2024-07-19T12:52:15.299Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa"
+      ],
+      "id": "626c64ab-4820-44e8-8b77-d09f43381a5e",
+      "children": [
+        "186682b5-fbef-4250-8e23-7054209d5b47"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a list of tasks for Tool 1, the Tool Descriptor:\r\n\r\n- [x] Create a clear and concise description of Tool 1, including its purpose, functionality, and specifications.\r\n- [x] Ensure the description covers the tool's ability to process free-form text input and generate a detailed tool description.\r\n- [x] Highlight the tool's natural language processing capabilities and its ability to prompt for additional information or clarification.\r\n\r\nLet me know if you would like me to elaborate on any of these tasks or provide additional details.",
+      "createdAt": "2024-07-19T12:52:15.299Z",
+      "updatedAt": "2024-07-19T12:52:15.309Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+        "626c64ab-4820-44e8-8b77-d09f43381a5e"
+      ],
+      "id": "186682b5-fbef-4250-8e23-7054209d5b47",
+      "children": [
+        "d15a2086-babf-40db-a032-8d8251cac750"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "can we leverage plandex for this?",
+      "files": [],
+      "createdAt": "2024-07-19T12:53:10.984Z",
+      "updatedAt": "2024-07-19T12:53:10.984Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+        "626c64ab-4820-44e8-8b77-d09f43381a5e",
+        "186682b5-fbef-4250-8e23-7054209d5b47"
+      ],
+      "id": "d15a2086-babf-40db-a032-8d8251cac750",
+      "children": [
+        "ce148b06-93e4-444b-8625-559140b3c536"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "We can leverage Plandex for Tool 1 as follows:\n\r\n- **Purpose and Functionality:** Use Plandex to generate a clear and concise description of Tool 1's purpose and functionality. We can prompt Plandex to explain the tool's role in the meta-AI team and how it facilitates the provision of tool specifications.\r\n\r\n- **Specifications and Features:** Leverage Plandex to enumerate the specifications and features of Tool 1. We can provide the tool's requirements, input/output details, and any unique characteristics that set it apart. Plandex can assist in structuring this information coherently.\r\n\r\n- **Natural Language Processing:** Utilize Plandex's natural language processing capabilities to enhance the tool description. This includes understanding free-form text inputs and generating prompts for additional information. Plandex can guide us in designing intuitive and user-friendly prompts for Tool 1.\r\n\r\n- **Contextual Prompts:** Plandex can help ensure that the tool descriptor is dynamic and context-aware. It can suggest mechanisms for prompting users for additional information based on their initial inputs, ensuring a comprehensive tool description.\r\n\r\n- **Iteration and Refinement:** Leverage Plandex's sandbox and iteration capabilities to refine the tool description. We can experiment with different prompts, inputs, and specifications, using Plandex's version control to keep track of changes and iterate effectively.\r\n\r\nBy leveraging Plandex, we can efficiently generate a detailed and dynamic description of Tool 1, taking advantage of its natural language processing capabilities and sandbox environment for iterative refinement.",
+      "createdAt": "2024-07-19T12:53:10.984Z",
+      "updatedAt": "2024-07-19T12:53:10.992Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+        "626c64ab-4820-44e8-8b77-d09f43381a5e",
+        "186682b5-fbef-4250-8e23-7054209d5b47",
+        "d15a2086-babf-40db-a032-8d8251cac750"
+      ],
+      "id": "ce148b06-93e4-444b-8625-559140b3c536",
+      "children": [
+        "cf354f59-2f62-4f14-9818-53b3d63d5b3d"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Let's begin, after \"plandex new\" which commands do you suggest?",
+      "files": [],
+      "createdAt": "2024-07-19T13:38:21.242Z",
+      "updatedAt": "2024-07-19T13:38:21.242Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+        "626c64ab-4820-44e8-8b77-d09f43381a5e",
+        "186682b5-fbef-4250-8e23-7054209d5b47",
+        "d15a2086-babf-40db-a032-8d8251cac750",
+        "ce148b06-93e4-444b-8625-559140b3c536"
+      ],
+      "id": "cf354f59-2f62-4f14-9818-53b3d63d5b3d",
+      "children": [
+        "7c0bd0ec-c0d9-42e2-be69-4e54b42b9c46"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "After running `plandex new` to initialize a new plan, here are the suggested commands to continue:\r\n\r\n- **Context Loading:** Start by loading relevant files, directories, or other resources into the LLM's context using the `plandex load` command. This ensures that the LLM has access to the necessary information to generate an accurate tool description. Examples:\r\n   - `plandex load tool_descriptor.txt` (load a text file with initial tool specifications)\r\n   - `plandex load tool_specs/ -r` (load all files in the \"tool_specs\" directory recursively)\r\n   - `plandex load images/tool_diagram.png` (load an image file for visual reference)\r\n\r\n- **Initial Prompt:** Use the `plandex tell` command to provide an initial prompt to the LLM. This prompt should guide the LLM in processing the loaded context and generating a tool description. Examples:\r\n   - `plandex tell \"Generate a detailed description of Tool 1, including its functionality and specifications.\"`\r\n   - `plandex tell -f initial_prompt.txt` (load the initial prompt from a text file)\r\n\r\n- **Review and Iterate:** Once the LLM provides an initial response, use Plandex's sandbox to review the generated tool description. Compare it against your requirements and specifications to identify areas for improvement. Use the `plandex tell` command again to provide additional prompts or refine the existing prompt. Examples:\r\n   - `plandex tell \"Expand on the tool's ability to handle vague or incomplete inputs.\"`\r\n   - `plandex tell -f refinement_prompt.txt` (load a refinement prompt from a text file)\r\n\r\n- **Version Control:** Leverage Plandex's version control capabilities to keep track of changes and iterations. Use the `plandex branch` and `plandex commit` commands to create branches and commit changes, allowing you to experiment with different prompts and compare results. Examples:\r\n   - `plandex branch refinement` (create a new branch for refinements)\r\n   - `plandex commit -m \"Refined tool description based on initial review.\"`\r\n\r\n- **Context Update:** If you make changes to the loaded context (e.g., updating specification files), use the `plandex load` command again to update the LLM's context. This ensures that the LLM has access to the latest information. Example:\r\n   - `plandex load tool_specs/ -u` (update the context with changes in the \"tool_specs\" directory)\r\n\r\n- **Background Processing:** Plandex allows you to run tasks in the background, freeing up your terminal for other work. Use the `&` character at the end of a command to run it in the background. Example:\r\n   - `plandex tell \"Expand on the tool's natural language processing capabilities.\" &`\r\n\r\nRemember, Plandex's strength lies in its ability to iterate and refine. Don't hesitate to experiment with different prompts, load additional context, and utilize version control to explore multiple approaches. Through this process, you can effectively leverage Plandex to generate a comprehensive and accurate tool description for Tool 1.",
+      "createdAt": "2024-07-19T13:38:21.242Z",
+      "updatedAt": "2024-07-19T13:38:21.250Z",
+      "ancestors": [
+        "55ea5e86-b509-4c63-afb1-71549e18aeaa",
+        "626c64ab-4820-44e8-8b77-d09f43381a5e",
+        "186682b5-fbef-4250-8e23-7054209d5b47",
+        "d15a2086-babf-40db-a032-8d8251cac750",
+        "ce148b06-93e4-444b-8625-559140b3c536",
+        "cf354f59-2f62-4f14-9818-53b3d63d5b3d"
+      ],
+      "id": "7c0bd0ec-c0d9-42e2-be69-4e54b42b9c46",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n## The outer self and world\r\n\r\n### Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-07-19T12:52:14.026Z",
+  "updatedAt": "2024-07-19T13:38:49.125Z",
+  "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

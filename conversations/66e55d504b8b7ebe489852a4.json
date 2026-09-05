@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66e55d504b8b7ebe489852a4",
+  "title": "📈 Content organization",
+  "rootMessageId": "152dde1d-8999-4568-9d69-34779603b7fc",
+  "messages": [
+    {
+      "id": "152dde1d-8999-4568-9d69-34779603b7fc",
+      "from": "system",
+      "content": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+      "createdAt": "2024-09-14T09:54:24.750Z",
+      "updatedAt": "2024-09-14T09:54:24.750Z",
+      "children": [
+        "b3379860-9e9a-4beb-91a0-507bc225419a"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Topic: Content Organization\nConcept: Format\nConcept: Structure\nConcept: Generation\nTopic: System Cognition\nConcept: Roles\nConcept: Activities\nConcept: Adaptability\nTopic: Collaboration\nConcept: Human-AI Collaboration\nConcept: Dynamic Roles\nConcept: Innovation",
+      "files": [],
+      "createdAt": "2024-09-14T09:54:25.307Z",
+      "updatedAt": "2024-09-14T09:54:25.307Z",
+      "ancestors": [
+        "152dde1d-8999-4568-9d69-34779603b7fc"
+      ],
+      "id": "b3379860-9e9a-4beb-91a0-507bc225419a",
+      "children": [
+        "7fe047be-81dd-4361-a085-f607b8010e4a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Chat/Flow:\nassistant\n\n\nIt seems like we have a list of topics and concepts related to content organization, system cognition, and collaboration. I'll help you organize this information into a more structured format.\n\n\nHere's a possible way to categorize the concepts under each topic:\n\n\n Topic: Content Organization\n  • Format\n  • Structure\n  • Generation\n\n\n Topic: System Cognition\n  • Roles\n  • Activities\n  • Adaptability\n\n\n Topic: Collaboration\n  • Human-AI Collaboration\n  • Dynamic Roles\n  • Innovation\n\n\nPlease let me know if this is what you had in mind or if there's anything else I can help with!\n\n\n\nWhat would you like to do next?",
+      "createdAt": "2024-09-14T09:54:25.307Z",
+      "updatedAt": "2024-09-14T09:54:25.316Z",
+      "ancestors": [
+        "152dde1d-8999-4568-9d69-34779603b7fc",
+        "b3379860-9e9a-4beb-91a0-507bc225419a"
+      ],
+      "id": "7fe047be-81dd-4361-a085-f607b8010e4a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+  "assistantId": "66c52a50278716117638740a",
+  "createdAt": "2024-09-14T09:54:24.751Z",
+  "updatedAt": "2024-09-14T09:54:40.319Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,69 @@
+{
+  "conversation_id": "660d6f7beda792dbe0f31f25",
+  "title": "💻 Llama.cpp and Vulkan backend compatibility issue",
+  "rootMessageId": "40015940-8474-4ae6-b82b-f0fba1c41986",
+  "messages": [
+    {
+      "id": "40015940-8474-4ae6-b82b-f0fba1c41986",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-03T15:02:19.618Z",
+      "updatedAt": "2024-04-03T15:02:19.618Z",
+      "children": [
+        "c07dd0a7-aedf-44c9-bf82-65b36b8f1a83"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "I am building llama.cpp with Vulkan backend. When I try to run it, it fails because it requires 16bit storage, however that is not supported by my Vulkan device. Is there an option to switch to 32bit storage?",
+      "files": [],
+      "createdAt": "2024-04-03T15:02:22.827Z",
+      "updatedAt": "2024-04-03T15:02:22.827Z",
+      "ancestors": [
+        "40015940-8474-4ae6-b82b-f0fba1c41986"
+      ],
+      "id": "c07dd0a7-aedf-44c9-bf82-65b36b8f1a83",
+      "children": [
+        "26a75b01-3d69-4178-a362-4bd3acba82f0"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-04-03T15:02:22.827Z",
+      "updatedAt": "2024-04-03T15:02:22.827Z",
+      "ancestors": [
+        "40015940-8474-4ae6-b82b-f0fba1c41986",
+        "c07dd0a7-aedf-44c9-bf82-65b36b8f1a83"
+      ],
+      "id": "26a75b01-3d69-4178-a362-4bd3acba82f0",
+      "children": [],
+      "webSearch": {
+        "prompt": "I am building llama.cpp with Vulkan backend. When I try to run it, it fails because it requires 16bit storage, however that is not supported by my Vulkan device. Is there an option to switch to 32bit storage?",
+        "searchQuery": " -site:youtube.com -site:twitter.com llama.cpp Vulkan backend 16bit storage 32bit storage",
+        "results": [
+          "https://github.com/ggerganov/llama.cpp/issues/1571",
+          "https://github.com/ggerganov/llama.cpp/issues/3146",
+          "https://www.reddit.com/r/LocalLLaMA/comments/13gok03/llamacpp_now_officially_supports_gpu_acceleration/",
+          "https://news.ycombinator.com/item?id=38585078",
+          "https://news.ycombinator.com/item?id=38583399",
+          "https://aur.archlinux.org/packages?SB=p&SO=d&O=92500&PP=250&SeB=nd",
+          "https://www.scribd.com/document/707256609/CMakeLists",
+          "https://torust.me/Thesis.pdf",
+          "https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=3Dbuffer+overflow="
+        ]
+      },
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "You run in a loop of Thought, Action, Observation.\r\nAt the end of the loop either Answer or restate your Thought and Action.\r\nUse Thought to describe your thoughts about the question you have been asked.\r\nUse Action to run one of these actions available to you:\r\n- calculate[python math expression]\r\n- research[lookup on the internet]\r\nObservation will be the result of running those actions\r\n\r\n\r\nQuestion: What is 4 * 7 / 3?\r\nThought: Do I need to use an action? Yes, I use calculate to do math\r\nAction: calculate[4 * 7 / 3]\r\nObservation: 9.3333333333\r\nThought: Do I need to use an action? No, have the result\r\nAnswer: The calculate tool says it is 9.3333333333\r\nQuestion: What is capital of france?\r\nThought: Do I need to use an action? No, I know the answer\r\nAnswer: Paris is the capital of France\r\nQuestion:",
+  "assistantId": "660cc773f9ad343dd7c42333",
+  "createdAt": "2024-04-03T15:02:19.621Z",
+  "updatedAt": "2024-04-03T15:03:21.940Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

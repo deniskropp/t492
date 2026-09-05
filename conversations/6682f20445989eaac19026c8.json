@@ -1,0 +1,68 @@
+{
+  "conversation_id": "6682f20445989eaac19026c8",
+  "title": "📝 Meeting notes summary",
+  "rootMessageId": "75f4d849-386c-4c6c-87fe-974a5712020b",
+  "messages": [
+    {
+      "id": "75f4d849-386c-4c6c-87fe-974a5712020b",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n⫻content/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+      "createdAt": "2024-07-01T18:14:28.127Z",
+      "updatedAt": "2024-07-01T18:14:28.127Z",
+      "children": [
+        "fb2258ab-1e74-4c81-9309-a5966582fd45"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Hallo,\n\nhier erstmal meine Stichpunkte, wie vorgeschlagen:\n\n\nV0.5\n\n\nOn 2024-07-01 06:55, Frank Osterfeld wrote:\n\n     - worum geht es überhaupt\n\n\n- LLMs for Code Generation\n  - Evaluation of whole file output\n- Achieve feasibility, for future developments\n\n     - Was ist das Ziel\n\n\n- Evaluate different models to achieve feasibility in future work\n- Find Code LLM that works best most/all of the time\n\n     - Was der Weg dahin\n\n\n- Developed scalable Prompt template\n- Wrote script that combines prompt and file input and uses completion API\n- Compared generated code of each model\n\n     - Was wurde schon ausprobiert, was funktioniert, was nicht\n\n\n- Structured prompt that is scalable and explicit regarding inputs\n- Out of five models tested, only \"Codestral\" was without issues\n\n     - Was ist als nächstes geplant\n\n\n- Refine prompt template and adjust script\n- Include more models in (automated) testing\n- More test cases to check if models compare still same\n",
+      "files": [],
+      "createdAt": "2024-07-01T18:14:28.563Z",
+      "updatedAt": "2024-07-01T18:14:28.563Z",
+      "ancestors": [
+        "75f4d849-386c-4c6c-87fe-974a5712020b"
+      ],
+      "id": "fb2258ab-1e74-4c81-9309-a5966582fd45",
+      "children": [
+        "3889e5df-420c-44a9-bcb7-3b300dfd6c3c",
+        "5d207999-5a12-44d5-afdb-fb6156466246"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-07-01T18:14:28.563Z",
+      "updatedAt": "2024-07-01T18:14:28.573Z",
+      "ancestors": [
+        "75f4d849-386c-4c6c-87fe-974a5712020b",
+        "fb2258ab-1e74-4c81-9309-a5966582fd45"
+      ],
+      "id": "3889e5df-420c-44a9-bcb7-3b300dfd6c3c",
+      "children": [],
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-07-01T18:21:52.352Z",
+      "updatedAt": "2024-07-01T18:21:52.362Z",
+      "id": "5d207999-5a12-44d5-afdb-fb6156466246",
+      "ancestors": [
+        "75f4d849-386c-4c6c-87fe-974a5712020b",
+        "fb2258ab-1e74-4c81-9309-a5966582fd45"
+      ],
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n⫻content/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-07-01T18:14:28.130Z",
+  "updatedAt": "2024-07-01T18:22:22.332Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

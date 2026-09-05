@@ -1,0 +1,54 @@
+{
+  "conversation_id": "6650e0ab7e5a461898cce57e",
+  "title": "📊 Code interface",
+  "rootMessageId": "db80416d-a164-49de-8ad6-d78d9c927081",
+  "messages": [
+    {
+      "id": "db80416d-a164-49de-8ad6-d78d9c927081",
+      "from": "system",
+      "content": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+      "createdAt": "2024-05-24T18:47:07.835Z",
+      "updatedAt": "2024-05-24T18:47:07.835Z",
+      "children": [
+        "2ae6ad58-0a9c-46c0-a6e3-8a718d20230d"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T18:47:11.859Z",
+      "updatedAt": "2024-05-24T18:47:11.859Z",
+      "ancestors": [
+        "db80416d-a164-49de-8ad6-d78d9c927081"
+      ],
+      "id": "2ae6ad58-0a9c-46c0-a6e3-8a718d20230d",
+      "children": [
+        "956d3915-1e14-49d6-817b-410b351c5006"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-05-24T18:47:11.859Z",
+      "updatedAt": "2024-05-24T18:47:11.868Z",
+      "ancestors": [
+        "db80416d-a164-49de-8ad6-d78d9c927081",
+        "2ae6ad58-0a9c-46c0-a6e3-8a718d20230d"
+      ],
+      "id": "956d3915-1e14-49d6-817b-410b351c5006",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-24T18:47:07.837Z",
+  "updatedAt": "2024-05-24T18:47:41.837Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

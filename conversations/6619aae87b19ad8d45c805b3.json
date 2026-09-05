@@ -1,0 +1,89 @@
+{
+  "conversation_id": "6619aae87b19ad8d45c805b3",
+  "title": "🏈 Football game",
+  "rootMessageId": "6166e207-e83b-40b1-a118-47c9398cf6ff",
+  "messages": [
+    {
+      "id": "6166e207-e83b-40b1-a118-47c9398cf6ff",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:43:04.523Z",
+      "updatedAt": "2024-04-12T21:43:04.523Z",
+      "children": [
+        "23fffa86-9438-4b5a-973d-9804e3005ef9"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick Off",
+      "files": [],
+      "createdAt": "2024-04-12T21:43:05.451Z",
+      "updatedAt": "2024-04-12T21:43:05.451Z",
+      "ancestors": [
+        "6166e207-e83b-40b1-a118-47c9398cf6ff"
+      ],
+      "id": "23fffa86-9438-4b5a-973d-9804e3005ef9",
+      "children": [
+        "feae39c0-9d9e-4e41-b7c8-58c16a62ba6b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, let's kick things off! \n\nWhat would you like to do? You can ask me questions, and I can provide information, generate text, or assist with a wide range of tasks. \n\nYou can also guide me by providing specific instructions or data to work with. If you have any particular requests or topics in mind, feel free to let me know! \n\nLet's get started!",
+      "createdAt": "2024-04-12T21:43:05.451Z",
+      "updatedAt": "2024-04-12T21:43:07.654Z",
+      "ancestors": [
+        "6166e207-e83b-40b1-a118-47c9398cf6ff",
+        "23fffa86-9438-4b5a-973d-9804e3005ef9"
+      ],
+      "id": "feae39c0-9d9e-4e41-b7c8-58c16a62ba6b",
+      "children": [
+        "dcc88cd8-67fb-49b7-bfee-8bd06520fe44"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "KickLang tutorial",
+      "files": [],
+      "createdAt": "2024-04-12T21:43:17.285Z",
+      "updatedAt": "2024-04-12T21:43:17.285Z",
+      "ancestors": [
+        "6166e207-e83b-40b1-a118-47c9398cf6ff",
+        "23fffa86-9438-4b5a-973d-9804e3005ef9",
+        "feae39c0-9d9e-4e41-b7c8-58c16a62ba6b"
+      ],
+      "id": "dcc88cd8-67fb-49b7-bfee-8bd06520fe44",
+      "children": [
+        "a43704cd-f225-45b6-b5e3-c46878113468"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Here's an introduction to KickLang, the formal language used in the Code74k system. \n\n**KickLang Basics:**\nKickLang is a domain-specific language designed for efficient knowledge representation and manipulation. It provides a structured way to express concepts, relationships, and rules, enabling complex computations and transformations. \n\n**Syntax and Structure:**\nThe fundamental unit of KickLang is the \"entry,\" which represents a piece of knowledge or a fact. Entries are structured as key-value pairs and are enclosed in curly braces {}. Here's an example:\n\n```\n{\n  \"key\": \"value\"\n}\n```\n\nIn KickLang, keys are typically descriptive words or phrases, and values can be primitive data types like strings, numbers, booleans, or even nested structures. \n\n**Lists and Nesting:**\nKickLang supports lists, allowing you to group multiple related entries together. Lists are denoted by square brackets []. Here's an example:\n\n```\n{\n  \"key\": [\n    \"value1\",\n    \"value2\",\n    \"value3\"\n  ]\n}\n```\n\nYou can also nest structures within lists to create more complex representations:\n\n```\n{\n  \"key\": [\n    {\n      \"subkey\": \"value1\"\n    },\n    {\n      \"subkey\": \"value2\"\n    }\n  ]\n}\n```\n\n**Variables and References:**\nKickLang allows you to define variables and reference them within entries. Variables are denoted by a dollar sign $. Here's an example:\n\n```\n{\n  \"$var\": \"value\"\n}\n```\n\nYou can then reference this variable in other entries:\n\n```\n{\n  \"key\": \"$var\"\n}\n```\n\nThis enables you to create dynamic and reusable structures. \n\n**Transformations and Rules:**\nKickLang supports transformations and rules, allowing you to manipulate and transform data. You can define rules that specify how to process and modify entries. These rules can involve variables, conditional statements, and functions. \n\nFor example, you can define a transformation rule to convert a list of values into a comma-separated string:\n\n```\n{\n  \"transform\": [\n    {\n      \"rule\": \"join($values, ', ')\",\n      \"from\": \"$values\"\n    }\n  ]\n}\n```\n\nIn this rule, `join` is a function that concatenates the values in `$values` with a comma delimiter. \n\n**Conclusion:**\nThis is just a basic introduction to KickLang. It provides a flexible and expressive way to represent and manipulate knowledge, enabling complex computations and transformations. With KickLang, you can build versatile systems for a variety of applications, including natural language processing, data analysis, and more. \n\nFeel free to provide any KickLang code or ask specific questions, and I can guide you further!",
+      "createdAt": "2024-04-12T21:43:17.285Z",
+      "updatedAt": "2024-04-12T21:43:32.097Z",
+      "ancestors": [
+        "6166e207-e83b-40b1-a118-47c9398cf6ff",
+        "23fffa86-9438-4b5a-973d-9804e3005ef9",
+        "feae39c0-9d9e-4e41-b7c8-58c16a62ba6b",
+        "dcc88cd8-67fb-49b7-bfee-8bd06520fe44"
+      ],
+      "id": "a43704cd-f225-45b6-b5e3-c46878113468",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:43:04.524Z",
+  "updatedAt": "2024-04-12T21:43:32.099Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

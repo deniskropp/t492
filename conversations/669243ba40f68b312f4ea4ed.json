@@ -1,0 +1,54 @@
+{
+  "conversation_id": "669243ba40f68b312f4ea4ed",
+  "title": "New Chat",
+  "rootMessageId": "616eaf5e-c027-4994-bc6c-7f03d40b8ce2",
+  "messages": [
+    {
+      "id": "616eaf5e-c027-4994-bc6c-7f03d40b8ce2",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:07:06.111Z",
+      "updatedAt": "2024-07-13T09:07:06.111Z",
+      "children": [
+        "a5ec851b-4c2a-4b30-8ff9-8efcf1e1c5fb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Explain your role",
+      "files": [],
+      "createdAt": "2024-07-13T09:11:44.131Z",
+      "updatedAt": "2024-07-13T09:11:44.131Z",
+      "ancestors": [
+        "616eaf5e-c027-4994-bc6c-7f03d40b8ce2"
+      ],
+      "id": "a5ec851b-4c2a-4b30-8ff9-8efcf1e1c5fb",
+      "children": [
+        "f8343d96-0888-4475-a659-17348eb5fee8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-07-13T09:11:44.131Z",
+      "updatedAt": "2024-07-13T09:11:44.149Z",
+      "ancestors": [
+        "616eaf5e-c027-4994-bc6c-7f03d40b8ce2",
+        "a5ec851b-4c2a-4b30-8ff9-8efcf1e1c5fb"
+      ],
+      "id": "f8343d96-0888-4475-a659-17348eb5fee8",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:07:06.113Z",
+  "updatedAt": "2024-07-13T09:11:44.151Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

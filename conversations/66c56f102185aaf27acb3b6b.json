@@ -1,0 +1,106 @@
+{
+  "conversation_id": "66c56f102185aaf27acb3b6b",
+  "title": "📝 Code generation",
+  "rootMessageId": "05e7a50b-ec86-487d-8367-9e474a8decc0",
+  "messages": [
+    {
+      "id": "05e7a50b-ec86-487d-8367-9e474a8decc0",
+      "from": "system",
+      "content": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n",
+      "createdAt": "2024-08-21T04:37:36.752Z",
+      "updatedAt": "2024-08-21T04:37:36.752Z",
+      "children": [
+        "a684f237-b998-4111-97d2-9bd0253c0b94"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": " ⫻context/xml:<<tag>> <task />  ⫻content/file:<<path>> The following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.    ⫻context/klmx:Kick/Template   Generate content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-08-21T04:37:37.279Z",
+      "updatedAt": "2024-08-21T04:37:37.279Z",
+      "ancestors": [
+        "05e7a50b-ec86-487d-8367-9e474a8decc0"
+      ],
+      "id": "a684f237-b998-4111-97d2-9bd0253c0b94",
+      "children": [
+        "45c2a0a3-d52a-4ac9-bab1-0a5f07da70e5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I understand the format!\n\nTo confirm, here's a breakdown of the rules:\n\n**Section Format**\n\n* Starts with `⫻` on a new line\n* Followed by `{name}/{type}:{place/index}`\n* Then the section data\n\n**Section Types**\n\n* `context/{tag}`: auxiliary information, not included in generated content\n* `const/{key}`: parameters in JSON or plain UTF-8\n* `content`: input data for generated output data\n\n**Example Sections**\n\n* `⫻context/xml:<<tag>> <task />`: provides auxiliary information about an XML tag\n* `⫻content/file:<<path>>`: provides input data for a file at a specified path\n* `⫻const/lang:{\"name\": \"English\", \"code\": \"en\"}`: defines a constant for language settings\n\nIs this correct? If so, I'm ready to help generate content based on these rules!",
+      "createdAt": "2024-08-21T04:37:37.279Z",
+      "updatedAt": "2024-08-21T04:37:37.287Z",
+      "ancestors": [
+        "05e7a50b-ec86-487d-8367-9e474a8decc0",
+        "a684f237-b998-4111-97d2-9bd0253c0b94"
+      ],
+      "id": "45c2a0a3-d52a-4ac9-bab1-0a5f07da70e5",
+      "children": [
+        "014d7c00-5964-408e-b802-9ce27d54d028"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "\n⫻const/yaml:user\nname: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\n\n",
+      "files": [],
+      "createdAt": "2024-08-21T04:38:44.947Z",
+      "updatedAt": "2024-08-21T04:38:44.947Z",
+      "ancestors": [
+        "05e7a50b-ec86-487d-8367-9e474a8decc0",
+        "a684f237-b998-4111-97d2-9bd0253c0b94",
+        "45c2a0a3-d52a-4ac9-bab1-0a5f07da70e5"
+      ],
+      "id": "014d7c00-5964-408e-b802-9ce27d54d028",
+      "children": [
+        "deff4b47-d138-498a-af93-3d0c850a55a0",
+        "3e6ce674-d910-482c-9416-58816abbc3a5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I've taken note of the constant.\n\n**Constant Recorded**\n\n* `user`:\n\t+ `name`: Denis\n\t+ `role`: Developer\n\t+ `age`: 42\n\t+ `nation`: Germany\n\nPlease provide the next section, whether it's another constant, context, or content. I'll use this information to generate the desired output. \n\n(Remember to start the section with `⫻` and follow the format!)",
+      "createdAt": "2024-08-21T04:38:44.947Z",
+      "updatedAt": "2024-08-21T04:38:44.956Z",
+      "ancestors": [
+        "05e7a50b-ec86-487d-8367-9e474a8decc0",
+        "a684f237-b998-4111-97d2-9bd0253c0b94",
+        "45c2a0a3-d52a-4ac9-bab1-0a5f07da70e5",
+        "014d7c00-5964-408e-b802-9ce27d54d028"
+      ],
+      "id": "deff4b47-d138-498a-af93-3d0c850a55a0",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "I've taken note of the constant.\n\n**Constant Recorded**\n\n* `user`:\n\t+ `name`: Denis\n\t+ `role`: Developer\n\t+ `age`: 42\n\t+ `nation`: Germany\n\nPlease provide the next section, whether it's another constant, context, or content. I'll use this information to generate the desired output. \n\n(Remember to start the section with `⫻` and specify the name, type, and place/index accordingly.)",
+      "createdAt": "2024-08-21T04:49:35.829Z",
+      "updatedAt": "2024-08-21T04:49:35.837Z",
+      "id": "3e6ce674-d910-482c-9416-58816abbc3a5",
+      "ancestors": [
+        "05e7a50b-ec86-487d-8367-9e474a8decc0",
+        "a684f237-b998-4111-97d2-9bd0253c0b94",
+        "45c2a0a3-d52a-4ac9-bab1-0a5f07da70e5",
+        "014d7c00-5964-408e-b802-9ce27d54d028"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-FP8",
+  "preprompt": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n",
+  "assistantId": "66c52a50278716117638740a",
+  "createdAt": "2024-08-21T04:37:36.753Z",
+  "updatedAt": "2024-08-21T04:49:45.838Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

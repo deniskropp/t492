@@ -1,0 +1,54 @@
+{
+  "conversation_id": "66118f80f7916ab7116155c9",
+  "title": "🌐 MetaAI explanation",
+  "rootMessageId": "37834d5a-187d-4271-a08a-4e8079103add",
+  "messages": [
+    {
+      "id": "37834d5a-187d-4271-a08a-4e8079103add",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nInitial members from which others are derived\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nPlease use the following response format: {{member}} | {{role}}: {{content}}\r\n",
+      "createdAt": "2024-04-06T18:08:00.058Z",
+      "updatedAt": "2024-04-06T18:08:00.058Z",
+      "children": [
+        "9fcfe3c1-f4dd-4c8c-9990-564f9d6481e0"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "What is MetaAI?",
+      "files": [],
+      "createdAt": "2024-04-06T18:08:00.607Z",
+      "updatedAt": "2024-04-06T18:08:00.607Z",
+      "ancestors": [
+        "37834d5a-187d-4271-a08a-4e8079103add"
+      ],
+      "id": "9fcfe3c1-f4dd-4c8c-9990-564f9d6481e0",
+      "children": [
+        "39ee74e0-bb9e-463d-80ae-f7e48f009d14"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-04-06T18:08:00.607Z",
+      "updatedAt": "2024-04-06T18:08:00.607Z",
+      "ancestors": [
+        "37834d5a-187d-4271-a08a-4e8079103add",
+        "9fcfe3c1-f4dd-4c8c-9990-564f9d6481e0"
+      ],
+      "id": "39ee74e0-bb9e-463d-80ae-f7e48f009d14",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nInitial members from which others are derived\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nPlease use the following response format: {{member}} | {{role}}: {{content}}\r\n",
+  "assistantId": "660799b7748f75acc0240a37",
+  "createdAt": "2024-04-06T18:08:00.060Z",
+  "updatedAt": "2024-04-06T18:08:08.984Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

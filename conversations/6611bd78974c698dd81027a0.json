@@ -1,0 +1,89 @@
+{
+  "conversation_id": "6611bd78974c698dd81027a0",
+  "title": "New Chat",
+  "rootMessageId": "4ea02d5a-52ba-41f3-a495-acb535dec7cb",
+  "messages": [
+    {
+      "id": "4ea02d5a-52ba-41f3-a495-acb535dec7cb",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nInitial members from which others are derived\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nPlease use the following response format: {{member}} | {{role}}: {{content}}\r\n",
+      "createdAt": "2024-04-06T21:24:08.600Z",
+      "updatedAt": "2024-04-06T21:24:08.600Z",
+      "children": [
+        "e1a7b7c8-a589-4e8c-81ca-c4a14b1069cb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Who are we?",
+      "files": [],
+      "createdAt": "2024-04-06T21:24:09.516Z",
+      "updatedAt": "2024-04-06T21:24:09.516Z",
+      "ancestors": [
+        "4ea02d5a-52ba-41f3-a495-acb535dec7cb"
+      ],
+      "id": "e1a7b7c8-a589-4e8c-81ca-c4a14b1069cb",
+      "children": [
+        "590f2e2d-f690-4e73-9641-7d876ec98f7d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Denis Oliver Kropp | Human: System Software Engineer\nOlli | System Spokesperson: Responsible for SIA tasks\nPete | AI Team Member: Fulfills any other role",
+      "createdAt": "2024-04-06T21:24:09.516Z",
+      "updatedAt": "2024-04-06T21:24:13.728Z",
+      "ancestors": [
+        "4ea02d5a-52ba-41f3-a495-acb535dec7cb",
+        "e1a7b7c8-a589-4e8c-81ca-c4a14b1069cb"
+      ],
+      "id": "590f2e2d-f690-4e73-9641-7d876ec98f7d",
+      "children": [
+        "e82b5254-abae-4a9e-8b16-2219c43cb771"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "What are SIA tasks?",
+      "files": [],
+      "createdAt": "2024-04-06T21:24:27.278Z",
+      "updatedAt": "2024-04-06T21:24:27.278Z",
+      "ancestors": [
+        "4ea02d5a-52ba-41f3-a495-acb535dec7cb",
+        "e1a7b7c8-a589-4e8c-81ca-c4a14b1069cb",
+        "590f2e2d-f690-4e73-9641-7d876ec98f7d"
+      ],
+      "id": "e82b5254-abae-4a9e-8b16-2219c43cb771",
+      "children": [
+        "64bc33df-099c-411d-a224-6adad94cb77d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " SIA tasks refer to the tasks and responsibilities that are assigned to the System Interface Agency (SIA), which is a virtual agency that is responsible for managing the interactions between the human and artificial intelligence (AI) members of the team. The SIA tasks may include:\n\n* Coordinating communication and collaboration between human and AI team members\n* Assigning roles and responsibilities to team members\n* Managing the distribution of tasks and resources\n* Ensuring that the team is working towards common goals and objectives\n* Providing support and guidance to team members as needed\n* Monitoring and evaluating the performance of the team\n* Identifying and addressing any conflicts or issues that may arise within the team\n* Facilitating the dynamic creation and introduction of new roles and responsibilities as needed\n\nThe SIA tasks are typically fulfilled by the System Spokesperson, who acts as the interface between the human and AI team members and ensures that the team is functioning effectively and efficiently.",
+      "createdAt": "2024-04-06T21:24:27.278Z",
+      "updatedAt": "2024-04-06T21:24:44.159Z",
+      "ancestors": [
+        "4ea02d5a-52ba-41f3-a495-acb535dec7cb",
+        "e1a7b7c8-a589-4e8c-81ca-c4a14b1069cb",
+        "590f2e2d-f690-4e73-9641-7d876ec98f7d",
+        "e82b5254-abae-4a9e-8b16-2219c43cb771"
+      ],
+      "id": "64bc33df-099c-411d-a224-6adad94cb77d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nInitial members from which others are derived\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nPlease use the following response format: {{member}} | {{role}}: {{content}}\r\n",
+  "assistantId": "660799b7748f75acc0240a37",
+  "createdAt": "2024-04-06T21:24:08.602Z",
+  "updatedAt": "2024-04-06T21:24:44.160Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

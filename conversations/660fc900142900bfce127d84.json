@@ -1,0 +1,54 @@
+{
+  "conversation_id": "660fc900142900bfce127d84",
+  "title": "💬  Continue chatting",
+  "rootMessageId": "62c528b7-3f2d-4e7b-9e2d-5038f57a0c69",
+  "messages": [
+    {
+      "id": "62c528b7-3f2d-4e7b-9e2d-5038f57a0c69",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-05T09:48:48.810Z",
+      "updatedAt": "2024-04-05T09:48:48.810Z",
+      "children": [
+        "60fc41b1-bad4-4198-baa6-a6a27dea9d12"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const:task\\ncontinue the chat",
+      "files": [],
+      "createdAt": "2024-04-05T09:48:49.296Z",
+      "updatedAt": "2024-04-05T09:48:49.296Z",
+      "ancestors": [
+        "62c528b7-3f2d-4e7b-9e2d-5038f57a0c69"
+      ],
+      "id": "60fc41b1-bad4-4198-baa6-a6a27dea9d12",
+      "children": [
+        "fc8cb5b7-1568-48e4-8753-cb7e7306dd58"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content:p\\n\n\n**MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams.**\n\nThrough the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations.\n\nThe system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields.\n\nIn a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Hum",
+      "createdAt": "2024-04-05T09:48:49.296Z",
+      "updatedAt": "2024-04-05T09:48:49.296Z",
+      "ancestors": [
+        "62c528b7-3f2d-4e7b-9e2d-5038f57a0c69",
+        "60fc41b1-bad4-4198-baa6-a6a27dea9d12"
+      ],
+      "id": "fc8cb5b7-1568-48e4-8753-cb7e7306dd58",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "GENERATE MARKDOWN USING TEMPLATE WITH FOLLOWING INFORMATION\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n    { role: 'USER', message: '⫻context:h2\\nMetaAI' },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:p\\n' +\r\n        \"MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results.\"\r\n    },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:p\\n' +\r\n        'At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations.'\r\n    },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:p\\n' +\r\n        'The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page.'\r\n    },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:p\\n' +\r\n        'This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields.'\r\n    },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:ul\\n' +\r\n        '- In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them.\\n' +\r\n        '- In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code.\\n' +\r\n        '- In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans.'\r\n    },\r\n    {\r\n      role: 'USER',\r\n      message: '⫻context:p\\n' +\r\n        'The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before.'\r\n    },\r\n    { role: 'USER', message: '⫻context:p\\n' }\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-05T09:48:48.812Z",
+  "updatedAt": "2024-04-05T09:48:58.953Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

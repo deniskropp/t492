@@ -1,0 +1,55 @@
+{
+  "conversation_id": "67453f4e5f5385fe3ded09f1",
+  "title": "📰 Guangdong newspaper",
+  "rootMessageId": "dfc054a2-592a-44fa-b844-2b483e61ddea",
+  "messages": [
+    {
+      "id": "dfc054a2-592a-44fa-b844-2b483e61ddea",
+      "from": "system",
+      "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+      "createdAt": "2024-11-26T03:23:58.499Z",
+      "updatedAt": "2024-11-26T03:23:58.499Z",
+      "children": [
+        "0979dcd7-2538-49a3-8e61-c2527b57d8c1"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\"question\":\"南方农村报是哪个省的农业报纸?\",\"answer\":\"广东省\"",
+      "files": [],
+      "createdAt": "2024-11-26T03:23:59.049Z",
+      "updatedAt": "2024-11-26T03:23:59.049Z",
+      "ancestors": [
+        "dfc054a2-592a-44fa-b844-2b483e61ddea"
+      ],
+      "id": "0979dcd7-2538-49a3-8e61-c2527b57d8c1",
+      "children": [
+        "295a0928-e312-4810-861b-06344b13f0ef"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "{\"question\":\"南方农村报是哪个省的农业报纸?\",\"answer\":\"广东省\"} \n\n您的答案是正确的。《南方农村报》是广东省的一份重要的农业类报纸，服务于广东省的农民和农村地区，报道农业政策、技术、市场信息等内容。",
+      "createdAt": "2024-11-26T03:23:59.049Z",
+      "updatedAt": "2024-11-26T03:23:59.057Z",
+      "ancestors": [
+        "dfc054a2-592a-44fa-b844-2b483e61ddea",
+        "0979dcd7-2538-49a3-8e61-c2527b57d8c1"
+      ],
+      "id": "295a0928-e312-4810-861b-06344b13f0ef",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "preprompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+  "assistantId": null,
+  "createdAt": "2024-11-26T03:23:58.500Z",
+  "updatedAt": "2024-11-26T03:24:00.463Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

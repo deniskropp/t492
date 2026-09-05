@@ -1,0 +1,70 @@
+{
+  "conversation_id": "667c537a7093ec8249be0333",
+  "title": "📊 API request",
+  "rootMessageId": "d86abe38-6767-4ab5-a3d3-8445259fa8e9",
+  "messages": [
+    {
+      "id": "d86abe38-6767-4ab5-a3d3-8445259fa8e9",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-06-26T17:44:26.230Z",
+      "updatedAt": "2024-06-26T17:44:26.230Z",
+      "children": [
+        "80ac04ff-ec2e-45d0-b554-4a3a71416938"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Use https://github.com/civitai/civitai/wiki/REST-API-Reference and generate typescript code that uses axios for user account backup (images)",
+      "files": [],
+      "createdAt": "2024-06-26T17:44:27.064Z",
+      "updatedAt": "2024-06-26T17:44:27.064Z",
+      "ancestors": [
+        "d86abe38-6767-4ab5-a3d3-8445259fa8e9"
+      ],
+      "id": "80ac04ff-ec2e-45d0-b554-4a3a71416938",
+      "children": [
+        "00747aee-c49e-4799-aa94-cdd4e8b45fd6",
+        "903e7fa8-8bf0-4677-9727-685a0774bdec"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is an example of TypeScript code that uses Axios to back up a user's images from the Civitai API:\n```typescript\nimport axios from 'axios';\n\n// Replace 'YOUR_API_KEY' with your actual API key\nconst API_KEY = 'YOUR_API_KEY';\nconst CIVITAI_API_URL = 'https://civitai.com/api';\n\n// Function to fetch all images for a user\nasync function getUserImages(username) {\n  try {\n    const response = await axios.get(`${CIVITAI_API_URL}/v1/images`, {\n      params: {\n        username: username,\n        limit: 0 // Retrieve all images\n      },\n      headers: {\n        'Content-Type': 'application/json',\n        'Authorization': `Bearer ${API_KEY}` // Include the API key in the request header\n      }\n    });\n\n    return response.data;\n  } catch (error) {\n    console.error('Error fetching user images:', error);\n    throw error;\n  }\n}\n\n// Function to download and save an image\nasync function downloadImage(imageUrl, filename) {\n  try {\n    const response = await axios.get(imageUrl, { responseType: 'stream' });\n    const writer = createWriteStream(filename);\n    response.data.pipe(writer);\n\n    return new Promise((resolve, reject) => {\n      writer.on('finish', resolve);\n      writer.on('error', reject);\n    });\n  } catch (error) {\n    console.error('Error downloading image:', error);\n    throw error;\n  }\n}\n\n// Example usage\nasync function backupUserImages(username, backupFolder) {\n  try {\n    // Create the backup folder if it doesn't exist\n    if (!fs.existsSync(backupFolder)) {\n      fs.mkdirSync(backupFolder);\n    }\n\n    // Get all images for the user\n    const images = await getUserImages(username);\n\n    // Download and save each image\n    for (const image of images) {\n      const filename = `${backupFolder}/${image.id}.jpg`; // Example filename, adjust as needed\n      await downloadImage(image.url, filename);\n      console.log(`Downloaded image: ${filename}`);\n    }\n\n    console.log('Backup complete!');\n  } catch (error) {\n    console.error('Error backing up user images:', error);\n  }\n}\n\n// Call the backup function with the desired username and backup folder path\nbackupUserImages('example_username', 'backup_folder_path');\n```\n\nThis code defines three functions: `getUserImages`, `downloadImage`, and `backupUserImages`. \n\n`getUserImages` fetches all images for a given user by making a GET request to the `/v1/images` endpoint, passing the `username` as a query parameter and including the API key in the request header.\n\n`downloadImage` downloads an image from a given URL and saves it to a specified filename using a writable stream.\n\n`backupUserImages` is a helper function that combines the previous two functions. It takes a `username` and a `backupFolder` path as arguments. It first creates the backup folder if it doesn't exist, fetches all images for the user, and then downloads and saves each image with a filename based on its ID.\n\nFinally, the code includes an example usage by calling the `backupUserImages` function with a sample username and backup folder path.\n\nPlease replace `'YOUR_API_KEY'` with your actual Civitai API key, and adjust the code as needed to match your specific requirements and environment.",
+      "createdAt": "2024-06-26T17:44:27.064Z",
+      "updatedAt": "2024-06-26T17:44:27.073Z",
+      "ancestors": [
+        "d86abe38-6767-4ab5-a3d3-8445259fa8e9",
+        "80ac04ff-ec2e-45d0-b554-4a3a71416938"
+      ],
+      "id": "00747aee-c49e-4799-aa94-cdd4e8b45fd6",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "Here is an example of how you can use the provided API reference to generate TypeScript code that uses Axios to back up a user's images:\n\n```typescript\nimport axios from 'axios';\n\n// Define the API endpoint and your API key\nconst API_ENDPOINT = 'https://civitai.com/api/v1/images';\nconst API_KEY = 'your_api_key';\n\n// Function to back up a user's images\nasync function backupUserImages(username) {\n  try {\n    // Make a request to the API to get the user's images\n    const response = await axios.get(API_ENDPOINT, {\n      params: {\n        username: username,\n        nsfw: false, // Optional: filter out NSFW images\n        limit: 100, // Optional: number of results per page, max is 200\n      },\n      headers: {\n        'Content-Type': 'application/json',\n        // Add your API key to the authorization header\n        Authorization: `Bearer ${API_KEY}`,\n      },\n    });\n\n    // Extract the data from the response\n    const images = response.data;\n\n    // Process the images as needed\n    // For example, you can save the image URLs to a file or database\n    console.log(images);\n    return images;\n  } catch (error) {\n    console.error('Error fetching user images:', error);\n    throw error;\n  }\n}\n\n// Example usage:\n// backupUserImages('your_username');\n```\n\nIn this code, we first import the Axios library, which is a popular choice for making HTTP requests in JavaScript applications. We then define the API endpoint and your API key (replace `'your_api_key'` with your actual key).\n\nThe `backupUserImages` function takes a `username` parameter and uses the Axios `get` method to make a request to the API endpoint, passing the username and optional parameters such as `nsfw` and `limit` as query parameters. The `Authorization` header is also set to include your API key.\n\nThe response from the API is then extracted, and you can process the images as needed for the backup. In this example, we simply log the images to the console and return them.\n\nYou can call the `backupUserImages` function with the desired username to back up that user's images.\n\nPlease note that this code assumes you have Axios installed and properly configured in your project. Also, make sure to replace `'your_api_key'` with your actual API key.",
+      "createdAt": "2024-06-26T17:54:22.822Z",
+      "updatedAt": "2024-06-26T17:54:22.910Z",
+      "id": "903e7fa8-8bf0-4677-9727-685a0774bdec",
+      "ancestors": [
+        "d86abe38-6767-4ab5-a3d3-8445259fa8e9",
+        "80ac04ff-ec2e-45d0-b554-4a3a71416938"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-06-26T17:44:26.236Z",
+  "updatedAt": "2024-06-26T17:54:56.875Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

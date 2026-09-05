@@ -1,0 +1,60 @@
+{
+  "conversation_id": "6650dc6fa426a0467d6fce7b",
+  "title": "📊 Code snippet",
+  "rootMessageId": "787da746-7c33-4d2f-8e7e-4dc74906e742",
+  "messages": [
+    {
+      "id": "787da746-7c33-4d2f-8e7e-4dc74906e742",
+      "from": "system",
+      "content": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+      "createdAt": "2024-05-24T18:29:03.774Z",
+      "updatedAt": "2024-05-24T18:29:03.774Z",
+      "children": [
+        "cbc647e1-d6e7-4b3f-8d12-6dd51e415ef1"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-05-24T18:29:04.445Z",
+      "updatedAt": "2024-05-24T18:29:04.445Z",
+      "ancestors": [
+        "787da746-7c33-4d2f-8e7e-4dc74906e742"
+      ],
+      "id": "cbc647e1-d6e7-4b3f-8d12-6dd51e415ef1",
+      "children": [
+        "38edb606-e698-47aa-bbf8-0544fa351935"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[{{Code74k.ts - KickLang}}] \n\nnamespace Code74k {\r\n\r\nexport enum NodeType {\r\n    Entity,\r\n    Relation,\r\n    Attribute,\r\n    Type,\r\n    Form,\r\n    View,\r\n    Agent,\r\n    Program,\r\n    Schema,\r\n    SchemaExtension,\r\n    Index,\r\n    Map,\r\n    Set,\r\n    List,\r\n    Group,\r\n    AccessControl,\r\n    Event,\r\n    Trigger,\r\n    Function,\r\n    Hook,\r\n    Service,\r\n    Protocol,\r\n    Adapter,\r\n    Connector,\r\n    Resource,\r\n    Media,\r\n    Style,\r\n    Layout,\r\n    Animation,\r\n    Transition,\r\n    Origin,\r\n    Dimension,\r\n    Position,\r\n    Angle,\r\n    Unit,\r\n    Format,\r\n    Expression,\r\n    Condition,\r\n    State,\r\n    Action,\r\n    Activity,\r\n    Task,\r\n    Step,\r\n    Option,\r\n    Choice,\r\n    Argument,\r\n    Parameter,\r\n    Variable,\r\n    Constant,\r\n    Value,\r\n    Term,\r\n    Context,\r\n    Comment,\r\n    Annotation,\r\n    Label,\r\n    Tag,\r\n    Reference,\r\n    Link,\r\n    Transaction,\r\n    Message,\r\n    Dialog,\r\n    Story,\r\n    Script,\r\n    Template,\r\n    Component,\r\n    Module,\r\n    Library,\r\n    Package,\r\n    Assembly,\r\n    Plugin,\r\n    Extension,\r\n    Integration,\r\n    Application,\r\n    Project,\r\n    Solution,\r\n    Workspace,\r\n    User,\r\n    Team,\r\n    Role,\r\n    Policy,\r\n    Rule,\r\n    Constraint,\r\n    Requirement,\r\n    Specification,\r\n    Contract,\r\n    License,\r\n    Certificate,\r\n    Credential,\r\n    Key,\r\n    Signature,\r\n    Encryption,\r\n    Hash,\r\n    Checksum,\r\n    Summary,\r\n    Statistics,\r\n    Report,\r\n    Documentation,\r\n    Note,\r\n    Metadata,\r\n}\r\n\r\nexport enum EdgeType {\r\n    IsA,\r\n    HasA,\r\n    PartOf,\r\n    RelatedTo,\r\n    InstanceOf,\r\n    SubtypeOf,\r\n    ParameterOf,\r\n    ArgumentOf,\r\n    DependentOn,\r\n    ContingentOn,\r\n    Causes,\r\n    ResultsFrom,\r\n    Before,\r\n    After,\r\n    During,\r\n    Contains,\r\n    Includes,\r\n    Excludes,\r\n    Intersects,\r\n    Starts,\r\n    Ends,\r\n    Increases,\r\n    Decreases,\r\n    GreaterThan,\r\n    LessThan,\r\n    EqualTo,\r\n    ProportionalTo,\r\n    DerivedFrom,\r\n    EquivalentTo,\r\n    DefinedBy,\r\n    ImplementedBy,\r\n    Extends,\r\n    Overrides,\r\n    ConflictsWith,\r\n    Requires,\r\n    Recommends,\r\n    Suggests,\r\n    DependsOn,\r\n    BasedOn,\r\n    SimilarTo,\r\n    AnalogousTo,\r\n    TranslatedFrom,\r\n    TranslatableTo,\r\n    OccursWith,\r\n    LocatedAt,\r\n    MovesTo,\r\n    BelongsTo,\r\n    SentBy,\r\n    ReceivedBy,\r\n    RequestedBy,\r\n    RepliedBy,\r\n    ForwardedTo,\r\n    RedirectedTo,\r\n    CreatedBy,\r\n    ModifiedBy,\r\n    DeletedBy,\r\n    AttachedTo,\r\n    DetachedFrom,\r\n    AssignedTo,\r\n    UnassignedFrom,\r\n    ApprovedBy,\r\n    RejectedBy,\r\n    ResolvedBy,\r\n    ClosedBy,\r\n    ReopenedBy,\r\n    FollowedBy,\r\n    LikedBy,\r\n    CommentedOn,\r\n    ReviewedBy,\r\n}\r\n\r\nexport enum DataType {\r\n    Boolean,\r\n    Integer,\r\n    Float,\r\n    String,\r\n    Date,\r\n    Time,\r\n    DateTime,\r\n    Duration,\r\n    Timestamp,\r\n    Interval,\rQtc\r\n    Blob,\r\n    Array,\r\n    Object,\r\n    JSON,\r\n    XML,\r\n    Graph,\r\n    Geometry,\r\n    Coordinate,\r\n    Geolocation,\r\n    URL,\r\n    Email,\r\n    PhoneNumber,\r\n    IPAddress,\r\n    MACAddress,\r\n    UUID,\r\n    LanguageTag,\r\n    Currency,\r\n    Percentage,\r\n    ScientificNotation,\r\n}\r\n\r\nexport enum ValueType {\r\n    Null,\r\n    Undefined,\r\n    True,\r\n    False,\r\n    NaN,\r\n    PositiveInfinity,\r\n    NegativeInfinity,\r\n    EmptyString,\r\n    EmptyArray,\r\n    EmptyObject,\r\n}\r\n\r\nexport enum ReferenceType {\r\n    Weak,\r\n    Strong,\r\n    Symbolic,\r\n    Alias,\r\n    Move,\r\n    Copy,\r\n    DeepCopy,\r\n    LazyLoad,\r\n    EagerLoad,\r\n    Synchronous,\r\n    Asynchronous,\r\n    SoftDelete,\r\n    HardDelete,\r\n}\r\n\r\nexport enum IndexType {\r\n    Primary,\r\n    Secondary,\r\n    FullText,\r\n    Spatial,\r\n    Unique,\r\n    NonUnique,\r\n    Dense,\r\n    Sparse,\r\n    Unsorted,\r\n    Sorted,\r\n    Tree,\r\n    Hash,\r\n    Graph,\r\n    BTree,\r\n    BPlusTree,\r\n    ISAM,\r\n    Heap,\r\n    QuadTree,\r\n    Octree,\r\n    KDTree,\r\n    RTree,\r\n    RadixTree,\r\n    Trie,\r\n    SuffixArray,\r\n    SkipList,\r\n    Bucket,\r\n    Grid,\r\n    MultiIndex,\r\n    Custom,\r\n}\r\n\r\nexport enum AccessType {\r\n    Public,\r\n    Private,\r\n    Protected,\r\n    Internal,\r\n    External,\r\n    Open,\r\n    Closed,\r\n    ReadOnly,\r\n    ReadWrite,\r\n    Executable,\r\n    NonExecutable,\r\n    Writable,\r\n    NonWritable,\r\n    AppendOnly,\r\n    Mutable,\r\n    Immutable,\r\n    Ephemeral,\r\n    Persistent,\r\n    Cached,\r\n    Uncached,\r\n    Compressed,\r\n    Encrypted,\r\n    Signed,\r\n}\r\n\r\nexport enum FunctionType {\r\n    Pure,\r\n    Impure,\r\n    Idempotent,\r\n    NonIdempotent,\r\n    Deterministic,\r\n    NonDeterministic,\r\n    Synchronous,\r\n    Asynchronous,\r\n    SideEffectFree,\r\n    WithSideEffects,\r\n    Variadic,\r\n    HigherOrder,\r\n    Recursive,\r\n    TailRecursive,\r\n    Generator,\r\n    Iterator,\r\n    Pipeline,\r\n    Reducer,\r\n    Callback,\r\n    Thunk,\r\n    Memoized,\r\n    Optimized,\r\n}\r\n\r\nexport enum HookType {\r\n    PreHook,\r\n    PostHook,\r\n    Middleware,\r\n    Interceptor,\r\n    Wrapper,\r\n    Guard,\r\n    Validator,\r\n    Sanitizer,\r\n    Transformer,\r\n    Serializer,\r\n    Deserializer,\r\n    Codec,\r\n    Encoder,\r\n    Decoder,\r\n    Cipher,\r\n    Decipher,\r\n    Compiler,\r\n    Transpiler,\r\n    Minifier,\r\n    Beautifier,\r\n    Normalizer,\r\n}\r\n\r\nexport enum ServiceType {\r\n    API,\r\n    WebService,\r\n    Microservice,\r\n    Serverless,\r\n    FunctionAsAService,\r\n    PlatformAsAService,\r\n    SoftwareAsAService,\r\n    InfrastructureAsAService,\r\n    BackendAsAService,\r\n    DesktopApplication,\r\n    MobileApplication,\r\n    WebApplication,\r\n    NativeApplication,\r\n    HybridApplication,\r\n    ProgressiveWebApplication,\r\n    SinglePageApplication,\r\n    StaticSite,\r\n    DynamicSite,\r\n    ClientServer,\r\n    PeerToPeer,\r\n    Cloud,\r\n    OnPremises,\r\n    Monolith,\r\n    DistributedSystem,\r\n    ServiceOrientedArchitecture,\r\n    MicroservicesArchitecture,\r\n    EventDrivenArchitecture,\r\n    LayeredArchitecture,\r\n    HexagonalArchitecture,\r\n    ModelViewController,\r\n    RepresentationalStateTransfer,\r\n    ServiceModel,\r\n    PublishSubscribe,\r\n    RequestReply,\r\n    MessageQueue,\r\n    SharedDatabase,\r\n    DataCentric,\r\n    ModelCentric,\r\n    EntityCentric,\r\n    AgentCentric,\r\n    ServiceCentric,\r\n}\r\n\r\nexport enum ProtocolType {\r\n    HTTP,\r\n    HTTPS,\r\n    FTP,\r\n    SFTP,\r\n    SMTP,\r\n    POP,\r\n    IMAP,\r\n    WebSocket,\r\n    WebRTC,\r\n    TCP,\r\n    UDP,\r\n    IP,\r\n    MQTT,\r\n    CoAP,\r\n    DDS,\r\n    AMQP,\r\n    gRPC,\r\n    CORBA,\r\n    SOAP,\r\n    REST,\r\n    GraphQL,\r\n    JSONRPC,\r\n    XMLRPC,\r\n    WebSockets,\r\n    WebHooks,\r\n    gRPCWeb,\r\n    QUIC,\r\n    WebDAV,\r\n    OAuth,\r\n    OpenID,\r\n    SAML,\r\n    LDAP,\r\n    XMPP,\r\n    DNS,\r\n    SNMP,\r\n    NTP,\r\n    RTP,\r\n    RTCP,\r\n}\r\n\r\nexport enum AdapterType {\r\n    Database,\r\n    Storage,\r\n    Cache,\r\n    Search,\r\n    Queue,\r\n    Stream,\r\n    Pipe,\r\n    Socket,\r\n    API,\r\n    Proxy,\r\n    Gateway,\r\n    Tunnel,\r\n    Firewall,\r\n    Bridge,\r\n    Router,\r\n    Switch,\r\n    LoadBalancer,\r\n    Reverse",
+      "createdAt": "2024-05-24T18:29:04.445Z",
+      "updatedAt": "2024-05-24T18:29:04.454Z",
+      "ancestors": [
+        "787da746-7c33-4d2f-8e7e-4dc74906e742",
+        "cbc647e1-d6e7-4b3f-8d12-6dd51e415ef1"
+      ],
+      "id": "38edb606-e698-47aa-bbf8-0544fa351935",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts  - KickLang types",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": true,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "The following conversation is between the system and users.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\nUse the following format for each response: [{{source}} - {{target}}] {{text}}",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-05-24T18:29:03.775Z",
+  "updatedAt": "2024-05-24T18:30:23.873Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

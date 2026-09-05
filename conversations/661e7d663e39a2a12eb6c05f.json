@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661e7d663e39a2a12eb6c05f",
+  "title": "💻 TypeScript code for Code74k language",
+  "rootMessageId": "15d8f439-6b6a-4c6f-b465-8482c592edd7",
+  "messages": [
+    {
+      "id": "15d8f439-6b6a-4c6f-b465-8482c592edd7",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-16T13:30:14.370Z",
+      "updatedAt": "2024-04-16T13:30:14.370Z",
+      "children": [
+        "67472cbf-578b-4ac7-a87b-89d4f02005c4"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-04-16T13:30:14.979Z",
+      "updatedAt": "2024-04-16T13:30:14.979Z",
+      "ancestors": [
+        "15d8f439-6b6a-4c6f-b465-8482c592edd7"
+      ],
+      "id": "67472cbf-578b-4ac7-a87b-89d4f02005c4",
+      "children": [
+        "d3f17ad5-f1e2-4cc1-8e19-8aea13d9eb8f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\n//Code74k.ts\r\n\r\ntype Code74kEntry = {\r\n  id: string;\r\n  conversations: Code74kConversation[];\r\n};\r\n\r\ntype Code74kConversation = {\r\n  from: \"human\" | \"gpt\";\r\n  value: string;\r\n};\r\n\r\ntype Code74kData = Code74kEntry[];\r\n\r\ntype Code74kUtil = {\r\n  data: Code74kData;\r\n  getEntry: (id: string) => Code74kEntry | undefined;\r\n  getConversation: (\r\n    id: string,\r\n    conversationIndex: number\r\n  ) => Code74kConversation | undefined;\r\n};\r\n\r\nconst code74kData: Code74kData = /*Data from Code74k.json*/;\r\n\r\nconst code74kUtil: Code74kUtil = {\r\n  data: code74kData,\r\n  getEntry: (id: string) => code74kData.find((entry) => entry.id === id),\r\n  getConversation: (id: string, index: number) => {\r\n    const entry = code74kUtil.getEntry(id);\r\n    return entry?.conversations[index];\r\n  },\r\n};\r\n\r\nexport default code74kUtil;\r\n```",
+      "createdAt": "2024-04-16T13:30:14.979Z",
+      "updatedAt": "2024-04-16T13:30:21.651Z",
+      "ancestors": [
+        "15d8f439-6b6a-4c6f-b465-8482c592edd7",
+        "67472cbf-578b-4ac7-a87b-89d4f02005c4"
+      ],
+      "id": "d3f17ad5-f1e2-4cc1-8e19-8aea13d9eb8f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-16T13:30:14.375Z",
+  "updatedAt": "2024-04-16T13:30:21.652Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

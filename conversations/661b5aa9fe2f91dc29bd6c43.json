@@ -1,0 +1,56 @@
+{
+  "conversation_id": "661b5aa9fe2f91dc29bd6c43",
+  "title": "🗺️ Detailed description of Map.klmx",
+  "rootMessageId": "f9102112-bcf2-484b-95f0-f58bc718bf37",
+  "messages": [
+    {
+      "id": "f9102112-bcf2-484b-95f0-f58bc718bf37",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}\r\n\r\n\r\n\r\n\r\n///Map.klmx:Base//\r\nCreate a mind map with the main topic derived from {CLIPBOARD} (max 3 words) with a first level of sub topics derived from {PAGE} context and extended by questions or links, then generate mind map file format, any json (mdx file nodes).",
+      "createdAt": "2024-04-14T04:25:13.895Z",
+      "updatedAt": "2024-04-14T04:25:13.895Z",
+      "children": [
+        "f581917f-7c42-48ff-81ac-b2e6e853559e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Describe Map.klmx in detail",
+      "files": [],
+      "createdAt": "2024-04-14T04:25:14.381Z",
+      "updatedAt": "2024-04-14T04:25:14.381Z",
+      "ancestors": [
+        "f9102112-bcf2-484b-95f0-f58bc718bf37"
+      ],
+      "id": "f581917f-7c42-48ff-81ac-b2e6e853559e",
+      "children": [
+        "027415d8-b808-40a5-a3e2-f5eb84bb90ce"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Map.klmx is a KickLang script designed to create a mind map based on the provided input. Here's a detailed description of its functionality:\r\n\r\n1. Input Sources:\r\n   - CLIPBOARD: The script uses the content of the clipboard as the main topic for the mind map. It expects the clipboard content to be a maximum of three words, which will be extracted and used as the central idea or theme of the mind map.\r\n   - PAGE: The script also utilizes the context of the current page or document as an input source. It treats the page content as additional information to generate sub-topics and extend the mind map.\r\n2. Processing:\r\n   - Main Topic: Map.klmx extracts up to three words from the clipboard content to establish the main topic of the mind map. This topic will be at the center of the map and represents the core concept or idea.\r\n   - Sub-Topics: The script then processes the PAGE context to identify relevant information and extract potential sub-topics. These sub-topics will be directly linked to the main topic, forming the first level of branches in the mind map.\r\n   - Extensions: Map.klmx further enhances the mind map by adding questions or links as extensions to the sub-topics. These extensions provide additional dimensions to the map, allowing for further exploration and analysis of the sub-topics.\r\n3. Output Format:\r\n   - Mind Map File: The script generates a mind map in a file format of your choice, such as JSON. Specifically, it produces an MDX file format, which is a JSON-based format commonly used for representing mind maps and supporting hierarchical data structures.\r\n   - MDX File Nodes: The generated mind map file will consist of nodes that represent the main topic, sub-topics, and their respective extensions. These nodes will be structured in a hierarchical manner, with connections and relationships defined by the script's logic.\r\n\r\nBy utilizing Map.klmx, you can automatically generate a mind map that visually organizes and presents the main topic, derived from the clipboard content, along with relevant sub-topics and extensions extracted from the PAGE context. The resulting mind map file in MDX format can then be used for further analysis, brainstorming, or knowledge organization.",
+      "createdAt": "2024-04-14T04:25:14.381Z",
+      "updatedAt": "2024-04-14T04:25:30.953Z",
+      "ancestors": [
+        "f9102112-bcf2-484b-95f0-f58bc718bf37",
+        "f581917f-7c42-48ff-81ac-b2e6e853559e"
+      ],
+      "id": "027415d8-b808-40a5-a3e2-f5eb84bb90ce",
+      "children": [],
+      "interrupted": false,
+      "score": 1,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}\r\n\r\n\r\n\r\n\r\n///Map.klmx:Base//\r\nCreate a mind map with the main topic derived from {CLIPBOARD} (max 3 words) with a first level of sub topics derived from {PAGE} context and extended by questions or links, then generate mind map file format, any json (mdx file nodes).",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-14T04:25:13.897Z",
+  "updatedAt": "2024-04-14T04:25:30.957Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

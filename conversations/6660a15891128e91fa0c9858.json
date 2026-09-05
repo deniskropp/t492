@@ -1,0 +1,127 @@
+{
+  "conversation_id": "6660a15891128e91fa0c9858",
+  "title": "💬 I understand the format!",
+  "rootMessageId": "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+  "messages": [
+    {
+      "id": "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries from the user, which are translated into the formal language.",
+      "createdAt": "2024-06-05T17:33:12.293Z",
+      "updatedAt": "2024-06-05T17:33:12.293Z",
+      "children": [
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template \nThe system generates markdown content according to these rules: \n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content \n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8 \n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data \n \nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data... \n1. 'name' being a keyword or token: ['const','content','context'] \n2. 'type' being optional information: format, encoding, component type \n3. data as indicated \n4. a few empty lines until the end of the section ",
+      "files": [],
+      "createdAt": "2024-06-05T17:33:12.920Z",
+      "updatedAt": "2024-06-05T17:33:12.920Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f"
+      ],
+      "id": "082c1751-677c-40cd-9c3d-fd79a8f50cc3",
+      "children": [
+        "2c2dc419-5be3-441f-9da4-06e199fcf52f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ack/Kick \nI've received your template definition, and I'm excited to work with it! 🤖\n\nTo confirm, I understand that the template consists of sections, each starting with '⫻' followed by '{name}/{type}': '{place/index}' and then the section data. The three main section types are:\n\n1. **Context**: `context:{tag}` - auxiliary information, not included in the generated content.\n2. **Constants**: `const:{key}` - parameters, using JSON or plain UTF-8.\n3. **Content**: `content` - input data, asking for generated output data.\n\nI'll keep this template structure in mind as we work together. Please provide the sections, and I'll process them accordingly. If I have any questions or need clarification, I'll let you know. 😊\n\nPlease go ahead and provide the first section, and we'll get started! ⫻ready/Kick",
+      "createdAt": "2024-06-05T17:33:12.920Z",
+      "updatedAt": "2024-06-05T17:33:12.929Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3"
+      ],
+      "id": "2c2dc419-5be3-441f-9da4-06e199fcf52f",
+      "children": [
+        "8da42d3e-bbf5-4ef9-a94b-afa0433d7800"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/json:Kick/Template\n{\n\"title\": \"Kick\",\n\"description\": \"A powerful and versatile programming language.\",\n\"features\": [\n\"Simple and intuitive syntax\",\n\"Strong typing\",\n\"Object-oriented and functional programming support\",\n\"Efficient memory management\",\n\"Cross-platform compatibility\"\n]\n}\n\n⫻content/md:Kick/Template",
+      "files": [],
+      "createdAt": "2024-06-05T17:56:52.772Z",
+      "updatedAt": "2024-06-05T17:56:52.772Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3",
+        "2c2dc419-5be3-441f-9da4-06e199fcf52f"
+      ],
+      "id": "8da42d3e-bbf5-4ef9-a94b-afa0433d7800",
+      "children": [
+        "64d599a8-296d-44d6-8bd7-627c5a86e734"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ack/Kick \nI've received the constants section in JSON format and the content section in Markdown format. I'll store the constants for later use.\n\nHere's a summary of the constants:\n\n* `title`: \"Kick\"\n* `description`: \"A powerful and versatile programming language.\"\n* `features`: an array of 5 strings, listing the features of the Kick language.\n\nNow, I'm ready to generate the Markdown content. Please provide the input data for the content section, and I'll process it accordingly.\n\nIf you need any assistance or have questions, feel free to ask. Otherwise, please go ahead and provide the content data. ⫻ready/Kick",
+      "createdAt": "2024-06-05T17:56:52.772Z",
+      "updatedAt": "2024-06-05T17:56:52.787Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3",
+        "2c2dc419-5be3-441f-9da4-06e199fcf52f",
+        "8da42d3e-bbf5-4ef9-a94b-afa0433d7800"
+      ],
+      "id": "64d599a8-296d-44d6-8bd7-627c5a86e734",
+      "children": [
+        "aced3eff-85f7-4817-95f0-027577b1eb2e"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/md\nKick Programming Language\n\nKick is a modern and innovative programming language designed to empower developers and streamline development processes.\nOverview\n\nKick offers a rich set of features that make it a versatile and powerful tool for building a wide range of applications. With its simple and intuitive syntax, Kick is easy to learn and use, enabling developers to quickly turn their ideas into reality.\nKey Features\n\n    Simple and intuitive syntax: Kick's syntax is designed to be straightforward and readable, making it easy for developers to understand and maintain their code.\n    Strong typing: Kick employs a strong typing system, enabling early error detection and enhancing code reliability and maintainability.\n    Object-oriented and functional programming support: Kick provides support for both object-oriented and functional programming paradigms, allowing developers to choose the most suitable approach for their projects.\n    Efficient memory management: Kick's memory management system is optimized for performance and efficiency, ensuring that applications built with Kick run smoothly and efficiently.\n    Cross-platform compatibility: Kick is designed to be cross-platform, allowing developers to build applications that can run on multiple operating systems without code modifications.\n\nWith its comprehensive set of features and a focus on simplicity and performance, Kick is an excellent choice for developers seeking a powerful and flexible programming language for their next project. ",
+      "files": [],
+      "createdAt": "2024-06-05T17:58:39.922Z",
+      "updatedAt": "2024-06-05T17:58:39.922Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3",
+        "2c2dc419-5be3-441f-9da4-06e199fcf52f",
+        "8da42d3e-bbf5-4ef9-a94b-afa0433d7800",
+        "64d599a8-296d-44d6-8bd7-627c5a86e734"
+      ],
+      "id": "aced3eff-85f7-4817-95f0-027577b1eb2e",
+      "children": [
+        "fea2f634-51ff-4f1f-ac87-88729b44bf38"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ack/Kick \nI've received the Markdown content, and I'll process it using the constants provided earlier.\n\nHere's the generated Markdown content, incorporating the constants:\n\n**{title} Programming Language**\n=============================\n\n{description}\n-------------\n\nKick offers a rich set of features that make it a versatile and powerful tool for building a wide range of applications. With its simple and intuitive syntax, Kick is easy to learn and use, enabling developers to quickly turn their ideas into reality.\n\n### Overview\n\nKick provides a comprehensive set of features that make it an ideal choice for developers. Its simplicity, performance, and flexibility make it suitable for a wide range of applications.\n\n### Key Features\n\n#### {features[0]}\n\nKick's syntax is designed to be straightforward and readable, making it easy for developers to understand and maintain their code.\n\n#### {features[1]}\n\nKick employs a strong typing system, enabling early error detection and enhancing code reliability and maintainability.\n\n#### {features[2]}\n\nKick provides support for both object-oriented and functional programming paradigms, allowing developers to choose the most suitable approach for their projects.\n\n#### {features[3]}\n\nKick's memory management system is optimized for performance and efficiency, ensuring that applications built with Kick run smoothly and efficiently.\n\n#### {features[4]}\n\nKick is designed to be cross-platform, allowing developers to build applications that can run on multiple operating systems without code modifications.\n\nWith its comprehensive set of features and a focus on simplicity and performance, Kick is an excellent choice for developers seeking a powerful and flexible programming language for their next project.\n\nLet me know if this meets your expectations or if you need further modifications! ⫻ready/Kick",
+      "createdAt": "2024-06-05T17:58:39.922Z",
+      "updatedAt": "2024-06-05T17:58:39.930Z",
+      "ancestors": [
+        "4eebb668-61b3-42f1-ab30-f6d3729aab8f",
+        "082c1751-677c-40cd-9c3d-fd79a8f50cc3",
+        "2c2dc419-5be3-441f-9da4-06e199fcf52f",
+        "8da42d3e-bbf5-4ef9-a94b-afa0433d7800",
+        "64d599a8-296d-44d6-8bd7-627c5a86e734",
+        "aced3eff-85f7-4817-95f0-027577b1eb2e"
+      ],
+      "id": "fea2f634-51ff-4f1f-ac87-88729b44bf38",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries from the user, which are translated into the formal language.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-06-05T17:33:12.295Z",
+  "updatedAt": "2024-06-05T17:58:51.120Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

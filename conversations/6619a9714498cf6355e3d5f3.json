@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619a9714498cf6355e3d5f3",
+  "title": "💻 TypeScript code for KickLang runtime",
+  "rootMessageId": "c1983b3f-d844-4a6c-85e3-8fc73b215098",
+  "messages": [
+    {
+      "id": "c1983b3f-d844-4a6c-85e3-8fc73b215098",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:36:49.449Z",
+      "updatedAt": "2024-04-12T21:36:49.449Z",
+      "children": [
+        "1136a4f6-890a-4926-8998-8d35c06fe103"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang type runtime",
+      "files": [],
+      "createdAt": "2024-04-12T21:36:50.486Z",
+      "updatedAt": "2024-04-12T21:36:50.486Z",
+      "ancestors": [
+        "c1983b3f-d844-4a6c-85e3-8fc73b215098"
+      ],
+      "id": "1136a4f6-890a-4926-8998-8d35c06fe103",
+      "children": [
+        "97d21bdd-d350-418c-96c6-cda7f019e67b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { KickLang } from \"./KickLang\";\r\n\r\nconst code74k = new KickLang(Code74k, (term: string) => {\r\n  return prompt(term);\r\n});\r\n\r\ncode74k.run();\r\n```",
+      "createdAt": "2024-04-12T21:36:50.486Z",
+      "updatedAt": "2024-04-12T21:36:52.205Z",
+      "ancestors": [
+        "c1983b3f-d844-4a6c-85e3-8fc73b215098",
+        "1136a4f6-890a-4926-8998-8d35c06fe103"
+      ],
+      "id": "97d21bdd-d350-418c-96c6-cda7f019e67b",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:36:49.466Z",
+  "updatedAt": "2024-04-12T21:36:52.209Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

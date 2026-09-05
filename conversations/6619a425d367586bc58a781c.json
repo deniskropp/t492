@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619a425d367586bc58a781c",
+  "title": "💻 TypeScript code for KickLang programming language",
+  "rootMessageId": "3efe4e07-05f7-4c37-9ebd-50253810f208",
+  "messages": [
+    {
+      "id": "3efe4e07-05f7-4c37-9ebd-50253810f208",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:14:13.527Z",
+      "updatedAt": "2024-04-12T21:14:13.527Z",
+      "children": [
+        "7f7c5055-3d8a-4d19-982d-c12b2cf2d9bc"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-04-12T21:14:14.668Z",
+      "updatedAt": "2024-04-12T21:14:14.668Z",
+      "ancestors": [
+        "3efe4e07-05f7-4c37-9ebd-50253810f208"
+      ],
+      "id": "7f7c5055-3d8a-4d19-982d-c12b2cf2d9bc",
+      "children": [
+        "688caf88-2067-42b9-9bd7-26f493a5592c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\nimport { Util, KickLang } from '../'\r\n\r\nexport interface Code74kEntry {\r\n  id: string\r\n  conversations: Conversation[]\r\n}\r\n\r\nexport interface Conversation {\r\n  from: 'human' | 'gpt'\r\n  value: string\r\n}\r\n\r\nexport class Code74k extends Util {\r\n  static readonly id = '[ code-74k ]'\r\n  static readonly unit = 'entry'\r\n  static readonly data = 'Code74k.json'\r\n  static readonly types = {\r\n    Code74kEntry,\r\n    Conversation,\r\n  }\r\n}\r\n\r\nexport const Code74kQuery = KickLang.define(Code74k)\r\n```",
+      "createdAt": "2024-04-12T21:14:14.668Z",
+      "updatedAt": "2024-04-12T21:14:23.539Z",
+      "ancestors": [
+        "3efe4e07-05f7-4c37-9ebd-50253810f208",
+        "7f7c5055-3d8a-4d19-982d-c12b2cf2d9bc"
+      ],
+      "id": "688caf88-2067-42b9-9bd7-26f493a5592c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:14:13.529Z",
+  "updatedAt": "2024-04-12T21:14:23.540Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

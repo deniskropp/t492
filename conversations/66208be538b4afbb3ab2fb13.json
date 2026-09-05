@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66208be538b4afbb3ab2fb13",
+  "title": "🌀 Lamina+Three.js slideshow code",
+  "rootMessageId": "2929af35-995c-416f-9a2a-9b239f6e2dd5",
+  "messages": [
+    {
+      "id": "2929af35-995c-416f-9a2a-9b239f6e2dd5",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-18T02:56:37.850Z",
+      "updatedAt": "2024-04-18T02:56:37.850Z",
+      "children": [
+        "c9dc7b76-e103-4850-a0d6-2c3cc3259a49"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write a lamina+THREE.js slideshow with fade and zoom effects",
+      "files": [],
+      "createdAt": "2024-04-18T02:56:38.591Z",
+      "updatedAt": "2024-04-18T02:56:38.591Z",
+      "ancestors": [
+        "2929af35-995c-416f-9a2a-9b239f6e2dd5"
+      ],
+      "id": "c9dc7b76-e103-4850-a0d6-2c3cc3259a49",
+      "children": [
+        "badda18b-cb35-46f6-8039-4712c36d3408"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure! Here is the code for a lamina + THREE.js slideshow with fade and zoom effects:\r\n\r\n```html\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n  <title>Lamina + THREE.js Slideshow</example>\r\n  <style>\r\n    body { margin: 0; overflow: hidden; }\r\n    canvas { display: block; }\r\n  </style>\r\n</head>\r\n<body>\r\n  <script type=\"module\">\r\n    import * as Lamina from 'https://cdn.skypack.dev/lamina@0.3.3';\r\n    import * as THREE from 'https://cdn.skypack.dev/three@0.137.0';\r\n\r\n    const canvas = document.createElement('canvas');\r\n    document.body.appendChild(canvas);\r\n\r\n    const renderer = new THREE.WebGLRenderer({ canvas });\r\n    const scene = new THREE.Scene();\r\n    const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);\r\n\r\n    const images = [\r\n      'image1.jpg',\r\n      'image2.jpg',\r\n      'image3.jpg',\r\n      // Add more image URLs here\r\n    ];\r\n\r\n    let currentImage = 0;\r\n    let textureLoader = new THREE.TextureLoader();\r\n    let imageTexture = textureLoader.load(images[currentImage]);\r\n\r\n    const geometry = new THREE.PlaneGeometry(2, 2);\r\n    const material = new THREE.MeshBasicMaterial({ map: imageTexture });\r\n    const plane = new THREE.Mesh(geometry, material);\r\n    scene.add(plane);\r\n\r\n    camera.position.z = 3;\r\n\r\n    function updateImage(index) {\r\n      imageTexture.dispose();\r\n      imageTexture = textureLoader.load(images[index]);\r\n      material.map = imageTexture;\r\n      currentImage = index;\r\n    }\r\n\r\n    function animateIn() {\r\n      const animation = new Lamina.Animation({\r\n        duration: 1000,\r\n        easing: Lamina.easing.cubicInOut,\r\n        start: { opacity: 0, scale: 0.5 },\r\n        end: { opacity: 1, scale: 1 },\r\n        onUpdate: ({ opacity, scale }) => {\r\n          material.opacity = opacity;\r\n          plane.scale.set(scale, scale, scale);\r\n        },\r\n      });\r\n      animation.start();\r\n    }\r\n\r\n    function animateOut() {\r\n      const animation = new Lamina.Animation({\r\n        duration: 1000,\r\n        easing: Lamina.easing.cubicInOut,\r\n        start: { opacity: 1, scale: 1 },\r\n        end: { opacity: 0, scale: 1.5 },\r\n        onUpdate: ({ opacity, scale }) => {\r\n          material.opacity = opacity;\r\n          plane.scale.set(scale, scale, scale);\r\n        },\r\n        onComplete: () => {\r\n          currentImage = (currentImage + 1) % images.length;\r\n          updateImage(currentImage);\r\n          animateIn();\r\n        },\r\n      });\r\n      animation.start();\r\n    }\r\n\r\n    renderer.setSize(innerWidth, innerHeight);\r\n    renderer.setPixelRatio(devicePixelRatio);\r\n\r\n    function resizeRendererToDisplaySize() {\r\n      const canvas = renderer.domElement;\r\n      const width = canvas.clientWidth;\r\n      const height = canvas.clientHeight;\r\n      const needResize = canvas.width !== width || canvas.height !== height;\r\n      if (needResize) {\r\n        renderer.setSize(width, height, false);\r\n      }\r\n      return needResize;\r\n    }\r\n\r\n    function render() {\r\n      if (resizeRendererToDisplaySize()) {\r\n        const canvas = renderer.domElement;\r\n        camera.aspect = canvas.clientWidth / canvas.clientHeight;\r\n        camera.updateProjectionMatrix();\r\n      }\r\n      renderer.render(scene, camera);\r\n    }\r\n\r\n    function tick() {\r\n      requestAnimationFrame(tick);\r\n      render();\r\n    }\r\n\r\n    tick();\r\n\r\n    window.addEventListener('click', animateOut);\r\n  </script>\r\n</body>\r\n</html>\r\n```\r\n\r\nIn this code, we first import the necessary modules, Lamina.js and THREE.js, and set up the HTML canvas element. We then define an array of image URLs that will be used in the slideshow.\r\n\r\nWe create a `PlaneGeometry` and a `MeshBasicMaterial` to display the images. The `imageTexture` is updated whenever the image changes, and we use Lamina.js to create animations for fading and zooming effects during the transition between images.\r\n\r\nThe `animateIn` and `animateOut` functions handle the fade-in and fade-out animations, respectively. The `tick` function is responsible for rendering the scene and updating the display size.\r\n\r\nFinally, we add a click event listener to the window, so that when the user clicks, the `animateOut` function is triggered, initiating the transition to the next image in the slideshow.\r\n\r\nMake sure to replace the `image1.jpg`, `image2.jpg`, etc. with the actual URLs of your images. You can add more images to the `images` array as needed.\r\n\r\nNote that this is a basic example, and you can further customize and enhance the slideshow by adding more advanced animations, transitions, and user interactions using Lamina.js and THREE.js.",
+      "createdAt": "2024-04-18T02:56:38.591Z",
+      "updatedAt": "2024-04-18T02:57:43.564Z",
+      "ancestors": [
+        "2929af35-995c-416f-9a2a-9b239f6e2dd5",
+        "c9dc7b76-e103-4850-a0d6-2c3cc3259a49"
+      ],
+      "id": "badda18b-cb35-46f6-8039-4712c36d3408",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-18T02:56:37.852Z",
+  "updatedAt": "2024-04-18T02:57:43.566Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

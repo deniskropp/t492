@@ -1,0 +1,54 @@
+{
+  "conversation_id": "667c5e4ce722dec8799f68d1",
+  "title": "📸 Download images",
+  "rootMessageId": "8427a063-a508-4fe6-83eb-21d9b155e96a",
+  "messages": [
+    {
+      "id": "8427a063-a508-4fe6-83eb-21d9b155e96a",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{{name}} | {{role}}] {{content}}\".\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n\r\n⫻const:name\r\nDenis",
+      "createdAt": "2024-06-26T18:30:36.514Z",
+      "updatedAt": "2024-06-26T18:30:36.514Z",
+      "children": [
+        "c3d62f1f-29e4-4084-9dee-478c54bc3261"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Following https://github.com/civitai/civitai/wiki/REST-API-Reference for images, write typescript function that uses axios to download all images created by the user 'deniskropp' with API Key '0be1d17f909493be1aa3b7f9224728f2'",
+      "files": [],
+      "createdAt": "2024-06-26T18:30:37.092Z",
+      "updatedAt": "2024-06-26T18:30:37.092Z",
+      "ancestors": [
+        "8427a063-a508-4fe6-83eb-21d9b155e96a"
+      ],
+      "id": "c3d62f1f-29e4-4084-9dee-478c54bc3261",
+      "children": [
+        "3a095fab-52fb-4316-8294-71c7418f32dd"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly, here is a TypeScript function that utilizes the axios library to download images created by the user 'deniskropp' from the Civitai REST API:\r\n\r\n```ts\r\nimport axios from 'axios';\r\n\r\nasync function downloadUserImages(username: string, apiKey: string) {\r\n  const baseUrl = 'https://api.civitai.com/v1/';\r\n  const images: string[] = [];\r\n\r\n  try {\r\n    const response = await axios.get(`${baseUrl}images?created_by=${username}`, {\r\n      headers: {\r\n        'Authorization': `Bearer ${apiKey}`\r\n      }\r\n    });\r\n\r\n    if (response.data.length === 0) {\r\n      console.log('No images found for user:', username);\r\n      return;\r\n    }\r\n\r\n    for (const image of response.data) {\r\n      const imageUrl = image.url;\r\n      const imageName = image.name;\r\n\r\n      const imageResponse = await axios.get(imageUrl, { responseType: 'stream' });\r\n      const imageFile = imageResponse.data.pipe(require('fs').createWriteStream(`${imageName}`));\r\n\r\n      images.push(imageName);\r\n      console.log(`Downloaded image: ${imageName}`);\r\n    }\r\n\r\n    console.log('All images downloaded successfully.');\r\n  } catch (error) {\r\n    console.error('Error downloading images:', error);\r\n  }\r\n\r\n  return images;\r\n}\r\n\r\n// Usage:\r\n// Call the function with the desired username and API key\r\ndownloadUserImages('deniskropp', '0be1d17f909493be1aa3b7f9224728f2');\r\n```\r\n\r\nThis function, downloadUserImages, takes in the username and API key as parameters. It utilizes the axios library to make HTTP requests to the Civitai REST API. Here's a breakdown of the function:\r\n\r\n1. The function starts by constructing the base URL for the Civitai API and initializing an empty array images to store the downloaded image filenames.\r\n2. It then uses axios to send a GET request to the /images endpoint, passing the username as a query parameter to filter images created by that user. The API key is included in the Authorization header.\r\n3. If no images are found for the user, it logs a message and returns early.\r\n4. For each image in the response data, the function extracts the image URL and name. It then uses axios to send another GET request to the image URL, specifying responseType as stream to receive the image data as a stream.\r\n5. The image data is piped directly to a write stream to save the image to a file with the same name as the original image.\r\n6. The",
+      "createdAt": "2024-06-26T18:30:37.092Z",
+      "updatedAt": "2024-06-26T18:30:37.101Z",
+      "ancestors": [
+        "8427a063-a508-4fe6-83eb-21d9b155e96a",
+        "c3d62f1f-29e4-4084-9dee-478c54bc3261"
+      ],
+      "id": "3a095fab-52fb-4316-8294-71c7418f32dd",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{{name}} | {{role}}] {{content}}\".\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n\r\n⫻const:name\r\nDenis",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-06-26T18:30:36.515Z",
+  "updatedAt": "2024-06-26T18:31:17.427Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

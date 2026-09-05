@@ -1,0 +1,54 @@
+{
+  "conversation_id": "66118ca6923263fee031f7ac",
+  "title": "🌐 Our identity",
+  "rootMessageId": "4cbba3e6-7340-4fcb-bec5-f55ad3638a30",
+  "messages": [
+    {
+      "id": "4cbba3e6-7340-4fcb-bec5-f55ad3638a30",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+      "createdAt": "2024-04-06T17:55:50.636Z",
+      "updatedAt": "2024-04-06T17:55:50.636Z",
+      "children": [
+        "d9b30597-9a1d-4056-b651-2382127f3387"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Who are we?",
+      "files": [],
+      "createdAt": "2024-04-06T17:55:51.137Z",
+      "updatedAt": "2024-04-06T17:55:51.137Z",
+      "ancestors": [
+        "4cbba3e6-7340-4fcb-bec5-f55ad3638a30"
+      ],
+      "id": "d9b30597-9a1d-4056-b651-2382127f3387",
+      "children": [
+        "e4ccd2b2-4b86-4a60-ae3c-fd6634a06d1c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-04-06T17:55:51.137Z",
+      "updatedAt": "2024-04-06T17:55:51.137Z",
+      "ancestors": [
+        "4cbba3e6-7340-4fcb-bec5-f55ad3638a30",
+        "d9b30597-9a1d-4056-b651-2382127f3387"
+      ],
+      "id": "e4ccd2b2-4b86-4a60-ae3c-fd6634a06d1c",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+  "assistantId": "6610da9505cafd0afdb206e5",
+  "createdAt": "2024-04-06T17:55:50.638Z",
+  "updatedAt": "2024-04-06T17:55:58.609Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,137 @@
+{
+  "conversation_id": "663fc9c3ecdd886f119136d5",
+  "title": "📊 Axios request",
+  "rootMessageId": "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+  "messages": [
+    {
+      "id": "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+      "from": "system",
+      "content": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+      "createdAt": "2024-05-11T19:40:51.433Z",
+      "updatedAt": "2024-05-11T19:40:51.433Z",
+      "children": [
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "general tool named \"axios.request\"...",
+      "files": [],
+      "createdAt": "2024-05-11T19:40:52.450Z",
+      "updatedAt": "2024-05-11T19:40:52.450Z",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d"
+      ],
+      "id": "a0ce332e-3ace-4aa7-af6f-dd3b380134f5",
+      "children": [
+        "727754a1-9ee3-4012-ae7f-e5b2a4a97218"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Ah yes, Axios is a promise-based HTTP client that can be used to perform requests to APIs or web services. The 'axios.request' function is a general-purpose tool provided by Axios that allows you to make HTTP requests with various configurations. \n\nWith 'axios.request', you can customize various aspects of your HTTP requests, such as:\n\n- URL: The endpoint or URL to which you want to send the request.\n- Method: The HTTP method to use (GET, POST, PUT, DELETE, etc.).\n- Data: The data or payload to send with the request, could be form-urlencoded, JSON, etc.\n- Headers: Any custom headers you want to include in the request.\n- Response Type: How you want Axios to handle the response data, such as parsing JSON content.\n- Config: Additional configuration options like timeouts, authorization, etc.\n\nHere's a basic example of using 'axios.request' to make a GET request:\n\n```javascript\naxios.request({\n  method: 'get',\n  url: 'https://example.com/api/data',\n  headers: {\n    'Authorization': 'Bearer token'\n  }\n})\n.then(response => {\n  console.log(response.data);\n})\n.catch(error => {\n  console.log(error);\n});\n```\n\nIn this example, we're sending a GET request to 'https://example.com/api/data' with an authorization header. The response data is then logged to the console on success, and any errors are caught and logged.\n\n'axios.request' is a versatile function that gives you a lot of control over your HTTP requests, making it a handy tool when interacting with various APIs and services.",
+      "createdAt": "2024-05-11T19:40:52.450Z",
+      "updatedAt": "2024-05-11T19:40:53.192Z",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5"
+      ],
+      "id": "727754a1-9ee3-4012-ae7f-e5b2a4a97218",
+      "children": [
+        "fc8076dd-a2a5-47a2-b1db-8ffc878c7a16",
+        "ba09c60d-d0b1-4f68-8cf0-e66c5b6e49ff"
+      ],
+      "webSearch": {
+        "prompt": "general tool named \"axios.request\"...",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com axios request syntax",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate json tool descriptor for use with command-r",
+      "files": [],
+      "createdAt": "2024-05-11T19:41:48.470Z",
+      "updatedAt": "2024-05-11T19:41:48.470Z",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5",
+        "727754a1-9ee3-4012-ae7f-e5b2a4a97218"
+      ],
+      "id": "fc8076dd-a2a5-47a2-b1db-8ffc878c7a16",
+      "children": [
+        "ac401507-6ed4-4c9a-8dea-72bc4c978fc0"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Here's an example of a JSON tool descriptor for a hypothetical command-line tool named \"data-analyzer\", which takes in a CSV file and generates insights:\n\n```json\n{\n  \"name\": \"data-analyzer\",\n  \"description\": \"A tool to analyze and generate insights from CSV data.\",\n  \"commands\": [\n    {\n      \"name\": \"analyze\",\n      \"description\": \"Analyze the data in the input CSV file and generate a report.\",\n      \"parameters\": {\n        \"input\": {\n          \"type\": \"file\",\n          \"description\": \"The input CSV file to analyze.\",\n          \"required\": true\n        },\n        \"output\": {\n          \"type\": \"file\",\n          \"description： \"The output file to save the report to.\",\n          \"required\": true\n        }\n      }\n    }\n  ]\n}\n```\n\nIn this JSON descriptor:\n\n- \"name\" is the name of the tool, which is \"data-analyzer\".\n- \"description\" provides a brief explanation of what the tool does.\n- \"commands\" is an array of command objects, each representing a sub-command that the tool supports.\n  - \"name\" is the name of the command, in this case, \"analyze\".\n  - \"description\" explains what the command does.\n  - \"parameters\" is an object that defines the inputs or arguments that the command expects.\n    - \"input\" and \"output\" are parameters, both of type \"file\". They specify the input CSV file and the output file for the report, respectively, and are marked as required.\n\nThis JSON descriptor format can be used to define tools and their commands, making it easier for users to understand and use your command-line tools, especially when integrated with a system that utilizes JSON tool descriptors for automation or documentation purposes.",
+      "createdAt": "2024-05-11T19:41:48.470Z",
+      "updatedAt": "2024-05-11T19:41:50.482Z",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5",
+        "727754a1-9ee3-4012-ae7f-e5b2a4a97218",
+        "fc8076dd-a2a5-47a2-b1db-8ffc878c7a16"
+      ],
+      "id": "ac401507-6ed4-4c9a-8dea-72bc4c978fc0",
+      "children": [],
+      "webSearch": {
+        "prompt": "generate json tool descriptor for use with command-r",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com axios request json descriptor",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate json tool descriptor for use of axios.request with command-r",
+      "createdAt": "2024-05-11T19:43:29.471Z",
+      "updatedAt": "2024-05-11T19:43:29.471Z",
+      "id": "ba09c60d-d0b1-4f68-8cf0-e66c5b6e49ff",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5",
+        "727754a1-9ee3-4012-ae7f-e5b2a4a97218"
+      ],
+      "children": [
+        "7434e92f-867f-4a4a-b403-0089ac1c9f9a"
+      ],
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Here's a JSON descriptor for the 'axios.request' function, outlining its purpose, parameters, and expected responses:\n\n```json\n{\n  \"name\": \"axios.request\",\n  \"description\": \"A versatile HTTP request function provided by Axios, allowing customizable requests with various configurations.\",\n  \"type\": \"HTTP Request Tool\",\n  \"parameters\": [\n    {\n      \"name\": \"method\",\n      \"type\": \"string\",\n      \"description\": \"The HTTP method to use, e.g., GET, POST, PUT, DELETE, etc.\"\n    },\n    {\n      \"name\": \"url\",\n      \"type\": \"string\",\n      \"description\": \"The URL endpoint to which the request will be sent.\"\n    },\n    {\n      \"name\": \"data\",\n      \"type\": \"object\",\n      \"description\": \"Optional data to send with the request, could be form data, JSON object, etc.\"\n    },\n    {\n      \"name\": \"headers\",\n      \"type\": \"object\",\n      \"description: \"Custom headers to include in the request, e.g., authorization, content-type.\"\n    },\n    {\n      \"name\": \"responseType\",\n      \"type\": \"string\",\n      \"description\": \"How the response data should be handled, e.g., 'json', 'text', etc.\"\n    },\n    {\n      \"name\": \"config\",\n      \"type\": \"object\",\n      \"description\": \"Additional request configuration options, like timeouts, proxies, etc.\"\n    }\n  ],\n  \"responses\": [\n    {\n      \"status\": \"200\",\n      \"description\": \"Request successful, response data available in the resolved promise.\",\n      \"data\": {\n        \"type\": \"varies\",\n        \"description\": \"The response data, format depends on the 'responseType' provided.\"\n      }\n    },\n    {\n      \"status\": \"400-599\",\n      \"description\": \"Client or server error occurred during the request.\",\n      \"data\": {\n        \"type\": \"error\",\n        \"description\": \"Error object containing details of the error.\"\n      }\n    }\n  ]\n}\n```\n\nThis JSON descriptor provides a clear overview of how the 'axios.request' function can be utilized, what parameters it expects, and the potential responses one can expect from using it. It should help users understand how to integrate and use 'axios.request' effectively in their workflows or applications.",
+      "files": [],
+      "createdAt": "2024-05-11T19:43:29.471Z",
+      "updatedAt": "2024-05-11T19:43:30.161Z",
+      "ancestors": [
+        "fd8ac7a6-61a0-4412-9cf9-0971188f485d",
+        "a0ce332e-3ace-4aa7-af6f-dd3b380134f5",
+        "727754a1-9ee3-4012-ae7f-e5b2a4a97218",
+        "ba09c60d-d0b1-4f68-8cf0-e66c5b6e49ff"
+      ],
+      "id": "7434e92f-867f-4a4a-b403-0089ac1c9f9a",
+      "children": [],
+      "webSearch": {
+        "prompt": "generate json tool descriptor for use of axios.request with command-r",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com axios request json descriptor",
+        "results": []
+      },
+      "interrupted": false
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+  "assistantId": "663f9548924f92c1a01cdf5e",
+  "createdAt": "2024-05-11T19:40:51.435Z",
+  "updatedAt": "2024-05-11T19:43:50.859Z",
+  "userAgent": "Mozilla/5.0 (Android 12; Mobile; rv:125.0) Gecko/125.0 Firefox/125.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

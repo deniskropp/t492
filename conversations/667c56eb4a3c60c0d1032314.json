@@ -1,0 +1,55 @@
+{
+  "conversation_id": "667c56eb4a3c60c0d1032314",
+  "title": "📸 Download images",
+  "rootMessageId": "4e0cde42-e205-47b1-9f7f-bfc49be7b2b1",
+  "messages": [
+    {
+      "id": "4e0cde42-e205-47b1-9f7f-bfc49be7b2b1",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-06-26T17:59:07.920Z",
+      "updatedAt": "2024-06-26T17:59:07.920Z",
+      "children": [
+        "988b505d-f92b-45aa-9d2b-b5f1ae7796dd"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Following https://github.com/civitai/civitai/wiki/REST-API-Reference for images, write typescript function that uses axios to download all images created by the user 'deniskropp' with API Key '0be1d17f909493be1aa3b7f9224728f2'",
+      "files": [],
+      "createdAt": "2024-06-26T17:59:08.462Z",
+      "updatedAt": "2024-06-26T17:59:08.462Z",
+      "ancestors": [
+        "4e0cde42-e205-47b1-9f7f-bfc49be7b2b1"
+      ],
+      "id": "988b505d-f92b-45aa-9d2b-b5f1ae7796dd",
+      "children": [
+        "e8ccdada-bdd0-45fb-b55e-68341933e9be"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a TypeScript function that uses Axios to download all images created by the user 'deniskropp' with the API Key '0be1d17f909493be1aa3b7f9224728f2':\n```typescript\nimport axios from 'axios';\n\nasync function downloadUserImages(username: string, apiKey: string) {\n  const baseUrl = 'https://civitai.com/api/v1/images';\n  const params = {\n    username: username,\n    limit: 0, // Request all images\n    apiKey: apiKey\n  };\n\n  const response = await axios.get(baseUrl, { params: params });\n  const images = response.data.items;\n\n  for (const image of images) {\n    const imageUrl = image.url;\n    const filename = image.id + '.jpg'; // Assuming jpg file extension\n    await axios.get(imageUrl, { responseType: 'stream' }).then((response) => {\n      response.data.pipe(fs.createWriteStream(filename));\n    });\n  }\n}\n\n// Usage\nconst username = 'deniskropp';\nconst apiKey = '0be1d17f909493be1aa3b7f9224728f2';\ndownloadUserImages(username, apiKey);\n```\n\nThis function makes use of the Axios library to perform HTTP requests. It constructs the appropriate endpoint URL with query parameters to fetch all images created by the user 'deniskropp'. The API key is included as a query parameter to authenticate the request.\n\nThe function then iterates through the returned images and constructs the image URLs. It downloads each image using Axios with the `responseType` set to `'stream'` to handle the binary data. The image data is piped to a file stream to save the image locally.\n\nNote that this code assumes the presence of the `fs` module for writing files. Also, ensure that you have the necessary permissions and file system access to perform the image downloads and save them locally.",
+      "createdAt": "2024-06-26T17:59:08.462Z",
+      "updatedAt": "2024-06-26T17:59:08.471Z",
+      "ancestors": [
+        "4e0cde42-e205-47b1-9f7f-bfc49be7b2b1",
+        "988b505d-f92b-45aa-9d2b-b5f1ae7796dd"
+      ],
+      "id": "e8ccdada-bdd0-45fb-b55e-68341933e9be",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-06-26T17:59:07.921Z",
+  "updatedAt": "2024-06-26T17:59:40.611Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

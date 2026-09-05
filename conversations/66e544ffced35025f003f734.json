@@ -1,0 +1,121 @@
+{
+  "conversation_id": "66e544ffced35025f003f734",
+  "title": "💬 I understand the format you provided. However, I don't see any sections",
+  "rootMessageId": "e42f3d05-98c3-41bf-83ad-448599f92849",
+  "messages": [
+    {
+      "id": "e42f3d05-98c3-41bf-83ad-448599f92849",
+      "from": "system",
+      "content": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:e\r\nFunction: e()\r\nDescription: A critical component within the Core LLM that identifies situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+      "createdAt": "2024-09-14T08:10:39.906Z",
+      "updatedAt": "2024-09-14T08:10:39.906Z",
+      "children": [
+        "9e8a0390-96a8-4e11-989d-969344bc34fd"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template   Generate content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-09-14T08:10:40.368Z",
+      "updatedAt": "2024-09-14T08:10:40.368Z",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849"
+      ],
+      "id": "9e8a0390-96a8-4e11-989d-969344bc34fd",
+      "children": [
+        "54cf869b-f80f-49e0-98fd-f2eb0f09209f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I understand the rules now. Thank you for clarifying!\n\nHere's my revised understanding:\n\n**Format**\n\n* Sections start with `⫻` followed by `name/type:place`\n* `name` can be one of:\n\t+ `const`: constants or parameters\n\t+ `content`: input data for generation\n\t+ `context`: auxiliary information (not included in generated content)\n* `type` is optional and provides additional information about the section (e.g., format, encoding, component type)\n* Data follows the `place` or `index",
+      "createdAt": "2024-09-14T08:10:40.368Z",
+      "updatedAt": "2024-09-14T08:10:40.377Z",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849",
+        "9e8a0390-96a8-4e11-989d-969344bc34fd"
+      ],
+      "id": "54cf869b-f80f-49e0-98fd-f2eb0f09209f",
+      "children": [
+        "502206f3-1b03-4d4c-9222-10084fbd5759",
+        "39d19202-36a2-44fa-bed0-dce41e29fc77"
+      ],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:scenario\nA user wants to generate a story about a character who discovers a hidden world.\n\n⫻const:genre\nFantasy\n\n⫻const:main_character\nA young adult\n\n⫻content\nGenerate a story about a young adult who discovers a hidden world.\n\n(Note: Please respond with a short story based on the provided context and constants)",
+      "files": [],
+      "createdAt": "2024-09-14T08:10:47.603Z",
+      "updatedAt": "2024-09-14T08:10:47.603Z",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849",
+        "9e8a0390-96a8-4e11-989d-969344bc34fd",
+        "54cf869b-f80f-49e0-98fd-f2eb0f09209f"
+      ],
+      "id": "502206f3-1b03-4d4c-9222-10084fbd5759",
+      "children": [
+        "b53b730b-c9d6-4527-b43b-06f7e3baf60f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content/generated\nIn the quaint town of Willowdale, where myth and magic were mere whispers of a forgotten past, Emilia had always felt an insatiable curiosity about the unknown. As a young adult, she spent most of her days exploring the outskirts of town, searching for something that would quench her thirst for adventure. One fateful evening, while wandering through the woods, Emilia stumbled upon a hidden path she had never seen before. The trees seemed to lean in, as if sharing a secret, as she stepped onto the winding trail. With each step, the air thickened with an otherworldly energy, and the sky transformed into a deep shade of indigo. Suddenly, the trees parted, revealing a shimmering portal where the moon should have been. Without hesitation, Emilia stepped through the portal and entered a realm beyond her wildest dreams. Rolling hills of iridescent wildflowers stretched towards the horizon, meeting at a crystal palace that shone like a beacon. A figure emerged from within, cloaked in mist, beckoning her closer. As Emilia approached, the figure revealed itself to be a guardian of this mystical realm, tasked with protecting ancient secrets and hidden knowledge. The guardian presented Emilia with a gift – a small crystal orb that glowed with an ethereal light. This was just the beginning of her journey, one that would unravel mysteries, forge unbreakable bonds, and reveal the true depths of her own potential.",
+      "createdAt": "2024-09-14T08:10:47.603Z",
+      "updatedAt": "2024-09-14T08:10:47.611Z",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849",
+        "9e8a0390-96a8-4e11-989d-969344bc34fd",
+        "54cf869b-f80f-49e0-98fd-f2eb0f09209f",
+        "502206f3-1b03-4d4c-9222-10084fbd5759"
+      ],
+      "id": "b53b730b-c9d6-4527-b43b-06f7e3baf60f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:scenario\nA user wants to generate a story about a character who discovers a hidden world.\n\n⫻const:genre\nFantasy\n\n⫻const:main_character\nA young adult\n\n⫻content\nGenerate a story about a young adult who discovers a hidden world.",
+      "files": [],
+      "createdAt": "2024-09-14T08:11:09.651Z",
+      "updatedAt": "2024-09-14T08:11:09.651Z",
+      "id": "39d19202-36a2-44fa-bed0-dce41e29fc77",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849",
+        "9e8a0390-96a8-4e11-989d-969344bc34fd",
+        "54cf869b-f80f-49e0-98fd-f2eb0f09209f"
+      ],
+      "children": [
+        "36bb0637-3e46-46a8-a1e6-38203801a500"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻story/output\n\n\nIn the heart of the mystical forest, where ancient trees whispered secrets to the wind, and wildflowers bloomed with an otherworldly glow, a young adult named Lyra stumbled upon a hidden path she had never seen before. The air was alive with an electric sense of possibility as she stepped onto the winding trail, her feet carrying her toward a world beyond her wildest dreams.\n\n\nAs she walked, the trees grew taller, their branches tangling above her like a canopy of emeralds. The sound of soft chirping and gentle chimes filled the air, drawing Lyra deeper into the unknown. She felt an strange energy building within her, as if the very fabric of reality was shifting to reveal a secret realm.\n\n\nSuddenly, the trees parted, and Lyra found herself standing at the edge of a shimmering lake. A delicate wooden boat bobbed gently on the water, its surface adorned with intricate carvings that seemed to dance in the fading light. Without hesitation, Lyra climbed aboard, feeling the wood beneath her feet come alive with a soft hum.\n\n\nAs the boat drifted across the lake, Lyra saw wonders she had only ever imagined: creatures with iridescent wings flitted between the reeds, and great crystal spires rose from the depths, casting kaleidoscopic patterns across the waves. The air vibrated with magic, and Lyra knew she had entered a realm where anything was possible.\n\n\nThe boat glided to a stop beside a waterfall, which cascaded down a crystal cliff face, creating a misty veil that surrounded Lyra like a rainbow-colored aura. As she stepped ashore, a figure emerged from the mist – an ethereal being with skin like moonlight and hair like starlight.\n\n\n\"Welcome, young one,\" the being said, offering Lyra a hand. \"We have been waiting for you. You have entered this world uninvited, yet we sense great potential within you. Are you prepared to unlock the secrets of our realm?\"",
+      "createdAt": "2024-09-14T08:11:09.651Z",
+      "updatedAt": "2024-09-14T08:11:09.661Z",
+      "ancestors": [
+        "e42f3d05-98c3-41bf-83ad-448599f92849",
+        "9e8a0390-96a8-4e11-989d-969344bc34fd",
+        "54cf869b-f80f-49e0-98fd-f2eb0f09209f",
+        "39d19202-36a2-44fa-bed0-dce41e29fc77"
+      ],
+      "id": "36bb0637-3e46-46a8-a1e6-38203801a500",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n⫻context/function:e\r\nFunction: e()\r\nDescription: A critical component within the Core LLM that identifies situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the e() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+  "assistantId": "66c52a50278716117638740a",
+  "createdAt": "2024-09-14T08:10:39.908Z",
+  "updatedAt": "2024-09-14T08:11:34.662Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

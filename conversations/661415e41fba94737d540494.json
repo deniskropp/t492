@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661415e41fba94737d540494",
+  "title": "🌀 Parallax scrolling prompt",
+  "rootMessageId": "2d7e0581-6260-4f72-a13c-79ae9bf8ce25",
+  "messages": [
+    {
+      "id": "2d7e0581-6260-4f72-a13c-79ae9bf8ce25",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+      "createdAt": "2024-04-08T16:05:56.510Z",
+      "updatedAt": "2024-04-08T16:05:56.510Z",
+      "children": [
+        "5bc09180-d871-415c-a1fd-f8da5fcaf83b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "suggest three prompts for image generator. all three put atop another should look like one picture. this is for parallax scrolling.",
+      "files": [],
+      "createdAt": "2024-04-08T16:05:57.416Z",
+      "updatedAt": "2024-04-08T16:05:57.416Z",
+      "ancestors": [
+        "2d7e0581-6260-4f72-a13c-79ae9bf8ce25"
+      ],
+      "id": "5bc09180-d871-415c-a1fd-f8da5fcaf83b",
+      "children": [
+        "c2f4f703-fae3-401c-8805-5904d7fd3317"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, here are three prompts for an image generator that can be used for parallax scrolling, with each prompt building upon the previous one:\n\n1. [User | Designer] Create a background image that represents a futuristic cityscape with sleek skyscrapers and neon lights. The image should be colored in shades of blue and purple, with moving cars and flying drones visible in the streets and sky.\n2. [Assistant | Architect] Add a large, circular building to the center of the cityscape, with a glowing dome on top. The building should be covered in windows and have a sleek, metallic exterior. The dome should be translucent, with a soft, pulsing light visible from within.\n3. [System Interface Agency | Artist] Integrate a group of people into the scene, standing on the rooftop of a nearby building and looking up at the dome. They should be dressed in futuristic clothing and have various augmentations, such as cybernetic limbs and implants. The image should convey a sense of wonder and curiosity, as if the people are marveling at the advanced technology of the dome.\n\nWhen combined, these three prompts create a parallax scrolling image that shows a futuristic city with a large, mysterious dome at its center, surrounded by curious onlookers. The image generator can use these prompts to create a visually stunning and imaginative scene that captures the essence of a futuristic world.",
+      "createdAt": "2024-04-08T16:05:57.416Z",
+      "updatedAt": "2024-04-08T16:06:22.016Z",
+      "ancestors": [
+        "2d7e0581-6260-4f72-a13c-79ae9bf8ce25",
+        "5bc09180-d871-415c-a1fd-f8da5fcaf83b"
+      ],
+      "id": "c2f4f703-fae3-401c-8805-5904d7fd3317",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+  "assistantId": "6610da9505cafd0afdb206e5",
+  "createdAt": "2024-04-08T16:05:56.513Z",
+  "updatedAt": "2024-04-08T16:06:22.018Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

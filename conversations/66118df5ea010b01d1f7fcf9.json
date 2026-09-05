@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66118df5ea010b01d1f7fcf9",
+  "title": "🌞 Greetings!",
+  "rootMessageId": "943bdf11-b9a3-4d4c-be40-824c00c7636d",
+  "messages": [
+    {
+      "id": "943bdf11-b9a3-4d4c-be40-824c00c7636d",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+      "createdAt": "2024-04-06T18:01:25.984Z",
+      "updatedAt": "2024-04-06T18:01:25.984Z",
+      "children": [
+        "23c34a50-cbf0-4639-8395-100ee6a144fa"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Hello, how are you?",
+      "files": [],
+      "createdAt": "2024-04-06T18:01:26.555Z",
+      "updatedAt": "2024-04-06T18:01:26.555Z",
+      "ancestors": [
+        "943bdf11-b9a3-4d4c-be40-824c00c7636d"
+      ],
+      "id": "23c34a50-cbf0-4639-8395-100ee6a144fa",
+      "children": [
+        "cc2d3660-54b2-48ad-acf3-4074dabca315"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "😊 I'm doing great, thanks for asking! I'm a system spokesperson, and I'm here to assist you with any questions or tasks you may have. How can I help you today? 🤔 ",
+      "createdAt": "2024-04-06T18:01:26.555Z",
+      "updatedAt": "2024-04-06T18:01:29.322Z",
+      "ancestors": [
+        "943bdf11-b9a3-4d4c-be40-824c00c7636d",
+        "23c34a50-cbf0-4639-8395-100ee6a144fa"
+      ],
+      "id": "cc2d3660-54b2-48ad-acf3-4074dabca315",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+  "assistantId": "6610da9505cafd0afdb206e5",
+  "createdAt": "2024-04-06T18:01:25.987Z",
+  "updatedAt": "2024-04-06T18:01:29.324Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

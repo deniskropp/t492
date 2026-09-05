@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661b2ee6ac8bd3f38f81ad48",
+  "title": "💻 Core dump error message",
+  "rootMessageId": "847158a0-9177-46fd-a094-b446f8fd3558",
+  "messages": [
+    {
+      "id": "847158a0-9177-46fd-a094-b446f8fd3558",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-14T01:18:30.140Z",
+      "updatedAt": "2024-04-14T01:18:30.140Z",
+      "children": [
+        "948fc5ee-1857-4592-8a0a-c8501eaa2ae6"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "How to disable core dump?\n\n\n#0 0x7f13804c0432 llvm::sys::PrintStackTrace(_IO_FILE*) (/opt/intel/opencl/libigdmcl.so+0x8c0432)\n#1 0x7f13804be921 (/opt/intel/opencl/libigdmcl.so+0x8be921)\n#2 0x7f1386c5a770 (/usr/lib/libc.so.6+0x40770)\n#3 0x7f138014ff92 (/opt/intel/opencl/libigdmcl.so+0x54ff92)\n#4 0x7f1380152d7d (/opt/intel/opencl/libigdmcl.so+0x552d7d)\n#5 0x7f13800c27f6 llvm::FPPassManager::runOnFunction(llvm::Function&) (/opt/intel/opencl/libigdmcl.so+0x4c27f6)\n#6 0x7f13800c28db llvm::FPPassManager::runOnModule(llvm::Module&) (/opt/intel/opencl/libigdmcl.so+0x4c28db)\n#7 0x7f13800c4888 llvm::legacy::PassManagerImpl::run(llvm::Module&) (/opt/intel/opencl/libigdmcl.so+0x4c4888)\n#8 0x7f137fe06eb5 llc_main(llvm::LLCInputArgs const*, llvm::LLCOutputArgs*, LLC_IO_BUFFERS, bool, _SGlobalData const&) (/opt/intel/opencl/libigdmcl.so+0x206eb5)\n#9 0x7f137fe0751e llvm::LLC_Translate(llvm::LLCInputArgs const*, llvm::LLCOutputArgs*, bool, _SGlobalData const&) (/opt/intel/opencl/libigdmcl.so+0x20751e)\n#10 0x7f137fdff189 TC::CLLCTranslationBlock::Translate(TC::STB_TranslateInputArgs const*, TC::STB_TranslateOutputArgs*) (/opt/intel/opencl/libigdmcl.so+0x1ff189)\n#11 0x7f1381af51f5 (/opt/intel/opencl/libigdrcl.so+0xf51f5)\n#12 0x7f1381aec5b7 (/opt/intel/opencl/libigdrcl.so+0xec5b7)\n#13 0x7f1381aecdd1 (/opt/intel/opencl/libigdrcl.so+0xecdd1)\n#14 0x7f1381ada104 (/opt/intel/opencl/libigdrcl.so+0xda104)\n#15 0x7f1381a4c8ed (/opt/intel/opencl/libigdrcl.so+0x4c8ed)\n#16 0x7f1381ac03a9 (/opt/intel/opencl/libigdrcl.so+0xc03a9)\n#17 0x7f138687aa36 (/usr/lib/libclblast.so.1+0x27aa36)\n#18 0x7f138687c5e8 clblast::CompileFromSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, clblast::Precision, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, clblast::Device const&, clblast::Context const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>&, unsigned long, bool) (/usr/lib/libclblast.so.1+0x27c5e8)\n#19 0x7f13868a408a clblast::Routine::InitProgram(std::initializer_list<char const*>) (/usr/lib/libclblast.so.1+0x2a408a)\n#20 0x7f13868a4c47 clblast::Routine::Routine(clblast::Queue&, _cl_event**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>> const&, clblast::Precision, std::vector<clblast::database::DatabaseEntry, std::allocator<clblast::database::DatabaseEntry>> const&, std::initializer_list<char const*>) (/usr/lib/libclblast.so.1+0x2a4c47)\n#21 0x7f13869a38e4 clblast::Xgemm<float>::Xgemm(clblast::Queue&, _cl_event**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&) (/usr/lib/libclblast.so.1+0x3a38e4)\n#22 0x7f13868d52cc clblast::StatusCode clblast::Gemm<float>(clblast::Layout, clblast::Transpose, clblast::Transpose, unsigned long, unsigned long, unsigned long, float, _cl_mem*, unsigned long, unsigned long, _cl_mem*, unsigned long, unsigned long, float, _cl_mem*, unsigned long, unsigned long, _cl_command_queue**, _cl_event**, _cl_mem*) (/usr/lib/libclblast.so.1+0x2d52cc)\n#23 0x7f1387366eec ggml_cl_mul_mat_q_f32(ggml_tensor const*, ggml_tensor const*, ggml_tensor*) ggml-opencl.cpp:0:0\n#24 0x7f13872d5d9b ggml_graph_compute_thread ggml.c:0:0\n#25 0x7f13872d5516 ggml_graph_compute (/opt/llama.cpp/lib/libllama.so+0xd5516)\n#26 0x7f138732b1ff ggml_backend_cpu_graph_compute ggml-backend.c:0:0\n#27 0x7f1387329ba8 ggml_backend_sched_graph_compute_async (/opt/llama.cpp/lib/libllama.so+0x129ba8)\n#28 0x7f138725517d llama_decode (/opt/llama.cpp/lib/libllama.so+0x5517d)\n#29 0x41df99 llama_init_from_gpt_params(gpt_params&) (/opt/llama.cpp/bin/main+0x41df99)\n#30 0x40a4c3 main (/opt/llama.cpp/bin/main+0x40a4c3)\n#31 0x7f1386c43cd0 (/usr/lib/libc.so.6+0x29cd0)\n#32 0x7f1386c43d8a __libc_start_main (/usr/lib/libc.so.6+0x29d8a)\n#33 0x4092f5 _start (/opt/llama.cpp/bin/main+0x4092f5)\nSpeicherzugriffsfehler (Speicherabzug geschrieben)",
+      "files": [],
+      "createdAt": "2024-04-14T01:18:30.712Z",
+      "updatedAt": "2024-04-14T01:18:30.712Z",
+      "ancestors": [
+        "847158a0-9177-46fd-a094-b446f8fd3558"
+      ],
+      "id": "948fc5ee-1857-4592-8a0a-c8501eaa2ae6",
+      "children": [
+        "8baa3389-f16c-4ef5-a83c-2fd1ba184074"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "To disable core dumps, you can use the `ulimit` command in a Linux environment. Here is an example command:\n```bash\nulimit -c 0\n```\n\nThis command sets the maximum size of core files created to 0, effectively disabling core dumps.",
+      "createdAt": "2024-04-14T01:18:30.712Z",
+      "updatedAt": "2024-04-14T01:18:32.385Z",
+      "ancestors": [
+        "847158a0-9177-46fd-a094-b446f8fd3558",
+        "948fc5ee-1857-4592-8a0a-c8501eaa2ae6"
+      ],
+      "id": "8baa3389-f16c-4ef5-a83c-2fd1ba184074",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-04-14T01:18:30.141Z",
+  "updatedAt": "2024-04-14T01:18:32.387Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619b1c3af2b476e6a20bc09",
+  "title": "💻 Code74k.ts - KickLang runtime",
+  "rootMessageId": "06444503-73ba-46d4-a8e2-0a08a56a511a",
+  "messages": [
+    {
+      "id": "06444503-73ba-46d4-a8e2-0a08a56a511a",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-12T22:12:19.301Z",
+      "updatedAt": "2024-04-12T22:12:19.301Z",
+      "children": [
+        "58f04eda-af14-4a80-bc76-4152d1f37f6a"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - KickLang runtime",
+      "files": [],
+      "createdAt": "2024-04-12T22:12:20.322Z",
+      "updatedAt": "2024-04-12T22:12:20.322Z",
+      "ancestors": [
+        "06444503-73ba-46d4-a8e2-0a08a56a511a"
+      ],
+      "id": "58f04eda-af14-4a80-bc76-4152d1f37f6a",
+      "children": [
+        "ee6daa85-d5ce-48aa-ad4e-34eb10431a05"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { Runtime } from '@kick/runtime'\r\nimport { Code74k } from './Code74k.json'\r\n\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}\r\n\r\nexport class Code74kRuntime extends Runtime {\r\n    public readonly data: Code74k[] = []\r\n\r\n    public constructor() {\r\n        super()\r\n        this.loadData()\r\n    }\r\n\r\n    private loadData() {\r\n        const response = fetch('./Code74k.json')\r\n        const data = response.json()\r\n        this.data.push(...data)\r\n    }\r\n\r\n    public get(key: string) {\r\n        return this.data.find((item) => item.key === key)?.value\r\n    }\r\n}\r\n\r\nexport const code74k = new Code74kRuntime()\r\n```",
+      "createdAt": "2024-04-12T22:12:20.322Z",
+      "updatedAt": "2024-04-12T22:12:26.876Z",
+      "ancestors": [
+        "06444503-73ba-46d4-a8e2-0a08a56a511a",
+        "58f04eda-af14-4a80-bc76-4152d1f37f6a"
+      ],
+      "id": "ee6daa85-d5ce-48aa-ad4e-34eb10431a05",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-12T22:12:19.302Z",
+  "updatedAt": "2024-04-12T22:12:26.877Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

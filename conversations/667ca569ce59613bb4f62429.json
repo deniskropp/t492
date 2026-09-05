@@ -1,0 +1,54 @@
+{
+  "conversation_id": "667ca569ce59613bb4f62429",
+  "title": "💻 Language-based research",
+  "rootMessageId": "b21b3185-96b4-4c3f-88fe-1fedcf215c3b",
+  "messages": [
+    {
+      "id": "b21b3185-96b4-4c3f-88fe-1fedcf215c3b",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\n## System\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />",
+      "createdAt": "2024-06-26T23:34:01.310Z",
+      "updatedAt": "2024-06-26T23:34:01.310Z",
+      "children": [
+        "88ac9a62-ace2-45af-886b-be1ca556cd07"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:Language   The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+      "files": [],
+      "createdAt": "2024-06-26T23:34:02.019Z",
+      "updatedAt": "2024-06-26T23:34:02.019Z",
+      "ancestors": [
+        "b21b3185-96b4-4c3f-88fe-1fedcf215c3b"
+      ],
+      "id": "88ac9a62-ace2-45af-886b-be1ca556cd07",
+      "children": [
+        "46027ffb-fb88-4358-9301-ecd6600ef611"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Kick|AI:user/yaml\r\nThanks, Denis! 🦹‍♀️\n\nI couldn't find any direct references to \"KickLang\" in the code snippets provided, but here are some potential language features I inferred from the context:\r\n\r\n- String manipulation and translation: The code mentions language keys, language translation, and string input/output. This suggests that KickLang has robust support for working with multilingual text and dynamic string manipulation.\r\n- Entity manipulation: The code references entities, such as vehicles and players, and their properties (e.g., coordinates, god mode). This indicates that KickLang provides functionalities to interact with and modify entities in a simulated environment.\r\n- Conditional logic and flow control: The presence of conditions (e.g., \"if-else\" statements) and loops (\"for\" loops)",
+      "createdAt": "2024-06-26T23:34:02.019Z",
+      "updatedAt": "2024-06-26T23:34:02.030Z",
+      "ancestors": [
+        "b21b3185-96b4-4c3f-88fe-1fedcf215c3b",
+        "88ac9a62-ace2-45af-886b-be1ca556cd07"
+      ],
+      "id": "46027ffb-fb88-4358-9301-ecd6600ef611",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions and answer questions\r\n\r\n## System\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-06-26T23:34:01.312Z",
+  "updatedAt": "2024-06-26T23:34:23.627Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

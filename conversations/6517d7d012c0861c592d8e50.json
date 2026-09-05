@@ -1,0 +1,26 @@
+{
+  "conversation_id": "6517d7d012c0861c592d8e50",
+  "title": "\"Optimize symbol order for performance\"",
+  "messages": [
+    {
+      "content": "Sort out the perfect order of symbols.\n\nThe system consists of a distinct set of four symbols.\n\nDepending on the order of all four symbols (each present once) is the system's performance.\n\nThe four symbols are:\n1. A = yields best performance if not followed by more than one symbol\n2. B = yields best performance if not preceeeded by symbol A or C\n3. C = yields best performance when not being the last symbol\n4. D = yields best performance when being the first symbol",
+      "from": "user",
+      "id": "46c5c119-7de4-436f-9370-d12ea8e4c4d1",
+      "createdAt": "2023-09-30T08:09:53.726Z",
+      "updatedAt": "2023-09-30T08:09:53.726Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " The perfect order of symbols is D,B,C,A.",
+      "id": "da2c5f95-d30c-4c2c-8303-4b2e3544bcec",
+      "createdAt": "2023-09-30T08:09:53.869Z",
+      "updatedAt": "2023-09-30T08:09:53.869Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "createdAt": "2023-09-30T08:09:52.083Z",
+  "updatedAt": "2023-09-30T08:10:24.397Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

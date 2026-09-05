@@ -1,0 +1,120 @@
+{
+  "conversation_id": "663f9da4d6eb9992e081a256",
+  "title": "🛠 Tool definition",
+  "rootMessageId": "ea65a007-9e65-4d8b-8137-5c03a346bafb",
+  "messages": [
+    {
+      "id": "ea65a007-9e65-4d8b-8137-5c03a346bafb",
+      "from": "system",
+      "content": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+      "createdAt": "2024-05-11T16:32:36.369Z",
+      "updatedAt": "2024-05-11T16:32:36.369Z",
+      "children": [
+        "cc90f128-be1c-4e62-a9d8-0939711cab8e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "what is tool use?",
+      "files": [],
+      "createdAt": "2024-05-11T16:32:37.610Z",
+      "updatedAt": "2024-05-11T16:32:37.610Z",
+      "ancestors": [
+        "ea65a007-9e65-4d8b-8137-5c03a346bafb"
+      ],
+      "id": "cc90f128-be1c-4e62-a9d8-0939711cab8e",
+      "children": [
+        "26815e8a-64fb-4e7e-b0da-c16322cb618d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "According to the search results, tool use is a technique that allows developers to connect AI models (in this case, Cohere's models) to external tools, such as search engines, APIs, functions, databases, and so on, and use them to perform various actions. This enables the language model to reason, perform dynamic actions, and quickly adapt based on information coming from external sources.",
+      "createdAt": "2024-05-11T16:32:37.610Z",
+      "updatedAt": "2024-05-11T16:32:40.600Z",
+      "ancestors": [
+        "ea65a007-9e65-4d8b-8137-5c03a346bafb",
+        "cc90f128-be1c-4e62-a9d8-0939711cab8e"
+      ],
+      "id": "26815e8a-64fb-4e7e-b0da-c16322cb618d",
+      "children": [
+        "e6f7617c-4e75-4e8a-9591-91653296d75f"
+      ],
+      "webSearch": {
+        "prompt": "what is tool use?",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com definition of tool use",
+        "results": [
+          "https://docs.cohere.com/docs/multi-step-tool-use",
+          "https://docs.cohere.com/docs/parameter-types-in-tool-use",
+          "https://docs.cohere.com/docs/retrieval-augmented-generation-rag",
+          "https://docs.cohere.com/docs/the-attention-mechanism",
+          "https://docs.cohere.com/docs/advanced-prompt-engineering-techniques",
+          "https://docs.cohere.com/docs/validating-outputs",
+          "https://docs.cohere.com/docs/the-cohere-platform",
+          "https://docs.cohere.com/docs/introduction-to-semantic-search",
+          "https://docs.cohere.com/docs/prompt-engineering-basics",
+          "https://docs.cohere.com/docs/transformer-models"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "what tools do you know?",
+      "files": [],
+      "createdAt": "2024-05-11T16:33:52.038Z",
+      "updatedAt": "2024-05-11T16:33:52.038Z",
+      "ancestors": [
+        "ea65a007-9e65-4d8b-8137-5c03a346bafb",
+        "cc90f128-be1c-4e62-a9d8-0939711cab8e",
+        "26815e8a-64fb-4e7e-b0da-c16322cb618d"
+      ],
+      "id": "e6f7617c-4e75-4e8a-9591-91653296d75f",
+      "children": [
+        "28249f31-bca8-415e-b6da-76f3ed676c2d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Based on the search results, I can identify some tools mentioned:\n\n1. **Web search tool**: allows the model to interact with search engines.\n2. **Python interpreter tool**: enables the model to execute Python code.\n3. **TavilySearch**: a web search tool that can be equipped to an agent.\n4. **Vector stores**: a type of tool that allows the model to interact with vector databases.\n5. **Langchain_cohere**: a tool that provides access to Cohere models.\n6. **Langchain_experimental**: an experimental version of Langchain.\n7. **ReAct agent**: a tool that allows using Cohere models through Langchain.\n\nThese tools can be used to extend the capabilities of the language model, enabling it to interact with external sources, execute code, and perform various actions.",
+      "createdAt": "2024-05-11T16:33:52.038Z",
+      "updatedAt": "2024-05-11T16:33:55.029Z",
+      "ancestors": [
+        "ea65a007-9e65-4d8b-8137-5c03a346bafb",
+        "cc90f128-be1c-4e62-a9d8-0939711cab8e",
+        "26815e8a-64fb-4e7e-b0da-c16322cb618d",
+        "e6f7617c-4e75-4e8a-9591-91653296d75f"
+      ],
+      "id": "28249f31-bca8-415e-b6da-76f3ed676c2d",
+      "children": [],
+      "webSearch": {
+        "prompt": "what tools do you know?",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com list of tools",
+        "results": [
+          "https://docs.cohere.com/docs/tool-use",
+          "https://docs.cohere.com/docs/parameter-types-in-tool-use",
+          "https://docs.cohere.com/docs/multi-step-tool-use",
+          "https://docs.cohere.com/reference/chat",
+          "https://docs.cohere.com/docs/command-r",
+          "https://docs.cohere.com/docs/command-r-plus",
+          "https://docs.cohere.com/docs/cohere-and-langchain",
+          "https://docs.cohere.com/docs/reranking",
+          "https://docs.cohere.com/docs/few-shot-classification"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+  "assistantId": "663f9548924f92c1a01cdf5e",
+  "createdAt": "2024-05-11T16:32:36.370Z",
+  "updatedAt": "2024-05-11T16:34:34.702Z",
+  "userAgent": "Mozilla/5.0 (Android 12; Mobile; rv:125.0) Gecko/125.0 Firefox/125.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

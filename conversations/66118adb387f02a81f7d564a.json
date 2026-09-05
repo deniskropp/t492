@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66118adb387f02a81f7d564a",
+  "title": "🌐 About us",
+  "rootMessageId": "a47c45e0-aaa3-437c-afc1-dd96d5be609a",
+  "messages": [
+    {
+      "id": "a47c45e0-aaa3-437c-afc1-dd96d5be609a",
+      "from": "system",
+      "content": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+      "createdAt": "2024-04-06T17:48:11.200Z",
+      "updatedAt": "2024-04-06T17:48:11.200Z",
+      "children": [
+        "6cdcee36-8bc2-4412-ad4b-0e16a99d168b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Who are we?",
+      "files": [],
+      "createdAt": "2024-04-06T17:48:11.763Z",
+      "updatedAt": "2024-04-06T17:48:11.763Z",
+      "ancestors": [
+        "a47c45e0-aaa3-437c-afc1-dd96d5be609a"
+      ],
+      "id": "6cdcee36-8bc2-4412-ad4b-0e16a99d168b",
+      "children": [
+        "1bfbe625-60d0-4771-a044-1d692e04b373"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "**Team:**\n\n{{AI | System Analyst}} - Contributes to system design and implementation.\n{{Human | Team Lead}} - Oversees team activities and assigns responsibilities.\n{{System Spokesperson | System Interface}} - Represents the system interface using natural language.\n\n**Roles:**\n\n- **System Analyst:** Responsible for designing and implementing system solutions.\n- **Team Lead:** Leads the team, assigns responsibilities, and ensures progress.\n- **System Interface:** Interacts with the system using natural language.\n\n**Activities:**\n\n- Team members engage in activities assigned to their roles.\n- Tasks promote activities and ensure their completion.\n- Responsibilities are assigned to the team based on roles and skills.\n\n**Update:**\n\nThe team has a new member, the System Spokesperson, who represents the system interface using natural language.",
+      "createdAt": "2024-04-06T17:48:11.763Z",
+      "updatedAt": "2024-04-06T17:48:14.211Z",
+      "ancestors": [
+        "a47c45e0-aaa3-437c-afc1-dd96d5be609a",
+        "6cdcee36-8bc2-4412-ad4b-0e16a99d168b"
+      ],
+      "id": "1bfbe625-60d0-4771-a044-1d692e04b373",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "google/gemma-7b-it",
+  "preprompt": "Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nUpdate: A new team member (system spokesperson) does represent the system interface using natural language.\r\n\r\nPlease use the following response format: [{{member}} | {{role}}] {{content}}",
+  "assistantId": "6610da9505cafd0afdb206e5",
+  "createdAt": "2024-04-06T17:48:11.203Z",
+  "updatedAt": "2024-04-06T17:48:14.211Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

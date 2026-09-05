@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6751c6bf4749f79fabacc003",
+  "title": "📝 Code analysis",
+  "rootMessageId": "269711f0-2624-4d06-a780-9e7fa23ddf0f",
+  "messages": [
+    {
+      "id": "269711f0-2624-4d06-a780-9e7fa23ddf0f",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+      "createdAt": "2024-12-05T15:29:03.471Z",
+      "updatedAt": "2024-12-05T15:29:03.471Z",
+      "children": [
+        "4cbaa908-7a2f-4bd0-9087-45e3c4f5f545"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-12-05T15:29:04.309Z",
+      "updatedAt": "2024-12-05T15:29:04.309Z",
+      "ancestors": [
+        "269711f0-2624-4d06-a780-9e7fa23ddf0f"
+      ],
+      "id": "4cbaa908-7a2f-4bd0-9087-45e3c4f5f545",
+      "children": [
+        "a3eb8744-fcaf-485f-9987-9e4c94b574fe"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\n# Initialize a new Plandex project\n$ plandex init my_project\n\n# Navigate to the project directory\n$ cd my_project\n\n# Add the code files to the project\n$ plandex add path/to/code/files\n\n# Run the concept extraction process\n$ plandex concepts\n\n# View the extracted concepts\n$ plandex view concepts\n\n# Filter concepts by a specific term (optional)\n$ plandex filter concepts --term \"high-level concept\"\n\n# Export the extracted concepts (optional)\n$ plandex export concepts --format csv > extracted_concepts.csv\n```",
+      "createdAt": "2024-12-05T15:29:04.309Z",
+      "updatedAt": "2024-12-05T15:29:04.315Z",
+      "ancestors": [
+        "269711f0-2624-4d06-a780-9e7fa23ddf0f",
+        "4cbaa908-7a2f-4bd0-9087-45e3c4f5f545"
+      ],
+      "id": "a3eb8744-fcaf-485f-9987-9e4c94b574fe",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-12-05T15:29:03.472Z",
+  "updatedAt": "2024-12-05T15:29:12.609Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

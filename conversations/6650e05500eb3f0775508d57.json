@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6650e05500eb3f0775508d57",
+  "title": "📊 Code interface",
+  "rootMessageId": "fa1c5ae0-a928-4e28-9407-916449f4fdd9",
+  "messages": [
+    {
+      "id": "fa1c5ae0-a928-4e28-9407-916449f4fdd9",
+      "from": "system",
+      "content": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-05-24T18:45:41.093Z",
+      "updatedAt": "2024-05-24T18:45:41.093Z",
+      "children": [
+        "00a17c10-0427-4b5e-818d-192f80f11c08"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T18:45:41.574Z",
+      "updatedAt": "2024-05-24T18:45:41.574Z",
+      "ancestors": [
+        "fa1c5ae0-a928-4e28-9407-916449f4fdd9"
+      ],
+      "id": "00a17c10-0427-4b5e-818d-192f80f11c08",
+      "children": [
+        "344751e1-3701-4da0-96a9-40cd40dd2869"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\r\nimport { CodeInterface } from './CodeInterface';\r\n\r\nexport class Code74k implements CodeInterface {\r\n  private readonly apiToken: string;\r\n  constructor(apiToken: string) {\r\n    this.apiToken = apiToken;\r\n  }\r\n\r\n  public async execute(): Promise<void> {\r\n    try {\r\n      // API integration or any other runtime logic here\r\n      console.log('Code74k is executing...');\r\n      // Example API call\r\n      const response = await fetch('https://api.example.com/data', {\r\n        headers: {\r\n          'Authorization': `Bearer ${this.apiToken}`,\r\n        },\r\n      });\r\n      const data = await response.json();\r\n      console.log('API response:', data);\r\n    } catch (error) {\r\n      console.error('Error executing Code74k:', error);\r\n    }\r\n  }\r\n}\r\n```",
+      "createdAt": "2024-05-24T18:45:41.574Z",
+      "updatedAt": "2024-05-24T18:45:41.582Z",
+      "ancestors": [
+        "fa1c5ae0-a928-4e28-9407-916449f4fdd9",
+        "00a17c10-0427-4b5e-818d-192f80f11c08"
+      ],
+      "id": "344751e1-3701-4da0-96a9-40cd40dd2869",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-05-24T18:45:41.094Z",
+  "updatedAt": "2024-05-24T18:45:50.481Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

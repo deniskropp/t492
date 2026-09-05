@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66924594adc625baa5c50d0a",
+  "title": "📝 Code generation",
+  "rootMessageId": "427ef960-7a48-4221-bbb3-31ff5b5730cf",
+  "messages": [
+    {
+      "id": "427ef960-7a48-4221-bbb3-31ff5b5730cf",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:15:00.073Z",
+      "updatedAt": "2024-07-13T09:15:00.073Z",
+      "children": [
+        "23f19cd4-4e98-4f3f-9e1d-f4473591e80c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "I want to use the framework for generating code, please advise",
+      "files": [],
+      "createdAt": "2024-07-13T09:15:00.516Z",
+      "updatedAt": "2024-07-13T09:15:00.516Z",
+      "ancestors": [
+        "427ef960-7a48-4221-bbb3-31ff5b5730cf"
+      ],
+      "id": "23f19cd4-4e98-4f3f-9e1d-f4473591e80c",
+      "children": [
+        "de9ecde4-2efc-47c0-8d1d-7596ebbb2c37"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, you can use this framework for generating code by providing the necessary details in the \"context\", \"const\", and \"content\" sections. Here's an example to illustrate how you can structure your request:\r\n\r\n⫻ context:setup : 1\r\nThis framework can be used for code generation tasks by providing relevant details in the respective sections. The \"context\" section can include information about the programming language, any specific libraries or frameworks to be used, and any other necessary setup details. The \"const\" section can contain constants, configuration values, or any data that remains constant across the code generation process. Finally, the \"content\" section should include the specifics of the code generation request, such as function signatures, class definitions, or any other code snippets that need to be generated.\r\n\r\n\r\n⫻ \r\n\r\n⫻ const:language : 1\r\njson\r\n{\r\n  \"language\": \"python\",\r\n  \"version\": \"3.9\"\r\n}\r\n\r\n⫻ \r\n\r\n⫻ content : 1\r\nGenerate a Python function named 'calculate_average' that takes a list of numbers as an argument and returns the average of those numbers. The function should also include a docstring describing its purpose and parameters.\r\n\r\n\r\nWith this setup, the response will provide you with the requested code snippet in Python, taking into account the context and constants provided. You can adapt this framework to generate code in other programming languages or for different use cases by modifying the sections accordingly.",
+      "createdAt": "2024-07-13T09:15:00.516Z",
+      "updatedAt": "2024-07-13T09:15:00.523Z",
+      "ancestors": [
+        "427ef960-7a48-4221-bbb3-31ff5b5730cf",
+        "23f19cd4-4e98-4f3f-9e1d-f4473591e80c"
+      ],
+      "id": "de9ecde4-2efc-47c0-8d1d-7596ebbb2c37",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:15:00.074Z",
+  "updatedAt": "2024-07-13T09:15:14.705Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

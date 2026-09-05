@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661997443030839a79f837d7",
+  "title": "💻 TypeScript code for KickLang parser and types",
+  "rootMessageId": "cf793f99-b286-4938-b68f-c9d3b831ab79",
+  "messages": [
+    {
+      "id": "cf793f99-b286-4938-b68f-c9d3b831ab79",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Implement a Trie data structure in Java for efficient storage and retrieval of strings. Additionally, provide a function for adding a word\r\n to the Trie with its frequency of occurrence. \\n\\nYour implementation should contain methods for:\\n\\n1. Adding words to the Trie along with their frequency\r\n of occurrence.\\n2. Searching for a particular word in the Trie, including its frequency.\\n3. Retrieving all words with a given prefix.\\n4. Deleting a word \r\nfrom the Trie.\\n5. Updating the frequency of a word. \\n\\nYour code should handle potential exceptions and errors, and should be optimized for efficiency.\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a basic implementation of a Trie data structure with added functionality for managing frequencies of added words in Java:\\n\\n```ja\r\nva\\nimport java.util.*;\\n\\nclass TrieNode {\\n\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Develop a Python code snippet that generates an abbreviated version of a given full name.\\nname = \\\"John Smith\\\"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a Python code snippet that generates an abbreviated version of the given full name:\\n\\n```python\\ndef abbreviate_name(name):\\n   \r\nname_parts = name.split(' ')\\n   for i in range(len(name_parts)):\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+      "createdAt": "2024-04-12T20:19:16.374Z",
+      "updatedAt": "2024-04-12T20:19:16.374Z",
+      "children": [
+        "58b6bd9e-9540-42d4-8f86-70f3bdae4110"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang parser - KickLang types",
+      "files": [],
+      "createdAt": "2024-04-12T20:19:17.756Z",
+      "updatedAt": "2024-04-12T20:19:17.756Z",
+      "ancestors": [
+        "cf793f99-b286-4938-b68f-c9d3b831ab79"
+      ],
+      "id": "58b6bd9e-9540-42d4-8f86-70f3bdae4110",
+      "children": [
+        "5fc48f1c-a329-4b24-9547-aa5ce98d2dbe"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { readFileSync } from 'fs';\r\n\r\n// KickLang parser\r\nconst code74k = JSON.parse(readFileSync('Code74k.json', 'utf8'));\r\n\r\n// KickLang types\r\ntype KickLangEntry = {\r\n  id: string;\r\n  conversations: KickLangConversation[];\r\n};\r\n\r\ntype KickLangConversation = {\r\n  from: 'human' | 'gpt';\r\n  value: string;\r\n};\r\n\r\n// Parse Code74k.json into KickLang types\r\nconst kickLangEntries: KickLangEntry[] = code74k;\r\n\r\n// Example usage\r\nkickLangEntries.forEach((entry) => {\r\n  console.log(`Entry ID: ${entry.id}`);\r\n  entry.conversations.forEach((conversation) => {\r\n    console.log(`- ${conversation.from}: ${conversation.value}`);\r\n  });\r\n});\r\n```",
+      "createdAt": "2024-04-12T20:19:17.756Z",
+      "updatedAt": "2024-04-12T20:19:23.377Z",
+      "ancestors": [
+        "cf793f99-b286-4938-b68f-c9d3b831ab79",
+        "58b6bd9e-9540-42d4-8f86-70f3bdae4110"
+      ],
+      "id": "5fc48f1c-a329-4b24-9547-aa5ce98d2dbe",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Implement a Trie data structure in Java for efficient storage and retrieval of strings. Additionally, provide a function for adding a word\r\n to the Trie with its frequency of occurrence. \\n\\nYour implementation should contain methods for:\\n\\n1. Adding words to the Trie along with their frequency\r\n of occurrence.\\n2. Searching for a particular word in the Trie, including its frequency.\\n3. Retrieving all words with a given prefix.\\n4. Deleting a word \r\nfrom the Trie.\\n5. Updating the frequency of a word. \\n\\nYour code should handle potential exceptions and errors, and should be optimized for efficiency.\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a basic implementation of a Trie data structure with added functionality for managing frequencies of added words in Java:\\n\\n```ja\r\nva\\nimport java.util.*;\\n\\nclass TrieNode {\\n\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Develop a Python code snippet that generates an abbreviated version of a given full name.\\nname = \\\"John Smith\\\"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a Python code snippet that generates an abbreviated version of the given full name:\\n\\n```python\\ndef abbreviate_name(name):\\n   \r\nname_parts = name.split(' ')\\n   for i in range(len(name_parts)):\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T20:19:16.375Z",
+  "updatedAt": "2024-04-12T20:19:23.379Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

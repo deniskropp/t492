@@ -1,0 +1,55 @@
+{
+  "conversation_id": "67454c760a94484780c3df1e",
+  "title": "📰 Guangdong newspaper",
+  "rootMessageId": "07f9163b-9751-4ea3-abec-cbb208ab154e",
+  "messages": [
+    {
+      "id": "07f9163b-9751-4ea3-abec-cbb208ab154e",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.\r\n\r\nWith each command you output, specify the source in the cli reference.",
+      "createdAt": "2024-11-26T04:20:06.409Z",
+      "updatedAt": "2024-11-26T04:20:06.409Z",
+      "children": [
+        "fa3bfa67-d538-4a62-a124-ca6651a90875"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\"question\":\"南方农村报是哪个省的农业报纸?\",\"answer\":\"广东省\"",
+      "files": [],
+      "createdAt": "2024-11-26T04:20:07.427Z",
+      "updatedAt": "2024-11-26T04:20:07.427Z",
+      "ancestors": [
+        "07f9163b-9751-4ea3-abec-cbb208ab154e"
+      ],
+      "id": "fa3bfa67-d538-4a62-a124-ca6651a90875",
+      "children": [
+        "fe0984d2-2cdb-403b-a7b8-11119f4b76ec"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```bash\n# 搜索 \"南方农村报\"\nplandex search \"南方农村报\"\n\n# 搜索 \"南方农村报\" 并过滤 \"广东省\"\nplandex search \"南方农村报\" --filter \"广东省\"\n```\n\n以上命令基于以下 Plandex CLI 参考：\n- [Search](https://docs.plandex.com/cli/search)\n- [Filter](https://docs.plandex.com/cli/filter)",
+      "createdAt": "2024-11-26T04:20:07.427Z",
+      "updatedAt": "2024-11-26T04:20:07.520Z",
+      "ancestors": [
+        "07f9163b-9751-4ea3-abec-cbb208ab154e",
+        "fa3bfa67-d538-4a62-a124-ca6651a90875"
+      ],
+      "id": "fe0984d2-2cdb-403b-a7b8-11119f4b76ec",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.\r\n\r\nWith each command you output, specify the source in the cli reference.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-11-26T04:20:06.411Z",
+  "updatedAt": "2024-11-26T04:20:16.321Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

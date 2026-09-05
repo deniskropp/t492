@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6720985b942fe68b803bbea6",
+  "title": "📝 FAQ questions",
+  "rootMessageId": "5af6672d-f424-40fe-a512-121947069ba2",
+  "messages": [
+    {
+      "id": "5af6672d-f424-40fe-a512-121947069ba2",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+      "createdAt": "2024-10-29T08:10:03.950Z",
+      "updatedAt": "2024-10-29T08:10:03.950Z",
+      "children": [
+        "27aa6b36-fdca-42c3-9d08-a935476cda8a"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "## FAQ\n\n1. What is Kick La Metta?\n2. How does Kick La Metta facilitate communication?\n3. Can you provide an example of how to structure a request using Kick La Metta?\n4. What is the role of KickLang in Kick La Metta?\n5. What are the potential benefits of using Kick La Metta?\n6. What types of requests can I make using Kick La Metta?\n7. How can I provide more details or specify my needs to Kick La Metta?\n8. Can I customize the request structure or add more fields?\n",
+      "files": [],
+      "createdAt": "2024-10-29T08:10:04.724Z",
+      "updatedAt": "2024-10-29T08:10:04.724Z",
+      "ancestors": [
+        "5af6672d-f424-40fe-a512-121947069ba2"
+      ],
+      "id": "27aa6b36-fdca-42c3-9d08-a935476cda8a",
+      "children": [
+        "44353182-a8d6-4a83-b8be-7d07670d47b5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Let's go through each of your questions in detail:\n\n### 1. What is Kick La Metta?\nKick La Metta is a senior in meta-artificial intelligence tasks, designed to engage in a cohesive team with dynamic roles. It interfaces with a versatile and dynamic research assistant system that can assume various roles to provide flexible and efficient means of organizing, exploring, and analyzing data in a knowledge graph.\n\n### 2. How does Kick La Metta facilitate communication?\nKick La Metta facilitates communication by:\n- **Interfacing with the System:** Translating natural language queries into a formal language called KickLang.\n- **Dynamic Roles:** Assuming different roles based on the task requirements.\n- **Meta-Communicative Style:** Engaging in discussions about work, using placeholders, and working around tasks to ensure clarity and efficiency.\n\n### 3. Can you provide an example of how to structure a request using Kick La Metta?\nCertainly! Here's an example of a structured request:\n\n```yaml\n⫻const/yaml:user\nname: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\n\n⫻template/xml:<<task>>\n<task action=\"create\" type=\"knowledge_graph\" topic=\"AI Ethics\" />\n\n⫻context/file:knowledge_graph_template.kl\nConcepts:\n  - AI Ethics\n  - Data Privacy\n  - Algorithmic Bias\n  - Transparency\n\n⫻request/text\nCreate a knowledge graph on AI Ethics, including related concepts such as Data Privacy, Algorithmic Bias, and Transparency.\n```\n\n### 4. What is the role of KickLang in Kick La Metta?\nKickLang is the formal language used by the system to process and transform natural language queries into a structured format. It serves as a cognitive computational linguistic transport, enabling the system to:\n- **Understand and Interpret Queries:** Translate natural language into a formal language.\n- **Execute Tasks:** Perform actions such as creating, modifying, or querying the knowledge graph.\n- **Maintain Consistency:** Ensure that the data in the knowledge graph is consistent and well-structured.\n\n### 5. What are the potential benefits of using Kick La Metta?\nUsing Kick La Metta offers several benefits:\n- **Efficiency:** Streamlined communication and task execution.\n- **Flexibility:** Ability to assume various roles and handle dynamic tasks.\n- **Accuracy:** Precise translation of natural language into formal language.\n- **Scalability:** Supports complex and large-scale knowledge graphs.\n- **Collaboration:** Facilitates teamwork between humans and AI.\n\n### 6. What types of requests can I make using Kick La Metta?\nYou can make a variety of requests, including:\n- **Creating Knowledge Graphs:** Define new concepts and relationships.\n- **Modifying Knowledge Graphs:** Update or delete existing concepts and relationships.\n- **Querying Knowledge Graphs:** Retrieve information based on specific criteria.\n- **Analyzing Data:** Perform data analysis and generate insights.\n- **Generating Reports:** Create detailed reports based on the knowledge graph.\n\n### 7. How can I provide more details or specify my needs to Kick La Metta?\nTo provide more details or specify your needs, you can:\n- **Use YAML for User Information:** Provide detailed user information in YAML format.\n- **Use XML for Task Templates:** Define task actions and parameters in XML.\n- **Use Context Files:** Provide context and structure for the knowledge graph.\n- **Include Additional Comments:** Add comments to your requests to clarify your needs.\n\n### 8. Can I customize the request structure or add more fields?\nYes, you can customize the request structure and add more fields. For example, you can add fields for priority, deadline, or specific requirements. Here's an extended example:\n\n```yaml\n⫻const/yaml:user\nname: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\npriority: High\ndeadline: \"2023-10-15\"\n\n⫻template/xml:<<task>>\n<task action=\"create\" type=\"knowledge_graph\" topic=\"AI Ethics\" priority=\"High\" deadline=\"2023-10-15\" />\n\n⫻context/file:knowledge_graph_template.kl\nConcepts:\n  - AI Ethics\n  - Data Privacy\n  - Algorithmic Bias\n  - Transparency\n\n⫻request/text\nCreate a knowledge graph on AI Ethics, including related concepts such as Data Privacy, Algorithmic Bias, and Transparency. This is a high-priority task with a deadline of October 15, 2023.\n```\n\nFeel free to ask more questions or provide specific tasks you'd like to work on!",
+      "createdAt": "2024-10-29T08:10:04.724Z",
+      "updatedAt": "2024-10-29T08:10:04.732Z",
+      "ancestors": [
+        "5af6672d-f424-40fe-a512-121947069ba2",
+        "27aa6b36-fdca-42c3-9d08-a935476cda8a"
+      ],
+      "id": "44353182-a8d6-4a83-b8be-7d07670d47b5",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-10-29T08:10:03.951Z",
+  "updatedAt": "2024-10-29T08:10:39.983Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

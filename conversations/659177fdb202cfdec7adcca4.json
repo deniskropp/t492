@@ -1,0 +1,27 @@
+{
+  "conversation_id": "659177fdb202cfdec7adcca4",
+  "title": "💬  SVG content not understood without additional context. Please provide more information.",
+  "messages": [
+    {
+      "content": "```content/svg",
+      "from": "user",
+      "id": "4c273d68-4c96-42b5-98ac-f983f5f13477",
+      "createdAt": "2023-12-31T14:17:35.483Z",
+      "updatedAt": "2023-12-31T14:17:35.483Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " ```\n\n```const/format\n{\"type\": \"image/svg+xml\"}\n```\n\n```content/text\n```\n\n```const/encoding\n{\"type\": \"utf-8\"}\n```\n\n```content/json\n```\n\n```const/component\n{\"type\": \"object\", \"properties\": {}}\n```\n\n```context/document\n```\n\n```content/html\n```\n\n```const/format\n{\"type\": \"text/html\"}\n```\n\n```const/encoding\n{\"type\": \"utf-8\"}\n```\n\n```const/component\n{\"type\": \"object\", \"properties\": {}}\n```\n\n```context/template\n```\n\n```content/javascript\n```\n\n```const/format\n{\"type\": \"application/javascript\"}\n```\n\n```const/encoding\n{\"type\": \"utf-8\"}\n```\n\n```const/component\n{\"type\": \"object\", \"properties\": {}}\n```\n\n```context/script\n```\n\n```content/css\n```\n\n```const/format\n{\"type\": \"text/css\"}\n```\n\n```const/encoding\n{\"type\": \"utf-8\"}\n```\n\n```const/component\n{\"type\": \"object\", \"properties\": {}}\n```\n\n```context/style\n```\n\n```content/markdown\n```\n\n```const/format\n{\"type\": \"text/markdown\"}\n```\n\n```const/encoding\n{\"type\": \"utf-8\"}\n```\n\n```const/component\n{\"type\": \"object\", \"properties\": {}}\n```\n\n```context/readme\n```",
+      "id": "9205f2d5-e933-459c-84ac-6dc21e6a20cb",
+      "createdAt": "2023-12-31T14:17:35.832Z",
+      "updatedAt": "2023-12-31T14:17:46.214Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "preprompt": "GENERATE MARKDOWN CONTENT FROM FOLLOWING INFORMATION\n\nThis is a template for document driven content!\n\nGenerate responses according to these rules:\n1. Context elements are given by sections named \"context:{{tag}}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{{key}}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '```', followed by its 'name/type' - a colon - 'place/index' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n",
+  "createdAt": "2023-12-31T14:17:33.639Z",
+  "updatedAt": "2023-12-31T14:18:16.159Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

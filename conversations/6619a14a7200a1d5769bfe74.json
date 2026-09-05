@@ -1,0 +1,83 @@
+{
+  "conversation_id": "6619a14a7200a1d5769bfe74",
+  "title": "New Chat",
+  "rootMessageId": "b6a37577-dafd-4338-98f7-99f7a252c92e",
+  "messages": [
+    {
+      "id": "b6a37577-dafd-4338-98f7-99f7a252c92e",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:02:02.119Z",
+      "updatedAt": "2024-04-12T21:02:02.119Z",
+      "children": [
+        "80f48197-7743-45db-92e1-4b1e91844928"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-04-12T21:02:03.355Z",
+      "updatedAt": "2024-04-12T21:02:03.355Z",
+      "ancestors": [
+        "b6a37577-dafd-4338-98f7-99f7a252c92e"
+      ],
+      "id": "80f48197-7743-45db-92e1-4b1e91844928",
+      "children": [
+        "3154b98b-0e1e-49ad-9130-b961e0ed7f42",
+        "941af18f-1183-409e-b9b3-d30c609efc6b",
+        "0a91b10a-a2b6-4ac8-8987-9c1ef890b935"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\nimport { Transport } from \"@opennetwork/environments\";\r\n\r\nexport interface Code74k extends Transport {\r\n    id: string;\r\n    conversations: {\r\n        from: \"human\" | \"gpt\";\r\n        value: string;\r\n    }[];\r\n}\r\n```",
+      "createdAt": "2024-04-12T21:02:03.355Z",
+      "updatedAt": "2024-04-12T21:02:05.225Z",
+      "ancestors": [
+        "b6a37577-dafd-4338-98f7-99f7a252c92e",
+        "80f48197-7743-45db-92e1-4b1e91844928"
+      ],
+      "id": "3154b98b-0e1e-49ad-9130-b961e0ed7f42",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { Base } from \"./Base\";\r\n\r\nexport interface Code74k extends Base {\r\n  conversations: Conversation[];\r\n}\r\n\r\nexport interface Conversation {\r\n  from: string;\r\n  value: string;\r\n}\r\n```",
+      "id": "941af18f-1183-409e-b9b3-d30c609efc6b",
+      "ancestors": [
+        "b6a37577-dafd-4338-98f7-99f7a252c92e",
+        "80f48197-7743-45db-92e1-4b1e91844928"
+      ],
+      "children": [],
+      "interrupted": false,
+      "updatedAt": "2024-04-12T21:02:21.164Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "```ts\nimport { IResponse, IStatement } from \"..\"\r\n\r\nexport interface IEntry {\r\n  id: string\r\n  conversations: IConversation[]\r\n}\r\n\r\nexport interface IConversation {\r\n  from: \"human\" | \"gpt\"\r\n  value: string\r\n}\r\n\r\nexport function parse(input: string): IEntry[] {\r\n  const json = JSON.parse(input) as { [key: string]: any }[]\r\n  return json.map((entry: { [key: string]: any }) => {\r\n    const conversations = entry.conversations.map(\r\n      (conv: { [key: string]: any }) => {\r\n        return {\r\n          from: conv.from,\r\n          value: conv.value,\r\n        } as IConversation\r\n      }\r\n    )\r\n    return {\r\n      id: entry.id,\r\n      conversations: conversations,\r\n    } as IEntry\r\n  })\r\n}\r\n\r\nexport function respond(\r\n  input: string,\r\n  entries: IEntry[],\r\n  statement: IStatement\r\n): IResponse {\r\n  const id = statement.id\r\n  const entry = entries.find((e) => e.id === id)\r\n  if (!entry) {\r\n    return {\r\n      type: \"error\",\r\n      value: `Entry not found: ${id}`,\r\n    }\r\n  }\r\n  const conversation = entry.conversations.find(\r\n    (c) => c.from === \"human\" && c.value === input\r\n  )\r\n  if (!conversation) {\r\n    return {\r\n      type: \"error\",\r\n      value: `Conversation not found: ${input}`,\r\n    }\r\n  }\r\n  const response = entry.conversations.find(\r\n    (c) => c.from === \"gpt\" && conversation && conversation.value === c.value\r\n  )\r\n  if (!response) {\r\n    return {\r\n      type: \"error\",\r\n      value: `Response not found for: ${conversation.value}`,\r\n    }\r\n  }\r\n  return {\r\n    type: \"success\",\r\n    value: response.value,\r\n  }\r\n}\r\n```",
+      "id": "0a91b10a-a2b6-4ac8-8987-9c1ef890b935",
+      "ancestors": [
+        "b6a37577-dafd-4338-98f7-99f7a252c92e",
+        "80f48197-7743-45db-92e1-4b1e91844928"
+      ],
+      "children": [],
+      "interrupted": false,
+      "updatedAt": "2024-04-12T21:02:42.115Z",
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:02:02.120Z",
+  "updatedAt": "2024-04-12T21:02:42.116Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

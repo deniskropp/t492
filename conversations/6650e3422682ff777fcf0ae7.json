@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6650e3422682ff777fcf0ae7",
+  "title": "📊 Code interface",
+  "rootMessageId": "a6fc64be-5cdc-44bc-a718-2ee34e39ef04",
+  "messages": [
+    {
+      "id": "a6fc64be-5cdc-44bc-a718-2ee34e39ef04",
+      "from": "system",
+      "content": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+      "createdAt": "2024-05-24T18:58:10.493Z",
+      "updatedAt": "2024-05-24T18:58:10.493Z",
+      "children": [
+        "0881ab69-494e-4f90-a006-c36ef2cfad57"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T18:58:11.185Z",
+      "updatedAt": "2024-05-24T18:58:11.185Z",
+      "ancestors": [
+        "a6fc64be-5cdc-44bc-a718-2ee34e39ef04"
+      ],
+      "id": "0881ab69-494e-4f90-a006-c36ef2cfad57",
+      "children": [
+        "b7b29f45-2225-47f1-b696-c96b025435f6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here's a TypeScript code snippet representing the runtime interface for Code74k.ts:\r\n\r\n```typescript\r\n// Code74k.ts runtime interface\r\ninterface ICode74kRuntime {\r\n  /**\r\n   * Initialize the runtime with the provided configuration.\r\n   * @param config - Configuration options for the runtime.\r\n   */\r\n  init(config: ICode74kConfig): Promise<void>;\r\n\r\n  /**\r\n  λάχισť Get the current configuration of the runtime.\r\n   * @returns The runtime configuration object.\r\n   */\r\n  getConfig(): ICode74kConfig;\r\n\r\n  /**\r\n   * Start the runtime, executing the defined tasks or behavior.\r\n   */\r\n  run(): Promise<void>;\r\n\r\n  /**\r\n   * Stop the runtime gracefully.\r\n   */\r\n  stop(): Promise<void>;\r\n\r\n  /**\r\n   * Register a new task with the runtime.\r\n   * @param taskName - A unique name for the task.\r\n   * @param taskFunction - The function representing the task logic.\r\n   */\r\n  registerTask(taskName: string, taskFunction: Function): void;\r\n\r\n  /**\r\n   * Execute a registered task.\r\n   * @param taskName - The name of the task to execute.\r\n   * @param args - Arguments to be passed to the task function.\r\n   */\r\n  executeTask(taskName: string, ...args: any[]): Promise<any>;\r\n\r\n  /**\r\n   * Get the current status of the runtime.\r\n   * @returns An object representing the runtime status.\r\n   */\r\n  getStatus(): ICode74kStatus;\r\n\r\n  /**\r\n   * Set the log level for the runtime.\r\n   * @param level - The desired log level (e.g., \"info\", \"warn\", \"error\").\r\n   */\r\n  setLogLevel(level: string): void;\r\n\r\n  /**\r\n   * Manually trigger a garbage collection cycle.\r\n   */\r\n  garbageCollect(): void;\r\n\r\n  /**\r\n   * Register a shutdown handler to be executed when the runtime stops.\r\n   * @param handler - The function to be executed on shutdown.\r\n   */\r\n  onShutdown(handler: Function): void;\r\n\r\n  /**\r\n   * Emit a custom event, which can be listened to by other parts of the system.\r\n   * @param eventName - The name of the event to emit.\r\n   * @param data - Optional data to attach to the event.\r\n   */\r\n  emit(eventName: string, data?: any): void;\r\n\r\n  /**\r\n   * Listen for a custom event emitted by the runtime or other parts of the system.\r\n   * @param eventName - The name of the event to listen for.\r\n   * @param listener - The function to be executed when the event is emitted.\r\n   */\r\n  on(eventName: string, listener: Function): void;\r\n\r\n  /**\r\n   * Remove a listener for a custom event.\r\n   * @param eventName - The name of the event.\r\n   * @param listener - The function that was previously added as a listener.\r\n   */\r\n  off(eventName: string, listener: Function): void;\r\n}\r\n\r\n// Type definitions for additional interfaces and objects\r\ninterface ICode74kConfig {\r\n  // TODO: Define the configuration options for Code74k\r\n  tasks: Record<string, Function>;\r\n  logLevel: string;\r\n  // Add more configuration options as needed\r\n}\r\n\r\ninterface ICode74kStatus {\r\n  // TODO: Define the properties representing the runtime status\r\n  running: boolean;\r\n  taskQueue: string[];\r\n  memoryUsage: number;\r\n  // Add more status properties as needed\r\n}\r\n```\r\n\r\nThis interface, `ICode74kRuntime`, represents the public API that can be used to interact with and control the runtime of Code74k. It provides methods for initializing the runtime, executing tasks, managing events, and performing other operations.\r\n\r\nYou can adjust the interface and the additional type definitions (`ICode74kConfig` and `ICode74kStatus`) according to your specific requirements and features of Code74k.",
+      "createdAt": "2024-05-24T18:58:11.185Z",
+      "updatedAt": "2024-05-24T18:58:11.194Z",
+      "ancestors": [
+        "a6fc64be-5cdc-44bc-a718-2ee34e39ef04",
+        "0881ab69-494e-4f90-a006-c36ef2cfad57"
+      ],
+      "id": "b7b29f45-2225-47f1-b696-c96b025435f6",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-24T18:58:10.494Z",
+  "updatedAt": "2024-05-24T18:58:55.257Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

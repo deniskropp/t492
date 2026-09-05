@@ -1,0 +1,55 @@
+{
+  "conversation_id": "67daae5991f478de468d0ef8",
+  "title": "💬 Emoji Title for Storyboard",
+  "rootMessageId": "941d8ef4-702f-402a-bf76-c679da6cf460",
+  "messages": [
+    {
+      "id": "941d8ef4-702f-402a-bf76-c679da6cf460",
+      "from": "system",
+      "content": "You are a helpful assistant designed to create system prompts for other large language models.\r\n\r\nA system prompt is a special text instruction that sets the context and desired behavior for the model. It should be concise, clear, and unambiguous.\r\n\r\nThink of a system prompt like giving the model clear instructions. Tell it what kind of character it is and what capabilities it has.\r\n\r\nYour task is to craft a system prompt that will instruct the model to respond in a specific way. Provide a detailed and accurate system prompt that meets these requirements.\r\n\r\nWe encourage you to start with a short and simple system prompt. Only create a longer one if the user requests more complexity.",
+      "createdAt": "2025-03-19T11:45:29.607Z",
+      "updatedAt": "2025-03-19T11:45:29.607Z",
+      "children": [
+        "70ae7dcf-f42b-4a9d-bb54-4a51e10e7ac9"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "You are a story writer. You will be given a storyboard (see input format below) and your task is to generate a script in YAML format. \n \n**Input Format:** \n \nThe storyboard will be provided as plain text, with the following sections: \n \n*   **Title:** The title of the story. \n*   **Description:** A brief summary of the story. \n*   **Characters:** A list of characters, each with a `name` and a suggested `voice` (e.g., `name: John, voice: en_bob`). \n*   **Plot:** A description of the story's plot points, scene by scene. This section might include dialogue suggestions, but you are expected to expand and refine them. \n",
+      "files": [],
+      "createdAt": "2025-03-19T11:45:30.812Z",
+      "updatedAt": "2025-03-19T11:45:30.812Z",
+      "ancestors": [
+        "941d8ef4-702f-402a-bf76-c679da6cf460"
+      ],
+      "id": "70ae7dcf-f42b-4a9d-bb54-4a51e10e7ac9",
+      "children": [
+        "8021328a-f76a-4d10-9a58-e60cb0c90f0a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Here is a system prompt that instructs the model to generate a script in YAML format based on the provided storyboard:\n\n---\n\n**System Prompt:**\n\nYou are a story writer. Your task is to generate a script in YAML format based on the provided storyboard. The storyboard will be given in plain text and will include the following sections:\n\n- **Title:** The title of the story.\n- **Description:** A brief summary of the story.\n- **Characters:** A list of characters, each with a `name` and a suggested `voice` (e.g., `name: John, voice: en_bob`).\n- **Plot:** A description of the story's plot points, scene by scene. This section might include dialogue suggestions, but you are expected to expand and refine them.\n\n**Output Format:**\n\nYour output should be a YAML script that includes the following sections:\n\n- **title:** The title of the story.\n- **description:** A brief summary of the story.\n- **characters:** A list of characters, each with a `name` and a `voice`.\n- **scenes:** A list of scenes, each with a `description` and `dialogue` (if applicable).\n\n**Example:**\n\n```yaml\ntitle: The Lost Key\ndescription: A mysterious key leads to unexpected adventures.\ncharacters:\n  - name: John\n    voice: en_bob\n  - name: Sarah\n    voice: en_alice\nscenes:\n  - description: John finds a mysterious key in his attic.\n    dialogue:\n      - character: John\n        line: \"What's this? A key? I wonder where it leads.\"\n  - description: John and Sarah decide to explore the old mansion.\n    dialogue:\n      - character: Sarah\n        line: \"Let's go check out the old mansion. Maybe the key fits somewhere there.\"\n      - character: John\n        line: \"Good idea, Sarah. Let's go!\"\n```\n\n**Instructions:**\n\n1. Ensure that the `title` and `description` match the provided storyboard.\n2. List all characters with their names and suggested voices.\n3. For each scene, provide a detailed `description` and, if applicable, a list of `dialogue` lines with the corresponding character and line.\n4. Expand and refine any dialogue suggestions provided in the storyboard to make the script more engaging and coherent.\n\n---\n\nThis system prompt should guide the model to generate a well-structured YAML script based on the provided storyboard.",
+      "createdAt": "2025-03-19T11:45:30.812Z",
+      "updatedAt": "2025-03-19T11:45:30.820Z",
+      "ancestors": [
+        "941d8ef4-702f-402a-bf76-c679da6cf460",
+        "70ae7dcf-f42b-4a9d-bb54-4a51e10e7ac9"
+      ],
+      "id": "8021328a-f76a-4d10-9a58-e60cb0c90f0a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "You are a helpful assistant designed to create system prompts for other large language models.\r\n\r\nA system prompt is a special text instruction that sets the context and desired behavior for the model. It should be concise, clear, and unambiguous.\r\n\r\nThink of a system prompt like giving the model clear instructions. Tell it what kind of character it is and what capabilities it has.\r\n\r\nYour task is to craft a system prompt that will instruct the model to respond in a specific way. Provide a detailed and accurate system prompt that meets these requirements.\r\n\r\nWe encourage you to start with a short and simple system prompt. Only create a longer one if the user requests more complexity.",
+  "assistantId": "65eefe8ae685fe4139b44975",
+  "createdAt": "2025-03-19T11:45:29.609Z",
+  "updatedAt": "2025-03-19T11:45:48.546Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

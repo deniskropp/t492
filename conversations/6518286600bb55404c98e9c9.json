@@ -1,0 +1,26 @@
+{
+  "conversation_id": "6518286600bb55404c98e9c9",
+  "title": "\"Optimize symbol sequence for performance.\"",
+  "messages": [
+    {
+      "content": "Find the perfect order of a distinct set of symbols to operate the system at its best!\n\nDepending on the order is the system's performance.\nEach symbol can only be present once in the output sequence.\n\nThe symbols with their performance properties:\nA = yields best performance if not followed by more than one symbol\nB = yields best performance if not preceded by symbol A or C\nC = yields best performance when not being the last symbol\nD = yields best performance when being the first symbol\n\nNo explanations. Final answer only!",
+      "from": "user",
+      "id": "3941572c-bb65-4916-9cec-d7a95481f401",
+      "createdAt": "2023-09-30T13:53:44.117Z",
+      "updatedAt": "2023-09-30T13:53:44.117Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "The optimal order for the given scenario would be DABCD.",
+      "id": "e791d100-fe2e-4cf1-bb4b-0ac31aed8603",
+      "createdAt": "2023-09-30T13:53:44.210Z",
+      "updatedAt": "2023-09-30T13:53:44.210Z",
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "createdAt": "2023-09-30T13:53:42.563Z",
+  "updatedAt": "2023-09-30T13:54:14.446Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

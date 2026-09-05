@@ -1,0 +1,127 @@
+{
+  "conversation_id": "668796eccb8b50b9219956ab",
+  "title": "👋 Hello",
+  "rootMessageId": "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+  "messages": [
+    {
+      "id": "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+      "from": "system",
+      "content": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-05T06:47:08.058Z",
+      "updatedAt": "2024-07-05T06:47:08.058Z",
+      "children": [
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "hi",
+      "files": [],
+      "createdAt": "2024-07-05T06:47:10.146Z",
+      "updatedAt": "2024-07-05T06:47:10.146Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1"
+      ],
+      "id": "6fb14750-0809-4a71-9d49-daeaa090ecfb",
+      "children": [
+        "5367193b-0c33-48d2-8458-b2f03e7da32d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```json\n[\r\n    {\r\n        \"thoughts_and_reasoning\": \"The user said 'hi', so I will respond with a greeting.\",\r\n        \"function\": \"send_message\",\r\n        \"arguments\": {\r\n            \"content\": \"Hi there! How can I help you today?\"\r\n        }\r\n    }\r\n]\r\n```",
+      "createdAt": "2024-07-05T06:47:10.146Z",
+      "updatedAt": "2024-07-05T06:47:10.155Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb"
+      ],
+      "id": "5367193b-0c33-48d2-8458-b2f03e7da32d",
+      "children": [
+        "ac9465e6-db03-4e1a-adad-9aa44995908d"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "tomorrow",
+      "files": [],
+      "createdAt": "2024-07-05T06:47:27.169Z",
+      "updatedAt": "2024-07-05T06:47:27.169Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb",
+        "5367193b-0c33-48d2-8458-b2f03e7da32d"
+      ],
+      "id": "ac9465e6-db03-4e1a-adad-9aa44995908d",
+      "children": [
+        "58ab6f0f-e96d-42cd-91fd-e0265c00c67a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```json\n[\r\n    {\r\n        \"thoughts_and_reasoning\": \"The user's message of 'tomorrow' doesn't provide a clear context, so I will ask them to clarify their query.\",\r\n        \"function\": \"send_message\",\r\n        \"arguments\": {\r\n            \"content\": \"Sorry, I don't understand the context of 'tomorrow'. Could you please provide more details or clarify your query?\"\r\n        }\r\n    }\r\n]\r\n```",
+      "createdAt": "2024-07-05T06:47:27.169Z",
+      "updatedAt": "2024-07-05T06:47:27.179Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb",
+        "5367193b-0c33-48d2-8458-b2f03e7da32d",
+        "ac9465e6-db03-4e1a-adad-9aa44995908d"
+      ],
+      "id": "58ab6f0f-e96d-42cd-91fd-e0265c00c67a",
+      "children": [
+        "076416c6-edf8-473b-bd32-cd6cb567209a"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "today",
+      "files": [],
+      "createdAt": "2024-07-05T06:47:58.632Z",
+      "updatedAt": "2024-07-05T06:47:58.632Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb",
+        "5367193b-0c33-48d2-8458-b2f03e7da32d",
+        "ac9465e6-db03-4e1a-adad-9aa44995908d",
+        "58ab6f0f-e96d-42cd-91fd-e0265c00c67a"
+      ],
+      "id": "076416c6-edf8-473b-bd32-cd6cb567209a",
+      "children": [
+        "63e5e2af-b921-41d4-8faf-1891f4e56f49"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```json\n[\r\n    {\r\n        \"thoughts_and_reasoning\": \"The user's message of 'today' doesn't provide a specific query or context, so I will respond with a general message about the current day.\",\r\n        \"function\": \"send_message\",\r\n        \"arguments\": {\r\n            \"content\": \"It's a brand new day! What would you like to accomplish or discuss today?\"\r\n        }\r\n    }\r\n]\r\n```",
+      "createdAt": "2024-07-05T06:47:58.632Z",
+      "updatedAt": "2024-07-05T06:47:58.641Z",
+      "ancestors": [
+        "f47c42f0-1c0c-43d8-a34e-944b59810ca1",
+        "6fb14750-0809-4a71-9d49-daeaa090ecfb",
+        "5367193b-0c33-48d2-8458-b2f03e7da32d",
+        "ac9465e6-db03-4e1a-adad-9aa44995908d",
+        "58ab6f0f-e96d-42cd-91fd-e0265c00c67a",
+        "076416c6-edf8-473b-bd32-cd6cb567209a"
+      ],
+      "id": "63e5e2af-b921-41d4-8faf-1891f4e56f49",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f8853c0d9d439d43548c",
+  "createdAt": "2024-07-05T06:47:08.059Z",
+  "updatedAt": "2024-07-05T06:48:10.680Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

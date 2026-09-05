@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66199b11444b5b2ca83e9729",
+  "title": "💻 System architecture",
+  "rootMessageId": "34c768cd-7cd9-4afb-af65-c46236601c2e",
+  "messages": [
+    {
+      "id": "34c768cd-7cd9-4afb-af65-c46236601c2e",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Implement a Trie data structure in Java for efficient storage and retrieval of strings. Additionally, provide a function for adding a word\r\n to the Trie with its frequency of occurrence. \\n\\nYour implementation should contain methods for:\\n\\n1. Adding words to the Trie along with their frequency\r\n of occurrence.\\n2. Searching for a particular word in the Trie, including its frequency.\\n3. Retrieving all words with a given prefix.\\n4. Deleting a word \r\nfrom the Trie.\\n5. Updating the frequency of a word. \\n\\nYour code should handle potential exceptions and errors, and should be optimized for efficiency.\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a basic implementation of a Trie data structure with added functionality for managing frequencies of added words in Java:\\n\\n```ja\r\nva\\nimport java.util.*;\\n\\nclass TrieNode {\\n\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Develop a Python code snippet that generates an abbreviated version of a given full name.\\nname = \\\"John Smith\\\"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a Python code snippet that generates an abbreviated version of the given full name:\\n\\n```python\\ndef abbreviate_name(name):\\n   \r\nname_parts = name.split(' ')\\n   for i in range(len(name_parts)):\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+      "createdAt": "2024-04-12T20:35:29.806Z",
+      "updatedAt": "2024-04-12T20:35:29.806Z",
+      "children": [
+        "63c4915a-df86-489b-8edf-d049f1f6c154"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "You are interfacing with the system while talking to the user.\n\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\n\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\n\nThe system interface receives natural language queries from the user, which are translated into the formal language.\n\n\n\n///README//\n///Code74k.json//\n///Code74k.ts//\n\n---\nEvolve types/Code74k.d.ts\n- KickLang types",
+      "files": [],
+      "createdAt": "2024-04-12T20:35:31.273Z",
+      "updatedAt": "2024-04-12T20:35:31.273Z",
+      "ancestors": [
+        "34c768cd-7cd9-4afb-af65-c46236601c2e"
+      ],
+      "id": "63c4915a-df86-489b-8edf-d049f1f6c154",
+      "children": [
+        "d203f274-963d-4f0d-b6be-7e38fbf1c063"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "type Code74kEntry = {\n  id: string;\n  conversations: {\n    from: \"human\" | \"gpt\";\n    value: string;\n  }[];\n};\n\ntype Code74kDatabase = Code74kEntry[];\n\ndeclare const code74kDatabase: Code74kDatabase;\n\ntype GetCode74kEntryById = (id: string) => Code74kEntry | undefined;\n\nconst getCode74kEntryById: GetCode74kEntryById = (id) => {\n  return code74kDatabase.find((entry) => entry.id === id);\n};\n\ntype GetConversationsByFrom = (from: \"human\" | \"gpt\") => string[];\n\nconst getHumanConversations: GetConversationsByFrom = (from) => {\n  return code74kDatabase\n    .flatMap((entry) => entry.conversations.filter((convo) => convo.from === from))\n    .map((convo) => convo.value);\n};\n\ntype GetGptResponses = () => string[];\n\nconst getGptResponses: GetGptResponses = () => {\n  return getHumanConversations(\"gpt\");\n};",
+      "createdAt": "2024-04-12T20:35:31.273Z",
+      "updatedAt": "2024-04-12T20:35:38.893Z",
+      "ancestors": [
+        "34c768cd-7cd9-4afb-af65-c46236601c2e",
+        "63c4915a-df86-489b-8edf-d049f1f6c154"
+      ],
+      "id": "d203f274-963d-4f0d-b6be-7e38fbf1c063",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Implement a Trie data structure in Java for efficient storage and retrieval of strings. Additionally, provide a function for adding a word\r\n to the Trie with its frequency of occurrence. \\n\\nYour implementation should contain methods for:\\n\\n1. Adding words to the Trie along with their frequency\r\n of occurrence.\\n2. Searching for a particular word in the Trie, including its frequency.\\n3. Retrieving all words with a given prefix.\\n4. Deleting a word \r\nfrom the Trie.\\n5. Updating the frequency of a word. \\n\\nYour code should handle potential exceptions and errors, and should be optimized for efficiency.\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a basic implementation of a Trie data structure with added functionality for managing frequencies of added words in Java:\\n\\n```ja\r\nva\\nimport java.util.*;\\n\\nclass TrieNode {\\n\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"Develop a Python code snippet that generates an abbreviated version of a given full name.\\nname = \\\"John Smith\\\"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Here is a Python code snippet that generates an abbreviated version of the given full name:\\n\\n```python\\ndef abbreviate_name(name):\\n   \r\nname_parts = name.split(' ')\\n   for i in range(len(name_parts)):\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T20:35:29.807Z",
+  "updatedAt": "2024-04-12T20:35:38.894Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

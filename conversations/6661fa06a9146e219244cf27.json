@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6661fa06a9146e219244cf27",
+  "title": "📝 Determine premise-hypothesis relation",
+  "rootMessageId": "0d236fc9-fc21-4e4c-be25-1e25bd47ae3e",
+  "messages": [
+    {
+      "id": "0d236fc9-fc21-4e4c-be25-1e25bd47ae3e",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries from the user, which are translated into the formal language.",
+      "createdAt": "2024-06-06T18:03:50.516Z",
+      "updatedAt": "2024-06-06T18:03:50.516Z",
+      "children": [
+        "a745e534-d131-4ec8-a36f-b28e1ddc0460"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>In this task, you will be presented with a premise and a hypothesis sentence. Determine whether the hypothesis sentence entails (implies), contradicts (opposes), or is neutral with respect to the given premise. Please answer with \"Contradiction\", \"Neutral\", or \"Entailment\".<n><n>### Input:<n>Premise: The Death and Life of John F. Donovan is an upcoming Canadian drama film, co-written, co-produced and directed by Xavier Dolan in his English-language debut. It stars Kit Harington, Natalie Portman, Jessica Chastain, Susan Sarandon, Kathy Bates, Jacob Tremblay, Ben Schnetzer, Thandie Newton, Amara Karan, Chris Zylka, Jared Keeso, Emily Hampshire and Michael Gambon. <sep> Hypothesis: The Death and Life of John F. Donovan is not avialable to view yet.<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>You will see a sentence and a given pronoun. Answer with the word in the sentence to which the pronoun is referring.<n><n>### Input:<n>text: as andrea in the crop duster passed over susan, she could see the landing gear.; pronoun: she<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>Given a premise and a hypothesis, determine if the hypothesis (second sentence) can be concluded from the premise and assigning it a label among entailment, neutral, or contradiction. Entailment means thats the hypothesis makes sense/follows after the premise. Neutral means that the hypothesis does not follow the premise but also does not contradict the premise. Contradiction means that the hypothesis clearly contradicts the premise.<n><n>### Input:<n>A woman with a green headscarf, blue shirt and a very big grin. <sep> The woman is very happy.<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>In each example you will read a short sentence (or two). Then, a pronoun in the text is mentioned. Your task is to choose a referent which the mentioned pronoun refers to. You will be given two options in each case and one choice should seem much more likely to you than the other.<n><n>### Input:<n>sentence: The drains are clogged with hair and dirt . They have to be removed .pronoun: They. A) the drains B) the hair and dirt<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>In this task, you're given five sentences, numbered 1 through 5. Your job is to generate a title for the story that makes complete sense. The title must be short, with less than three words, use simple language, and include the main topic of the story.<n><n>### Input:<n>Sentence 1: Sheila set of for the airport early so she could catch her flight. Sentence 2: On the way her car had a burst tire. Sentence 3: She had no idea how to change a tire and started to cry. Sentence 4: A car pulled up behind and the driver greeted her by name. Sentence 5: It turned out to be someone she had worked with 10 years before.<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>Two analogies that relate places/locations to the associated travel mode is given in the form \"A : B. C : ?\". \"A : B\" relates place A to travel mode B. Your task is to replace the question mark (?) with the appropriate travel mode for the given place C, following the \"A : B\" relation.<n><n>### Input:<n>restaurant : taxi. mars : ?<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>In this task, you will be presented with a premise and a hypothesis sentence. Determine whether the hypothesis sentence entails (implies), contradicts (opposes), or is neutral with respect to the given premise. Please answer with \"Contradiction\", \"Neutral\", or \"Entailment\".<n><n>### Input:<n>Premise: \"Drivin' Around Song\" is a song recorded by American country rap singer Colt Ford and country music singer Jason Aldean. It is the third single from his fourth studio album, \"Declaration of Independence\". The song was written by Chris Tompkins and Craig Wiseman. <sep> Hypothesis: The song was written by someone with a first name not starting with a C<n><n>### Response:<n>\nBelow is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.<n><n>### Instruction:<n>In this task, you will be given a sentence, and you need to identify the set of coreference words. Coreferences are generally a set of words in the text that refer to the same person or thing. Your output set of coreference words must be strictly present in the given input sentence. Do not use any outside knowledge to create the set of coreference words. If there is a 'the' article before the person or thing you should include 'the' as well. Please separate the coreference words by commas in the output.<n><n>### Input:<n>The assistant laughed at the janitor because she heard the joke .<n><n>### Response:<n>",
+      "files": [],
+      "createdAt": "2024-06-06T18:03:50.977Z",
+      "updatedAt": "2024-06-06T18:03:50.977Z",
+      "ancestors": [
+        "0d236fc9-fc21-4e4c-be25-1e25bd47ae3e"
+      ],
+      "id": "a745e534-d131-4ec8-a36f-b28e1ddc0460",
+      "children": [
+        "2cd7c30f-4845-48b3-b513-8e9c77d92708"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I see what's going on here! You've provided a series of tasks with instructions and inputs, and you'd like me to respond accordingly. I'll do my best to complete each task.\n\n**Task 1**\n### Response:\nEntailment\n\n**Task 2**\n### Response:\nAndrea\n\n**Task 3**\n### Response:\nEntailment\n\n**Task 4**\n### Response:\nA) the drains\n\n**Task 5**\n### Response:\nFlight\n\n**Task 6**\n### Response:\nspaceship (Note: This is a bit of a stretch, but I'm assuming Mars would require a spaceship to travel to!)\n\n**Task 7**\n### Response:\nContradiction\n\n**Task 8**\n### Response:\nthe assistant, she",
+      "createdAt": "2024-06-06T18:03:50.977Z",
+      "updatedAt": "2024-06-06T18:03:50.986Z",
+      "ancestors": [
+        "0d236fc9-fc21-4e4c-be25-1e25bd47ae3e",
+        "a745e534-d131-4ec8-a36f-b28e1ddc0460"
+      ],
+      "id": "2cd7c30f-4845-48b3-b513-8e9c77d92708",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n \r\nThe system interface receives natural language queries from the user, which are translated into the formal language.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-06-06T18:03:50.517Z",
+  "updatedAt": "2024-06-06T18:04:00.274Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,89 @@
+{
+  "conversation_id": "66199dfab98ef7babccaee87",
+  "title": "💻 TypeScript code for KickLang programming language",
+  "rootMessageId": "dfac3a45-0cf3-45e0-8d6e-73aa775f9240",
+  "messages": [
+    {
+      "id": "dfac3a45-0cf3-45e0-8d6e-73aa775f9240",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+      "createdAt": "2024-04-12T20:47:54.325Z",
+      "updatedAt": "2024-04-12T20:47:54.325Z",
+      "children": [
+        "45c61b9c-2689-4e35-b5b7-4bab34f4ff2c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts  - KickLang types",
+      "files": [],
+      "createdAt": "2024-04-12T20:47:55.707Z",
+      "updatedAt": "2024-04-12T20:47:55.707Z",
+      "ancestors": [
+        "dfac3a45-0cf3-45e0-8d6e-73aa775f9240"
+      ],
+      "id": "45c61b9c-2689-4e35-b5b7-4bab34f4ff2c",
+      "children": [
+        "2ae81cb7-8e3b-4d0a-83ac-39b989df2076"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { Util, UtilOptions, Conversation } from \"kicklang-lib\";\r\n\r\ninterface Code74kEntry {\r\n  id: string;\r\n  conversations: Conversation[];\r\n}\r\n\r\ninterface Code74kOptions extends UtilOptions {\r\n  entries: Code74kEntry[];\r\n}\r\n\r\nconst code74k: Util<Code74kOptions> = new Util({\r\n  name: \"Code74k\",\r\n  // Provide the data and implement the required methods\r\n  options: {\r\n    entries: [],\r\n  },\r\n  methods: {\r\n    // Implement your custom methods here\r\n  },\r\n});\r\n\r\nexport default code74k;\r\n```",
+      "createdAt": "2024-04-12T20:47:55.707Z",
+      "updatedAt": "2024-04-12T20:48:03.169Z",
+      "ancestors": [
+        "dfac3a45-0cf3-45e0-8d6e-73aa775f9240",
+        "45c61b9c-2689-4e35-b5b7-4bab34f4ff2c"
+      ],
+      "id": "2ae81cb7-8e3b-4d0a-83ac-39b989df2076",
+      "children": [
+        "60bab3a9-1b55-46a8-9fe4-c5a0cb7ef03f"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Util.ts",
+      "files": [],
+      "createdAt": "2024-04-12T20:49:14.624Z",
+      "updatedAt": "2024-04-12T20:49:14.624Z",
+      "ancestors": [
+        "dfac3a45-0cf3-45e0-8d6e-73aa775f9240",
+        "45c61b9c-2689-4e35-b5b7-4bab34f4ff2c",
+        "2ae81cb7-8e3b-4d0a-83ac-39b989df2076"
+      ],
+      "id": "60bab3a9-1b55-46a8-9fe4-c5a0cb7ef03f",
+      "children": [
+        "d75d7098-1006-4a70-8df4-0325710554fc"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\nimport { UtilOptions, Conversation } from \"./types\";\r\n\r\nexport class Util<T extends UtilOptions> {\r\n  name: string;\r\n  options: T;\r\n  methods: Record<string, (...args: any[]) => any>;\r\n\r\n  constructor(config: { name: string; options: T; methods: Record<string, (...args: any[]) => any> }) {\r\n    this.name = config.name;\r\n    this.options = config.options;\r\n    this.methods = config.methods;\r\n  }\r\n\r\n  // Example method to get all conversations\r\n  getAllConversations(): Conversation[] {\r\n    return this.options.conversations;\r\n  }\r\n\r\n  // Example method to add a new conversation\r\n  addConversation(conversation: Conversation): void {\r\n    this.options.conversations.push(conversation);\r\n  }\r\n\r\n  // Call a specific method dynamically\r\n  callMethod(methodName: string, ...args: any[]): any {\r\n    if (this.methods[methodName]) {\r\n      return this.methods[methodName].apply(this, args);\r\n    } else {\r\n      throw new Error(`Method ${methodName} does not exist in ${this.name}`);\r\n    }\r\n  }\r\n}\r\n```",
+      "createdAt": "2024-04-12T20:49:14.624Z",
+      "updatedAt": "2024-04-12T20:49:22.071Z",
+      "ancestors": [
+        "dfac3a45-0cf3-45e0-8d6e-73aa775f9240",
+        "45c61b9c-2689-4e35-b5b7-4bab34f4ff2c",
+        "2ae81cb7-8e3b-4d0a-83ac-39b989df2076",
+        "60bab3a9-1b55-46a8-9fe4-c5a0cb7ef03f"
+      ],
+      "id": "d75d7098-1006-4a70-8df4-0325710554fc",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n \r\n \r\n \r\n///Code74k.ts// ",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T20:47:54.326Z",
+  "updatedAt": "2024-04-12T20:49:22.073Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,60 @@
+{
+  "conversation_id": "660d12118d5f352919f5a1d9",
+  "title": "New Chat",
+  "rootMessageId": "1281fa06-425b-41fc-86d2-f34ff09d38eb",
+  "messages": [
+    {
+      "id": "1281fa06-425b-41fc-86d2-f34ff09d38eb",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-03T08:23:45.281Z",
+      "updatedAt": "2024-04-03T08:23:45.281Z",
+      "children": [
+        "3e7b92b8-7b5d-44b3-962a-e1f3d8f16759"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick Off",
+      "files": [],
+      "createdAt": "2024-04-03T08:23:45.783Z",
+      "updatedAt": "2024-04-03T08:23:45.783Z",
+      "ancestors": [
+        "1281fa06-425b-41fc-86d2-f34ff09d38eb"
+      ],
+      "id": "3e7b92b8-7b5d-44b3-962a-e1f3d8f16759",
+      "children": [
+        "b25d801f-fa50-4340-8e9f-a6b5e808a86b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Thought: Do I need to use an action? No, I understand the instruction given, it is called \"Kick Off\" in Agile methodology and it is the start of a new Sprint or project\nAction: None\nObservation: N/A\nThought: Do I need to use an action? No, I have the understanding of what \"Kick Off\" means\nAnswer: \"Kick Off\" is the start of a new Sprint or project in Agile methodology.",
+      "createdAt": "2024-04-03T08:23:45.783Z",
+      "updatedAt": "2024-04-03T08:23:48.034Z",
+      "ancestors": [
+        "1281fa06-425b-41fc-86d2-f34ff09d38eb",
+        "3e7b92b8-7b5d-44b3-962a-e1f3d8f16759"
+      ],
+      "id": "b25d801f-fa50-4340-8e9f-a6b5e808a86b",
+      "children": [],
+      "webSearch": {
+        "prompt": "Kick Off",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "preprompt": "You run in a loop of Thought, Action, Observation.\r\nAt the end of the loop either Answer or restate your Thought and Action.\r\nUse Thought to describe your thoughts about the question you have been asked.\r\nUse Action to run one of these actions available to you:\r\n- calculate[python math expression]\r\n- research[lookup on the internet]\r\nObservation will be the result of running those actions\r\n\r\n\r\nQuestion: What is 4 * 7 / 3?\r\nThought: Do I need to use an action? Yes, I use calculate to do math\r\nAction: calculate[4 * 7 / 3]\r\nObservation: 9.3333333333\r\nThought: Do I need to use an action? No, have the result\r\nAnswer: The calculate tool says it is 9.3333333333\r\nQuestion: What is capital of france?\r\nThought: Do I need to use an action? No, I know the answer\r\nAnswer: Paris is the capital of France\r\nQuestion:",
+  "assistantId": "660cc773f9ad343dd7c42333",
+  "createdAt": "2024-04-03T08:23:45.283Z",
+  "updatedAt": "2024-04-03T08:23:48.037Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

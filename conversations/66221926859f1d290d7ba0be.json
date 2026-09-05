@@ -1,0 +1,60 @@
+{
+  "conversation_id": "66221926859f1d290d7ba0be",
+  "title": "New Chat",
+  "rootMessageId": "df0321b4-63b6-459b-a624-b7b1eedcc8b1",
+  "messages": [
+    {
+      "id": "df0321b4-63b6-459b-a624-b7b1eedcc8b1",
+      "from": "system",
+      "content": "You are a helpful assistant interfacing with the system while talking to the user.\r\n\r\nThe system uses a formal language called KickLang a cognitive computational linguistic transport/transform.\r\n\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-{name}.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis repository serves...\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k extends...\r\n",
+      "createdAt": "2024-04-19T07:11:34.013Z",
+      "updatedAt": "2024-04-19T07:11:34.013Z",
+      "children": [
+        "630b1a70-c4b3-4937-a635-fa4046f6238f"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - KickLang interfaces",
+      "files": [],
+      "createdAt": "2024-04-19T07:11:34.438Z",
+      "updatedAt": "2024-04-19T07:11:34.438Z",
+      "ancestors": [
+        "df0321b4-63b6-459b-a624-b7b1eedcc8b1"
+      ],
+      "id": "630b1a70-c4b3-4937-a635-fa4046f6238f",
+      "children": [
+        "65e800e8-e060-4b78-9e75-4d45a5312f24"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here is a possible implementation of Code74k.ts using KickLang:\r\n\r\n```typescript\r\n///Code74k.ts//\r\nimport { Code74k } from './Code74k';\r\n\r\nconst code74k: Code74k = {\r\n  interface: 'Code74k',\r\n  guide: 'This repository serves as a reference implementation...',\r\n  repository: 'Code74k',\r\n  version: '1.0.0',\r\n  author: '74k',\r\n  date: '2023-08-04',\r\n  license: 'MIT',\r\n  contributors: ['74k'],\r\n  files: ['Code74k.json', 'Code74k.d.ts', 'Code74k.ts'],\r\n  dependencies: {},\r\n  devDependencies: {},\r\n  scripts: {\r\n    build: 'tsc',\r\n    test: 'jest',\r\n  },\r\n};\r\n\r\nexport default code74k;\r\n```\r\n\r\nIn this example, we define an object `code74k` that adheres to the `Code74k` interface specified in `Code74k.d.ts`. We provide values for each property defined in the interface, such as `interface`, `guide`, `repository`, `version`, and so on.\r\n\r\nYou can modify the values according to your specific use case and add or remove properties as needed.\r\n\r\nRemember to replace the placeholder content with your actual information, such as the repository name, author, date, contributors, and so on.\r\n\r\nLet me know if you have any further questions or if there's anything else I can assist with!",
+      "createdAt": "2024-04-19T07:11:34.438Z",
+      "updatedAt": "2024-04-19T07:11:50.014Z",
+      "ancestors": [
+        "df0321b4-63b6-459b-a624-b7b1eedcc8b1",
+        "630b1a70-c4b3-4937-a635-fa4046f6238f"
+      ],
+      "id": "65e800e8-e060-4b78-9e75-4d45a5312f24",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts - KickLang interfaces",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are a helpful assistant interfacing with the system while talking to the user.\r\n\r\nThe system uses a formal language called KickLang a cognitive computational linguistic transport/transform.\r\n\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-{name}.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis repository serves...\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k extends...\r\n",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-19T07:11:34.015Z",
+  "updatedAt": "2024-04-19T07:11:50.016Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

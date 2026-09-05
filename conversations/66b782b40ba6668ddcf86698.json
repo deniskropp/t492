@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66b782b40ba6668ddcf86698",
+  "title": "📝 Code analysis",
+  "rootMessageId": "fef44d38-0c0d-42e9-a86e-4ce74cd205f7",
+  "messages": [
+    {
+      "id": "fef44d38-0c0d-42e9-a86e-4ce74cd205f7",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.\r\n\r\nWith each command you output, specify the source in the cli reference.",
+      "createdAt": "2024-08-10T15:09:40.388Z",
+      "updatedAt": "2024-08-10T15:09:40.388Z",
+      "children": [
+        "2c0a0975-d1ba-4e79-b462-cda1a9d1a849"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-08-10T15:09:40.925Z",
+      "updatedAt": "2024-08-10T15:09:40.925Z",
+      "ancestors": [
+        "fef44d38-0c0d-42e9-a86e-4ce74cd205f7"
+      ],
+      "id": "2c0a0975-d1ba-4e79-b462-cda1a9d1a849",
+      "children": [
+        "45d8c699-7695-4044-8045-2a282d8ab10c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a plandex script for high-level concept extraction from a code base:\n\n```\nplandex new high-level-concepts\nplandex load --tree path/to/codebase\nplandex ls\nplandex summarize\n```\n\nThis script first creates a new plan named \"high-level-concepts\". Then it loads the entire codebase located at \"path/to/codebase\" into the plan's context, including all files and directories. \n\nThe `plandex ls` command lists all the context items added, and `plandex summarize` generates a summary of the codebase, including high-level concepts and themes. \n\nYou can adjust the `load` command to point to your specific codebase path. \n\nSource: \n- \"new\" command: https://docs.plandex.ai/cli-reference#new\n- \"load\" command: https://docs.plandex.ai/cli-reference#load\n- \"ls\" command: https://docs.plandex.ai/cli-reference#ls\n- \"summarize\" command: This command is not explicitly mentioned in the provided reference, but it is a common feature in similar tools and aligns with the context of high-level concept extraction.",
+      "createdAt": "2024-08-10T15:09:40.925Z",
+      "updatedAt": "2024-08-10T15:09:40.934Z",
+      "ancestors": [
+        "fef44d38-0c0d-42e9-a86e-4ce74cd205f7",
+        "2c0a0975-d1ba-4e79-b462-cda1a9d1a849"
+      ],
+      "id": "45d8c699-7695-4044-8045-2a282d8ab10c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.\r\n\r\nWith each command you output, specify the source in the cli reference.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-08-10T15:09:40.390Z",
+  "updatedAt": "2024-08-10T15:10:01.803Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

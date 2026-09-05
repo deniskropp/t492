@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669245e4ce7a1a25328a7314",
+  "title": "📊 Project configuration",
+  "rootMessageId": "42edbe50-4620-438f-bc01-591ce3728643",
+  "messages": [
+    {
+      "id": "42edbe50-4620-438f-bc01-591ce3728643",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:16:20.780Z",
+      "updatedAt": "2024-07-13T09:16:20.780Z",
+      "children": [
+        "999f4d4f-1013-467f-a865-63867f59a516"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ const/config:project_config:1\n{\n  \"project_name\": \"Meta-AI Assistant\",\n  \"language\": \"JavaScript\",\n  \"framework\": \"Node.js\",\n  \"dependencies\": [\"axios\", \"express\", \"preact\", \"cohere-ai\"]\n}\n\n⫻ context/meta:project_description:1\nThis project aims to develop a meta-artificial intelligence system that can engage with users in a cohesive team with dynamic tasks and roles.\n\n⫻ content/code:initial_code:1\n// Initial code for the Meta-AI Assistant\nimport axios from 'axios';\nimport express from 'express';\nimport { h, render } from 'preact';\nimport { Cohere } from 'cohere-ai';\n\nconst app = express();",
+      "files": [],
+      "createdAt": "2024-07-13T09:16:21.415Z",
+      "updatedAt": "2024-07-13T09:16:21.415Z",
+      "ancestors": [
+        "42edbe50-4620-438f-bc01-591ce3728643"
+      ],
+      "id": "999f4d4f-1013-467f-a865-63867f59a516",
+      "children": [
+        "87476b25-595e-4498-b839-1db6bdb16a9e"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ content/code/javascript:full_code:1\n\n// Meta-AI Assistant: A Cohesive Team with Dynamic Roles and Tasks\n// ------------------------------------------------------------------------------\r\n\r\n// Package Imports\r\nimport axios from 'axios';\r\nimport express from 'express';\r\nimport { h, render } from 'preact';\r\nimport { Cohere } from 'cohere-ai';\r\n\r\n// Initializing Express App\r\nconst app = express();\r\n\r\n// Middlewares and Routers\r\napp.use(express.json()); // Enable JSON body parsing\r\n\r\n// Example Route\r\napp.get('/', (req, res) => {\r\n  res.send('Meta-AI Assistant is up and running!');\r\n});\r\n\r\n// Error Handling Middleware\r\napp.use((err, req, res, next) => {\r\n  res.status(500).send('Something broke!');\r\n});\r\n\r\n// Spinning up the Server\r\nconst PORT = process.env.PORT || 3000;\r\napp.listen(PORT, () => {\r\n  console.log(`Server started on http://localhost:${PORT}`);\r\n});\r\n\r\n// Example Function to Interact with Cohere AI\r\nconst queryCohereAI = async (question) => {\r\n  try {\r\n    const response = await axios.post('https://api.cohere.com/command', {\r\n      commands: [\r\n        {\r\n          slug: 'answer-question',\r\n          parameters: {\r\n            question: question,\r\n          },\r\n        },\r\n      ],\r\n    });\r\n    return response.data.results[0].output;\r\n  } catch (error) {\r\n    console.error('Error querying Cohere AI:', error);\r\n    return null;\r\n  }\r\n};\r\n\r\n// Example Usage of queryCohereAI Function\r\n(async () => {\r\n  const question = 'What are the benefits of using a meta-AI assistant?';\r\n  const answer = await queryCohereAI(question);\r\n  console.log(`Question: ${question}`);\r\n  console.log(`Answer: ${answer}`);\r\n})();",
+      "createdAt": "2024-07-13T09:16:21.415Z",
+      "updatedAt": "2024-07-13T09:16:21.424Z",
+      "ancestors": [
+        "42edbe50-4620-438f-bc01-591ce3728643",
+        "999f4d4f-1013-467f-a865-63867f59a516"
+      ],
+      "id": "87476b25-595e-4498-b839-1db6bdb16a9e",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:16:20.781Z",
+  "updatedAt": "2024-07-13T09:16:36.091Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

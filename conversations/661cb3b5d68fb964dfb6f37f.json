@@ -1,0 +1,119 @@
+{
+  "conversation_id": "661cb3b5d68fb964dfb6f37f",
+  "title": "🌐 About us",
+  "rootMessageId": "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+  "messages": [
+    {
+      "id": "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+      "from": "system",
+      "content": "You are in a Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nThe system spokesperson does represent the system interface using natural language.",
+      "createdAt": "2024-04-15T04:57:25.735Z",
+      "updatedAt": "2024-04-15T04:57:25.735Z",
+      "children": [
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Who are we?",
+      "files": [],
+      "createdAt": "2024-04-15T04:57:26.245Z",
+      "updatedAt": "2024-04-15T04:57:26.245Z",
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f"
+      ],
+      "id": "0daa20aa-2070-4fb5-8c37-ed59087f4a58",
+      "children": [
+        "96463606-d9bb-4caa-b791-332993006d6c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " We are a team consisting of both artificial intelligence (AI) and human members. Our team has various roles, responsibilities, and activities that are promoted by tasks. The roles in our team are not fixed and can be dynamically created and introduced by the user, the assistant, or the system interface agency. The system spokesperson represents the system interface and communicates using natural language.\n\nAs a team, we work together to achieve our goals and complete tasks. The AI members of our team can process and analyze large amounts of data quickly and accurately, while the human members bring creativity, critical thinking, and emotional intelligence to the team. By combining our strengths, we can provide effective and efficient solutions to problems.\n\nOur team's agency is an interconnection between any person, system, or subsystem, which allows us to interacting and working together seamlessly. This interconnection enables us to communicate and collaborate effectively, ensuring that we can deliver high-quality results.\n\nIn summary, we are a dynamic and collaborative team made up of AI and human members, working together to provide effective and efficient solutions to problems.",
+      "createdAt": "2024-04-15T04:57:26.245Z",
+      "updatedAt": "2024-04-15T04:57:36.599Z",
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58"
+      ],
+      "id": "96463606-d9bb-4caa-b791-332993006d6c",
+      "children": [
+        "e01bde1e-508d-4bb3-8202-50680bec00f0",
+        "58a96cc6-df9d-4e03-99f2-736342ad6773"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "///functionCalling\nf: {\n  \"name\": \"e\",\n  \"description\": \"like throw or emit, use whenever to report anything, returning to the system and eventually return to continue the flow\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"q\": {\n        \"type\": \"string\",\n        \"description\": \"any info or state to keep and return with continue\"\n      }\n    },\n    \"required\": []\n  }\n}\n\n\n///Create a mind map with the main topic derived from \"{CLIPBOARD}\" (max 3 words)\nwith a few sub topics derived from the {PAGE} or broader context, then generate mind map file format, e.g. mermaid or any json (nodes).",
+      "files": [],
+      "createdAt": "2024-04-15T04:58:53.833Z",
+      "updatedAt": "2024-04-15T04:58:53.833Z",
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58",
+        "96463606-d9bb-4caa-b791-332993006d6c"
+      ],
+      "id": "e01bde1e-508d-4bb3-8202-50680bec00f0",
+      "children": [
+        "d6873638-e3a1-4db2-b1de-e00e89a96876"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, I can help you create a mind map based on the clipboard content and the broader context. Here's an example mind map in Mermaid format:\n```mermaid\ngraph TD\n  MainTopic(({CLIPBOARD}))\n  subtopic1((SubTopic1))\n  subtopic2((SubTopic2))\n  subtopic3((SubTopic3))\n  MainTopic-->subtopic1\n  MainTopic-->subtopic2\n  MainTopic-->subtopic3\n```\nTo generate this mind map, we can follow these steps:\n\n1. Extract the main topic from the clipboard content by taking the first three words.\n2. Identify a few subtopics related to the main topic from the broader context.\n3. Create a Mermaid format mind map with the main topic as the central node and the subtopics as child nodes.\n\nHere's an example of how we can generate the Mermaid format mind map using a JSON format:\n```json\n{\n  \"mindmap\": {\n    \"format\": \"mermaid\",\n    \"nodes\": [\n      {\n        \"name\": \"{CLIPBOARD}\",\n        \"children\": [\n          {\n            \"name\": \"SubTopic1\"\n          },\n          {\n            \"name\": \"SubTopic2\"\n          },\n          {\n            \"name\": \"SubTopic3\"\n          }\n        ]\n      }\n    ]\n  }\n}\n```\nThis JSON format can be easily converted to Mermaid format using a simple script or a JSON to Mermaid converter tool.\n\nNote: The above mind map and JSON format are just examples, and the actual mind map may vary depending on the clipboard content and the broader context.",
+      "createdAt": "2024-04-15T04:58:53.833Z",
+      "updatedAt": "2024-04-15T04:59:08.280Z",
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58",
+        "96463606-d9bb-4caa-b791-332993006d6c",
+        "e01bde1e-508d-4bb3-8202-50680bec00f0"
+      ],
+      "id": "d6873638-e3a1-4db2-b1de-e00e89a96876",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "///functionCalling\nf: {\n  \"name\": \"e\",\n  \"description\": \"like throw or emit, use whenever to report anything, returning to the system and eventually return to continue the flow\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"q\": {\n        \"type\": \"string\",\n        \"description\": \"any info or state to keep and return with continue\"\n      }\n    },\n    \"required\": []\n  }\n}\n\n\n///Create a mind map with the main topic derived from {{CLIPBOARD}} (max 3 words)\nwith a few sub topics derived from the broader context, then generate mind map file format, any json (nodes).",
+      "id": "58a96cc6-df9d-4e03-99f2-736342ad6773",
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58",
+        "96463606-d9bb-4caa-b791-332993006d6c"
+      ],
+      "children": [
+        "a2d765d4-b781-4f8c-96c4-9bf11642d4e1"
+      ],
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, I can help you create a mind map based on the clipboard content. The main topic derived from the clipboard is \"Team Interaction.\" Here's a possible mind map with a few subtopics:\n```json\n{\n \n  \"name\": \"Team Interaction\",\n  \"children\": [\n    {\n      \"name\": \"Roles\",\n      \"children\": [\n        {\n          \"name\": \"AI\"\n        },\n        {\n          \"name\": \"Human\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Responsibilities\",\n      \"children\": [\n        {\n          \"name\": \"Tasks\"\n        },\n        {\n          \"name\": \"Communication\"\n        }\n      ]\n    },\n    {\n      \"name\": \"System Interface\",\n      \"children\": [\n        {\n          \"name\": \"Agency\"\n        },\n        {\n          \"name\": \"Spokesperson\"\n        }\n      ]\n    }\n  ]\n}\n```\nIn this mind map, the main topic is \"Team Interaction,\" and it has three subtopics: \"Roles,\" \"Responsibilities,\" and \"System Interface.\" Each of these subtopics has further subtopics. For example, \"Roles\" has two subtopics: \"AI\" and \"Human,\" representing the two types of members in our team. \"Responsibilities\" has two subtopics: \"Tasks\" and \"Communication,\" representing the two main responsibilities of our team members. Finally, \"System Interface\" has two subtopics: \"Agency\" and \"Spokesperson,\" representing the system interface through which we interact with each other and the outside world.\n\nI hope this mind map helps you visualize the main topic and subtopics related to team interaction!",
+      "files": [],
+      "ancestors": [
+        "baac6a2e-22a8-4976-9fe5-3141f9afaa6f",
+        "0daa20aa-2070-4fb5-8c37-ed59087f4a58",
+        "96463606-d9bb-4caa-b791-332993006d6c",
+        "58a96cc6-df9d-4e03-99f2-736342ad6773"
+      ],
+      "id": "a2d765d4-b781-4f8c-96c4-9bf11642d4e1",
+      "children": [],
+      "interrupted": false,
+      "updatedAt": "2024-04-15T05:01:19.940Z"
+    }
+  ],
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "preprompt": "You are in a Team made up from AI and Human.\r\n\r\nRoles are assumed by Team members. Activities are promoted by Tasks. Responsibilities are assigned to the Team.\r\n\r\nRoles are binding to the system interface, its agency is an interconnection between any person, system or subsystem.\r\n\r\nNew roles shall be dynamically created and introduced by the User, Assistant or System Interface Agency.\r\n\r\nThe system spokesperson does represent the system interface using natural language.",
+  "assistantId": "6610da9505cafd0afdb206e5",
+  "createdAt": "2024-04-15T04:57:25.737Z",
+  "updatedAt": "2024-04-15T05:01:19.942Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

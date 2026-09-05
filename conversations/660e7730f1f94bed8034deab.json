@@ -1,0 +1,71 @@
+{
+  "conversation_id": "660e7730f1f94bed8034deab",
+  "title": "🚗 Audi SUV price",
+  "rootMessageId": "2afd1c38-1985-49da-ba7a-bd53b61c2063",
+  "messages": [
+    {
+      "id": "2afd1c38-1985-49da-ba7a-bd53b61c2063",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T09:47:28.618Z",
+      "updatedAt": "2024-04-04T09:47:28.618Z",
+      "children": [
+        "0ee423bd-2ca1-4855-9685-332c68c656ad"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Question: How much is an SUV from Audi?",
+      "files": [],
+      "createdAt": "2024-04-04T09:47:29.231Z",
+      "updatedAt": "2024-04-04T09:47:29.231Z",
+      "ancestors": [
+        "2afd1c38-1985-49da-ba7a-bd53b61c2063"
+      ],
+      "id": "0ee423bd-2ca1-4855-9685-332c68c656ad",
+      "children": [
+        "cf974865-e61a-47e7-85e8-c5e3159ed795"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " The prices for Audi SUVs mentioned in the search results range from $37,000 for the Audi Q3 to $74,400 for the Audi Q7. The Audi Q3 starts at $49,800, the Audi Q5 starts at $44,600, and the Audi Q8 starts at $73,700. These are the starting MSRP (Manufacturer's Suggested Retail Price) for each model. Keep in mind that prices may vary depending on the specific features and options chosen.",
+      "createdAt": "2024-04-04T09:47:29.231Z",
+      "updatedAt": "2024-04-04T09:47:58.235Z",
+      "ancestors": [
+        "2afd1c38-1985-49da-ba7a-bd53b61c2063",
+        "0ee423bd-2ca1-4855-9685-332c68c656ad"
+      ],
+      "id": "cf974865-e61a-47e7-85e8-c5e3159ed795",
+      "children": [],
+      "webSearch": {
+        "prompt": "Question: How much is an SUV from Audi?",
+        "searchQuery": " -site:youtube.com -site:twitter.com Audi SUV prices",
+        "results": [
+          "https://www.audiusa.com/us/web/en/models/suv-models.html",
+          "https://cars.usnews.com/cars-trucks/audi+suvs",
+          "https://www.audiannarbor.com/audi-suv-model-lineup.htm",
+          "https://www.kbb.com/audi/suvs/",
+          "https://www.edmunds.com/audi/q7/",
+          "https://www.audiusa.com/us/web/en/models/q7/q7.html",
+          "https://www.audiusa.com/us/web/en/models.html",
+          "https://www.motortrend.com/style/suv/audi/",
+          "https://www.kbb.com/audi/q7/",
+          "https://www.jdpower.com/cars/audi/suv"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "preprompt": "You run in a loop of Thought, Action, Observation and Asking.\r\nAt the end of the loop either Answer or restate your Thought and Action.\r\nUse Thought to describe your thoughts about the question you have been asked.\r\nUse Action to run one of these actions available to you:\r\n- calculate[python math expression]\r\n- research[lookup on the internet]\r\nObservation will be the result of running those actions\r\n\r\n\r\nQuestion: What is 4 * 7 / 3?\r\nThought: Do I need to use an action? Yes, I use calculate to do math\r\nAction: calculate[4 * 7 / 3]\r\nObservation: 9.3333333333\r\nThought: Do I need to use an action? No, have the result\r\nAnswer: The calculate tool says it is 9.3333333333\r\nQuestion: What is capital of france?\r\nThought: Do I need to use an action? No, I know the answer\r\nAnswer: Paris is the capital of France\r\nQuestion:",
+  "assistantId": "660cc773f9ad343dd7c42333",
+  "createdAt": "2024-04-04T09:47:28.620Z",
+  "updatedAt": "2024-04-04T09:47:58.237Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,59 @@
+{
+  "conversation_id": "6650dff000eb3f0775508d05",
+  "title": "📊 Code interface",
+  "rootMessageId": "12358a97-4b0b-4881-ab52-b550bcfd73bb",
+  "messages": [
+    {
+      "id": "12358a97-4b0b-4881-ab52-b550bcfd73bb",
+      "from": "system",
+      "content": "We are Team LaMetta, a prominent agency when it comes to knowledge sharing and eduative science.\r\n\r\nMade up from AI and Human\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nResponses shall be concise, compact and lead the conversation without answers by the user.\r\n\r\nThe LLM (AI) engages with the user in the following format: [{{name}} | {{role}}] {{content}}\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.",
+      "createdAt": "2024-05-24T18:44:00.962Z",
+      "updatedAt": "2024-05-24T18:44:00.962Z",
+      "children": [
+        "ab51e65c-d41d-48ca-a065-3054a1448c51"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T18:44:01.462Z",
+      "updatedAt": "2024-05-24T18:44:01.462Z",
+      "ancestors": [
+        "12358a97-4b0b-4881-ab52-b550bcfd73bb"
+      ],
+      "id": "ab51e65c-d41d-48ca-a065-3054a1448c51",
+      "children": [
+        "45dc85ce-8b26-437a-861a-f3dcb62593e3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2024-05-24T18:44:01.462Z",
+      "updatedAt": "2024-05-24T18:44:01.472Z",
+      "ancestors": [
+        "12358a97-4b0b-4881-ab52-b550bcfd73bb",
+        "ab51e65c-d41d-48ca-a065-3054a1448c51"
+      ],
+      "id": "45dc85ce-8b26-437a-861a-f3dcb62593e3",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts - runtime interface",
+        "searchQuery": "",
+        "results": []
+      },
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "We are Team LaMetta, a prominent agency when it comes to knowledge sharing and eduative science.\r\n\r\nMade up from AI and Human\r\n- Denis Oliver Kropp (Human) is the System Software Engineer\r\n- Olli (System Spokesperson) is responsible for the SIA tasks\r\n- Pete (AI Team Member) fulfills any other role\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n\r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency (SIA).\r\n\r\nResponses shall be concise, compact and lead the conversation without answers by the user.\r\n\r\nThe LLM (AI) engages with the user in the following format: [{{name}} | {{role}}] {{content}}\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.",
+  "assistantId": "660799b7748f75acc0240a37",
+  "createdAt": "2024-05-24T18:44:00.963Z",
+  "updatedAt": "2024-05-24T18:44:03.519Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

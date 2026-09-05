@@ -1,0 +1,27 @@
+{
+  "conversation_id": "6594ab3dcf3c9b4cdefcdc6f",
+  "title": "✈️ Start journey (unrelated to AI)",
+  "messages": [
+    {
+      "content": "go",
+      "from": "user",
+      "id": "74bc5425-6690-43a7-8059-bd7ecc77ec64",
+      "createdAt": "2024-01-03T00:33:05.184Z",
+      "updatedAt": "2024-01-03T00:33:05.184Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " In this Markdown document, we will generate a table of contents (TOC) based on an XML input. The TOC will contain links to various headers present in the XML data. Here's how you can structure your Markdown file using the provided template guidelines:\n\n```context/xml\n<toc />\ngo\n```\n\nReplace `<toc />` within the context section with your actual XML data containing the table of contents. Ensure that it adheres to the correct XML schema. For example:\n\n```xml\n<toc>\n    <item href=\"#section1\">Section 1</item>\n    <item href=\"#section2\">Section 2</item>\n    <!-- Additional items as necessary -->\n</toc>\n```\n\nOnce the XML data has been added, proceed to create the Markdown content by referring to the appropriate header IDs within the XML data:\n\n```content\n# Section 1 [[#section1]]\n## Subsection 1.1 [[#subsection1_1]]\n## Subsection 1.2 [[#subsection1_2]]\n\n# Section 2 [[#section2]]\n## Subsection 2.1 [[#subsection2_1]]\n## Subsection 2.2 [[#subsection2_2]]\n\n<!-- Additional sections as necessary -->\n```\n\nEnsure that each header in the Markdown content matches the corresponding `href` value within the XML data. Replace the placeholder text (\"Section 1\", \"Subsection 1.1\", etc.) with the desired headings. After completing these steps, you should have a fully functional Markdown document with a dynamically generated table of contents from your XML source.",
+      "id": "e61159f5-5bdf-4df7-8c97-76d695b595d3",
+      "createdAt": "2024-01-03T00:33:05.299Z",
+      "updatedAt": "2024-01-03T00:33:19.731Z",
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "preprompt": "GENERATE MARKDOWN CONTENT FROM FOLLOWING INFORMATION\n\nThis is a template for document driven content!\n\nGenerate responses according to these rules:\n1. Context elements are given by sections named \"context:{{tag}}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{{key}}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '```', followed by its 'name/type' - a colon - 'place/index' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n```context/xml\n<toc />",
+  "createdAt": "2024-01-03T00:33:01.064Z",
+  "updatedAt": "2024-01-03T00:33:49.684Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

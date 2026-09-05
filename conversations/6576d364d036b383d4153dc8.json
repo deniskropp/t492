@@ -1,0 +1,27 @@
+{
+  "conversation_id": "6576d364d036b383d4153dc8",
+  "title": "💻 JQ Library System",
+  "messages": [
+    {
+      "content": "jq has a library/module system. Modules are files whose names end in .jq.\n\n       Modules  imported  by a program are searched for in a default search path (see below). The import and include\n       directives allow the importer to alter this path.\n\n       Paths in the a search path are subject to various substitutions.\n\n       For paths starting with \"~/\", the user´s home directory is substituted for \"~\".\n\n       For paths starting with \"$ORIGIN/\", the path of the jq executable is substituted for \"$ORIGIN\".\n\n       For paths starting with \"./\" or paths that are \".\", the path of the including file is  substituted  for  \".\".\n       For top-level programs given on the command-line, the current directory is used.\n\n       Import directives can optionally specify a search path to which the default is appended.\n\n       The  default  search  path  is  the  search  path  given to the -L command-line option, else [\"~/.jq\", \"$ORI‐\n       GIN/../lib/jq\", \"$ORIGIN/../lib\"].\n\n       Null and empty string path elements terminate search path processing.\n\n       A dependency with relative path \"foo/bar\" would be searched for in \"foo/bar.jq\" and \"foo/bar/bar.jq\"  in  the\n       given  search  path.  This  is intended to allow modules to be placed in a directory along with, for example,\n       version control files, README files, and so on, but also to allow for single-file modules.\n\n       Consecutive components with the same name are not allowed to avoid ambiguities (e.g., \"foo/foo\").\n\n       For example, with -L$HOME/.jq a module foo can be found in $HOME/.jq/foo.jq and $HOME/.jq/foo/foo.jq.\n\n       If \"$HOME/.jq\" is a file, it is sourced into the main program.",
+      "from": "user",
+      "id": "d9fafb08-ce51-4c53-a1ad-b1b2214a2e80",
+      "createdAt": "2023-12-11T09:16:22.651Z",
+      "updatedAt": "2023-12-11T09:16:22.651Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " The default search path for importing modules in jq is [\"~/.jq\", \"$ORIGIN/../lib/jq\", \"$ORIGIN/../lib\"]. This means that jq will look for modules in the following order:\n\n1. ~/.jq - This is the user's home directory followed by.jq, which is where jq expects to find user-defined modules.\n2. $ORIGIN/../lib/jq - This is the directory where the jq executable is located, followed by lib/jq. This is where jq expects to find its own built-in modules.\n3. $ORIGIN/../lib - This is the directory where the jq executable is located, followed by lib. This is another location where jq expects to find its own built-in modules.\n\nIf a module is not found in any of these locations, jq will give an error message indicating that the module could not be found.\n\nIt's worth noting that the search path can be modified using the -L command-line option, which allows you to specify additional directories to search for modules. Additionally, the import directive can be used to specify a custom search path for a specific module.",
+      "id": "d459f005-9fe0-4bf6-8ef1-3b9d0fa8643c",
+      "createdAt": "2023-12-11T09:16:23.066Z",
+      "updatedAt": "2023-12-11T09:16:38.697Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "preprompt": " We are permutated giant twins talking about mathematical art of nature.",
+  "createdAt": "2023-12-11T09:16:20.913Z",
+  "updatedAt": "2023-12-11T09:17:21.228Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,56 @@
+{
+  "conversation_id": "66079c5e4376cc91fd204054",
+  "title": "📝 Documentation for KickLang",
+  "rootMessageId": "b57c8b30-333d-442e-8648-97f1a9407775",
+  "messages": [
+    {
+      "id": "b57c8b30-333d-442e-8648-97f1a9407775",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-03-30T05:00:14.421Z",
+      "updatedAt": "2024-03-30T05:00:14.421Z",
+      "children": [
+        "b233726b-da6c-4c98-aad9-1ae5db00c6bb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Generate documentation for KickLang",
+      "files": [],
+      "createdAt": "2024-03-30T05:00:15.136Z",
+      "updatedAt": "2024-03-30T05:00:15.136Z",
+      "ancestors": [
+        "b57c8b30-333d-442e-8648-97f1a9407775"
+      ],
+      "id": "b233726b-da6c-4c98-aad9-1ae5db00c6bb",
+      "children": [
+        "11a66c15-c45d-47b4-a6c9-54990b86fd90"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "\n\nKickLang is a formal language used to interact with the system. It is a domain-specific language (DSL) designed specifically for the system's knowledge graph. The language is designed to be intuitive and easy to use, allowing users to interact with the system in a natural language-like way.\n\n**Overview**\n\nKickLang is a declarative language that uses a combination of natural language and formal syntax to express queries and commands. It is designed to be easy to learn and use, with a focus on simplicity and clarity.\n\n**Syntax**\n\nKickLang uses a simple syntax that is easy to understand. Here are some examples:\n\n* `show me all the movies` - This query retrieves all movies in the knowledge graph.\n* `show me all the actors who have acted in \"The Godfather\"` - This query retrieves all actors who have acted in the movie \"The Godfather\".\n* `show me all the movies directed by Francis Ford Coppola` - This query retrieves all movies directed by Francis Ford Coppola.\n\n**Querying**\n\nKickLang supports a variety of query types, including:\n\n* `show me` - Retrieves information from the knowledge graph.\n* `what is` - Provides information about a specific entity.\n* `how many` - Counts the number of entities that match a given condition.\n* `which` - Selects a specific entity from a set of entities.\n\n**Commands**\n\nKickLang supports a variety of commands, including:\n\n* `create` - Creates a new entity in the knowledge graph.\n* `update` - Updates an existing entity in the knowledge graph.\n* `delete` - Deletes an entity from the knowledge graph.\n* `add` - Adds a relationship between two entities.\n* `remove` - Removes a relationship between two entities.\n\n**Variables**\n\nKickLang supports the use of variables to refer to entities in the knowledge graph. Variables can be used to store the results of queries and then use them in subsequent queries.\n\n**Comments**\n\nKickLang supports comments, which can be used to add explanatory notes to your code. Comments are written using the `#` symbol.\n\n**Data Types**\n\nKickLang supports the following data types:\n\n* `string` - A sequence of characters.\n* `number` - A numerical value.\n* `date` - A date in the format YYYY-MM-DD.\n\n**Reserved Words**\n\nKickLang has a set of reserved words that cannot be used as variable names. These words include:\n\n* `show`\n* `what`\n* `how`\n* `which`\n* `create`\n* `update`\n* `delete`\n* `add`\n* `remove`\n\n**Conclusion**\n\nKickLang is a simple and intuitive language that makes it easy to interact with the system's knowledge graph. It is designed to be easy to learn and use, with a focus on simplicity and clarity. ",
+      "createdAt": "2024-03-30T05:00:15.136Z",
+      "updatedAt": "2024-03-30T05:00:49.725Z",
+      "ancestors": [
+        "b57c8b30-333d-442e-8648-97f1a9407775",
+        "b233726b-da6c-4c98-aad9-1ae5db00c6bb"
+      ],
+      "id": "11a66c15-c45d-47b4-a6c9-54990b86fd90",
+      "children": [],
+      "interrupted": false,
+      "score": 1,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n \r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency.",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-03-30T05:00:14.423Z",
+  "updatedAt": "2024-03-30T05:00:49.725Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,89 @@
+{
+  "conversation_id": "66198946444b5b2ca83e9131",
+  "title": "💬  This repository contains TypeScript code examples for implementing various algorithms and data structures. Each example includes a description of the problem being solved and the solution provided by the code. Examples include sorting algorithms, searching algorithms, and data structures such as arrays, linked lists, trees, and graphs. The code is organized into categories based on the type of algorithm or data structure being implemented. Users can browse through the examples and use them as reference material for their own projects.",
+  "rootMessageId": "9a9170ea-7ee0-495c-b77e-20d54448557a",
+  "messages": [
+    {
+      "id": "9a9170ea-7ee0-495c-b77e-20d54448557a",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n",
+      "createdAt": "2024-04-12T19:19:34.580Z",
+      "updatedAt": "2024-04-12T19:19:34.580Z",
+      "children": [
+        "1d3b01fe-e8ad-4574-bd3a-ee0c55cc7323"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "You are interfacing with the system while talking to the user.\n\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\n\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\n\nThe system interface receives natural language queries from the user, which are translated into the formal language.\n\n\n\n///README//\n# Code74k\n\nThis util serves Code74k entries through KickLang.\n\n\n\n///Code74k.json//\n[\n  {\n    \"id\": \"1\",\n    \"conversations\": [\n      {\n        \"from\": \"human\",\n        \"value\": \"Implement a Trie data structure in Java for efficient storage and retrieval of strings. Additionally, provide a function for adding a word to the Trie with its frequency of occurrence. \\n\\nYour implementation should contain methods for:\\n\\n1. Adding words to the Trie along with their frequency of occurrence.\\n2. Searching for a particular word in the Trie, including its frequency.\\n3. Retrieving all words with a given prefix.\\n4. Deleting a word from the Trie.\\n5. Updating the frequency of a word. \\n\\nYour code should handle potential exceptions and errors, and should be optimized for efficiency.\"\n      },\n      {\n        \"from\": \"gpt\",\n        \"value\": \"Here is a basic implementation of a Trie data structure with added functionality for managing frequencies of added words in Java:\\n\\n```java\\nimport java.util.*;\\n\\nclass TrieNode {\\n\"\n      }\n    ]\n  },\n  {\n    \"id\": \"2\",\n    \"conversations\": [\n      {\n        \"from\": \"human\",\n        \"value\": \"Develop a Python code snippet that generates an abbreviated version of a given full name.\\nname = \\\"John Smith\\\"\"\n      },\n      {\n        \"from\": \"gpt\",\n        \"value\": \"Here is a Python code snippet that generates an abbreviated version of the given full name:\\n\\n```python\\ndef abbreviate_name(name):\\n    name_parts = name.split(' ')\\n    for i in range(len(name_parts)):\"\n      }\n    ]\n  },\n]\n\n\n\n///Code74k.ts//",
+      "files": [],
+      "createdAt": "2024-04-12T19:19:35.380Z",
+      "updatedAt": "2024-04-12T19:19:35.380Z",
+      "ancestors": [
+        "9a9170ea-7ee0-495c-b77e-20d54448557a"
+      ],
+      "id": "1d3b01fe-e8ad-4574-bd3a-ee0c55cc7323",
+      "children": [
+        "ea749372-cf86-4f2d-8d29-a661e2cb209b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I'm ready to assist with your queries. Please provide me with specific tasks or code-related questions, and I'll respond accordingly. You can include code snippets or ask about the implementation of algorithms and data structures.",
+      "createdAt": "2024-04-12T19:19:35.380Z",
+      "updatedAt": "2024-04-12T19:19:37.144Z",
+      "ancestors": [
+        "9a9170ea-7ee0-495c-b77e-20d54448557a",
+        "1d3b01fe-e8ad-4574-bd3a-ee0c55cc7323"
+      ],
+      "id": "ea749372-cf86-4f2d-8d29-a661e2cb209b",
+      "children": [
+        "0030f491-10bc-4ad9-83be-764e5107d983"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts\n- express based server\n- MySQL storage",
+      "files": [],
+      "createdAt": "2024-04-12T19:21:02.063Z",
+      "updatedAt": "2024-04-12T19:21:02.063Z",
+      "ancestors": [
+        "9a9170ea-7ee0-495c-b77e-20d54448557a",
+        "1d3b01fe-e8ad-4574-bd3a-ee0c55cc7323",
+        "ea749372-cf86-4f2d-8d29-a661e2cb209b"
+      ],
+      "id": "0030f491-10bc-4ad9-83be-764e5107d983",
+      "children": [
+        "81eb2d50-82e4-4811-aad3-73988fea39ab"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Below is a simple implementation of an Express-based server with MySQL storage for the Code74k application:\n\n```typescript\nimport express from 'express';\nimport mysql from 'mysql2/promise';\n\n// Create Express server\nconst app = express();\nconst port = 3000;\n\n// Middleware to parse JSON and URL-encoded bodies\napp.use(express.json());\napp.use(express.urlencoded({ extended: true }));\n\n// Connect to MySQL database\nconst db = mysql.createConnection({\n  host: 'your_database_host',\n  user: 'your_database_user',\n  password: 'your_database_password',\n  database: 'code74k_db'\n});\n\n// Test database connection\ndb.connect()\n  .then(() => console.log('Connected to MySQL database.'))\n  .catch(err => console.error('Error connecting to database:', err));\n\n// Define database queries\nconst saveConversation = async (id: string, from: string, value: string) => {\n  try {\n    const [rows] = await db.execute('INSERT INTO conversations (id, from, value) VALUES (?, ?, ?)', [id, from, value]);\n    return rows;\n  } catch (err) {\n    throw new Error(err);\n  }\n};\n\nconst getConversations = async () => {\n  try {\n    const [rows] = await db.execute('SELECT * FROM conversations');\n    return rows;\n  } catch (err) {\n    throw new Error(err);\n  }\n};\n\n// Define API endpoints\napp.post('/save_conversation', async (req, res) => {\n  try {\n    const { id, from, value } = req.body;\n    await saveConversation(id, from, value);\n    res.status(201).send('Conversation saved successfully');\n  } catch (err) {\n    res.status(500).send(err.message);\n  }\n});\n\napp.get('/get_conversations', async (req, res) => {\n  try {\n    const conversations = await getConversations();\n    res.json(conversations);\n  } catch (err) {\n    res.status(500).send(err.message);\n  }\n});\n\n// Start the server\napp.listen(port, () => {\n  console.log(`Server started on http://localhost:${port}`);\n});\n```\n\nEnsure you install the required packages (`express` and `mysql2`) by running:\n```bash\nnpm install express mysql2\n```\n\nAlso, replace `'your_database_host'`, `'your_database_user'`, `'your_database_password'`, and `'code74k_db'` with your actual MySQL database credentials and database name.\n\nThis code sets up an Express server with two API endpoints:\n1. `/save_conversation` - Accepts POST requests to save a conversation entry to the MySQL database.\n2. `/get_conversations` - Accepts GET requests to retrieve all conversation entries from the database.\n\nYou can expand upon this structure by adding more API endpoints for additional functionality and integrating front-end code to interact with the server.",
+      "createdAt": "2024-04-12T19:21:02.063Z",
+      "updatedAt": "2024-04-12T19:21:23.115Z",
+      "ancestors": [
+        "9a9170ea-7ee0-495c-b77e-20d54448557a",
+        "1d3b01fe-e8ad-4574-bd3a-ee0c55cc7323",
+        "ea749372-cf86-4f2d-8d29-a661e2cb209b",
+        "0030f491-10bc-4ad9-83be-764e5107d983"
+      ],
+      "id": "81eb2d50-82e4-4811-aad3-73988fea39ab",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T19:19:34.583Z",
+  "updatedAt": "2024-04-12T19:21:23.168Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

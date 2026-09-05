@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661ad83e8083b04af7ad7865",
+  "title": "💻 Setting default compiler on Manjaro",
+  "rootMessageId": "f77a09f1-bc84-4156-b050-69842ad8f731",
+  "messages": [
+    {
+      "id": "f77a09f1-bc84-4156-b050-69842ad8f731",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-13T19:08:46.048Z",
+      "updatedAt": "2024-04-13T19:08:46.048Z",
+      "children": [
+        "997776cf-0bab-494e-b553-d15e9d6dbb96"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "How to set default compiler to clang++ in Manjaro?",
+      "files": [],
+      "createdAt": "2024-04-13T19:08:46.851Z",
+      "updatedAt": "2024-04-13T19:08:46.851Z",
+      "ancestors": [
+        "f77a09f1-bc84-4156-b050-69842ad8f731"
+      ],
+      "id": "997776cf-0bab-494e-b553-d15e9d6dbb96",
+      "children": [
+        "fec517f6-dd1c-4670-92a6-5e2d43d4b35c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "To set Clang as the default C++ compiler on Manjaro, follow these steps:\r\n\r\n1. Open a terminal.\r\n2. Check if Clang is installed by running the command:\r\n```\r\nclang++ --version\r\n```\r\nIf Clang is not installed, you can do so by running the command:\r\n```\r\nsudo pacman -S clang\r\n```\r\n3. Set Clang as the default C++ compiler by creating (if it doesn't exist) or editing the file `/etc/profile.d/clang.sh`. You can use your favorite text editor, for example:\r\n```\r\nsudo nano /etc/profile.d/clang.sh\r\n```\r\n4. Add the following lines to the file:\r\n```\r\nexport CXX=clang++\r\nexport CC=clang\r\n```\r\n5. Save and close the file.\r\n6. To apply the changes, either log out and log back in, or source the file by running:\r\n```\r\nsource /etc/profile.d/clang.sh\r\n```\r\n7. You can verify that Clang is now the default C++ compiler by running:\r\n```\r\ncpp --version\r\n```\r\nIt should display the version information for Clang.\r\n\r\nThat's it! Clang should now be set as the default C++ compiler on your Manjaro system.",
+      "createdAt": "2024-04-13T19:08:46.851Z",
+      "updatedAt": "2024-04-13T19:09:12.080Z",
+      "ancestors": [
+        "f77a09f1-bc84-4156-b050-69842ad8f731",
+        "997776cf-0bab-494e-b553-d15e9d6dbb96"
+      ],
+      "id": "fec517f6-dd1c-4670-92a6-5e2d43d4b35c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-13T19:08:46.054Z",
+  "updatedAt": "2024-04-13T19:09:12.080Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

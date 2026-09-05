@@ -1,0 +1,111 @@
+{
+  "conversation_id": "6691f6a485739822afc18c50",
+  "title": "📝 Code template",
+  "rootMessageId": "f578e69e-330f-4a1d-bebe-246de341b208",
+  "messages": [
+    {
+      "id": "f578e69e-330f-4a1d-bebe-246de341b208",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+      "createdAt": "2024-07-13T03:38:12.455Z",
+      "updatedAt": "2024-07-13T03:38:12.455Z",
+      "children": [
+        "7aa80263-cfa5-4b20-8cca-f1c6974f69e3",
+        "6368df0b-f178-4d62-a91c-6fd58eed9fcd",
+        "6f7b5877-2740-4ae9-aaf4-476d5d445126"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content\nKick/Template for generating code",
+      "files": [],
+      "createdAt": "2024-07-13T03:38:12.941Z",
+      "updatedAt": "2024-07-13T03:38:12.941Z",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208"
+      ],
+      "id": "7aa80263-cfa5-4b20-8cca-f1c6974f69e3",
+      "children": [
+        "44464616-406a-457a-a718-febda09cadf0"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Fizz/LLM:System\r\nSure! Here is a basic template for generating code: \n\n```python\r\n# Define the code generation function\r\ndef generate_code(**kwargs):\r\n    # Input parameters\r\n    params = kwargs.get(\"params\", {})\r\n\r\n    # Code template\r\n    code = \"def my_function({}):\\n\".format(\", \".join(params.keys()))\r\n    code += \"\\t{}\\n\".format(kwargs.get(\"body\", \"pass\"))\r\n\r\n    # Return the generated code\r\n    return code\r\n\r\n# Example usage\r\nif __name__ == \"__main__\":\r\n    # Function parameters\r\n    params = {\"x\": \"int\", \"y\": \"str\"}\r\n\r\n    # Function body\r\n    body = \"\"\"\r\n    if x > 0:\r\n        return y + str(x)\r\n    else:\r\n        return \"Negative value: \" + y\r\n    \"\"\"\r\n\r\n    # Generate the code\r\n    generated_code = generate_code(params=params, body=body)\r\n\r\n    # Print the generated code\r\n    print(generated_code)\r\n```\n\r\nThis template defines a `generate_code` function that takes in parameters and a code body. It uses those inputs to create a Python function with the specified parameters and body. In the example usage, we define the parameters `x` and `y`, along with their respective types, and provide a function body that performs some conditional logic. The `generate_code` function is then called with these inputs, and the generated code is printed. You can modify the `params` and `body` dictionaries to generate different functions with varying parameters and logic. This is just a basic example; more complex templates can involve integrating multiple",
+      "createdAt": "2024-07-13T03:38:12.941Z",
+      "updatedAt": "2024-07-13T03:38:12.949Z",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208",
+        "7aa80263-cfa5-4b20-8cca-f1c6974f69e3"
+      ],
+      "id": "44464616-406a-457a-a718-febda09cadf0",
+      "children": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/klmx\nKick/Template for generating code",
+      "files": [],
+      "createdAt": "2024-07-13T03:38:57.078Z",
+      "updatedAt": "2024-07-13T03:38:57.078Z",
+      "id": "6368df0b-f178-4d62-a91c-6fd58eed9fcd",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208"
+      ],
+      "children": [
+        "7067248a-68a6-4713-86b1-4f2a6e787e74"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻fizz/llm:System Spokesperson/1\nSure! Here's a kick template for generating code: \n\n```\n// Code Generation Kick Template\n\n## Input Parameters:\n- Language: [desired programming language e.g. Python, C++, etc.]\n- Function Name: [name of the function]\n- Function Inputs: [list of input parameters and their types]\n- Function Output: [expected output and its type]\n\n## Template Structure:\n\n```[Language]\n\n# Import necessary libraries/modules\nimport library_name\n\n# Function definition\ndef [Function Name]([Function Inputs]):\n    # Function logic\n    [code block for processing Function Inputs and generating desired output]\n\n    # Return statement\n    return [Function Output]\n\n# Example usage\n[provide an example usage of the function with sample inputs and expected output]\n```\n\nPlease note that the actual code structure and syntax may vary depending on the chosen programming language. Adjust the template accordingly to match the syntax and conventions of the selected language. \n\nThis template provides a basic structure for generating code, including import statements, function definition, function logic, and an example usage. You can customize and expand upon this template based on your specific requirements and the features of the chosen programming language.",
+      "createdAt": "2024-07-13T03:38:57.078Z",
+      "updatedAt": "2024-07-13T03:38:57.087Z",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208",
+        "6368df0b-f178-4d62-a91c-6fd58eed9fcd"
+      ],
+      "id": "7067248a-68a6-4713-86b1-4f2a6e787e74",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/klmx:meta\nKick/Template for generating code",
+      "files": [],
+      "createdAt": "2024-07-13T03:39:49.336Z",
+      "updatedAt": "2024-07-13T03:39:49.336Z",
+      "id": "6f7b5877-2740-4ae9-aaf4-476d5d445126",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208"
+      ],
+      "children": [
+        "ea43c573-2a30-4cef-b8d3-3284b63833ba"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Fizz/LLM:AI/Response\nSure! Here goes my attempt at generating code based on the provided template:\n\n```python\n# Code Generation Template for <<tag>>\n\ndef generate_code(**kwargs):\n    # Custom Function Banner\n    function_banner = f\"\"\"\n    %{kwargs.get('function_prototype')}\n\n    %{kwargs.get('function_description')}\n    Arguments: %{kwargs.get('arguments')}\n    Return Type: %{kwargs.get('return_type')}\n    \"\"\"\n\n    # Custom Header Code\n    coder_matlab_code = kwargs.get('coder_matlab_code')\n\n    # Code Insertion Section\n    includes = kwargs.get('includes')\n    defines = kwargs.get('defines')\n    types = kwargs.get('types')\n    enums = kwargs.get('enums')\n    definitions = kwargs.get('definitions')\n    declarations = kwargs.get('declarations')\n    functions = kwargs.get('functions')\n\n    # Build the code template\n    code_template = f\"\"\"\n    %{includes}\n    %{defines}\n    %{types}\n    %{enums}\n    %{definitions}\n    %{declarations}\n    %{functions}\n    \"\"\"\n\n    return function_banner",
+      "createdAt": "2024-07-13T03:39:49.336Z",
+      "updatedAt": "2024-07-13T03:39:49.344Z",
+      "ancestors": [
+        "f578e69e-330f-4a1d-bebe-246de341b208",
+        "6f7b5877-2740-4ae9-aaf4-476d5d445126"
+      ],
+      "id": "ea43c573-2a30-4cef-b8d3-3284b63833ba",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-07-13T03:38:12.457Z",
+  "updatedAt": "2024-07-13T03:40:08.210Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

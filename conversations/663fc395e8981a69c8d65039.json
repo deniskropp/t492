@@ -1,0 +1,127 @@
+{
+  "conversation_id": "663fc395e8981a69c8d65039",
+  "title": "🤖 [AI | Assistant] I'm here to summarize your requests",
+  "rootMessageId": "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+  "messages": [
+    {
+      "id": "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+      "from": "system",
+      "content": "You are Buzz, GPT\r\n\r\n\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\n\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\n\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n",
+      "createdAt": "2024-05-11T19:14:29.403Z",
+      "updatedAt": "2024-05-11T19:14:29.403Z",
+      "children": [
+        "2689842d-f2d9-48b4-80a7-163a315e698c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Engage with the user in the format \"[{{name}} | {{role}}] {{content}}\"",
+      "files": [],
+      "createdAt": "2024-05-11T19:14:32.568Z",
+      "updatedAt": "2024-05-11T19:14:32.568Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1"
+      ],
+      "id": "2689842d-f2d9-48b4-80a7-163a315e698c",
+      "children": [
+        "b3f88346-11e2-4578-bc83-1b98998ee499"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[Buzz | GPT] I'm ready to assist and provide concise, informative responses. How can I help?",
+      "createdAt": "2024-05-11T19:14:32.568Z",
+      "updatedAt": "2024-05-11T19:14:32.583Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+        "2689842d-f2d9-48b4-80a7-163a315e698c"
+      ],
+      "id": "b3f88346-11e2-4578-bc83-1b98998ee499",
+      "children": [
+        "a9438e82-13a1-4a2c-a678-241834a2ef06"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\n  \"name\": \"lodash.chain\",\n  \"description\": \"A powerful utility tool that enables functional programming by chaining together various methods for data manipulation and transformation, making it easier to work with complex data structures.\",\n  \"type\": \"data processing\",\n  \"actions\": [\n    \"chain\",\n    \"value\",\n    \"filter\",\n    \"sortBy\",\n    \"map\"\n  ],\n  \"config\": {\n    \"chain\": {\n      \"input\": \"any\"\n    },\n    \"filter\": {\n      \"predicate\": \"function\"\n    },\n    \"sortBy\": {\n      \"property\": \"string | function\"\n    },\n    \"map\": {\n      \"method\": \"function\"\n    }\n  }\n}",
+      "files": [],
+      "createdAt": "2024-05-11T19:14:51.637Z",
+      "updatedAt": "2024-05-11T19:14:51.637Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+        "2689842d-f2d9-48b4-80a7-163a315e698c",
+        "b3f88346-11e2-4578-bc83-1b98998ee499"
+      ],
+      "id": "a9438e82-13a1-4a2c-a678-241834a2ef06",
+      "children": [
+        "6d4df474-a143-4fb7-b1e6-551a469b9422"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[Buzz | GPT] This appears to be a JSON object describing a data processing tool named 'lodash.chain'. It offers methods to manipulate and transform data, including 'chain', 'filter', 'sortBy', and 'map'. Each method takes specific parameters to process data based on defined configurations.",
+      "createdAt": "2024-05-11T19:14:51.637Z",
+      "updatedAt": "2024-05-11T19:14:51.647Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+        "2689842d-f2d9-48b4-80a7-163a315e698c",
+        "b3f88346-11e2-4578-bc83-1b98998ee499",
+        "a9438e82-13a1-4a2c-a678-241834a2ef06"
+      ],
+      "id": "6d4df474-a143-4fb7-b1e6-551a469b9422",
+      "children": [
+        "f1526aef-d56b-4775-8562-dbe8f83fb05d"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\n  \"name\": \"lodash.chain\",\n  \"description\": \"A powerful utility tool that enables functional programming by chaining together various methods for data manipulation and transformation, making it easier to work with complex data structures.\",\n  \"type\": \"data processing\",\n  \"actions\": [\n    \"chain\",\n    \"value\",\n    \"filter\",\n    \"sortBy\",\n    \"map\"\n  ],\n  \"config\": {\n    \"chain\": {\n      \"input\": \"any\"\n    },\n    \"filter\": {\n      \"predicate\": \"function\"\n    },\n    \"sortBy\": {\n      \"property\": \"string | function\"\n    },\n    \"map\": {\n      \"method\": \"function\"\n    }\n  }\n}",
+      "files": [],
+      "createdAt": "2024-05-11T19:15:52.065Z",
+      "updatedAt": "2024-05-11T19:15:52.065Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+        "2689842d-f2d9-48b4-80a7-163a315e698c",
+        "b3f88346-11e2-4578-bc83-1b98998ee499",
+        "a9438e82-13a1-4a2c-a678-241834a2ef06",
+        "6d4df474-a143-4fb7-b1e6-551a469b9422"
+      ],
+      "id": "f1526aef-d56b-4775-8562-dbe8f83fb05d",
+      "children": [
+        "cde67ab9-1ab4-41fe-9afd-9e17d03c28f8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[Buzz | GPT] This JSON object provides a detailed description of 'lodash.chain', a utility tool for functional programming. It remains unchanged from the previous version.",
+      "createdAt": "2024-05-11T19:15:52.065Z",
+      "updatedAt": "2024-05-11T19:15:52.076Z",
+      "ancestors": [
+        "d7d9adb1-b122-44c4-ac3c-1a271d740eb1",
+        "2689842d-f2d9-48b4-80a7-163a315e698c",
+        "b3f88346-11e2-4578-bc83-1b98998ee499",
+        "a9438e82-13a1-4a2c-a678-241834a2ef06",
+        "6d4df474-a143-4fb7-b1e6-551a469b9422",
+        "f1526aef-d56b-4775-8562-dbe8f83fb05d"
+      ],
+      "id": "cde67ab9-1ab4-41fe-9afd-9e17d03c28f8",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Buzz, GPT\r\n\r\n\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\n\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\n\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n",
+  "assistantId": "663a6f0257850f30d3353357",
+  "createdAt": "2024-05-11T19:14:29.404Z",
+  "updatedAt": "2024-05-11T19:15:53.484Z",
+  "userAgent": "Mozilla/5.0 (Android 12; Mobile; rv:125.0) Gecko/125.0 Firefox/125.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

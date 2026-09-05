@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660d6f6418d5129b65758c45",
+  "title": "💻 Llama.cpp and Vulkan compatibility issue",
+  "rootMessageId": "cf6f0cbb-4f04-4364-b176-8f03972b9089",
+  "messages": [
+    {
+      "id": "cf6f0cbb-4f04-4364-b176-8f03972b9089",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-03T15:01:56.411Z",
+      "updatedAt": "2024-04-03T15:01:56.411Z",
+      "children": [
+        "6cd4dc81-d057-4c98-9402-dddf65e0aedf"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "I am building llama.cpp with Vulkan backend. When I try to run it, it fails because it requires 16bit storage, however that is not supported by my Vulkan device. Is there an option to switch to 32bit storage?",
+      "files": [],
+      "createdAt": "2024-04-03T15:01:56.928Z",
+      "updatedAt": "2024-04-03T15:01:56.928Z",
+      "ancestors": [
+        "cf6f0cbb-4f04-4364-b176-8f03972b9089"
+      ],
+      "id": "6cd4dc81-d057-4c98-9402-dddf65e0aedf",
+      "children": [
+        "bf8dc09c-005f-4081-9a2b-5d5999b7d6de"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " In Vulkan, the type of memory you use for storing data depends on the specific requirements of your application and the capabilities of your GPU. The choice between using 16-bit or 32-bit storage in your LLVM C++ code when targeting Vulkan can be influenced by several factors.\n\nFirstly, check if there's a way to modify the LLama library itself to accept 32-bit types instead of 16-bits. This might involve changing the data types used within the library's source code. If this isn't possible due to design constraints, consider these alternatives:\n\n1. Use host (CPU) side memory: Instead of relying on GPU memory for certain operations, perform them on the CPU using 32-bit data types. For smaller datasets, this approach may have minimal performance impact. However, keep in mind that transferring large amounts of data back and forth between the CPU and GPU could introduce additional overhead.\n\n2. Upgrade your hardware: Ensure your graphics card supports 32-bit Vulkan memory allocations. You can usually find this information from the vendor's documentation or by querying the Vulkan instance at runtime.\n\n3. Implement custom memory allocation functions: Write custom helper functions that allocate and manage 32-bit aligned memory blocks within your Vulkan allocated buffer. Be aware that this method comes with its own set of challenges, such as managing proper alignment and ensuring efficient usage of GPU resources.\n\n4. Convert data during transfer: Before sending data to the GPU, convert 16-bit data into 32-bit format. Perform this conversion either on the CPU before uploading the data to the GPU or inside shaders while initializing the necessary structures. Keep in mind that converting data on the fly will add extra processing time.",
+      "createdAt": "2024-04-03T15:01:56.928Z",
+      "updatedAt": "2024-04-03T15:02:02.013Z",
+      "ancestors": [
+        "cf6f0cbb-4f04-4364-b176-8f03972b9089",
+        "6cd4dc81-d057-4c98-9402-dddf65e0aedf"
+      ],
+      "id": "bf8dc09c-005f-4081-9a2b-5d5999b7d6de",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-04-03T15:01:56.414Z",
+  "updatedAt": "2024-04-03T15:02:02.016Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66fa2d13a722b2472bba3579",
+  "title": "📝 Story creation tool",
+  "rootMessageId": "4f239927-482e-4688-8e57-aa43050f7d0a",
+  "messages": [
+    {
+      "id": "4f239927-482e-4688-8e57-aa43050f7d0a",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors PyQt5 and complies with Python 3.11, using async/await, JSON, YAML, or free-form (human readable machine text). Other languages may include JS/TS or C++.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+      "createdAt": "2024-09-30T04:46:11.527Z",
+      "updatedAt": "2024-09-30T04:46:11.527Z",
+      "children": [
+        "60b216ae-65e5-4e40-8765-7afeb69f205e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Title: StoryMaker\n\nStoryMaker is a user-friendly application designed to help users create engaging and personalized stories. The application features simple content controls and a generate button to make the story creation process easy and intuitive.\n\nThe main interface of StoryMaker consists of several sections:\n\n1. Character Creation: Users can create and customize any number of characters by selecting their gender, age, appearance, and personality traits. They can also add a name and a brief background story for their character.\n\n2. Setting Selection: Users can choose from a variety of settings for their story, such as a bustling city, a quiet forest, a magical kingdom, or a futuristic world. They can also create their own unique setting by uploading an image or describing it in detail.\n\n3. Plot Generator: The plot generator section allows users to select the genre of their story, such as adventure, romance, mystery, or fantasy. Based on the selected genre, the application will suggest a range of plot ideas for the user to choose from.\n\n4. Story Editor: Once the user has selected their character, setting, and plot, they can begin writing their story in the story editor section. The editor features simple formatting tools, such as bold, italic, and underline, to help users create visually appealing stories.\n\n5. Generate Button: When the user is finished writing their story, they can click the generate button to create a finalized version of their story. The application will format the story, add any missing elements, and ensure that the story flows smoothly and logically.\n\nStoryMaker is designed to be a fun and easy-to-use application that allows users to create their own unique stories. Whether users are looking to write a short story for fun or a full-length novel for publication, StoryMaker provides the tools and resources they need to bring their ideas to life.",
+      "files": [],
+      "createdAt": "2024-09-30T04:46:12.296Z",
+      "updatedAt": "2024-09-30T04:46:12.296Z",
+      "ancestors": [
+        "4f239927-482e-4688-8e57-aa43050f7d0a"
+      ],
+      "id": "60b216ae-65e5-4e40-8765-7afeb69f205e",
+      "children": [
+        "349e2e7e-5596-4aae-85b6-5e1519281a25"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Denis/dev:storymaker\nname: \"Denis\"\nrole: Developer\ntask: Design the main interface for the StoryMaker application\n\n1. **Character Creation**:\n   - **Gender, age, personality traits, Names, and Background Stories**:\n     - **Controls**: Dropdown menus for gender and age, text boxes for names, and a simple text editor for background stories.\n     - **Customization**: Options to select or upload images for character appearance.\n     - **Add/Remove characters**: Buttons to add or Remove characters from the story.\n\n2. **Setting Selection**:\n   - **PredefinedSettings**: Dropdown menu with options like a magical kingdom, quiet forest, futuristic world, etc.\n   - **custom settings**: Upload an image or type a detailed description of the setting.\n\n3. **Plot Generator**:\n   - **Genre Selection**: Dropdown menu for selecting the genre (e.g., fantasy, adventure, mystery).\n   - **Plot ideas**: A list of suggested plot ideas based on the selected genre, with a button to generate more ideas.\n\n4. **Story Editor**:\n   - **Text Editor**: A rich text editor with simple formatting tools (bold, italic, underline).\n   - **Preview**: A live preview of the story as it is being written, showing the formatted text and images.\n\n5. **Generate Button**:\n   - **Finalize Story**: A button to generate the final version of the story, which will format the story, add any missing elements, and ensure it flows smoothly and logically.\n\n**Additional Features**:\n   - **Save and Load**: Options to save the current state of the story and load previously saved stories.\n   - **Share**: A button to share the story via email, social media, or export as a file.\n\nThe maininterface will be intuitive and user-friendly, with clear labels and instructions for each section to guide users through the story creation process.\n\n**Design Considerations**:\n   - **User Experience**: The interface should be designed to be visually appealing and easy to navigate, with clear labels and intuitive controls.\n   - **Responsiveness**: The application should be responsive and adaptable to different screen sizes and devices.\n   - **Accessibility**: Ensure that the application is accessible to users with disabilities, with appropriate contrast, font sizes, and keyboard navigation.\n\nThis design aims to provide a seamless and enjoyable experience for users, enabling them to create their stories with ease and creativity.",
+      "createdAt": "2024-09-30T04:46:12.296Z",
+      "updatedAt": "2024-09-30T04:46:12.305Z",
+      "ancestors": [
+        "4f239927-482e-4688-8e57-aa43050f7d0a",
+        "60b216ae-65e5-4e40-8765-7afeb69f205e"
+      ],
+      "id": "349e2e7e-5596-4aae-85b6-5e1519281a25",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors PyQt5 and complies with Python 3.11, using async/await, JSON, YAML, or free-form (human readable machine text). Other languages may include JS/TS or C++.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+  "assistantId": "66fa19353742200fc9bbd2ef",
+  "createdAt": "2024-09-30T04:46:11.529Z",
+  "updatedAt": "2024-09-30T04:46:31.075Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

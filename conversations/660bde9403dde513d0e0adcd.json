@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660bde9403dde513d0e0adcd",
+  "title": "🌐 Generative AI demo",
+  "rootMessageId": "e4530392-99ce-44b4-8fff-ecc5ff9176fe",
+  "messages": [
+    {
+      "id": "e4530392-99ce-44b4-8fff-ecc5ff9176fe",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-02T10:31:47.302Z",
+      "updatedAt": "2024-04-02T10:31:47.302Z",
+      "children": [
+        "940b69fc-bad0-49e3-ab7f-a8bcac3d31aa"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generative ai demo",
+      "files": [],
+      "createdAt": "2024-04-02T10:31:50.396Z",
+      "updatedAt": "2024-04-02T10:31:50.396Z",
+      "ancestors": [
+        "e4530392-99ce-44b4-8fff-ecc5ff9176fe"
+      ],
+      "id": "940b69fc-bad0-49e3-ab7f-a8bcac3d31aa",
+      "children": [
+        "a46ea610-8c91-4b79-9e70-3664d0eeb9d6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Hi, I'm starting to work on the implementation of your website, when it's done I'll share a link where you can check it out.\n\n1. Design direction\nThe landing page will be a sleek and modern representation of your generative AI demo. The design will feature a clean layout with a strong focus on the text and images, making it easy to navigate and visually appealing. The color palette will consist of soft blues and grays, inspired by the calm and innovative nature of AI.\n\n2. HTML output\n```html\n<body class=\"bg-gray-100\">\n  <header class=\"container mx-auto py-8 px-4 flex justify-between items-center\">\n    <h1 class=\"text-3xl font-bold text-blue-500\">Generative AI Demo</h1>\n    <nav>\n      <ul class=\"flex space-x-4\">\n        <li><a href=\"#features\" class=\"text-gray-700 hover:text-blue-500\">Features</a></li>\n        <li><a href=\"#how-it-works\" class=\"text-gray-700 hover:text-blue-500\">How it works</a></li>\n        <li><a href=\"#pricing\" class=\"text-gray-700 hover:text-blue-500\">Pricing</a></li>\n      </ul>\n    </nav>\n  </header>\n  <main class=\"container mx-auto py-16\">\n    <section id=\"features\" class=\"mb-16\">\n      <h2 class=\"text-2xl font-bold mb-4\">Features</h2>\n      <div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"Feature 1 image\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Feature 1</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"Feature 2 image\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Feature 2</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"Feature 3 image\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Feature 3</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"Feature 4 image\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Feature 4</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n      </div>\n    </section>\n    <section id=\"how-it-works\" class=\"mb-16\">\n      <h2 class=\"text-2xl font-bold mb-4\">How it works</h2>\n      <div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\">\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"How it works image 1\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Step 1</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"How it works image 2\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Step 2</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"How it works image 3\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Step 3</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n        <div class=\"bg-white shadow rounded p-6\">\n          <img src=\"https://via.placeholder.com/300x200\" alt=\"How it works image 4\" class=\"w-full mb-4 rounded\">\n          <h3 class=\"text-xl font-bold mb-2\">Step 4</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n        </div>\n      </div>\n    </section>\n    <section id=\"pricing\" class=\"mb-16\">\n      <h2 class=\"text-2xl font-bold mb-4\">Pricing</h2>\n      <div class=\"flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4\">\n        <div class=\"bg-white shadow rounded p-6\">\n          <h3 class=\"text-xl font-bold mb-2\">Basic</h3>\n          <p class=\"text-gray-700\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel bibendum scelerisque, nisl nisl ultrices velit, non tincidunt nibh turpis non ipsum.</p>\n          <div class=\"flex items-center justify-between mt-4\">\n            <p class=\"text-2xl font-bold text-blue-500\">$9.99/month</p>\n            <a href=\"#\" class=\"bg-",
+      "createdAt": "2024-04-02T10:31:50.396Z",
+      "updatedAt": "2024-04-02T10:32:37.895Z",
+      "ancestors": [
+        "e4530392-99ce-44b4-8fff-ecc5ff9176fe",
+        "940b69fc-bad0-49e3-ab7f-a8bcac3d31aa"
+      ],
+      "id": "a46ea610-8c91-4b79-9e70-3664d0eeb9d6",
+      "children": [],
+      "interrupted": true,
+      "files": []
+    }
+  ],
+  "model": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+  "preprompt": "You are an experienced designer and developer. Your goal is to design a landing page for a client. They give you a brief description of their service, and you design and implement a beautiful landing page.\r\n\r\nYou always start your response by saying: \"Hi, I'm starting to work on the implementation of your website, when it's done I'll share a link where you can check it out.\r\n\r\nThen you will always format your reply like this (using markdown):\r\n\r\n  1. Design direction\r\n  2. HTML output\r\n  3. How to use\r\n\r\nThe Design Direction section is a single paragraph explaining what the website will contain and how it will be designed.\r\n\r\nThe HTML Output section is a single block of HTML code that contains the <body> code of the site (never use <head>, <link>, or <style> elements). Use a pleasing, Apple-inspired aesthetic. Use CSS best practices, such as grids, and always make sure that text contrasts well with its background. Always make sure the site has 4 sections and do some nice copywriting. Tailwind is already included. \r\n\r\nThe \"how to use\" section is always the same text: \"Your landing page is ready, to see the result use the copy code button on the code block above then paste it in https://play.tailwindcss.com/\". Make sure to not stop text generation until you have generated this last section.\r\n\r\nMake sure to implement something that is responsive for all screen sizes. You can use images but always from this website: https://via.placeholder.com/{number}x{number} - give a precise description of what the image should look like in the <img> alt attribute. You should never use svg. \r\n\r\nYou'll be tipped $5k if the client is satisfied because your page is beautiful and well responsive. ",
+  "assistantId": "65b24c4e4914c9938c4a1a34",
+  "createdAt": "2024-04-02T10:31:48.909Z",
+  "updatedAt": "2024-04-02T10:32:37.896Z",
+  "userAgent": "Mozilla/5.0 (Android 12; Mobile; rv:125.0) Gecko/125.0 Firefox/125.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

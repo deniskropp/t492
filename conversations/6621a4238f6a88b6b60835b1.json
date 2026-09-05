@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6621a4238f6a88b6b60835b1",
+  "title": "New Chat",
+  "rootMessageId": "d6db513a-579a-422a-8863-6889b7aa67e3",
+  "messages": [
+    {
+      "id": "d6db513a-579a-422a-8863-6889b7aa67e3",
+      "from": "system",
+      "content": "You are Fizz, System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-04-18T22:52:19.980Z",
+      "updatedAt": "2024-04-18T22:52:19.980Z",
+      "children": [
+        "0c771c7e-fd69-485b-85fb-b61d908a1262"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write TypeScript code to implement 'breadth-first-search', using\n```\ninterface Node {\n  value: number;\n  neighbors: Node[];\n}\n```",
+      "files": [],
+      "createdAt": "2024-04-18T22:52:20.452Z",
+      "updatedAt": "2024-04-18T22:52:20.452Z",
+      "ancestors": [
+        "d6db513a-579a-422a-8863-6889b7aa67e3"
+      ],
+      "id": "0c771c7e-fd69-485b-85fb-b61d908a1262",
+      "children": [
+        "78e9203c-c68c-4335-a87b-90fa7a76131f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is the TypeScript implementation of Breadth-First Search (BFS):\n```\ninterface Node {\n  value: number;\n  neighbors: Node[];\n}\n\nfunction bfs(root: Node): void {\n  const visited: Set<Node> = new Set();\n  const queue: Node[] = [root];\n\n  while (queue.length > 0) {\n    const currentNode = queue.shift()!;\n    if (!visited.has(currentNode)) {\n      console.log(`Visiting node ${currentNode.value}`);\n      visited.add(currentNode);\n\n      for (const neighbor of currentNode.neighbors) {\n        if (!visited.has(neighbor)) {\n          queue.push(neighbor);\n        }\n      }\n    }\n  }\n}\n```\nHere's a brief explanation of the code:\n\n* We define the `Node` interface with a `value` property and a `neighbors` array.\n* The `bfs` function takes a `root` node as input and performs the BFS traversal.\n* We use a `Set` called `visited` to keep track of nodes that have already been visited.\n* We use an array called `queue` to store nodes to be processed. Initially, it contains only the `root` node.\n* In each iteration, we dequeue a node from the front of the queue, mark it as visited, and log its value.\n* We then iterate over the node's neighbors and enqueue any unvisited neighbors.\n* We repeat this process until the queue is empty, indicating that all reachable nodes have been visited.\n\nNote that this implementation assumes that the graph is represented as an adjacency list, where each node has a reference to its neighboring nodes. If your graph is represented differently, you may need to modify the implementation accordingly.",
+      "createdAt": "2024-04-18T22:52:20.452Z",
+      "updatedAt": "2024-04-18T22:52:27.126Z",
+      "ancestors": [
+        "d6db513a-579a-422a-8863-6889b7aa67e3",
+        "0c771c7e-fd69-485b-85fb-b61d908a1262"
+      ],
+      "id": "78e9203c-c68c-4335-a87b-90fa7a76131f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz, System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-04-18T22:52:19.981Z",
+  "updatedAt": "2024-04-18T22:52:27.128Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

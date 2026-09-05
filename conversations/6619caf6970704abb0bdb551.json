@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619caf6970704abb0bdb551",
+  "title": "💻 Code74k-express.ts",
+  "rootMessageId": "3416d862-0a7c-4e2e-9dd6-5cf42b9ccfec",
+  "messages": [
+    {
+      "id": "3416d862-0a7c-4e2e-9dd6-5cf42b9ccfec",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-12T23:59:50.793Z",
+      "updatedAt": "2024-04-12T23:59:50.793Z",
+      "children": [
+        "72399bb7-8c18-4361-b18d-9c1a9e2c9b31"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k-express.ts - KickLang server with MySQL storage",
+      "files": [],
+      "createdAt": "2024-04-12T23:59:51.840Z",
+      "updatedAt": "2024-04-12T23:59:51.840Z",
+      "ancestors": [
+        "3416d862-0a7c-4e2e-9dd6-5cf42b9ccfec"
+      ],
+      "id": "72399bb7-8c18-4361-b18d-9c1a9e2c9b31",
+      "children": [
+        "30756cbf-7549-48a5-bbdc-c1e324d1d43f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here is a basic example of a KickLang server using Express and MySQL for storage:\r\n\r\n```javascript\r\nimport express from 'express';\r\nimport mysql from 'mysql';\r\nimport bodyParser from 'body-parser';\r\nimport { compile } from 'kicklang';\r\n\r\n// Create the Express app\r\nconst app = express();\r\n\r\n// Use body parser middleware\r\napp.use(bodyParser.json());\r\n\r\n// Connect to the MySQL database\r\nconst db = mysql.createConnection({\r\n  host: 'localhost',\r\n  user: 'yourusername',\r\n  password: '<PASSWORD>',\r\n  database: 'yourdatabase'\r\n});\r\n\r\ndb.connect();\r\n\r\n// Define the data model\r\ninterface Code74k {\r\n  key: string;\r\n  value: string;\r\n}\r\n\r\n// KickLang compiler options\r\nconst options = {\r\n  functions: {\r\n    // Custom function to retrieve all Code74k entries\r\n    getAllCode74k: () => {\r\n      return new Promise((resolve, reject) => {\r\n        db.query('SELECT * FROM code74k', (error, results) => {\r\n          if (error) {\r\n            reject(error);\r\n          } else {\r\n            resolve(results);\r\n          }\r\n        });\r\n      });\r\n    },\r\n\r\n    // Custom function to create a new Code74k entry\r\n    createCode74k: (key: string, value: string) => {\r\n      return new Promise((resolve, reject) => {\r\n        db.query('INSERT INTO code74k SET ?', { key, value }, (error, result) => {\r\n          if (error) {\r\n            reject(error);\r\n          } else {\r\n            resolve(result);\r\n          }\r\n        });\r\n      });\r\n    },\r\n  }\r\n};\r\n\r\n// Compile the KickLang source code\r\nconst kicklangCode = `\r\n  rule get_all_code74k {\r\n    when getAllCode74k() -> ?output {\r\n      output = it;\r\n    }\r\n  }\r\n\r\n  rule create_code74k {\r\n    when createCode74k($key, $value) -> ?output {\r\n      output = \"Entry created successfully\";\r\n    }\r\n  }\r\n`;\r\n\r\nconst { get_all_code74k, create_code74k } = compile(kicklangCode, options);\r\n\r\n// Define API endpoints\r\napp.get('/code74k', async (req, res) => {\r\n  try {\r\n    const result = await get_all_code74k();\r\n    res.json(result);\r\n  } catch (error) {\r\n    res.status(500).send(error);\r\n  }\r\n});\r\n\r\napp.post('/code74k', async (req, res) => {\r\n  const { key, value } = req.body;\r\n  try {\r\n    await create_code74k(key, value);\r\n    res.send('Entry created successfully');\r\n  } catch (error) {\r\n    res.status(500).send(error);\r\n  }\r\n});\r\n\r\n// Start the server\r\napp.listen(3000, () => {\r\n  console.log('Server started on port 3000');\r\n});\r\n```\r\n\r\nIn this example, we have an Express server that uses MySQL as the data storage. We define two endpoints: one to retrieve all Code74k entries and another to create a new Code74k entry.\r\n\r\nThe `get_all_code74k` rule uses the `getAllCode74k` custom function to retrieve all entries from the database and return them as the output.\r\n\r\nThe `create_code74k` rule uses the `createCode74k` custom function to insert a new entry into the database.\r\n\r\nYou would need to replace `'yourusername'`, `'yourpassword'`, and `'yourdatabase'` with your actual MySQL credentials and database name.\r\n\r\nThis is a basic example, and you can extend it further by adding more rules, functions, and endpoints as per your requirements.",
+      "createdAt": "2024-04-12T23:59:51.840Z",
+      "updatedAt": "2024-04-13T00:00:13.445Z",
+      "ancestors": [
+        "3416d862-0a7c-4e2e-9dd6-5cf42b9ccfec",
+        "72399bb7-8c18-4361-b18d-9c1a9e2c9b31"
+      ],
+      "id": "30756cbf-7549-48a5-bbdc-c1e324d1d43f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-12T23:59:50.795Z",
+  "updatedAt": "2024-04-13T00:00:13.450Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

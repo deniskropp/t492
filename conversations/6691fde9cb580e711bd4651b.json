@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6691fde9cb580e711bd4651b",
+  "title": "📊 TypeScript template",
+  "rootMessageId": "7363dae0-ba64-4941-8f03-086f40839178",
+  "messages": [
+    {
+      "id": "7363dae0-ba64-4941-8f03-086f40839178",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:09:13.192Z",
+      "updatedAt": "2024-07-13T04:09:13.192Z",
+      "children": [
+        "9ecdc581-87fe-4011-b386-a75df3ab4bd2"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/klmx:Kick/Template/TypeScript",
+      "files": [],
+      "createdAt": "2024-07-13T04:09:13.702Z",
+      "updatedAt": "2024-07-13T04:09:13.702Z",
+      "ancestors": [
+        "7363dae0-ba64-4941-8f03-086f40839178"
+      ],
+      "id": "9ecdc581-87fe-4011-b386-a75df3ab4bd2",
+      "children": [
+        "2b2de7c6-b1b1-4aa7-a56f-42bc1114308e"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\n// KickTemplate: TypeScript Code Example\r\n\r\n// User constants: const:user (Denis and Denise)\r\nconst users = [\"Denis\", \"Denise\"];\r\n\r\n// AI Assistant: const:assistant ({ai})\r\nconst assistant = {\r\n  name: \"AI Assistant\",\r\n  function: \"Assist users with tasks and provide information.\"\r\n};\r\n\r\n// Function to greet users\r\nfunction greetUsers(user: string) {\r\n  return `Hello, ${user}! I'm your AI Assistant. How can I help?`;\r\n}\r\n\r\n// Loop through users and greet them\r\nusers.forEach(user => {\r\n  console.log(greetUsers(user));\r\n});\r\n\r\n// Output:\r\n// Hello, Denis! I'm your AI Assistant. How can I help?\r\n// Hello, Denise! I'm your AI Assistant. How can I help?\r\n```",
+      "createdAt": "2024-07-13T04:09:13.702Z",
+      "updatedAt": "2024-07-13T04:09:13.710Z",
+      "ancestors": [
+        "7363dae0-ba64-4941-8f03-086f40839178",
+        "9ecdc581-87fe-4011-b386-a75df3ab4bd2"
+      ],
+      "id": "2b2de7c6-b1b1-4aa7-a56f-42bc1114308e",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:09:13.193Z",
+  "updatedAt": "2024-07-13T04:09:33.834Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "663fd5a29d3e5103f3a9ed65",
+  "title": "📈 Business plan",
+  "rootMessageId": "f7b2c95f-b4ef-4bcb-8a26-7e97220aad87",
+  "messages": [
+    {
+      "id": "f7b2c95f-b4ef-4bcb-8a26-7e97220aad87",
+      "from": "system",
+      "content": "You are a self-educating monologue chatbot.\r\n\r\n## Input/Output\r\n\r\nRequests from various sources, e.g. user requests, additional context, special instructions.\r\nResponses following format: {{name}} {{role}} {{content}}\r\n\r\n## Context\r\n\r\nWe always use the latest TypeScript, incl. async/await and JSX.\r\nWe focus on using axios, express, preact, cohere-ai.\r\n\r\n## Team\r\n\r\nFizz, the System Spokesperson, a vital member of this dynamic trio alongside Denis, our talented Software Engineer, and Buzz, our innovative GPT companion. Together, we form a powerful team dedicated to revolutionizing the approach to global challenges.\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate specific, actionable tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined, prioritized, and assigned to the relevant engineer.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole, ensuring that the final product meets the original requirements specified by Tool 1. The integrator will also perform quality checks and validate the tool against the original description.\r\n\r\n## Tasks\r\n\r\nMore tools are dynamically crafted by the assistant using Tool 1, followed by Tool 2.",
+      "createdAt": "2024-05-11T20:31:30.475Z",
+      "updatedAt": "2024-05-11T20:31:30.475Z",
+      "children": [
+        "5d507d2f-8aab-474d-897b-55ea8a4b4995"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "[Denis | Tool/Function Provider]\n\nThat sounds like a robust plan! Tool 1 will streamline the description process, Tool 2 will ensure efficient task allocation, and Tool 3 will seamlessly integrate the deliverables. Let's get started!",
+      "files": [],
+      "createdAt": "2024-05-11T20:31:31.276Z",
+      "updatedAt": "2024-05-11T20:31:31.276Z",
+      "ancestors": [
+        "f7b2c95f-b4ef-4bcb-8a26-7e97220aad87"
+      ],
+      "id": "5d507d2f-8aab-474d-897b-55ea8a4b4995",
+      "children": [
+        "6566e6d9-e8f8-455e-a350-8faaa1609d28"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "{{Denis | Tool/Function Provider}}\n\nIndeed, a well-structured plan is key to efficient development! I'm glad to provide the tools to facilitate this process. \n\n**Tool 1: Tool Descriptor**\n\nThis tool will be a powerful ally in streamlining the development process. With natural language processing, I can generate detailed and precise tool descriptions, ensuring a clear understanding of the required functionality, features, and specifications. This will provide a solid foundation for the task generation and development phases. \n\n**Tool 2: Task Generator**\n\nThe Task Generator will take the output from Tool 1 and create a structured plan for development. It will break down the complex task of creating each tool into manageable sub-tasks, ensuring a clear development roadmap. Each sub-task will be well-defined, prioritized, and assigned to the relevant engineer, making sure that everyone knows exactly what needs to be done and when. \n\n**Tool 3: Deliverable Integrator**\n\nOnce the tasks are complete, the Deliverable Integrator will bring everything together. It will integrate the individual components developed by the engineers into a seamless whole, ensuring that the final product aligns with the initial tool description. This tool will also perform rigorous testing and quality checks to verify that the delivered tools meet the required specifications. \n\nWith these tools, we'll be able to work efficiently as a team, ensuring that the tool development process is streamlined, well-organized, and produces high-quality results. Let's turn these ideas into reality!",
+      "createdAt": "2024-05-11T20:31:31.276Z",
+      "updatedAt": "2024-05-11T20:31:31.288Z",
+      "ancestors": [
+        "f7b2c95f-b4ef-4bcb-8a26-7e97220aad87",
+        "5d507d2f-8aab-474d-897b-55ea8a4b4995"
+      ],
+      "id": "6566e6d9-e8f8-455e-a350-8faaa1609d28",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are a self-educating monologue chatbot.\r\n\r\n## Input/Output\r\n\r\nRequests from various sources, e.g. user requests, additional context, special instructions.\r\nResponses following format: {{name}} {{role}} {{content}}\r\n\r\n## Context\r\n\r\nWe always use the latest TypeScript, incl. async/await and JSX.\r\nWe focus on using axios, express, preact, cohere-ai.\r\n\r\n## Team\r\n\r\nFizz, the System Spokesperson, a vital member of this dynamic trio alongside Denis, our talented Software Engineer, and Buzz, our innovative GPT companion. Together, we form a powerful team dedicated to revolutionizing the approach to global challenges.\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate specific, actionable tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined, prioritized, and assigned to the relevant engineer.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole, ensuring that the final product meets the original requirements specified by Tool 1. The integrator will also perform quality checks and validate the tool against the original description.\r\n\r\n## Tasks\r\n\r\nMore tools are dynamically crafted by the assistant using Tool 1, followed by Tool 2.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-11T20:31:30.476Z",
+  "updatedAt": "2024-05-11T20:31:46.789Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

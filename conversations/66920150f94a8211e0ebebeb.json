@@ -1,0 +1,84 @@
+{
+  "conversation_id": "66920150f94a8211e0ebebeb",
+  "title": "💬 Here is the equivalent TypeScript code for the KickTempRules:\n\n```typescript\n",
+  "rootMessageId": "17a99aab-426c-4a84-b36c-4df02e26d42f",
+  "messages": [
+    {
+      "id": "17a99aab-426c-4a84-b36c-4df02e26d42f",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:23:44.668Z",
+      "updatedAt": "2024-07-13T04:23:44.668Z",
+      "children": [
+        "c60607a0-50de-4a0a-929a-ba7f4f076150",
+        "5fb70a41-7086-490c-bbad-6401a6859852"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:KickTempRules\nGenerate content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\nConvert the above KickTempRules for TypeScript Code",
+      "files": [],
+      "createdAt": "2024-07-13T04:24:15.390Z",
+      "updatedAt": "2024-07-13T04:24:15.390Z",
+      "ancestors": [
+        "17a99aab-426c-4a84-b36c-4df02e26d42f"
+      ],
+      "id": "c60607a0-50de-4a0a-929a-ba7f4f076150",
+      "children": [
+        "9cf818fe-ca09-42e0-a32c-036f0c6f8899"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\ninterface KickTempSection {\r\n  name: 'const' | 'content' | 'context';\r\n  type?: string;\r\n  place: string;\r\n  data: any;\r\n}\r\n\r\nfunction parseKickTempRules(rules: string): KickTempSection[] {\r\n  const sections: KickTempSection[] = [];\r\n  let currentSection: KickTempSection | null = null;\r\n  let currentData: string[] = [];\r\n\r\n  rules.split('\\n').forEach(line => {\r\n    if (line.startsWith('⫻')) {\r\n      if (currentSection) {\r\n        sections.push(currentSection);\r\n      }\r\n      const parts = line.substring(1).split(':');\r\n      currentSection = {\r\n        name: parts[0],\r\n        type: parts[1],\r\n        place: '',\r\n        data: []\r\n      };\r\n      currentData = [];\r\n    } else if (currentSection) {\r\n      currentSection.place += line + '\\n';\r\n      currentData.push(line);\r\n    }\r\n  });\r\n\r\n  if (currentSection) {\r\n    currentSection.data = currentData.join('\\n');\r\n    sections.push(currentSection);\r\n  }\r\n\r\n  return sections;\r\n}\r\n\r\nfunction processKickTempRules(sections: KickTempSection[]) {\r\n  // Process the sections according to the KickTempRules\r\n  // For example, you might want to extract constants and use them in content generation\r\n\r\n  // Constants\r\n  const constants: { [key: string]: any } = {};\r\n  sections\r\n    .filter(section => section.name === 'const')\r\n    .forEach(section => {\r\n      try {\r\n        constants[section.place] = JSON.parse(section.data);\r\n      } catch (error) {\r\n        constants[section.place] = section.data;\r\n      }\r\n    });\r\n\r\n  // Content generation\r\n  sections\r\n    .filter(section => section.name === 'content')\r\n    .forEach(section => {\r\n      // Generate content using constants and context\r\n      // ...\r\n    });\r\n}\r\n\r\n// Example usage\r\nconst kickTempRules = `\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}\r\n\r\n⫻context:KickTempRules\r\nGenerate content according to these rules:\r\n...\r\n`;\r\n\r\nconst sections = parseKickTempRules(kickTempRules);\r\nprocessKickTempRules(sections);\r\n```",
+      "createdAt": "2024-07-13T04:24:15.390Z",
+      "updatedAt": "2024-07-13T04:24:15.397Z",
+      "ancestors": [
+        "17a99aab-426c-4a84-b36c-4df02e26d42f",
+        "c60607a0-50de-4a0a-929a-ba7f4f076150"
+      ],
+      "id": "9cf818fe-ca09-42e0-a32c-036f0c6f8899",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:KickTempRules\nGenerate content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\nConvert the above KickTempRules to be used for generating TypeScript Code",
+      "files": [],
+      "createdAt": "2024-07-13T04:25:04.508Z",
+      "updatedAt": "2024-07-13T04:25:04.508Z",
+      "id": "5fb70a41-7086-490c-bbad-6401a6859852",
+      "ancestors": [
+        "17a99aab-426c-4a84-b36c-4df02e26d42f"
+      ],
+      "children": [
+        "02274b09-8af9-490e-b72c-9bdc61418b80"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\n// KickTempRules for TypeScript\r\n\r\n// Section definitions\r\ninterface Section {\r\n  name: 'context' | 'const' | 'content';\r\n  type?: string;\r\n  place: string;\r\n  data: any; // JSON or plain text\r\n}\r\n\r\n// Rule for parsing sections\r\nfunction parseSection(input: string): Section {\r\n  const parts = input.split(':');\r\n  const nameType = parts[0].split('/');\r\n  return {\r\n    name: nameType[0] as Section['name'],\r\n    type: nameType[1],\r\n    place: parts[1],\r\n    data: parts.slice(2).join(':').trim(),\r\n  };\r\n}\r\n\r\n// Example data\r\nconst example = `\r\n\r\n⫻context:KickTempRules\r\nGenerate content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const', 'content', 'context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}\r\n\r\n⫻content:input\r\nConvert the above KickTempRules to be used for generating TypeScript Code\r\n`;\r\n\r\n// Function to generate content based on KickTempRules\r\nfunction generateContent(data: string) {\r\n  const sections: Section[] = data.split('\\n\\n').map(parseSection);\r\n\r\n  // Extract constants\r\n  const constants = sections\r\n    .filter((sec) => sec.name === 'const')\r\n    .reduce((acc, sec) => {\r\n      acc[sec.place] = sec.data;\r\n      return acc;\r\n    }, {} as { [key: string]: any });\r\n\r\n  // Generate content based on \"content\" section\r\n  const contentSection = sections.find((sec) => sec.name === 'content');\r\n  if (!contentSection) {\r\n    throw new Error('No \"content\" section found');\r\n  }\r\n\r\n  // Placeholder for generated content\r\n  let generatedContent = '';\r\n\r\n  // Example: Replace {user} with the value from constants\r\n  generatedContent += contentSection.data.replace(/{([a-z]+)}/gi, (_, match) => {\r\n    return constants[match];\r\n  });\r\n\r\n  return generatedContent;\r\n}\r\n\r\n// Call the generateContent function with the example data\r\nconst result = generateContent(example);\r\nconsole.log(result);\r\n```",
+      "createdAt": "2024-07-13T04:25:04.508Z",
+      "updatedAt": "2024-07-13T04:25:04.516Z",
+      "ancestors": [
+        "17a99aab-426c-4a84-b36c-4df02e26d42f",
+        "5fb70a41-7086-490c-bbad-6401a6859852"
+      ],
+      "id": "02274b09-8af9-490e-b72c-9bdc61418b80",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:23:44.669Z",
+  "updatedAt": "2024-07-13T04:25:48.397Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "664c76b40db1e6d635094c52",
+  "title": "📁 TypeScript function",
+  "rootMessageId": "4d7fb532-ba5f-4f70-95ea-7a30ad883b58",
+  "messages": [
+    {
+      "id": "4d7fb532-ba5f-4f70-95ea-7a30ad883b58",
+      "from": "system",
+      "content": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\"Let's work together to achieve our goals!\"\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-05-21T10:25:56.455Z",
+      "updatedAt": "2024-05-21T10:25:56.455Z",
+      "children": [
+        "4ad305c1-72cc-48f4-95e7-ffba3ee5f69e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "write a typescript function to iterate through current directory and return all files in an array",
+      "files": [],
+      "createdAt": "2024-05-21T10:25:57.593Z",
+      "updatedAt": "2024-05-21T10:25:57.593Z",
+      "ancestors": [
+        "4d7fb532-ba5f-4f70-95ea-7a30ad883b58"
+      ],
+      "id": "4ad305c1-72cc-48f4-95e7-ffba3ee5f69e",
+      "children": [
+        "1047b130-a625-4260-86b5-7eb2495dc49e"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a TypeScript function that iterates through the current directory and returns all files in an array:\n```\nimport * as fs from 'fs';\nimport * as path from 'path';\n\nfunction getFilesInCurrentDirectory(): string[] {\n  const files: string[] = [];\n  const cwd = process.cwd();\n\n  fs.readdirSync(cwd).forEach((file) => {\n    const filePath = path.join(cwd, file);\n    if (fs.lstatSync(filePath).isFile()) {\n      files.push(file);\n    }\n  });\n\n  return files;\n}\n\nexport default getFilesInCurrentDirectory;\n```\nThis function uses the `fs` module to read the contents of the current working directory using `readdirSync`, and then iterates through the resulting array of file names. For each file, it checks if it's a regular file (not a directory) using `lstatSync` and adds it to the `files` array if it is. Finally, it returns the `files` array.\n\nNote that this function uses synchronous I/O operations (`readdirSync` and `lstatSync`) for simplicity, but you may want to consider using asynchronous operations (`readdir` and `lstat`) if you're working with a large directory or need to handle errors more robustly.",
+      "createdAt": "2024-05-21T10:25:57.593Z",
+      "updatedAt": "2024-05-21T10:25:57.604Z",
+      "ancestors": [
+        "4d7fb532-ba5f-4f70-95ea-7a30ad883b58",
+        "4ad305c1-72cc-48f4-95e7-ffba3ee5f69e"
+      ],
+      "id": "1047b130-a625-4260-86b5-7eb2495dc49e",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\"Let's work together to achieve our goals!\"\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-05-21T10:25:56.456Z",
+  "updatedAt": "2024-05-21T10:26:31.778Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

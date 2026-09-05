@@ -1,0 +1,61 @@
+{
+  "conversation_id": "674daf38f964d639268a61f7",
+  "title": "🗣 Speech generation",
+  "rootMessageId": "7fdc353b-5ffa-497a-bc91-407e670610eb",
+  "messages": [
+    {
+      "id": "7fdc353b-5ffa-497a-bc91-407e670610eb",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-12-02T12:59:36.214Z",
+      "updatedAt": "2024-12-02T12:59:36.214Z",
+      "children": [
+        "47f0f1db-55db-4400-b343-8ec0b494f1bb"
+      ],
+      "ancestors": [],
+      "files": [
+        "file-674daf38f964d639268a61f7-329ed018.wav"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "generate speech",
+      "files": [
+        "file-674daf38f964d639268a61f7-329ed018.wav"
+      ],
+      "createdAt": "2024-12-02T12:59:36.903Z",
+      "updatedAt": "2024-12-02T12:59:36.903Z",
+      "ancestors": [
+        "7fdc353b-5ffa-497a-bc91-407e670610eb"
+      ],
+      "id": "47f0f1db-55db-4400-b343-8ec0b494f1bb",
+      "children": [
+        "775eacf5-0926-4d97-a2c1-e8054c9220d8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I used the tool TTS (fast, here is the result.",
+      "createdAt": "2024-12-02T12:59:36.903Z",
+      "updatedAt": "2024-12-02T12:59:36.909Z",
+      "ancestors": [
+        "7fdc353b-5ffa-497a-bc91-407e670610eb",
+        "47f0f1db-55db-4400-b343-8ec0b494f1bb"
+      ],
+      "id": "775eacf5-0926-4d97-a2c1-e8054c9220d8",
+      "children": [],
+      "files": [
+        "file-674daf38f964d639268a61f7-329ed018.wav"
+      ],
+      "interrupted": false
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-12-02T12:59:36.215Z",
+  "updatedAt": "2024-12-02T12:59:52.539Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

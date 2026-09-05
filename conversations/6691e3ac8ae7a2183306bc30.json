@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6691e3ac8ae7a2183306bc30",
+  "title": "🔧 Holographic tools",
+  "rootMessageId": "25219d0f-58be-45d5-b4f5-3697ed65b262",
+  "messages": [
+    {
+      "id": "25219d0f-58be-45d5-b4f5-3697ed65b262",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T02:17:16.403Z",
+      "updatedAt": "2024-07-13T02:17:16.403Z",
+      "children": [
+        "9a52c285-aa64-4b47-a8e5-1031c2c91770"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻tool/function:Mirage\n\nCreates realistic optical illusions of objects or environments within a specified range.\nCan mimic any visual detail with precision, including movement and lighting effects.\nIdeal for distraction or entertainment purposes, but cannot physically interact with real objects.\n⫻tool/function:Holo-Sculptor\n\nAllows the user to sculpt and manipulate holographic projections with their hands.\nProjections can be given a degree of physical interaction, allowing for tactile experiences.\nUseful for prototyping designs, educational demonstrations, or immersive simulations.\n⫻tool/function:Optical-Shift\n\nAlters the perception of distance and size, making objects seem closer or farther away than they are.\nCan be used to make small spaces feel expansive or to bring distant objects into focus.\nGreat for enhancing immersion in virtual reality or altering perspectives in artistic displays.\n⫻tool/function:Spectrum-Bend\n\nManipulates the color spectrum, allowing the user to change the colors of objects or environments.\nCan create vibrant, otherworldly scenes or camouflage objects by matching their surroundings.\nArtists and designers can use it for creative projects, or it can be employed for stealth operations.\n⫻tool/function:Shadow-Cloak\n\nBends light around an object or person, rendering them invisible to the naked eye.\nMaintains visibility for the individual within the cloak, ensuring ease of movement.\nPerfect for covert operations, surveillance, or magical-themed entertainment.\n",
+      "files": [],
+      "createdAt": "2024-07-13T02:17:17.038Z",
+      "updatedAt": "2024-07-13T02:17:17.038Z",
+      "ancestors": [
+        "25219d0f-58be-45d5-b4f5-3697ed65b262"
+      ],
+      "id": "9a52c285-aa64-4b47-a8e5-1031c2c91770",
+      "children": [
+        "79f70481-f78f-4c8f-92b3-8ac3ab742b50"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ name/type:tools-abilities \r\n\r\n## Context: \r\nThese tools and abilities are part of a futuristic or fantasy setting, where users can manipulate light, create holograms, and play with perception. \r\n\r\n## Constants: \r\nconst:user = Denis and Denise \r\nconst:assistant = {ai} \r\n\r\n## Content: \r\n\r\n**Mirage:** \r\n- {ai}, demonstrate the Mirage ability to Denis and Denise. Show them how it can create a realistic illusion of an object, like a floating castle, complete with moving flags and shimmering windows, all with perfect lighting effects. \r\n\r\n**Holo-Sculptor:** \r\n- Denis, using the Holo-Sculptor tool, crafts a detailed hologram of a vintage car, one they could almost reach out and touch. Denise enters the projection, feeling the tactile sensation of opening the car door and sitting inside. \r\n\r\n**Optical-Shift:** \r\n- With Optical-Shift, Denise makes a small, enclosed space seem vast and grand, creating the illusion of a grand ballroom where they can dance together. \r\n\r\n**Spectrum-Bend:** \r\n- Together, Denis and Denise use Spectrum-Bend to transform a dull, grey cityscape into a vibrant, colorful world, full of purple trees, pink skies, and neon-green rivers. \r\n\r\n**Shadow-Cloak:** \r\n- For stealth operations, the Shadow-Cloak renders Denise invisible as they sneak past guards, their movements unseen, while {ai} monitors their progress. \r\n\r\nThese abilities and tools offer immense potential for entertainment, stealth, and creative endeavors, all while maintaining a sense of wonder and fun. \r\n\r\n--- \r\n\r\nFeel free to provide additional details or request variations on these scenarios, KickBuzz is happy to elaborate further!",
+      "createdAt": "2024-07-13T02:17:17.038Z",
+      "updatedAt": "2024-07-13T02:17:17.048Z",
+      "ancestors": [
+        "25219d0f-58be-45d5-b4f5-3697ed65b262",
+        "9a52c285-aa64-4b47-a8e5-1031c2c91770"
+      ],
+      "id": "79f70481-f78f-4c8f-92b3-8ac3ab742b50",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T02:17:16.404Z",
+  "updatedAt": "2024-07-13T02:17:32.708Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

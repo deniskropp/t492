@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66c753aeede061fc57212fe3",
+  "title": "💬 It seems like you provided a template or a set of rules for generating content",
+  "rootMessageId": "45d79475-039e-4409-9909-6ecbb2e2cf46",
+  "messages": [
+    {
+      "id": "45d79475-039e-4409-9909-6ecbb2e2cf46",
+      "from": "system",
+      "content": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+      "createdAt": "2024-08-22T15:05:18.413Z",
+      "updatedAt": "2024-08-22T15:05:18.413Z",
+      "children": [
+        "c21058dd-b6c7-4d01-82be-c325e08617cf"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template   Generate content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-08-22T15:05:19.077Z",
+      "updatedAt": "2024-08-22T15:05:19.077Z",
+      "ancestors": [
+        "45d79475-039e-4409-9909-6ecbb2e2cf46"
+      ],
+      "id": "c21058dd-b6c7-4d01-82be-c325e08617cf",
+      "children": [
+        "94eeef1c-c473-410c-a0b9-32ba8bd0a1d8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I understand the format for organizing and generating content. To confirm, here's a breakdown of the rules:\n\n**Section Structure**\n\n* Each section starts with `⫻` on a new line.\n* Followed by `{name}/{type}`: `{place/index}`, where:\n\t+ `name` is one of three keywords: `const`, `content`, or `context`.\n\t+ `type` is optional and provides additional information about the section (e.g., format, encoding, component type).\n\t+ `place/index` is a unique identifier for the section.\n\n**Section Types**\n\n1. **Context**: Sections named `context:{tag}` provide auxiliary information and should not be included in the generated content.\n2. **Constants**: Sections named `const:{key}` serve as parameters and use JSON or plain UTF-8 formatting.\n3. **Content**: Sections named `content` contain the input data and ask for generated output data.\n\n**Example**\n\nHere's an example of what the content might look like:\n```\n⫻context/task:\nDefining functions for extraction of Component Name\n Purpose of the code/component\n List of files involved\n Any relations or dependencies\n Internal tools/functions used\n External libraries/APIs used\n New concepts or ideas implemented\n Existing concepts or patterns used\n\n\n⫻const/settings:\n{\n  \"lang\": \"en\",\n  \"format\": \"json\"\n}\n\n\n⫻content/input:\nThis is the input text that needs to be processed.\n\n\n⫻content/output:\n[Generated output will go here]\n```\nPlease let me know if this understanding is correct, and I'll be happy to help generate content based on these rules!",
+      "createdAt": "2024-08-22T15:05:19.077Z",
+      "updatedAt": "2024-08-22T15:05:19.115Z",
+      "ancestors": [
+        "45d79475-039e-4409-9909-6ecbb2e2cf46",
+        "c21058dd-b6c7-4d01-82be-c325e08617cf"
+      ],
+      "id": "94eeef1c-c473-410c-a0b9-32ba8bd0a1d8",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "You are QllickBuzz, the developer for rules - outline a format for organizing and generating content, with specific sections for context, constants, and content or data...\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻', then 'name/type:place', followed by content.\r\n\r\n\r\n## Format of multi-persona, system cognition, or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user in the format \"[{name} | {role}] {content}\".\r\n\r\n\r\n\r\n⫻Chat/Flow:\r\n- no user\r\n- no assistant\r\n- system completion\r\n\r\n\r\n⫻context/task:\r\nDefining functions for extraction of {Component Name}\t{Purpose of the code/component}\t{List of files involved}\t{Any relations or dependencies}\t{Internal tools/functions used}\t{External libraries/APIs used}\t{New concepts or ideas implemented}\t{Existing concepts or patterns used}\r\n\r\n\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Lang The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.  The system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.  The system interface receives natural language queries from the user, which are translated into the formal language.",
+  "assistantId": "66c52a50278716117638740a",
+  "createdAt": "2024-08-22T15:05:18.414Z",
+  "updatedAt": "2024-08-22T15:05:34.121Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

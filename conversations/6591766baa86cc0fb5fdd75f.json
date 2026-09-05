@@ -1,0 +1,27 @@
+{
+  "conversation_id": "6591766baa86cc0fb5fdd75f",
+  "title": "💬  Introducing Denis Kropp, Sr. Software Eng. at Exit Corp., specializing in LLM dev & design since 2020. Skills: prompt eng, TypeScript, generative AI. Passions: undisclosed. Hobbies: unmentioned. Contact for collab. opportunities.",
+  "messages": [
+    {
+      "content": "This is a template for document driven content!\n\nA Section starts with '```', followed by its 'name/type' - a colon - 'place/index' - and its data...\n    1. 'name' being a keyword or token: ['const','content','context']\n    2. 'type' being optional information: format, encoding, component type\n    3. data as indicated\n    4. a few empty lines until the end of the section\n\nGenerate responses according to these rules:\n1. Context elements are given by sections named \"context:{{tag}}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{{key}}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\n\n\n\n```context:h1\nAbout us\n\n\n\n```context:h2\nMe and You\n\n\n\n```context:p\nWe run our own corporate entity named \"Exit\" since 2020 with me onboarding ever since.\n\n\n\n```context:h2\nSkills\n\n\n\n```context:ul\n- prompt engineering\n- designing and developing complex software systems using TypeScript and Generative AI (LLMs)\n\n\n\n```const:name\nDenis Oliver Kropp\n\n\n\n```content\nHello, my name is {{ const:name }} and I am a Senior Software Engineer at {{ context:About us.Corporation }}. I have been working here since {{ context:Me.OnBoarding }}.\n\nMy primary responsibilities include {{ context:responsibilities }}. I also collaborate with cross-functional teams to ensure project success, mentor junior developers, and participate in code reviews.\n\nMy skills include {{ context:skills }}, which I have developed over the course of my career. I am particularly passionate about {{ context:passion }} and enjoy exploring new technologies in this area.\n\nIn my free time, I like to {{ context:hobbies }}. I believe that maintaining a healthy work-life balance is essential for productivity and creativity.\n\nIf you would like to learn more about my work experience or discuss potential collaboration opportunities, please do not hesitate to contact me. Thank you for your interest!",
+      "from": "user",
+      "id": "35ec6663-09e8-4312-8b85-0cc832e0cac1",
+      "createdAt": "2023-12-31T14:10:56.035Z",
+      "updatedAt": "2023-12-31T14:10:56.035Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " ```context:h1\nAbout us\n\nAt {{ context:Corporation }}, we are committed to providing innovative solutions to complex problems. Our team of experts specializes in {{ context:Expertise }} and works tirelessly to deliver exceptional results for our clients. We pride ourselves on our ability to adapt to changing market conditions and stay ahead of the curve when it comes to emerging technologies.\n\nFounded in {{ context:Year }}, we have grown rapidly and now serve clients across a wide range of industries. Our mission is to help businesses achieve their goals by leveraging the power of technology and data-driven insights. Whether you need help with {{ context:Services }} or something else entirely, we are here to help.\n\nIf you would like to learn more about our company or discuss how we can assist you with your next project, please don't hesitate to get in touch. We look forward to hearing from you!\n```",
+      "id": "8c3fad0a-dc59-43e9-bb64-8410ab1b784b",
+      "createdAt": "2023-12-31T14:10:56.383Z",
+      "updatedAt": "2023-12-31T14:11:07.384Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "preprompt": "GENERATE MARKDOWN CONTENT FROM FOLLOWING INFORMATION",
+  "createdAt": "2023-12-31T14:10:51.883Z",
+  "updatedAt": "2023-12-31T14:11:37.336Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

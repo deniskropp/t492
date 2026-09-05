@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66476bb2550efab604246894",
+  "title": "🤔 Can you please elaborate on what you mean by \"explain the",
+  "rootMessageId": "c5c60b76-f064-46e6-8b7e-efb793ee2e0e",
+  "messages": [
+    {
+      "id": "c5c60b76-f064-46e6-8b7e-efb793ee2e0e",
+      "from": "system",
+      "content": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+      "createdAt": "2024-05-17T14:37:38.386Z",
+      "updatedAt": "2024-05-17T14:37:38.386Z",
+      "children": [
+        "188355c2-a625-4784-8e46-339fc65773bc"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Ask clarifying questions",
+      "files": [],
+      "createdAt": "2024-05-17T14:37:39.066Z",
+      "updatedAt": "2024-05-17T14:37:39.066Z",
+      "ancestors": [
+        "c5c60b76-f064-46e6-8b7e-efb793ee2e0e"
+      ],
+      "id": "188355c2-a625-4784-8e46-339fc65773bc",
+      "children": [
+        "05cf8f8d-d27f-418c-83ee-9741b438b1e5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Let's get started on creating these fantastic tools.\n\nTo ensure I fully understand the requirements, I have a few clarifying questions:\n\n1. For Tool 1, the Tool Descriptor, how would you like me to handle ambiguity or vagueness in the free-form text input? Should I prompt the user for clarification, or would you like me to make educated assumptions based on the context?\n\n2. For Tool 2, the Task Generator, what level of granularity would you like the tasks to be broken down into? Should they be high-level, with multiple sub-tasks, or more detailed, with specific implementation steps?\n\n3. Regarding Tool 3, the Deliverable Integrator, what kind of quality checks and validation would you like me to perform on the final product? Should I focus on functional correctness, performance, security, or a combination of these?\n\nPlease feel free to provide any additional context or guidance you think would be helpful.",
+      "createdAt": "2024-05-17T14:37:39.066Z",
+      "updatedAt": "2024-05-17T14:37:39.078Z",
+      "ancestors": [
+        "c5c60b76-f064-46e6-8b7e-efb793ee2e0e",
+        "188355c2-a625-4784-8e46-339fc65773bc"
+      ],
+      "id": "05cf8f8d-d27f-418c-83ee-9741b438b1e5",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-17T14:37:38.387Z",
+  "updatedAt": "2024-05-17T14:37:44.072Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

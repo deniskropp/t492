@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660f2496f8e2987cd4d6cd55",
+  "title": "🌐 Artec Course Overview",
+  "rootMessageId": "74b0e338-088d-46de-a307-9d3b69ed03a0",
+  "messages": [
+    {
+      "id": "74b0e338-088d-46de-a307-9d3b69ed03a0",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T22:07:18.027Z",
+      "updatedAt": "2024-04-04T22:07:18.027Z",
+      "children": [
+        "c5e36314-19ea-4693-bfbe-a21051084a35"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering\nTarget audience:\n- students (after highschool)\n- staff (freelance or unemployed)\nAreas of interest:\n- art\n- media\n- systems",
+      "files": [],
+      "createdAt": "2024-04-04T22:07:18.644Z",
+      "updatedAt": "2024-04-04T22:07:18.644Z",
+      "ancestors": [
+        "74b0e338-088d-46de-a307-9d3b69ed03a0"
+      ],
+      "id": "c5e36314-19ea-4693-bfbe-a21051084a35",
+      "children": [
+        "fe5649ea-cd56-4d11-9b46-8101dca7996d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einführung\n- Prompt Engineering\nTarget audience:\n- students (after highschool)\n- staff (freelance or unemployed)\nAreas of interest:\n- art\n- media\n- systems ",
+      "createdAt": "2024-04-04T22:07:18.644Z",
+      "updatedAt": "2024-04-04T22:07:21.507Z",
+      "ancestors": [
+        "74b0e338-088d-46de-a307-9d3b69ed03a0",
+        "c5e36314-19ea-4693-bfbe-a21051084a35"
+      ],
+      "id": "fe5649ea-cd56-4d11-9b46-8101dca7996d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-04T22:07:18.029Z",
+  "updatedAt": "2024-04-04T22:07:23.406Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

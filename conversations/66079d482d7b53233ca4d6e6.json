@@ -1,0 +1,89 @@
+{
+  "conversation_id": "66079d482d7b53233ca4d6e6",
+  "title": "🏆 Task list",
+  "rootMessageId": "0edf277f-c686-4fcf-aa12-97677f9693b4",
+  "messages": [
+    {
+      "id": "0edf277f-c686-4fcf-aa12-97677f9693b4",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-03-30T05:04:08.643Z",
+      "updatedAt": "2024-03-30T05:04:08.643Z",
+      "children": [
+        "a7938630-1e2a-402a-8ad9-d8d6b6e5d58b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "show me all the tasks",
+      "files": [],
+      "createdAt": "2024-03-30T05:04:09.232Z",
+      "updatedAt": "2024-03-30T05:04:09.232Z",
+      "ancestors": [
+        "0edf277f-c686-4fcf-aa12-97677f9693b4"
+      ],
+      "id": "a7938630-1e2a-402a-8ad9-d8d6b6e5d58b",
+      "children": [
+        "b07db864-d810-4eee-9b77-01754f36567d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "1. Create a new role\n2. Assign a responsibility to a team member\n3. Update a task's status\n4. Add a new team member\n5. Create a new task\n6. Assign a task to a team member\n7. Update a team member's role\n8. View a team member's tasks\n9. View a task's details\n10. View a team member's role\n\nThese are just a few examples of tasks that can be performed in the system. The actual tasks available will depend on the specific implementation and configuration of the system. ",
+      "createdAt": "2024-03-30T05:04:09.232Z",
+      "updatedAt": "2024-03-30T05:04:15.315Z",
+      "ancestors": [
+        "0edf277f-c686-4fcf-aa12-97677f9693b4",
+        "a7938630-1e2a-402a-8ad9-d8d6b6e5d58b"
+      ],
+      "id": "b07db864-d810-4eee-9b77-01754f36567d",
+      "children": [
+        "5461872f-7398-4af1-893e-4bba471e0f7e"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "how many team members are there currently",
+      "files": [],
+      "createdAt": "2024-03-30T05:04:50.115Z",
+      "updatedAt": "2024-03-30T05:04:50.115Z",
+      "ancestors": [
+        "0edf277f-c686-4fcf-aa12-97677f9693b4",
+        "a7938630-1e2a-402a-8ad9-d8d6b6e5d58b",
+        "b07db864-d810-4eee-9b77-01754f36567d"
+      ],
+      "id": "5461872f-7398-4af1-893e-4bba471e0f7e",
+      "children": [
+        "e1d64879-2ec1-4262-9e0d-9e753df2b385"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "1. Create a new role\n2. Assign a responsibility to a team member\n3. Update a task's status\n4. Add a new team member\n5. Create a new task\n6. Assign a task to a team member\n7. Update a team member's role\n8. View a team member's tasks\n9. View a task's details\n10. View a team member's role\n\nThese are just a few examples of tasks that can be performed in the system. The actual tasks available will depend on the specific implementation and configuration of the system. ",
+      "createdAt": "2024-03-30T05:04:50.115Z",
+      "updatedAt": "2024-03-30T05:04:53.602Z",
+      "ancestors": [
+        "0edf277f-c686-4fcf-aa12-97677f9693b4",
+        "a7938630-1e2a-402a-8ad9-d8d6b6e5d58b",
+        "b07db864-d810-4eee-9b77-01754f36567d",
+        "5461872f-7398-4af1-893e-4bba471e0f7e"
+      ],
+      "id": "e1d64879-2ec1-4262-9e0d-9e753df2b385",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "The system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nRoles are assumed by Team members. \r\nActivities are promoted by Tasks. \r\nResponsibilities are assigned to the Team. \r\n \r\nRoles are binding to the system interface, its agency is an interconnection \r\nbetween any person, system or subsystem. \r\n \r\nNew roles shall be dynamically created and introduced by the User, \r\nAssistant or System Interface Agency.",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-03-30T05:04:08.645Z",
+  "updatedAt": "2024-03-30T05:04:53.603Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

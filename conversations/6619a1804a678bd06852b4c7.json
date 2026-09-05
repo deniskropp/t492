@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619a1804a678bd06852b4c7",
+  "title": "New Chat",
+  "rootMessageId": "29e5763c-9073-4da6-bfcb-3f78c9767a72",
+  "messages": [
+    {
+      "id": "29e5763c-9073-4da6-bfcb-3f78c9767a72",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:02:56.867Z",
+      "updatedAt": "2024-04-12T21:02:56.867Z",
+      "children": [
+        "ec572fcf-292d-4b78-afff-5db239f6ff6c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Craft a tutorial",
+      "files": [],
+      "createdAt": "2024-04-12T21:02:57.826Z",
+      "updatedAt": "2024-04-12T21:02:57.826Z",
+      "ancestors": [
+        "29e5763c-9073-4da6-bfcb-3f78c9767a72"
+      ],
+      "id": "ec572fcf-292d-4b78-afff-5db239f6ff6c",
+      "children": [
+        "a8ee4732-f7f0-4a31-b4fc-5827d3fc4179"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here is a tutorial on how to use the Code74k utility to serve Code74k entries through KickLang:\n\n1. **Installation**:\n\n   - Clone or download the Code74k repository from the provided file structure.\n   - Install the required dependencies by running `npm install` in the project directory.\n\n2. **Understanding the File Structure**:\n\n   - `Code74k.json`: This file contains the Code74k entries in JSON format. Each entry has a unique `id` and a conversations array containing the dialogue between the human and GPT.\n   - `Code74k.ts`: This file contains the TypeScript code that interacts with the Code74k entries and KickLang.\n   - `types/Code74k.d.ts`: This file contains the TypeScript type definitions for the Code74k entries.\n\n3. **Serving Code74k Entries**:\n\n   - Open `Code74k.ts` in a text editor or IDE.\n   - The code in this file defines a function `serveCode74k` that takes a `req` (request) object and a `res` (response) object as parameters.\n   - The function retrieves the Code74k entries from the `Code74k.json` file and iterates through each entry.\n   - For each entry, it further iterates through the conversations and constructs a KickLang query object (`queryObj`) that represents the dialogue.\n   - The `queryObj` is then stringified and sent as a response with the corresponding `id` of the entry.\n\n4. **Running the Utility**:\n\n   - Save any changes made to `Code74k.ts`.\n   - Run the utility by executing the command `node Code74k.ts` in the project directory.\n   - The utility will start a server, and you can access the served Code74k entries through KickLang queries.\n\n5. **Interacting with the Utility**:\n\n   - Open a web browser and navigate to the URL where the utility is running (typically `http://localhost:3000` if you are running it locally).\n   - You can now send KickLang queries to the utility to retrieve and interact with the Code74k entries.\n   - For example, to retrieve the entry with `id: 1`, you can send a GET request to `http://localhost:3000/1`. The utility will respond with the corresponding KickLang query representing the conversations in that entry.\n\n6. **Extending the Utility**:\n\n   - The provided Code74k utility serves as a basic example of how to interact with Code74k entries through KickLang.\n   - You can extend and customize the utility to suit your specific use case. For example:\n     - Adding error handling and validation for incoming requests.\n     - Implementing additional endpoints or functionality to manipulate or analyze the Code74k data.\n     - Integrating with other systems or APIs to enhance the capabilities of the utility.\n\nRemember to refer to the KickLang documentation and explore its features to build more complex and powerful interactions with your Code74k data.",
+      "createdAt": "2024-04-12T21:02:57.826Z",
+      "updatedAt": "2024-04-12T21:03:13.277Z",
+      "ancestors": [
+        "29e5763c-9073-4da6-bfcb-3f78c9767a72",
+        "ec572fcf-292d-4b78-afff-5db239f6ff6c"
+      ],
+      "id": "a8ee4732-f7f0-4a31-b4fc-5827d3fc4179",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:02:56.869Z",
+  "updatedAt": "2024-04-12T21:03:13.278Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,142 @@
+{
+  "conversation_id": "66924453277f4d0ae9276250",
+  "title": "📝 Irrelevant parts",
+  "rootMessageId": "370376a9-7a73-4a8b-8930-45a336a6a726",
+  "messages": [
+    {
+      "id": "370376a9-7a73-4a8b-8930-45a336a6a726",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:09:39.586Z",
+      "updatedAt": "2024-07-13T09:09:39.586Z",
+      "children": [
+        "475025c5-2e92-41ea-8cf1-8342026fcdf2",
+        "f800304f-62c2-4498-adf1-8d66f5444977",
+        "61a1483e-55ac-4ef5-86f6-94db3f290b8f"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Which parts of the prompt are less relevant for content generation?",
+      "files": [],
+      "createdAt": "2024-07-13T09:09:40.261Z",
+      "updatedAt": "2024-07-13T09:09:40.261Z",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726"
+      ],
+      "id": "475025c5-2e92-41ea-8cf1-8342026fcdf2",
+      "children": [
+        "cb44d36f-3428-4bbf-a951-7d013e35deb9"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "The sections of the prompt that are less relevant for content generation are the \"context\" and \"const\" sections. These sections provide auxiliary information and parameters that may be useful for generating a response but are not directly related to the content that needs to be generated.\r\n\r\nThe \"context\" section provides background information or additional details that may help understand the content or const sections. It provides contextual information that may influence the understanding or interpretation of the content section but is not directly referenced or included in the generated content.\r\n\r\nThe \"const\" section contains parameters, constants, or predefined values that can be utilized in the content generation process. These values are typically provided in a structured format, such as JSON, and serve as variables or placeholders to be incorporated into the generated content. They provide flexibility and customization options for the generated output.\r\n\r\nHowever, the specific information included in these sections may vary depending on the prompt and the specific instructions provided. The content generation framework may utilize certain elements from these sections to influence or customize the generated content, but they are not directly included in the final output.",
+      "createdAt": "2024-07-13T09:09:40.261Z",
+      "updatedAt": "2024-07-13T09:09:40.268Z",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726",
+        "475025c5-2e92-41ea-8cf1-8342026fcdf2"
+      ],
+      "id": "cb44d36f-3428-4bbf-a951-7d013e35deb9",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Which parts of the prompt are less relevant for content generation?\n\nHow should the prompt instead look like?",
+      "files": [],
+      "createdAt": "2024-07-13T09:10:47.342Z",
+      "updatedAt": "2024-07-13T09:10:47.342Z",
+      "id": "f800304f-62c2-4498-adf1-8d66f5444977",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726"
+      ],
+      "children": [
+        "ed3d7c20-3060-4873-bced-070c4a187054",
+        "82f6d1a1-084b-4993-8df6-93aa6a764cf6",
+        "8b0339a8-7e8e-43c4-bfa8-2deb0cd8e897"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context:meta/json\r\n{\r\n  \"rules\": [\r\n    \"Sections are separated by empty lines\",\r\n    \"A section starts with a meta line: name, type, colon, index, dash, data\",\r\n    \"Names are keywords or tokens: const, content, context\",\r\n    \"Types are optional and indicate format, encoding, component type\",\r\n    \"Indices are optional and indicate the place or order of the section\",\r\n    \"Data is either JSON or plain UTF-8 text\"\r\n  ]\r\n}\r\n\r\n⫻ const:example/json\r\n{\r\n  \"key\": \"value\",\r\n  \"list\": [1, 2, 3],\r\n  \"text\": \"This is an example.\"\r\n}\r\n\r\n⫻ content:rewrite/txt\r\nWhich parts of this prompt are less relevant for content generation? How should the prompt be structured instead?\r\n\r\n⫻",
+      "createdAt": "2024-07-13T09:10:47.342Z",
+      "updatedAt": "2024-07-13T09:10:47.350Z",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726",
+        "f800304f-62c2-4498-adf1-8d66f5444977"
+      ],
+      "id": "ed3d7c20-3060-4873-bced-070c4a187054",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context:training/text\r\nThis is a training example for the model to understand the structure of the prompts.\r\n\r\n⫻ const:keys/json\r\n{\r\n  \"format\": \"text\",\r\n  \"placeholders\": [\"{name}\", \"{type}\", \"{place}\", \"{index}\"]\r\n}\r\n\r\n⫻ content:text/text\r\nThis is a test of the new prompt structure.\r\n\r\nThe following sections provide the necessary information for content generation:\r\n\r\nConstants:\r\n- Format: {format}\r\n- Placeholders: {placeholders}\r\n\r\nContent:\r\nGenerate a response based on the provided context and constants.\r\n\r\nContext:\r\nThe context section provides additional information or constraints that may be useful for generating the content.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "createdAt": "2024-07-13T09:12:06.067Z",
+      "updatedAt": "2024-07-13T09:12:06.075Z",
+      "id": "82f6d1a1-084b-4993-8df6-93aa6a764cf6",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726",
+        "f800304f-62c2-4498-adf1-8d66f5444977"
+      ],
+      "children": [],
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context:meta/json\r\n{\r\n  \"rules\": [\r\n    \"Sections are named and start with a special character on a new line\",\r\n    \"Name is given by <name>/<type> where <name> is a keyword and <type> optional\",\r\n    \"Data follows a colon and is either a single value or a list of values\",\r\n    \"Empty lines until the end of a section\"\r\n  ],\r\n  \"example\": {\r\n    \"const\": {\r\n      \"key\": \"value\"\r\n    },\r\n    \"content\": \"This is a content section with some text.\",\r\n    \"context\": \"This is some auxiliary context.\"\r\n  }\r\n}\r\n\r\n\r\n\r\n⫻ const:rules/json\r\n[\r\n  \"Content sections are the most important, as they contain the input data and indicate what needs to be generated.\",\r\n  \"Context sections provide auxiliary information that can be used to guide the generation, but are not required.\",\r\n  \"Const sections provide parameters and values that can be referenced and used in the generation process, but are not directly relevant to the structure or content.\"\r\n]\r\n\r\n\r\n\r\n⫻ content:prompt/txt\r\nWhich parts of the prompt are less relevant for content generation?\r\n\r\nHow should the prompt instead look like?",
+      "createdAt": "2024-07-13T09:13:19.273Z",
+      "updatedAt": "2024-07-13T09:13:19.282Z",
+      "id": "8b0339a8-7e8e-43c4-bfa8-2deb0cd8e897",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726",
+        "f800304f-62c2-4498-adf1-8d66f5444977"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Which parts of the prompt are less relevant for code generation?\n\nHow should the prompt instead look like?",
+      "files": [],
+      "createdAt": "2024-07-13T09:13:59.659Z",
+      "updatedAt": "2024-07-13T09:13:59.659Z",
+      "id": "61a1483e-55ac-4ef5-86f6-94db3f290b8f",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726"
+      ],
+      "children": [
+        "e5d2de92-4003-46e0-86d9-799e24ec1498"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context:example ⫻\r\n\r\nThis is an example context section. It contains auxiliary information that is not meant to be included in the generated content. This can include background information, references, or any other relevant details that can aid the generation process without being directly incorporated into the output.\r\n\r\n⫻\r\n\r\n⫻ const:parameters ⫻\r\n{\r\n  \"key\": \"value\",\r\n  \"name\": \"John\",\r\n  \"number\": 42\r\n}\r\n⫻\r\n\r\n⫻ content:input ⫻\r\nThis is the actual content section where the input data for code generation is provided. It should include all the necessary details, instructions, and specifications for the desired output. Feel free to include any relevant code snippets, examples, or specific requirements here.\r\n\r\nPlease generate a personalized response based on the given context and constants. Utilize the provided information to create a tailored and unique output.\r\n\r\n⫻",
+      "createdAt": "2024-07-13T09:13:59.659Z",
+      "updatedAt": "2024-07-13T09:13:59.666Z",
+      "ancestors": [
+        "370376a9-7a73-4a8b-8930-45a336a6a726",
+        "61a1483e-55ac-4ef5-86f6-94db3f290b8f"
+      ],
+      "id": "e5d2de92-4003-46e0-86d9-799e24ec1498",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:09:39.587Z",
+  "updatedAt": "2024-07-13T09:14:07.041Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

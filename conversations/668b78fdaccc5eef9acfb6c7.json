@@ -1,0 +1,56 @@
+{
+  "conversation_id": "668b78fdaccc5eef9acfb6c7",
+  "title": "!!!! 📝 Irrelevant parts",
+  "rootMessageId": "a5d8ba6a-f29b-4ee2-b7e3-b6c783c74b82",
+  "messages": [
+    {
+      "id": "a5d8ba6a-f29b-4ee2-b7e3-b6c783c74b82",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-08T05:28:29.020Z",
+      "updatedAt": "2024-07-08T05:28:29.020Z",
+      "children": [
+        "e7b74c9f-b89b-454b-a3e3-942c6598ac18"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Which parts of the prompt are superfluous or less relevant for any task?",
+      "files": [],
+      "createdAt": "2024-07-08T05:28:29.583Z",
+      "updatedAt": "2024-07-08T05:28:29.583Z",
+      "ancestors": [
+        "a5d8ba6a-f29b-4ee2-b7e3-b6c783c74b82"
+      ],
+      "id": "e7b74c9f-b89b-454b-a3e3-942c6598ac18",
+      "children": [
+        "600386d3-4780-4f2e-abee-6a964a6e7ac8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "The only section that is superfluous or less relevant for any task is the **Constant Sections**. It is meant to provide parameters and variables that can be used to generate content, but it is not necessary for understanding the task at hand.\r\n\r\nThe **Context Sections** and **Content Sections** are crucial for understanding the task and generating a response. They provide the necessary information and data to complete the task successfully.",
+      "createdAt": "2024-07-08T05:28:29.583Z",
+      "updatedAt": "2024-07-08T05:28:29.592Z",
+      "ancestors": [
+        "a5d8ba6a-f29b-4ee2-b7e3-b6c783c74b82",
+        "e7b74c9f-b89b-454b-a3e3-942c6598ac18"
+      ],
+      "id": "600386d3-4780-4f2e-abee-6a964a6e7ac8",
+      "children": [],
+      "interrupted": false,
+      "score": 1,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-08T05:28:29.021Z",
+  "updatedAt": "2024-07-08T05:28:33.441Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

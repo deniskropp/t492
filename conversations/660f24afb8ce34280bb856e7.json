@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660f24afb8ce34280bb856e7",
+  "title": "🌐 Artec Course Overview",
+  "rootMessageId": "0de5127a-449b-4ffd-ae74-b407ca55d148",
+  "messages": [
+    {
+      "id": "0de5127a-449b-4ffd-ae74-b407ca55d148",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T22:07:43.716Z",
+      "updatedAt": "2024-04-04T22:07:43.716Z",
+      "children": [
+        "32b03e4a-d271-4412-ab90-00f9c89e62b6"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering\nTarget audience:\n- students (after highschool)\n- staff (freelance or unemployed)\nAreas of interest:\n- art\n- media\n- systems",
+      "files": [],
+      "createdAt": "2024-04-04T22:07:44.150Z",
+      "updatedAt": "2024-04-04T22:07:44.150Z",
+      "ancestors": [
+        "0de5127a-449b-4ffd-ae74-b407ca55d148"
+      ],
+      "id": "32b03e4a-d271-4412-ab90-00f9c89e62b6",
+      "children": [
+        "a01c8447-1848-4035-a80c-d839be18699f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " # Start\n\nArtec Courses are composed of modules, which are:\n\n## content:modules\n- \"2D Game Design\"\n- \"3D Design and Print\"\n- \"Foto und Film Bearbeitung / Erstellung\"\n- \"Medientechnologie\"\n- \"TypeScript Introduction\"\n- \"Prompt Engineering\"\n\n## context:p\nThese modules are already part of Artec Education:\n\n1. For students after highschool\n2. For staff (freelance or unemployed)\n\n## context:p\nAreas of interest:\n\n1. Art\n2. Media\n3. Systems\n\n## content:welcome\nWelcome to the Artec Education platform! Here you will find a variety of modules designed to help you expand your skills and knowledge in various areas. Whether you are a student looking to further your education or a professional seeking to enhance your expertise, we have something for you.\n\nOur modules cover a range of topics, including 2D game design, 3D design and print, media technology, and more. Each module is designed to be engaging and interactive, allowing you to learn at your own pace and in a way that suits your learning style.\n\nWe believe that everyone deserves access to quality education, regardless of their background or current situation. That's why our modules are open to all, and we welcome students and professionals alike to join us on this learning journey.\n\nSo, what are you waiting for? Explore our modules and find the one that best suits your interests and goals. We're excited to help you reach your full potential!",
+      "createdAt": "2024-04-04T22:07:44.150Z",
+      "updatedAt": "2024-04-04T22:07:48.251Z",
+      "ancestors": [
+        "0de5127a-449b-4ffd-ae74-b407ca55d148",
+        "32b03e4a-d271-4412-ab90-00f9c89e62b6"
+      ],
+      "id": "a01c8447-1848-4035-a80c-d839be18699f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-04T22:07:43.718Z",
+  "updatedAt": "2024-04-04T22:07:48.253Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

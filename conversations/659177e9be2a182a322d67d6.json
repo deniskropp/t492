@@ -1,0 +1,27 @@
+{
+  "conversation_id": "659177e9be2a182a322d67d6",
+  "title": "💬  Empty input: please provide content for summary.",
+  "messages": [
+    {
+      "content": "```content",
+      "from": "user",
+      "id": "0b2da12f-df92-4561-9435-997f8bb46bc2",
+      "createdAt": "2023-12-31T14:17:15.997Z",
+      "updatedAt": "2023-12-31T14:17:15.997Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " ```\n\n\nThe quick brown fox jumps over the lazy dog.",
+      "id": "77ff8af2-388f-463f-a86b-2248ee669df8",
+      "createdAt": "2023-12-31T14:17:16.317Z",
+      "updatedAt": "2023-12-31T14:17:17.089Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "preprompt": "GENERATE MARKDOWN CONTENT FROM FOLLOWING INFORMATION\n\nThis is a template for document driven content!\n\nGenerate responses according to these rules:\n1. Context elements are given by sections named \"context:{{tag}}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{{key}}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '```', followed by its 'name/type' - a colon - 'place/index' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n",
+  "createdAt": "2023-12-31T14:17:13.960Z",
+  "updatedAt": "2023-12-31T14:17:46.937Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

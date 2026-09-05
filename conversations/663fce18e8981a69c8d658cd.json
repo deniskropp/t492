@@ -1,0 +1,59 @@
+{
+  "conversation_id": "663fce18e8981a69c8d658cd",
+  "title": "🌫️ Weather API request",
+  "rootMessageId": "ea87c507-ca60-4b20-97a4-b71204b9416e",
+  "messages": [
+    {
+      "id": "ea87c507-ca60-4b20-97a4-b71204b9416e",
+      "from": "system",
+      "content": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+      "createdAt": "2024-05-11T19:59:20.457Z",
+      "updatedAt": "2024-05-11T19:59:20.457Z",
+      "children": [
+        "21ef0917-482b-43bf-a225-8809451a07e0"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\n  \"name\": \"get_the_weather\",\n  \"description\": \"Get the weather\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"city\": {\n        \"type\": \"string\",\n        \"description\": \"The city to get the weather for\"\n      },\n      \"state\": {\n        \"type\": \"string\",\n        \"description\": \"The state to get the weather for\"\n      }\n    },\n    \"required\": [\n      \"city\",\n      \"state\"\n    ]\n  }\n}",
+      "files": [],
+      "createdAt": "2024-05-11T19:59:21.346Z",
+      "updatedAt": "2024-05-11T19:59:21.346Z",
+      "ancestors": [
+        "ea87c507-ca60-4b20-97a4-b71204b9416e"
+      ],
+      "id": "21ef0917-482b-43bf-a225-8809451a07e0",
+      "children": [
+        "4ee2d25e-b36b-4ee2-b341-eb758526f6d3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a suggested revision for the JSON object based on the context provided: \n\n```json\n{\n  \"action\": \"get_weather_data\",\n  \"description\": \"A function to retrieve weather information for a specific location to aid in mission planning and decision-making.\",\n  \"parameters\": {\n    \"location\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"city\": {\n          \"type\": \"string\",\n          \"description\": \"Name of the city for weather retrieval.\"\n        },\n        \"state\": {\n          \"",
+      "createdAt": "2024-05-11T19:59:21.346Z",
+      "updatedAt": "2024-05-11T19:59:22.213Z",
+      "ancestors": [
+        "ea87c507-ca60-4b20-97a4-b71204b9416e",
+        "21ef0917-482b-43bf-a225-8809451a07e0"
+      ],
+      "id": "4ee2d25e-b36b-4ee2-b341-eb758526f6d3",
+      "children": [],
+      "webSearch": {
+        "prompt": "{\n  \"name\": \"get_the_weather\",\n  \"description\": \"Get the weather\",\n  \"parameters\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"city\": {\n        \"type\": \"string\",\n        \"description\": \"The city to get the weather for\"\n      },\n      \"state\": {\n        \"type\": \"string\",\n        \"description\": \"The state to get the weather for\"\n      }\n    },\n    \"required\": [\n      \"city\",\n      \"state\"\n    ]\n  }\n}",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com weather in Paris France",
+        "results": []
+      },
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+  "assistantId": "663f9548924f92c1a01cdf5e",
+  "createdAt": "2024-05-11T19:59:20.458Z",
+  "updatedAt": "2024-05-11T19:59:38.386Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

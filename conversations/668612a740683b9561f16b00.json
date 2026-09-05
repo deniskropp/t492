@@ -1,0 +1,89 @@
+{
+  "conversation_id": "668612a740683b9561f16b00",
+  "title": "📝 YAML data",
+  "rootMessageId": "0cbf394f-a010-49b2-bd83-20700261893a",
+  "messages": [
+    {
+      "id": "0cbf394f-a010-49b2-bd83-20700261893a",
+      "from": "system",
+      "content": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-04T03:10:31.484Z",
+      "updatedAt": "2024-07-04T03:10:31.484Z",
+      "children": [
+        "85325b81-4c6e-4ec6-befa-9e96c147c73e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/yaml:user\nname: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\n\n\n⫻context/xml:<<tag>>\n<task />",
+      "files": [],
+      "createdAt": "2024-07-04T03:10:31.985Z",
+      "updatedAt": "2024-07-04T03:10:31.985Z",
+      "ancestors": [
+        "0cbf394f-a010-49b2-bd83-20700261893a"
+      ],
+      "id": "85325b81-4c6e-4ec6-befa-9e96c147c73e",
+      "children": [
+        "86c45ec4-7618-4770-bb63-2f838b1ed54c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```json\n[\r\n    {\r\n        \"thoughts_and_reasoning\": \"To introduce Denis, I need to extract his name, role, age, and nation from the provided constants. This information will be useful for creating a brief introduction.\",\r\n        \"function\": \"query\",\r\n        \"arguments\": {\r\n            \"query\": \"Select name, role, age, nation from user\",\r\n            \"source\": \"user\",\r\n            \"variables\": null,\r\n            \"options\": null\r\n        }\r\n    }\r\n]\r\n```",
+      "createdAt": "2024-07-04T03:10:31.985Z",
+      "updatedAt": "2024-07-04T03:10:31.995Z",
+      "ancestors": [
+        "0cbf394f-a010-49b2-bd83-20700261893a",
+        "85325b81-4c6e-4ec6-befa-9e96c147c73e"
+      ],
+      "id": "86c45ec4-7618-4770-bb63-2f838b1ed54c",
+      "children": [
+        "633b98b3-dce6-4da6-9e92-2654d6e56721"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "ame: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\n",
+      "files": [],
+      "createdAt": "2024-07-04T03:11:01.596Z",
+      "updatedAt": "2024-07-04T03:11:01.596Z",
+      "ancestors": [
+        "0cbf394f-a010-49b2-bd83-20700261893a",
+        "85325b81-4c6e-4ec6-befa-9e96c147c73e",
+        "86c45ec4-7618-4770-bb63-2f838b1ed54c"
+      ],
+      "id": "633b98b3-dce6-4da6-9e92-2654d6e56721",
+      "children": [
+        "3233de21-cbdd-4e95-84fd-7a2bb7ac3e94"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Based on the provided information, here is an introduction for Denis: \n\nHello, everyone! I'd like to introduce you to Denis, a talented developer from Germany. With his 42 years of wisdom and experience, Denis brings a wealth of knowledge to the team. He is an invaluable asset, and we're thrilled to have him as part of our development crew!",
+      "createdAt": "2024-07-04T03:11:01.596Z",
+      "updatedAt": "2024-07-04T03:11:01.607Z",
+      "ancestors": [
+        "0cbf394f-a010-49b2-bd83-20700261893a",
+        "85325b81-4c6e-4ec6-befa-9e96c147c73e",
+        "86c45ec4-7618-4770-bb63-2f838b1ed54c",
+        "633b98b3-dce6-4da6-9e92-2654d6e56721"
+      ],
+      "id": "3233de21-cbdd-4e95-84fd-7a2bb7ac3e94",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f2d3bad14ee8ccbcb4fc",
+  "createdAt": "2024-07-04T03:10:31.486Z",
+  "updatedAt": "2024-07-04T03:11:16.474Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

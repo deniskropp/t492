@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619ca97c1cb6cd22ed12c86",
+  "title": "💻 Code74k-express.ts",
+  "rootMessageId": "0c57ab81-3819-4912-8a31-ef7cba2f54af",
+  "messages": [
+    {
+      "id": "0c57ab81-3819-4912-8a31-ef7cba2f54af",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-12T23:58:15.357Z",
+      "updatedAt": "2024-04-12T23:58:15.357Z",
+      "children": [
+        "ea293fbf-3561-482c-b2ac-08ada65ee7a9"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k-express.ts - KickLang server with MySQL storage",
+      "files": [],
+      "createdAt": "2024-04-12T23:58:17.001Z",
+      "updatedAt": "2024-04-12T23:58:17.001Z",
+      "ancestors": [
+        "0c57ab81-3819-4912-8a31-ef7cba2f54af"
+      ],
+      "id": "ea293fbf-3561-482c-b2ac-08ada65ee7a9",
+      "children": [
+        "3de34fe8-8d11-447b-835c-85c641656a22"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here is a sample implementation of a KickLang server using MySQL for storage:\r\n\r\n```typescript\r\n///Code74k-express.ts//\r\nimport express from 'express';\r\nimport mysql from 'mysql';\r\nimport { parse } from 'kicklang-parser';\r\nimport { generate } from 'kicklang-generator';\r\n\r\n// Create Express app\r\nconst app = express();\r\n\r\n// Connect to MySQL database\r\nconst db = mysql.createConnection({\r\n  host: 'localhost',\r\n  user: 'yourusername',\r\n  password: '<PASSWORD>',\r\n  database: 'yourdatabase'\r\n});\r\n\r\ndb.connect();\r\n\r\n// Middleware to parse KickLang requests\r\napp.use(express.json({ type: 'application/kicklang' }));\r\n\r\n// Route to handle KickLang queries\r\napp.post('/query', (req, res) => {\r\n  const query = parse(req.body);\r\n  // Execute query and send response\r\n  db.query(query, (error, results) => {\r\n    if (error) {\r\n      res.status(500).send(error);\r\n    } else {\r\n      res.json(generate(results));\r\n    }\r\n  });\r\n});\r\n\r\n// Listen on port 3000\r\napp.listen(3000, () => {\r\n  console.log('KickLang server listening on port 3000!');\r\n});\r\n```\r\n\r\nIn this example, we're using the `express` framework to create a simple API server that can handle KickLang queries. Here's a breakdown of the code:\r\n\r\n1. We import the necessary dependencies, including `express` for the web server, `mysql` for the database connection, and `kicklang-parser` and `kicklang-generator` for parsing and generating KickLang queries.\r\n2. We create a new Express application and connect to a MySQL database using the provided credentials.\r\n3. We define a middleware using `express.json()` to parse incoming requests with the `application/kicklang` content type as KickLang queries.\r\n4. We set up a route `/query` to handle POST requests containing KickLang queries. The `parse` function from `kicklang-parser` is used to parse the incoming query, and then we execute the query against the MySQL database using `db.query()`. The results are then sent back as a KickLang response using the `generate` function from `kicklang-generator`.\r\n5. Finally, we start the server and listen on port 3000.\r\n\r\nPlease note that you need to replace `'yourusername'`, `'yourpassword'`, and `'yourdatabase'` with your actual MySQL credentials.\r\n\r\nThis is a basic example, and you can extend it further based on your specific requirements, such as adding error handling, authentication, and other middleware or routes as needed.",
+      "createdAt": "2024-04-12T23:58:17.001Z",
+      "updatedAt": "2024-04-12T23:58:32.139Z",
+      "ancestors": [
+        "0c57ab81-3819-4912-8a31-ef7cba2f54af",
+        "ea293fbf-3561-482c-b2ac-08ada65ee7a9"
+      ],
+      "id": "3de34fe8-8d11-447b-835c-85c641656a22",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-12T23:58:15.359Z",
+  "updatedAt": "2024-04-12T23:58:32.142Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

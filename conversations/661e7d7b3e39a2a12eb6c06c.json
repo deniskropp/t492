@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661e7d7b3e39a2a12eb6c06c",
+  "title": "🏈 Football game",
+  "rootMessageId": "d1dbc45d-f9d3-4196-99c3-27060d78358c",
+  "messages": [
+    {
+      "id": "d1dbc45d-f9d3-4196-99c3-27060d78358c",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-16T13:30:35.180Z",
+      "updatedAt": "2024-04-16T13:30:35.180Z",
+      "children": [
+        "2c20019e-2fdc-4f69-acf3-fd74aa655fed"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick Off",
+      "files": [],
+      "createdAt": "2024-04-16T13:30:35.661Z",
+      "updatedAt": "2024-04-16T13:30:35.661Z",
+      "ancestors": [
+        "d1dbc45d-f9d3-4196-99c3-27060d78358c"
+      ],
+      "id": "2c20019e-2fdc-4f69-acf3-fd74aa655fed",
+      "children": [
+        "2cab4bf1-0066-4729-b7f7-242cafa39157"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, let's kick things off! What would you like to do? Do you have any specific tasks or questions in mind for me?",
+      "createdAt": "2024-04-16T13:30:35.661Z",
+      "updatedAt": "2024-04-16T13:30:36.955Z",
+      "ancestors": [
+        "d1dbc45d-f9d3-4196-99c3-27060d78358c",
+        "2c20019e-2fdc-4f69-acf3-fd74aa655fed"
+      ],
+      "id": "2cab4bf1-0066-4729-b7f7-242cafa39157",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-16T13:30:35.182Z",
+  "updatedAt": "2024-04-16T13:30:36.955Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

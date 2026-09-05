@@ -1,0 +1,43 @@
+{
+  "conversation_id": "65917740be2a182a322d67cd",
+  "title": "💬  Senior Software Engineer Denis Oliver Kropp shares skills, passions, & hobbies at Exit Corporation since 2020.",
+  "messages": [
+    {
+      "content": "```context:h1\nAbout us\n\n\n\n```context:h2\nMe and You\n\n\n\n```context:p\nWe run our own corporate entity named \"Exit\" since 2020 with me onboarding ever since.\n\n\n\n```context:h2\nSkills\n\n\n\n```context:ul\n- prompt engineering\n- designing and developing complex software systems using TypeScript and Generative AI (LLMs)\n\n\n\n```const:name\nDenis Oliver Kropp\n\n\n\n```content\nHello, my name is {{ const:name }} and I am a Senior Software Engineer at {{ context:About us.Corporation }}. I have been working here since {{ context:Me.OnBoarding }}.\n\nMy primary responsibilities include {{ context:responsibilities }}. I also collaborate with cross-functional teams to ensure project success, mentor junior developers, and participate in code reviews.\n\nMy skills include {{ context:skills }}, which I have developed over the course of my career. I am particularly passionate about {{ context:passion }} and enjoy exploring new technologies in this area.\n\nIn my free time, I like to {{ context:hobbies }}. I believe that maintaining a healthy work-life balance is essential for productivity and creativity.\n\nIf you would like to learn more about my work experience or discuss potential collaboration opportunities, please do not hesitate to contact me. Thank you for your interest!",
+      "from": "user",
+      "id": "0ef4a914-269d-457b-8347-a4f0204e4fac",
+      "createdAt": "2023-12-31T14:14:26.719Z",
+      "updatedAt": "2023-12-31T14:14:26.719Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " # About us\n\nAt **Exit**, we strive to push the boundaries of what is possible with technology. Our team of experts works tirelessly to develop innovative solutions that solve real-world problems. We believe in fostering a collaborative and inclusive environment where everyone's ideas are valued.\n\n# Me and You\n\nAs a part of the **Exit** family, I have had the opportunity to work on exciting projects and grow both personally and professionally. My journey here began when I joined the company in {{ context:Me.OnBoarding }}. Since then, I have been involved in various aspects of software development, from design to implementation.\n\n# Skills\n\nOver the years, I have honed my skills in areas such as:\n\n- Prompt engineering\n- Designing and developing complex software systems using TypeScript and Generative AI (LLMs)\n\nI am always looking for ways to improve and expand my skill set, and I enjoy learning about new technologies and methodologies.\n\n# Denis Oliver Kropp\n\nMy name is {{ const:name }}, and I am a Senior Software Engineer at **Exit**. I joined the company in {{ context:Me.OnBoarding }} and have been an integral part of the team ever since. My primary responsibilities include {{ context:responsibilities }}, and I take pride in delivering high-quality work that meets or exceeds expectations.\n\nIn addition to my technical expertise, I am also passionate about mentoring junior developers and collaborating with cross-functional teams to ensure project success. I believe that effective communication and teamwork are essential for achieving great results.\n\nWhen I'm not coding, I enjoy {{ context:hobbies }}. Maintaining a healthy work-life balance is important to me, as it allows me to stay focused and creative when tackling complex problems.\n\nIf you'd like to learn more about my experience or discuss potential collaboration opportunities, please don't hesitate to reach out. I look forward to hearing from you!",
+      "id": "80766745-9fec-4f5f-b283-5a69ac1fb9f8",
+      "createdAt": "2023-12-31T14:14:27.914Z",
+      "updatedAt": "2023-12-31T14:14:45.383Z",
+      "files": []
+    },
+    {
+      "content": "ok",
+      "from": "user",
+      "id": "ce5494a8-123a-4597-90df-0c2250690ec4",
+      "createdAt": "2023-12-31T14:15:55.711Z",
+      "updatedAt": "2023-12-31T14:15:55.711Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": " I'm glad I could help. If you have any other questions or requests, feel free to ask.",
+      "id": "257a99aa-4b4d-4850-8b7a-b2eabdda73a9",
+      "createdAt": "2023-12-31T14:15:56.149Z",
+      "updatedAt": "2023-12-31T14:15:57.679Z",
+      "files": []
+    }
+  ],
+  "model": "tiiuae/falcon-180B-chat",
+  "preprompt": "GENERATE MARKDOWN CONTENT FROM FOLLOWING INFORMATION\n\nGenerate responses according to these rules:\n1. Context elements are given by sections named \"context:{{tag}}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{{key}}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '```', followed by its 'name/type' - a colon - 'place/index' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n",
+  "createdAt": "2023-12-31T14:14:24.941Z",
+  "updatedAt": "2023-12-31T14:16:27.578Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660fe8bb85b5bbbd23e94fc5",
+  "title": "💬  JSON data format index page",
+  "rootMessageId": "31331888-9257-4681-bce6-4a083c19ffae",
+  "messages": [
+    {
+      "id": "31331888-9257-4681-bce6-4a083c19ffae",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-05T12:04:11.386Z",
+      "updatedAt": "2024-04-05T12:04:11.386Z",
+      "children": [
+        "58eede9f-62d9-46ab-b6be-18d6d316c892"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻content/json:/index",
+      "files": [],
+      "createdAt": "2024-04-05T12:04:12.071Z",
+      "updatedAt": "2024-04-05T12:04:12.071Z",
+      "ancestors": [
+        "31331888-9257-4681-bce6-4a083c19ffae"
+      ],
+      "id": "58eede9f-62d9-46ab-b6be-18d6d316c892",
+      "children": [
+        "c07bca77-52c6-46fe-969a-1852175b9223"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content/json:/index\n{\n  \"title\": \"The Future of Human-Machine Collaboration\",\n  \"subtitle\": \"MetaAI's Research Offers a Glimpse into a Future Where Humans and Machines Collaborate Seamlessly\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"content\": \"MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations.\"\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": \"The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields.\"\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": \"In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans.\"\n    },\n    {\n      \"type\": \"paragraph\",\n      \"content\": \"The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before.\"\n    }\n  ]\n}\n\nPlease note that this is just a sample output, and the actual content may vary depending on the specific context and requirements. ",
+      "createdAt": "2024-04-05T12:04:12.071Z",
+      "updatedAt": "2024-04-05T12:04:30.238Z",
+      "ancestors": [
+        "31331888-9257-4681-bce6-4a083c19ffae",
+        "58eede9f-62d9-46ab-b6be-18d6d316c892"
+      ],
+      "id": "c07bca77-52c6-46fe-969a-1852175b9223",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n⫻context:head\r\nFuture of human collaboration\r\n\r\n⫻context:body\r\nMetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations. The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields. In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans. The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before.\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-05T12:04:11.389Z",
+  "updatedAt": "2024-04-05T12:04:30.238Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

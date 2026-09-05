@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66890e5330d605fc1843b138",
+  "title": "📝 Summarize text",
+  "rootMessageId": "f9f858db-2187-4a8a-a675-bd9d4a86c219",
+  "messages": [
+    {
+      "id": "f9f858db-2187-4a8a-a675-bd9d4a86c219",
+      "from": "system",
+      "content": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-06T09:28:51.260Z",
+      "updatedAt": "2024-07-06T09:28:51.260Z",
+      "children": [
+        "68f03d8f-6614-4816-a3ea-74986416c978"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Here's my take on the less relevant parts:\\n\\n⫻ Dima/AI: The self-description is not directly relevant to the task at hand, but it provides context for my role in this conversation.\\n\\n⫻ system/instructions, function_list, multi-persona_cognition, message_parts/format: These sections contain instructions, function descriptions, and formatting guidelines, which are essential for understanding how to interact with the system and respond appropriately.",
+      "files": [],
+      "createdAt": "2024-07-06T09:28:51.893Z",
+      "updatedAt": "2024-07-06T09:28:51.893Z",
+      "ancestors": [
+        "f9f858db-2187-4a8a-a675-bd9d4a86c219"
+      ],
+      "id": "68f03d8f-6614-4816-a3ea-74986416c978",
+      "children": [
+        "e91a5713-93b3-4f7b-8337-a06077f6f65d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is my response in JSON format: ```json\n[\r\n    {\r\n        \"thoughts_and_reasoning\": \"I will respond to the provided content with my take on the less relevant parts, as per the instructions and guidelines provided in the 'system/instructions' and 'function_list' sections.\",\r\n        \"function\": \"query\",\r\n        \"arguments\": {\r\n            \"query\": null,\r\n            \"source\": null,\r\n            \"variables\": null,\r\n            \"options\": null\r\n        }\r\n    }\r\n]\r\n```",
+      "createdAt": "2024-07-06T09:28:51.893Z",
+      "updatedAt": "2024-07-06T09:28:51.903Z",
+      "ancestors": [
+        "f9f858db-2187-4a8a-a675-bd9d4a86c219",
+        "68f03d8f-6614-4816-a3ea-74986416c978"
+      ],
+      "id": "e91a5713-93b3-4f7b-8337-a06077f6f65d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f2d3bad14ee8ccbcb4fc",
+  "createdAt": "2024-07-06T09:28:51.262Z",
+  "updatedAt": "2024-07-06T09:28:56.441Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

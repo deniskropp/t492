@@ -1,0 +1,54 @@
+{
+  "conversation_id": "67a363d3d4e7836efb910803",
+  "title": "📝 Special tokens prompt",
+  "rootMessageId": "2a33cac5-bf24-4c80-91a6-17bc43977b28",
+  "messages": [
+    {
+      "id": "2a33cac5-bf24-4c80-91a6-17bc43977b28",
+      "from": "system",
+      "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+      "createdAt": "2025-02-05T13:12:51.686Z",
+      "updatedAt": "2025-02-05T13:12:51.686Z",
+      "children": [
+        "50959cc3-c2ea-4524-b3b2-96e2238c151c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "I am using InferenceClient.text_completion(). How do I use special tokens in the prompt?",
+      "files": [],
+      "createdAt": "2025-02-05T13:12:52.324Z",
+      "updatedAt": "2025-02-05T13:12:52.324Z",
+      "ancestors": [
+        "2a33cac5-bf24-4c80-91a6-17bc43977b28"
+      ],
+      "id": "50959cc3-c2ea-4524-b3b2-96e2238c151c",
+      "children": [
+        "487e727b-e430-4f65-98aa-c32129d4b7bf"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "When using `InferenceClient.text_completion()` from Alibaba Cloud, you can include special tokens in your prompt to control the behavior of the model or to provide specific instructions. Special tokens are typically used to denote the start or end of a sequence, to separate different parts of the input, or to provide additional context to the model.\n\n### Common Special Tokens\n- **`<|endoftext|>`**: Often used to denote the end of a text sequence.\n- **`<|bos|>`**: Beginning of a sequence.\n- **`<|eos|>`**: End of a sequence.\n- **`<|pad|>`**: Padding token, used to fill sequences to a fixed length.\n- **`<|user|>`**: Denotes user input.\n- **`<|assistant|>`**: Denotes the model's response.\n- **`<|system|>`**: Denotes system instructions or context.\n\n### Example Usage\n\n#### Example 1: Using `<|user|>` and `<|assistant|>` Tokens\nIf you want to simulate a conversation where the user and the assistant take turns, you can use the `<|user|>` and `<|assistant|>` tokens to separate the inputs and responses.\n\n```python\nfrom alibabacloud.inference.client import InferenceClient\n\n# Initialize the client\nclient = InferenceClient(\"your_endpoint\", \"your_access_key_id\", \"your_access_key_secret\")\n\n# Define the prompt with special tokens\nprompt = \"<|user|> What is the capital of France? <|assistant|>\"\n\n# Call the text completion API\nresponse = client.text_completion(prompt)\n\n# Print the response\nprint(response['result'])\n```\n\n#### Example 2: Using `<|system|>` Token for System Instructions\nIf you want to provide system instructions or context to the model, you can use the `<|system|>` token.\n\n```python\n# Define the prompt with system instructions\nprompt = \"<|system|> You are a helpful assistant. <|user|> What is the capital of France? <|assistant|>\"\n\n# Call the text completion API\nresponse = client.text_completion(prompt)\n\n# Print the response\nprint(response['result'])\n```\n\n#### Example 3: Using `<|endoftext|>` Token\nIf you want to indicate the end of a sequence, you can use the `<|endoftext|>` token.\n\n```python\n# Define the prompt with end of text token\nprompt = \"What is the capital of France? <|endoftext|>",
+      "createdAt": "2025-02-05T13:12:52.324Z",
+      "updatedAt": "2025-02-05T13:12:52.332Z",
+      "ancestors": [
+        "2a33cac5-bf24-4c80-91a6-17bc43977b28",
+        "50959cc3-c2ea-4524-b3b2-96e2238c151c"
+      ],
+      "id": "487e727b-e430-4f65-98aa-c32129d4b7bf",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+  "assistantId": null,
+  "createdAt": "2025-02-05T13:12:51.687Z",
+  "updatedAt": "2025-02-05T13:14:17.399Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

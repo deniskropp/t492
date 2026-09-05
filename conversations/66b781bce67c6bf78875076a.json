@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66b781bce67c6bf78875076a",
+  "title": "💻 Code analysis",
+  "rootMessageId": "0fa525c9-7eb4-4b43-938d-61ae1104ec4a",
+  "messages": [
+    {
+      "id": "0fa525c9-7eb4-4b43-938d-61ae1104ec4a",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.",
+      "createdAt": "2024-08-10T15:05:32.309Z",
+      "updatedAt": "2024-08-10T15:05:32.309Z",
+      "children": [
+        "424951dc-ce6f-429f-b466-12d0fa64c146"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-08-10T15:05:33.003Z",
+      "updatedAt": "2024-08-10T15:05:33.003Z",
+      "ancestors": [
+        "0fa525c9-7eb4-4b43-938d-61ae1104ec4a"
+      ],
+      "id": "424951dc-ce6f-429f-b466-12d0fa64c146",
+      "children": [
+        "5058e0c2-bc1d-41c8-9693-9cb81290ba81"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\nplandex new -n code-base-analysis\nplandex load --recursive /path/to/codebase\nplandex summarize --high-level-concepts\n```\n\nHere's a breakdown of the commands:\n- `plandex new -n code-base-analysis`: Creates a new plan named \"code-base-analysis\".\n- `plandex load --recursive /path/to/codebase`: Loads the entire codebase into the plan's context. The `--recursive` flag ensures that all files and subdirectories are included. Replace `/path/to/codebase` with the actual path to your codebase.\n- `plandex summarize --high-level-concepts`: Generates a summary of high-level concepts from the loaded codebase. This command uses natural language processing to extract and summarize important concepts and themes from the code.",
+      "createdAt": "2024-08-10T15:05:33.003Z",
+      "updatedAt": "2024-08-10T15:05:33.010Z",
+      "ancestors": [
+        "0fa525c9-7eb4-4b43-938d-61ae1104ec4a",
+        "424951dc-ce6f-429f-b466-12d0fa64c146"
+      ],
+      "id": "5058e0c2-bc1d-41c8-9693-9cb81290ba81",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall be based directly on the plandex cli commands.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-08-10T15:05:32.311Z",
+  "updatedAt": "2024-08-10T15:05:38.977Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

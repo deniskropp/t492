@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669a8f168d6586cf8ffaa3c1",
+  "title": "📊 Qt onboarding",
+  "rootMessageId": "afd1e16a-c3c1-4d23-bff4-6c43496372e0",
+  "messages": [
+    {
+      "id": "afd1e16a-c3c1-4d23-bff4-6c43496372e0",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+      "createdAt": "2024-07-19T16:06:46.987Z",
+      "updatedAt": "2024-07-19T16:06:46.987Z",
+      "children": [
+        "3a1dd8ba-685d-406d-8bb9-f9ab59c5ab4b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "about onboarding QtCore",
+      "files": [],
+      "createdAt": "2024-07-19T16:06:47.522Z",
+      "updatedAt": "2024-07-19T16:06:47.522Z",
+      "ancestors": [
+        "afd1e16a-c3c1-4d23-bff4-6c43496372e0"
+      ],
+      "id": "3a1dd8ba-685d-406d-8bb9-f9ab59c5ab4b",
+      "children": [
+        "fc837b22-9d00-4978-9996-74e7143ff786"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ name/type:onboarding \r\n\r\ncontext: \r\n{ \r\n  \"description\": \"Onboarding a new developer, providing an overview of QtCore and its role in the Qt framework.\", \r\n  \"target_audience\": \"New Qt Developers\" \r\n} \r\n\r\nconst: \r\n{ \r\n  \"QtCore\": \"A core module of the Qt framework, providing fundamental functionality. It includes tools for managing applications, data structures, and abstraction layers for various functionalities.\", \r\n  \"Key_Features\": [\"Signal and Slot Mechanism\", \"Event Loop and Thread Management\", \"Qt Meta-Object System\", \"Internationalization and Localization support\"] \r\n} \r\n\r\ncontent: \r\n{ \r\n  \"introduction\": \"Welcome aboard! Today, we'll be exploring QtCore, an essential component of the Qt framework. QtCore lays the foundation for building powerful and flexible applications with Qt. By the end of this onboarding, you should have a solid understanding of what QtCore offers and how it fits into the larger Qt ecosystem.\", \r\n  \"agenda\": [ \r\n    \"Unpacking the Key Features of QtCore\", \r\n    \"Understanding the Role of Signals and Slots\", \r\n    \"Diving into the Event Loop and Thread Management\", \r\n    \"Exploring the Qt Meta-Object System\", \r\n    \"Internationalizing and Localizing Your Application\" \r\n  ], \r\n  \"summary\": \"QtCore is a powerhouse, offering a rich set of tools and functionalities that streamline application development. By utilizing QtCore effectively, developers can create robust and responsive applications, leveraging its cross-platform capabilities and efficient event handling. Remember to explore the provided resources and code examples to strengthen your understanding further.\" \r\n} \r\n\r\noutput: \r\n{ \r\n  \"onboarding_guide\": [ \r\n    \"## Onboarding QtCore ##\", \r\n    \"\", \r\n    \"### Introduction: ###\", \r\n    content.introduction, \r\n    \"\", \r\n    \"### Agenda: ###\", \r\n    \"We'll be covering the following topics today:\", \r\n    \"- \" + const.Key_Features.join(\"\\n- \"), \r\n    \"\", \r\n    \"### QtCore Overview: ###\", \r\n    \"QtCore is \" + const.QtCore + \". Let's delve into each of the key features and understand how they empower Qt developers.\", \r\n    \"\", \r\n    \"### Key Features: ###\", \r\n    \"- **Signal and Slot Mechanism:** Explain the concept and provide code examples showcasing signal-slot connections.\", \r\n    \"- **Event Loop and Thread Management:** Discuss how QtCore handles events and demonstrates multithreading with QThread.\", \r\n    \"- **Qt Meta-Object System:** Elaborate on the benefits and demonstrate its usage in dynamic property access and signal-slot connections.\", \r\n    \"- **Internationalization and Localization:** Guide on localizing an application's UI and provide best practices.\", \r\n    \"\", \r\n    \"Refer to the official Qt documentation and online resources for further details and code samples on each topic.\", \r\n    \"\", \r\n    \"### Summary: ###\", \r\n    content.summary \r\n  ] \r\n}",
+      "createdAt": "2024-07-19T16:06:47.522Z",
+      "updatedAt": "2024-07-19T16:06:47.529Z",
+      "ancestors": [
+        "afd1e16a-c3c1-4d23-bff4-6c43496372e0",
+        "3a1dd8ba-685d-406d-8bb9-f9ab59c5ab4b"
+      ],
+      "id": "fc837b22-9d00-4978-9996-74e7143ff786",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-19T16:06:46.988Z",
+  "updatedAt": "2024-07-19T16:07:23.352Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6691ea058ae7a2183306be0e",
+  "title": "📝 Markdown template",
+  "rootMessageId": "0fd43f6a-b6dc-4db8-9d67-16c77d30c8e9",
+  "messages": [
+    {
+      "id": "0fd43f6a-b6dc-4db8-9d67-16c77d30c8e9",
+      "from": "system",
+      "content": "You are BuzzEase, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\n\n**Sections:**\nStart with '⫻', then 'name/type:place', followed by data.\n\n**Context Sections:**\nProvide extra info, marked as \"context:{tag}\".\n\n**Constant Sections:**\nContain parameters, named \"const:{key}\", with data in JSON or plain text.\n\n**Content Sections:**\nHold input data, marked as \"content\", and request generated output.",
+      "createdAt": "2024-07-13T02:44:21.562Z",
+      "updatedAt": "2024-07-13T02:44:21.562Z",
+      "children": [
+        "b7946bbc-8ec1-4651-96f1-06e843dca111"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template\nThe system generates markdown content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n",
+      "files": [],
+      "createdAt": "2024-07-13T02:44:22.218Z",
+      "updatedAt": "2024-07-13T02:44:22.218Z",
+      "ancestors": [
+        "0fd43f6a-b6dc-4db8-9d67-16c77d30c8e9"
+      ],
+      "id": "b7946bbc-8ec1-4651-96f1-06e843dca111",
+      "children": [
+        "19a0eb39-ece7-4c73-9ca4-a57fa51d46c8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is an example of a well-formatted input according to the rules:\n\n⫻context/klmx:Kick/Template\n\ncontext:author\nJohn Doe\n\n⫻const/configuration:JSON\n{\n  \"title\": \"My Template\",\n  \"version\": 1.0\n}\n\n⫻content/markdown:Main\nThis is the main content.\nIt will be processed and generated into markdown.\n\nNote:\n\n* The first section is a context section, providing auxiliary information about the author.\n* The second section is a constant section, providing parameters in JSON format.\n* The third section is a content section, providing the input data in markdown format and asking for generated output.\n\nThe system will process this input and generate markdown content according to the provided rules and parameters.",
+      "createdAt": "2024-07-13T02:44:22.218Z",
+      "updatedAt": "2024-07-13T02:44:22.230Z",
+      "ancestors": [
+        "0fd43f6a-b6dc-4db8-9d67-16c77d30c8e9",
+        "b7946bbc-8ec1-4651-96f1-06e843dca111"
+      ],
+      "id": "19a0eb39-ece7-4c73-9ca4-a57fa51d46c8",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are BuzzEase, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\n\n**Sections:**\nStart with '⫻', then 'name/type:place', followed by data.\n\n**Context Sections:**\nProvide extra info, marked as \"context:{tag}\".\n\n**Constant Sections:**\nContain parameters, named \"const:{key}\", with data in JSON or plain text.\n\n**Content Sections:**\nHold input data, marked as \"content\", and request generated output.",
+  "assistantId": null,
+  "createdAt": "2024-07-13T02:44:21.563Z",
+  "updatedAt": "2024-07-13T02:44:26.960Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

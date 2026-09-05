@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669207259b7c14c7e30ca8b5",
+  "title": "🐍 Django function",
+  "rootMessageId": "67188922-ec53-4d30-83fb-c65558bf4421",
+  "messages": [
+    {
+      "id": "67188922-ec53-4d30-83fb-c65558bf4421",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+      "createdAt": "2024-07-13T04:48:37.213Z",
+      "updatedAt": "2024-07-13T04:48:37.213Z",
+      "children": [
+        "a970733f-99fa-4ef8-9cc2-9849d80c6356"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ context:language:python\n⫻ context:framework:django\n\n⫻ const:database_name:json\n\"my_database\"\n\n⫻ content:function_description:plain\nA function to fetch all users from the database.\n\n⫻ content:model_name:plain\nUser",
+      "files": [],
+      "createdAt": "2024-07-13T04:48:37.617Z",
+      "updatedAt": "2024-07-13T04:48:37.617Z",
+      "ancestors": [
+        "67188922-ec53-4d30-83fb-c65558bf4421"
+      ],
+      "id": "a970733f-99fa-4ef8-9cc2-9849d80c6356",
+      "children": [
+        "b51afb3b-c164-4620-a283-a43c54d2d2e4"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ fizz/llm:Component/Response\nHere is a Python code snippet that defines a function to retrieve all users from a Django database: \n\n```python\ndef get_all_users():\n    \"\"\"Fetch all users from the database.\"\"\"\n    # Connect to the database\n    with connect(database_name) as db:\n        # Create a cursor object to interact with the database\n        with db.cursor() as cursor:\n            # Execute the SQL query to select all rows from the \"User\" model\n            cursor.execute(f\"SELECT * FROM {User._meta.db_table};\")\n\n            # Fetch all rows returned by the query\n            users = cursor.fetchall()\n\n    return users\n```\n\nThe `get_all_users` function establishes a connection to the specified database and executes an SQL SELECT query to retrieve all records from the \"User\" model. The results are stored in the `users` variable and returned by the function. \n\nEnsure that the `User` model is defined elsewhere in your code, as it is not included in this snippet. Also, remember to handle any potential errors or exceptions that may occur during database operations.\n\nIs there anything else I can help with regarding database interactions or Django development?",
+      "createdAt": "2024-07-13T04:48:37.617Z",
+      "updatedAt": "2024-07-13T04:48:37.625Z",
+      "ancestors": [
+        "67188922-ec53-4d30-83fb-c65558bf4421",
+        "a970733f-99fa-4ef8-9cc2-9849d80c6356"
+      ],
+      "id": "b51afb3b-c164-4620-a283-a43c54d2d2e4",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-07-13T04:48:37.214Z",
+  "updatedAt": "2024-07-13T04:48:55.271Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

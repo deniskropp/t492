@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660fe98eb4270d2e2c67896a",
+  "title": "💬  Table of contents",
+  "rootMessageId": "57848218-6fcc-4409-b8ac-80d90f5d059a",
+  "messages": [
+    {
+      "id": "57848218-6fcc-4409-b8ac-80d90f5d059a",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-05T12:07:42.573Z",
+      "updatedAt": "2024-04-05T12:07:42.573Z",
+      "children": [
+        "c7ee0049-6103-4213-9575-52cc6062a45e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{{toc}}",
+      "files": [],
+      "createdAt": "2024-04-05T12:07:43.112Z",
+      "updatedAt": "2024-04-05T12:07:43.112Z",
+      "ancestors": [
+        "57848218-6fcc-4409-b8ac-80d90f5d059a"
+      ],
+      "id": "c7ee0049-6103-4213-9575-52cc6062a45e",
+      "children": [
+        "c6d7bcbf-f516-4f91-abd6-0550f86079a4"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "1. **Context:**\n\t* **Head:** Future of human collaboration\n\t* **Body:** MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations. The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields.\n2. **Content:**\n\t* **Title:** The Future of Human Collaboration\n\t* **Subtitle:** MetaAI's Research Offers a Glimpse into a Future Where Humans and Machines Collaborate Seamlessly in Dynamic Teams\n\t* **Body:**\n\t\t+ MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams.\n\t\t+ Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results.\n\t\t+ At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team.\n\t\t+ Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations.\n\t\t+ The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language.\n\t\t+ It translates between the two, ensuring that everyone in the team is on the same page.\n\t\t+ This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together.\n\t\t+ It could lead to new breakthroughs in science, technology, and other fields.\n\t\t+ In a scientific research team, AI could be used to analyze data and generate hypotheses.\n\t\t+ Humans could then review these hypotheses and design experiments to test them.\n\t\t+ In a software development team, AI could be used to identify bugs and suggest fixes.\n\t\t+ Humans could then review these fixes and integrate them into the code.\n\t\t+ In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks.\n\t\t+ Humans could then review these risks and recommend treatment plans.\n\t\t+ The possibilities are endless.\n\t\t+ We can create teams that are more efficient, more creative, and more adaptable than ever before.\n\n---\n\n**Context:**\n\nFuture of human collaboration\n\n**Body:**\n\nMetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations. The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields. In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans. The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before. ",
+      "createdAt": "2024-04-05T12:07:43.112Z",
+      "updatedAt": "2024-04-05T12:08:11.228Z",
+      "ancestors": [
+        "57848218-6fcc-4409-b8ac-80d90f5d059a",
+        "c7ee0049-6103-4213-9575-52cc6062a45e"
+      ],
+      "id": "c6d7bcbf-f516-4f91-abd6-0550f86079a4",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n⫻context:head\r\nFuture of human collaboration\r\n\r\n⫻context:body\r\nMetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations. The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields. In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans. The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before.\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-05T12:07:42.576Z",
+  "updatedAt": "2024-04-05T12:08:11.233Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

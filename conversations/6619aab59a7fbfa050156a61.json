@@ -1,0 +1,89 @@
+{
+  "conversation_id": "6619aab59a7fbfa050156a61",
+  "title": "🏈 Football game",
+  "rootMessageId": "84a2587b-e275-447c-ba8b-ec3eabf2b16a",
+  "messages": [
+    {
+      "id": "84a2587b-e275-447c-ba8b-ec3eabf2b16a",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:42:13.496Z",
+      "updatedAt": "2024-04-12T21:42:13.496Z",
+      "children": [
+        "314b348d-9249-49db-9127-ed26ba2719ad"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick Off",
+      "files": [],
+      "createdAt": "2024-04-12T21:42:14.361Z",
+      "updatedAt": "2024-04-12T21:42:14.361Z",
+      "ancestors": [
+        "84a2587b-e275-447c-ba8b-ec3eabf2b16a"
+      ],
+      "id": "314b348d-9249-49db-9127-ed26ba2719ad",
+      "children": [
+        "7deadb5e-c2d0-448d-9f52-f90886849286"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure! Let's get started! What would you like to do first?",
+      "createdAt": "2024-04-12T21:42:14.361Z",
+      "updatedAt": "2024-04-12T21:42:15.026Z",
+      "ancestors": [
+        "84a2587b-e275-447c-ba8b-ec3eabf2b16a",
+        "314b348d-9249-49db-9127-ed26ba2719ad"
+      ],
+      "id": "7deadb5e-c2d0-448d-9f52-f90886849286",
+      "children": [
+        "93d0c3a4-8fa5-4402-ade9-600bc791e8ef"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Explain KickLang",
+      "files": [],
+      "createdAt": "2024-04-12T21:42:21.846Z",
+      "updatedAt": "2024-04-12T21:42:21.846Z",
+      "ancestors": [
+        "84a2587b-e275-447c-ba8b-ec3eabf2b16a",
+        "314b348d-9249-49db-9127-ed26ba2719ad",
+        "7deadb5e-c2d0-448d-9f52-f90886849286"
+      ],
+      "id": "93d0c3a4-8fa5-4402-ade9-600bc791e8ef",
+      "children": [
+        "1e42e070-f4b4-46bf-8519-806aad88a5f6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "KickLang is a formal language used to interact with the knowledge graph and instruct the research assistant. It provides a structured and expressive way to represent and manipulate data, enabling complex queries, transformations, and analyses.\n\nAt its core, KickLang is designed to be human-readable and intuitive, allowing users to specify their intentions clearly and concisely. It offers a rich set of operators and functions to navigate, filter, aggregate, and transform data within the knowledge graph.\n\nHere's a simplified example of KickLang in action:\n\nLet's say you have a knowledge graph containing information about books, including their titles, authors, genres, and publication years. You want to find all science fiction books published after the year 2000 and their authors. In KickLang, you might express this query as:\n\n```\n/.book\n  /..title\n  /..author\n  /..genre = \"science fiction\"\n  /..publicationYear > 2000\n```\n\nIn this example:\n\n- `/.book` represents the starting point, indicating that we want to work with the \"book\" entities in the knowledge graph.\n- `/.title`, `/.author`, and `/.genre` are paths that navigate to specific attributes of the \"book\" entity, such as its title, author, and genre, respectively.\n- `/.publicationYear > 2000` is a filter condition that restricts the results to books published after the year 2000.\n\nThe result of this query would give you a list of science fiction books published after 2000, along with their titles and authors.\n\nKickLang also supports more advanced features, including aggregation, grouping, sorting, and complex transformations. It allows you to combine and manipulate data from different parts of the knowledge graph, enabling in-depth analysis and insight generation.\n\nBy using KickLang, you can harness the power of the knowledge graph and the research assistant to efficiently explore and derive valuable information from your data. It provides a flexible and expressive way to interact with structured and semi-structured data, making it a versatile tool for knowledge management and analysis.",
+      "createdAt": "2024-04-12T21:42:21.846Z",
+      "updatedAt": "2024-04-12T21:42:31.372Z",
+      "ancestors": [
+        "84a2587b-e275-447c-ba8b-ec3eabf2b16a",
+        "314b348d-9249-49db-9127-ed26ba2719ad",
+        "7deadb5e-c2d0-448d-9f52-f90886849286",
+        "93d0c3a4-8fa5-4402-ade9-600bc791e8ef"
+      ],
+      "id": "1e42e070-f4b4-46bf-8519-806aad88a5f6",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:42:13.497Z",
+  "updatedAt": "2024-04-12T21:42:31.377Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

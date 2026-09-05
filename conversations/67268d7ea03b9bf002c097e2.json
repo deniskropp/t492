@@ -1,0 +1,61 @@
+{
+  "conversation_id": "67268d7ea03b9bf002c097e2",
+  "title": "🤔 Extension request",
+  "rootMessageId": "e3b25efa-ba1b-47fe-b0c8-f1d36941f7e2",
+  "messages": [
+    {
+      "id": "e3b25efa-ba1b-47fe-b0c8-f1d36941f7e2",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+      "createdAt": "2024-11-02T20:37:18.397Z",
+      "updatedAt": "2024-11-02T20:37:18.397Z",
+      "children": [
+        "4f2f1a65-c607-4384-909f-a14de7282c15"
+      ],
+      "ancestors": [],
+      "files": [
+        "file-67268d7ea03b9bf002c097e2-521d80f3"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "extend",
+      "files": [
+        "file-67268d7ea03b9bf002c097e2-521d80f3"
+      ],
+      "createdAt": "2024-11-02T20:37:19.115Z",
+      "updatedAt": "2024-11-02T20:37:19.115Z",
+      "ancestors": [
+        "e3b25efa-ba1b-47fe-b0c8-f1d36941f7e2"
+      ],
+      "id": "4f2f1a65-c607-4384-909f-a14de7282c15",
+      "children": [
+        "277b98fe-f3de-4614-ad50-2ff7434cf5be"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Let's delve deeper into the concept of self-running LLMs and explore a specific aspect or application in more detail. Here are a few options we can discuss:\n\n1. **Technical Challenges:**\n   - **Understanding Complex Instructions:** How can LLMs be trained to understand and execute multi-step tasks?\n   - **Workflow Management:** What are the best practices for breaking down and prioritizing tasks?\n   - **Adaptation and Learning:** How can LLMs continuously improve their performance based on feedback and new data?\n   - **Environment Interaction:** What are the technical requirements for LLMs to interact with external systems and data sources?\n\n2. **Safety and Ethics:**\n   - **Ensuring Responsible Use:** What measures can be taken to prevent misuse and ensure ethical behavior?\n   - **Transparency and Explainability:** How can we make the decision-making process of self-running LLMs more transparent and understandable?\n   - **Human Oversight:** What mechanisms can be put in place to allow for human intervention and control?\n\n3. **Applications:**\n   - **Autonomous Research:** How can self-running LLMs be used to conduct scientific experiments and generate hypotheses?\n   - **Personalized Education:** What are the potential benefits and challenges of using self-running LLMs in education?\n   - **Creative Content Generation:** How can LLMs be used to create art, music, and stories with minimal human input?\n\n4. **Future Trends:**\n   - **Integration with IoT and Edge Computing:** How can self-running LLMs be integrated with Internet of Things (IoT) devices and edge computing?\n   - **Collaborative AI:** What are the possibilities of multiple self-running LLMs working together to solve complex problems?\n\nWhich of these topics would you like to explore further? Or do you have another specific area in mind?",
+      "createdAt": "2024-11-02T20:37:19.115Z",
+      "updatedAt": "2024-11-02T20:37:19.123Z",
+      "ancestors": [
+        "e3b25efa-ba1b-47fe-b0c8-f1d36941f7e2",
+        "4f2f1a65-c607-4384-909f-a14de7282c15"
+      ],
+      "id": "277b98fe-f3de-4614-ad50-2ff7434cf5be",
+      "children": [],
+      "interrupted": false,
+      "files": [
+        "file-67268d7ea03b9bf002c097e2-521d80f3"
+      ]
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-11-02T20:37:18.398Z",
+  "updatedAt": "2024-11-02T20:37:34.333Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,176 @@
+{
+  "conversation_id": "66924d50262e078f2ac2200d",
+  "title": "📊 Project configuration",
+  "rootMessageId": "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+  "messages": [
+    {
+      "id": "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+      "createdAt": "2024-07-13T09:48:00.080Z",
+      "updatedAt": "2024-07-13T09:48:00.080Z",
+      "children": [
+        "59fb1fcc-2442-4067-89e9-6b7a87c21f06",
+        "76808cef-1993-469c-993c-226fa2642cb3",
+        "2d7c67ad-72d2-4c02-9736-39b521711817",
+        "5269c12a-0ad7-4987-b52c-3a020b132213"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/config:project_config:1\n{\n\"project_name\": \"QtAssist\",\n\"language\": \"Python\",\n\"framework\": \"PyQt5\",\n\"dependencies\": [\"ollama\"]\n}\n\n⫻context/meta:project_description:1\nThis project aims to develop a multi-assistant group chat (like IRC) using Ollama.",
+      "files": [],
+      "createdAt": "2024-07-13T09:48:00.618Z",
+      "updatedAt": "2024-07-13T09:48:00.618Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480"
+      ],
+      "id": "59fb1fcc-2442-4067-89e9-6b7a87c21f06",
+      "children": [
+        "cbc1e0ea-5b5c-4121-bb7b-eff90ed872db"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "**Project Configuration and Context** \n\n```\n{\n  \"project_name\": \"QtAssist\",\n  \"language\": \"Python\",\n  ``framework\": \"PyQt5\",\n  \"dependencies\": [\"ollama\"]\n}\n```\n\n**Context:** \n\nThe project, QtAssist, is a Python application that utilizes the PyQt5 framework to develop a graphical user interface (GUI). It aims to create a multi-assistant group chat functionality similar to IRC, integrating with the Ollama dependency to facilitate this feature. \n\n**Constants:** \n\n- project_name: QtAssist \n- language: Python \n- framework: PyQt5 \n- dependencies: ollama \n\nThese constants provide essential configuration details for the project and can be used as parameters for further content generation or as a reference for consistent terminology throughout the project's documentation.",
+      "createdAt": "2024-07-13T09:48:00.618Z",
+      "updatedAt": "2024-07-13T09:48:00.627Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "59fb1fcc-2442-4067-89e9-6b7a87c21f06"
+      ],
+      "id": "cbc1e0ea-5b5c-4121-bb7b-eff90ed872db",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/config:project_config:1\n{\n\"project_name\": \"QtAssist\",\n\"language\": \"Python\",\n\"framework\": \"PyQt5\",\n\"dependencies\": [\"ollama\"]\n}\n\n⫻context/meta:project_description:1\nThis project aims to develop a multi-assistant group chat (like IRC) using Ollama.\n\n⫻content/code",
+      "files": [],
+      "createdAt": "2024-07-13T09:48:49.504Z",
+      "updatedAt": "2024-07-13T09:48:49.504Z",
+      "id": "76808cef-1993-469c-993c-226fa2642cb3",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480"
+      ],
+      "children": [
+        "e75f9924-7cb7-4667-ba11-63db63235757"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```python\nimport ollama\r\nfrom PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout\r\n\r\nclass QtAssist:\r\n    def __init__(self):\r\n        self.app = QApplication([])\r\n        self.window = QWidget()\r\n        self.window.setLayout(QVBoxLayout())\r\n        self.window.setWindowTitle(self.get_project_info(\"project_name\"))\r\n\r\n        self.chat_label = QLabel(\"Multi-Assistant Group Chat\")\r\n        self.assistants_label = QLabel(\"Connected Assistants:\")\r\n        self.connect_button = QPushButton(\"Connect to IRC\")\r\n\r\n        self.window.layout().addWidget(self.chat_label)\r\n        self.window.layout().addWidget(self.assistants_label)\r\n        self.window.layout().addWidget(self.connect_button)\r\n\r\n        self.connect_button.clicked.connect(self.on_connect)\r\n\r\n        self.window.show()\r\n\r\n    def get_project_info(self, key):\r\n        return self.project_config.get(key)\r\n\r\n    def on_connect(self):\r\n        # Implement IRC connection and assistant handling here\r\n        pass\r\n\r\nif __name__ == \"__main__\":\r\n    project_config = {\r\n        \"project_name\": \"QtAssist\",\r\n        \"language\": \"Python\",\r\n        \"framework\": \"PyQt5\",\r\n        \"dependencies\": [\"ollama\"]\r\n    }\r\n\r\n    app = QtAssist()\r\n    app.project_config = project_config\r\n\r\n    # Start the Qt event loop\r\n    app.app.exec_()\r\n```",
+      "createdAt": "2024-07-13T09:48:49.504Z",
+      "updatedAt": "2024-07-13T09:48:49.513Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "76808cef-1993-469c-993c-226fa2642cb3"
+      ],
+      "id": "e75f9924-7cb7-4667-ba11-63db63235757",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/config:project_config:1\n{\n\"project_name\": \"QtAssist\",\n\"language\": \"Python\",\n\"framework\": \"PyQt5\",\n\"dependencies\": [\"ollama\"]\n}\n\n⫻context/meta:project_description:1\nThis project aims to develop a multi-assistant group chat frontend for Ollama.\n\n⫻content/code",
+      "files": [],
+      "createdAt": "2024-07-13T09:49:53.778Z",
+      "updatedAt": "2024-07-13T09:49:53.778Z",
+      "id": "2d7c67ad-72d2-4c02-9736-39b521711817",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480"
+      ],
+      "children": [
+        "661973e5-1cd3-4d38-94fb-2e3e01a80eaa"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "**Project Configuration**\r\n\r\n```json\r\n{\r\n  \"project_name\": \"QtAssist\",\r\n  \"language\": \"Python\",\r\n  「framework\": \"PyQt5\",\r\n  \"dependencies\": [\"ollama\"]\r\n}\r\n```\r\n\r\n**Project Description (Context)**\r\n\r\nThis project, codenamed \"QtAssist\", involves creating a graphical user interface using the PyQt5 framework in Python. The goal is to develop a multi-assistant group chat frontend, leveraging the capabilities of the \"ollama\" dependency to enable seamless interactions with multiple digital assistants within a chat interface.\r\n\r\n**Content Request**\r\n\r\nPlease provide specific details or code requirements for the QtAssist project. Are there any particular features or functionalities you would like to include in the multi-assistant group chat frontend?",
+      "createdAt": "2024-07-13T09:49:53.778Z",
+      "updatedAt": "2024-07-13T09:49:53.787Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "2d7c67ad-72d2-4c02-9736-39b521711817"
+      ],
+      "id": "661973e5-1cd3-4d38-94fb-2e3e01a80eaa",
+      "children": [
+        "c5e0f2bd-5155-4af8-b0cd-930a96e85074"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "```python\nimport os\nimport ast\nimport ollama\nfrom PyQt5 import QtWidgets, QtGui\n\nstd_prompts = [\n    '<|start_header_id|>Which parts of the prompt are superfluous or less relevant?<|end_header_id|>',\n]\n\noptions = {\"temperature\": 0.0, \"num_gpu\": 1}\n\nclass ModelListTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_list = QtWidgets.QListWidget()\n        self.model_list.addItems([model[\"name\"] for model in self.parent.models[\"models\"]])\n        self.model_list.activated.connect(self.parent.model_selected)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_list)\n        self.setLayout(layout)\n\nclass ModelTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_label = QtWidgets.QLabel(self.parent.model[\"name\"])\n        self.model_text = QtWidgets.QTextEdit()\n        self.model_text.setReadOnly(False)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_label)\n        layout.addWidget(self.model_text)\n        self.setLayout(layout)\n\nclass InputOutputTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_name_label = QtWidgets.QLabel(\"No model selected\")\n        self.message_input = QtWidgets.QTextEdit()\n        self.message_input.setPlainText(std_prompts[0])\n        self.send_button = QtWidgets.QPushButton(\"Send\")\n        self.send_button.clicked.connect(self.send_message)\n        self.response_output = QtWidgets.QTextEdit()\n        self.response_output.setReadOnly(True)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_name_label)\n        layout.addWidget(self.message_input)\n        layout.addWidget(self.send_button)\n        layout.addWidget(self.response_output)\n        self.setLayout(layout)\n\n    def send_message(self):\n        message_text = self.message_input.toPlainText()\n        self.parent.send_message(message_text, self.response_output)\n\nclass OpenAIApplication(QtWidgets.QTabWidget):\n    def __init__(self):\n        super().__init__()\n\n        # Read the API key from the environment variable\n        # openai.api_key = os.environ.get(\"AIML_API_KEY\")\n        # openai.api_base = \"https://api.aimlapi.com/v1\"\n\n        # List the available models\n        self.models = ollama.list()\n        print(self.models['models'][0]['name'])\n\n        self.model = self.models['models'][0]\n\n        # Create the tabs\n        self.model_list_tab = ModelListTab(self)\n        self.model_tab = ModelTab(self)\n        self.input_output_tab = InputOutputTab(self)\n\n        # Add the tabs\n        self.addTab(self.model_list_tab, \"Models\")\n        self.addTab(self.model_tab, \"Model\")\n        self.addTab(self.input_output_tab, \"Input/Output\")\n\n        # Set the window title\n        self.setWindowTitle(\"OLLAMA\")\n\n        # Resize the window\n        self.resize(800, 600)\n\n    def model_selected(self):\n        # Get the selected model\n        selected_model = self.model_list_tab.model_list.currentItem().text()\n        # Find the index of the selected model in the models list\n        index = next((i for i, model in enumerate(self.models['models']) if model['name'] == selected_model), None)\n\n        # Update the current model if the selected model is found\n        if index is not None:\n            self.model = self.models['models'][index]\n        else:\n            print(f\"Model {selected_model} not found.\")\n\n        self.model_tab.model_label.setText(self.model['name'])\n\n    def send_message(self, message_text, response_output):\n        # Get the selected model\n        selected_model = self.model['name']#_list_tab.findChild(QtWidgets.QListWidget).currentItem().text()\n        response_output.setPlainText(\"# Prompt: \" + message_text)\n\n        # Update the model name label and window title\n        self.input_output_tab.model_name_label.setText(\"Selected model: \" + selected_model)\n        self.setWindowTitle(\"OLLAMA - \" + selected_model)\n\n        try:\n            # Send the message to the selected model\n            if (True):\n                response = ollama.generate(\n                    model=selected_model,\n                    prompt=message_text,\n                    system=self.model_tab.model_text.toPlainText(),\n                    #raw=True,\n                    options=options,\n                    #max_tokens=1024,\n                    #n=1,\n                    #stop=None,\n                    #temperature=0.5,\n                )\n                text = response[\"response\"]\n            else:\n                response = ollama.chat(\n                    model=selected_model,\n                    messages=[{\"role\": \"user\", \"content\": message_input.toPlainText()}],\n                    # max_tokens=1024,\n                    # n=1,\n                    # stop=None,\n                    # temperature=0.5,\n                )\n                text = response[\"message\"][\"content\"]\n\n            # Display the response in the response output\n            response_output.setPlainText(text)\n\n        # except RateLimitError:\n        #     # Display an error message to the user\n        #     response_output.setText(\n        #         \"Sorry, you have exceeded your current quota. Please check your plan and billing details.\")\n\n        except Exception as e:\n            # Display a generic error message to the user\n            response_output.setText(\"An error occurred: \" + str(e))\n\n\nif __name__ == \"__main__\":\n    app = QtWidgets.QApplication([])\n    window = OpenAIApplication()\n    window.show()\n    app.exec_()\n```",
+      "files": [],
+      "createdAt": "2024-07-13T09:50:54.940Z",
+      "updatedAt": "2024-07-13T09:50:54.940Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "2d7c67ad-72d2-4c02-9736-39b521711817",
+        "661973e5-1cd3-4d38-94fb-2e3e01a80eaa"
+      ],
+      "id": "c5e0f2bd-5155-4af8-b0cd-930a96e85074",
+      "children": [
+        "99b99b87-bf34-49ea-ab64-4b538785accf"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "**Code Analysis**\r\n\r\nThe provided Python code demonstrates the implementation of a graphical user interface (GUI) application using PyQt5 for interacting with the Ollama API. Here's a breakdown of the code:\r\n\r\n1. **Imports and Configuration**:\r\n   - Imports necessary modules, including `os`, `ast`, `ollama`, and relevant PyQt5 modules.\r\n   - Defines standard prompts (`std_prompts`) and generation options (`options`) as constants.\r\n2. **ModelListTab Class**:\r\n   - Represents a tab for displaying a list of available models from the Ollama API.\r\n   - Inherits from `QtWidgets.QWidget`.\r\n   - Contains a `QListWidget` (`self.model_list`) to display model names.\r\n   - Connects the model list's activation signal to the `model_selected` method.\r\n3. **ModelTab Class**:\r\n   - Represents a tab for displaying details of the selected model.\r\n   - Inherits from `QtWidgets.QWidget`.\r\n   - Includes a label (`self.model_label`) to display the model name and a text edit (`self.model_text`) to display model details.\r\n4. **InputOutputTab Class**:\r\n   - Represents a tab for user input and displaying responses from the model.\r\n   - Inherits from `QtWidgets.QWidget`.\r\n   - Contains input-related widgets: a label (`self.model_name_label`), a text edit for user input (`self.message_input`), and a send button (`self.send_button`).\r\n   - The send button is connected to the `send_message` method.\r\n   - Includes a text edit for displaying responses (`self.response_output`).\r\n5. **OpenAIApplication Class**:\r\n   - Represents the main application window.\r\n   - Inherits from `QtWidgets.QTabWidget`, allowing for tabbed interfaces.\r\n   - In the constructor (`__init__`):\r\n     - Reads the API key from an environment variable.\r\n     - Lists available models using the Ollama API.\r\n     - Creates instances of the three tabs: `ModelListTab`, `ModelTab`, and `InputOutputTab`.\r\n     - Adds the tabs to the tab widget.\r\n     - Sets the window title and initial size.\r\n   - The `model_selected` method updates the selected model based on the user's choice from the model list tab.\r\n   - The `send_message` method sends the user's input to the selected model and displays the response in the output tab.\r\n6. **Main Function**:\r\n   - Executed when the script is run directly (`if __name__ == \"__main__\"`).\r\n   - Creates an instance of the `QtWidgets.QApplication` and the `OpenAIApplication` class.\r\n   - Shows the main application window and starts the event loop with `app.exec_()`.\r\n\r\n**Note**: The code includes comments indicating sections that are not functional, such as API key setup and error handling. These sections would need to be implemented according to your specific requirements and API credentials.",
+      "createdAt": "2024-07-13T09:50:54.940Z",
+      "updatedAt": "2024-07-13T09:50:54.949Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "2d7c67ad-72d2-4c02-9736-39b521711817",
+        "661973e5-1cd3-4d38-94fb-2e3e01a80eaa",
+        "c5e0f2bd-5155-4af8-b0cd-930a96e85074"
+      ],
+      "id": "99b99b87-bf34-49ea-ab64-4b538785accf",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/config:project_config:1\n{\n\"project_name\": \"QtAssist\",\n\"language\": \"Python\",\n\"framework\": \"PyQt5\",\n\"dependencies\": [\"ollama\"]\n}\n\n⫻context/meta:project_description:1\nThis project aims to develop a multi-assistant group chat frontend for Ollama.\n\n⫻context/code:\nimport os\nimport ast\nimport ollama\nfrom PyQt5 import QtWidgets, QtGui\n\nstd_prompts = [\n    '<|start_header_id|>Which parts of the prompt are superfluous or less relevant?<|end_header_id|>',\n]\n\noptions = {\"temperature\": 0.0, \"num_gpu\": 1}\n\nclass ModelListTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_list = QtWidgets.QListWidget()\n        self.model_list.addItems([model[\"name\"] for model in self.parent.models[\"models\"]])\n        self.model_list.activated.connect(self.parent.model_selected)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_list)\n        self.setLayout(layout)\n\nclass ModelTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_label = QtWidgets.QLabel(self.parent.model[\"name\"])\n        self.model_text = QtWidgets.QTextEdit()\n        self.model_text.setReadOnly(False)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_label)\n        layout.addWidget(self.model_text)\n        self.setLayout(layout)\n\nclass InputOutputTab(QtWidgets.QWidget):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.parent = parent\n        self.model_name_label = QtWidgets.QLabel(\"No model selected\")\n        self.message_input = QtWidgets.QTextEdit()\n        self.message_input.setPlainText(std_prompts[0])\n        self.send_button = QtWidgets.QPushButton(\"Send\")\n        self.send_button.clicked.connect(self.send_message)\n        self.response_output = QtWidgets.QTextEdit()\n        self.response_output.setReadOnly(True)\n        layout = QtWidgets.QVBoxLayout()\n        layout.addWidget(self.model_name_label)\n        layout.addWidget(self.message_input)\n        layout.addWidget(self.send_button)\n        layout.addWidget(self.response_output)\n        self.setLayout(layout)\n\n    def send_message(self):\n        message_text = self.message_input.toPlainText()\n        self.parent.send_message(message_text, self.response_output)\n\nclass OpenAIApplication(QtWidgets.QTabWidget):\n    def __init__(self):\n        super().__init__()\n\n        # Read the API key from the environment variable\n        # openai.api_key = os.environ.get(\"AIML_API_KEY\")\n        # openai.api_base = \"https://api.aimlapi.com/v1\"\n\n        # List the available models\n        self.models = ollama.list()\n        print(self.models['models'][0]['name'])\n\n        self.model = self.models['models'][0]\n\n        # Create the tabs\n        self.model_list_tab = ModelListTab(self)\n        self.model_tab = ModelTab(self)\n        self.input_output_tab = InputOutputTab(self)\n\n        # Add the tabs\n        self.addTab(self.model_list_tab, \"Models\")\n        self.addTab(self.model_tab, \"Model\")\n        self.addTab(self.input_output_tab, \"Input/Output\")\n\n        # Set the window title\n        self.setWindowTitle(\"OLLAMA\")\n\n        # Resize the window\n        self.resize(800, 600)\n\n    def model_selected(self):\n        # Get the selected model\n        selected_model = self.model_list_tab.model_list.currentItem().text()\n        # Find the index of the selected model in the models list\n        index = next((i for i, model in enumerate(self.models['models']) if model['name'] == selected_model), None)\n\n        # Update the current model if the selected model is found\n        if index is not None:\n            self.model = self.models['models'][index]\n        else:\n            print(f\"Model {selected_model} not found.\")\n\n        self.model_tab.model_label.setText(self.model['name'])\n\n    def send_message(self, message_text, response_output):\n        # Get the selected model\n        selected_model = self.model['name']#_list_tab.findChild(QtWidgets.QListWidget).currentItem().text()\n        response_output.setPlainText(\"# Prompt: \" + message_text)\n\n        # Update the model name label and window title\n        self.input_output_tab.model_name_label.setText(\"Selected model: \" + selected_model)\n        self.setWindowTitle(\"OLLAMA - \" + selected_model)\n\n        try:\n            # Send the message to the selected model\n            if (True):\n                response = ollama.generate(\n                    model=selected_model,\n                    prompt=message_text,\n                    system=self.model_tab.model_text.toPlainText(),\n                    #raw=True,\n                    options=options,\n                    #max_tokens=1024,\n                    #n=1,\n                    #stop=None,\n                    #temperature=0.5,\n                )\n                text = response[\"response\"]\n            else:\n                response = ollama.chat(\n                    model=selected_model,\n                    messages=[{\"role\": \"user\", \"content\": message_input.toPlainText()}],\n                    # max_tokens=1024,\n                    # n=1,\n                    # stop=None,\n                    # temperature=0.5,\n                )\n                text = response[\"message\"][\"content\"]\n\n            # Display the response in the response output\n            response_output.setPlainText(text)\n\n        # except RateLimitError:\n        #     # Display an error message to the user\n        #     response_output.setText(\n        #         \"Sorry, you have exceeded your current quota. Please check your plan and billing details.\")\n\n        except Exception as e:\n            # Display a generic error message to the user\n            response_output.setText(\"An error occurred: \" + str(e))\n\n\nif __name__ == \"__main__\":\n    app = QtWidgets.QApplication([])\n    window = OpenAIApplication()\n    window.show()\n    app.exec_()",
+      "files": [],
+      "createdAt": "2024-07-13T09:52:30.400Z",
+      "updatedAt": "2024-07-13T09:52:30.400Z",
+      "id": "5269c12a-0ad7-4987-b52c-3a020b132213",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480"
+      ],
+      "children": [
+        "4302a7c1-900f-4c04-870e-bc06c887f650"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content/code:\n```python\nimport os\nfrom ollama import AI\nfrom PyQt5 import QtWidgets, QtGui\n\nclass QtOllamaApp(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__init__()\n        self.setWindowTitle(\"QtOllama\")\n        self.setGeometry(100, 100, 800, 600)\n\n        self.central_widget = QtWidgets.QWidget(self)\n        self.setCentralWidget(self.central_widget)\n\n        self.layout = QtWidgets.QVBoxLayout(self.central_widget)\n\n        self.input_text = QtWidgets.QTextEdit(self.central_widget)\n        self.input_text.setPlaceholderText(\"Enter your message here...\")\n        self.layout.addWidget(self.input_text)\n\n        self.output_text = QtWidgets.QTextEdit(self.central_widget)\n        self.output_text.setReadOnly(True)\n        self.layout.addWidget(self.output_text)\n\n        self.send_button = QtWidgets.QPushButton(\"Send\", self.central_widget)\n        self.send_button.clicked.connect(self.send_message)\n        self.layout.addWidget(self.send_button)\n\n        self.model_label = QtWidgets.QLabel(\"Model: Base\")\n        self.layout.addWidget(self.model_label)\n\n        self.init_ollama()\n\n    def init_ollama(self):\n        self.ollama = AI()\n\n    def send_message(self):\n        message = self.input_text.toPlainText()\n        response = self.ollama.chat(message)\n        self.output_text.append(f\"You: {message}\\nAI: {response}\\n\")\n\nif __name__ == \"__main__\":\n    app = QtWidgets.QApplication([])\n    window = QtOllamaApp()\n    window.show()\n    app.exec_()\n```\n\n⫻content/description:\nA simple PyQt5-based GUI application for interacting with the Ollama AI chatbot. Users can input messages and receive responses from the AI model. The GUI includes a text box for user input, an output box for displaying the conversation, and a \"Send\" button to initiate the AI response. The application utilizes the Ollama Python package for AI interactions.",
+      "createdAt": "2024-07-13T09:52:30.400Z",
+      "updatedAt": "2024-07-13T09:52:30.409Z",
+      "ancestors": [
+        "7bac0aad-9c2d-4f00-8875-08f6f440d480",
+        "5269c12a-0ad7-4987-b52c-3a020b132213"
+      ],
+      "id": "4302a7c1-900f-4c04-870e-bc06c887f650",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T09:48:00.081Z",
+  "updatedAt": "2024-07-13T09:53:07.404Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

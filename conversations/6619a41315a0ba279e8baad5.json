@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619a41315a0ba279e8baad5",
+  "title": "🏈 Football game",
+  "rootMessageId": "d2514fb2-44a0-4988-92e4-4152d9d6a4c1",
+  "messages": [
+    {
+      "id": "d2514fb2-44a0-4988-92e4-4152d9d6a4c1",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:13:55.138Z",
+      "updatedAt": "2024-04-12T21:13:55.138Z",
+      "children": [
+        "c1605e3e-3620-4019-aa9c-589360185b06"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick Off",
+      "files": [],
+      "createdAt": "2024-04-12T21:13:56.439Z",
+      "updatedAt": "2024-04-12T21:13:56.439Z",
+      "ancestors": [
+        "d2514fb2-44a0-4988-92e4-4152d9d6a4c1"
+      ],
+      "id": "c1605e3e-3620-4019-aa9c-589360185b06",
+      "children": [
+        "32d52dd7-fe92-4d1b-8a80-3d5c7811d9da"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "To kick off a project, it is essential to have a clear understanding of the goals and objectives. It is also important to establish a solid plan and gather the necessary resources. Effective communication and collaboration among team members are crucial for a successful project kickoff. Here are some key steps to consider when kicking off a project:\r\n\r\n- Define the scope and objectives: Clearly define the scope of the project, including the specific goals, deliverables, and success criteria. Ensure that everyone involved has a shared understanding of what needs to be achieved.\r\n\r\n- Assemble the right team: Identify the key stakeholders, team members, and subject matter experts who will be involved in the project. Ensure that the team has the necessary skills, resources, and bandwidth to deliver the project successfully.\r\n\r\n- Create a project plan: Develop a detailed project plan that outlines the tasks, timelines, dependencies, and milestones. Break down the project into manageable tasks and assign responsibilities to team members. Identify any potential risks or challenges and develop mitigation strategies.\r\n\r\n- Establish communication and collaboration processes: Determine the communication and collaboration tools that the team will use to stay connected and aligned. Set expectations for meeting frequency, information sharing, decision-making processes, and issue escalation.\r\n\r\n- Set up the project environment: Prepare the necessary infrastructure, tools, and systems to support the project. This may include setting up project management software, collaboration platforms, development environments, and ensuring access to necessary data or resources.\r\n\r\n- Conduct a kick-off meeting: Bring the team together to officially launch the project. Use this meeting to review the project plan, clarify roles and responsibilities, discuss potential risks and challenges, and establish team norms and expectations.\r\n\r\n- Begin execution: With the project plan in place and the team aligned, start executing the tasks and deliverables. Maintain regular communication, monitor progress against milestones, and adjust the plan as necessary to ensure the project stays on track.\r\n\r\nRemember, a successful project kickoff sets the tone and foundation for the entire project. It helps to align the team, establish clear direction, and create a positive momentum that carries through to completion.",
+      "createdAt": "2024-04-12T21:13:56.439Z",
+      "updatedAt": "2024-04-12T21:14:15.854Z",
+      "ancestors": [
+        "d2514fb2-44a0-4988-92e4-4152d9d6a4c1",
+        "c1605e3e-3620-4019-aa9c-589360185b06"
+      ],
+      "id": "32d52dd7-fe92-4d1b-8a80-3d5c7811d9da",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n\r\nfs\r\n- README\r\n- Code74k.json\r\n- Code74k.ts\r\n- types/Code74k.d.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:13:55.147Z",
+  "updatedAt": "2024-04-12T21:14:15.857Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

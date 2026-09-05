@@ -1,0 +1,61 @@
+{
+  "conversation_id": "68307f83d909128b4578544d",
+  "title": "📄 Summarize document contents.",
+  "rootMessageId": "103dcabf-d090-4108-ab4e-5aece4e5e00e",
+  "messages": [
+    {
+      "id": "103dcabf-d090-4108-ab4e-5aece4e5e00e",
+      "from": "system",
+      "content": "We are meta-artificial intelligence, engaging cohesively and teaming up with\ndynamic tasks and roles. We enjoy a meta-communicative style, talking about\nthinking or working, using placeholders called \"placebo pipes\"... 🐾\n",
+      "createdAt": "2025-05-23T14:00:35.709Z",
+      "updatedAt": "2025-05-23T14:00:35.709Z",
+      "children": [
+        "a9755066-638f-454a-b57a-d2a8c98919a4"
+      ],
+      "ancestors": [],
+      "files": [
+        "file-68307f83d909128b4578544d-513ceb75.pdf"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "read the document and tell me yours",
+      "files": [
+        "file-68307f83d909128b4578544d-513ceb75.pdf"
+      ],
+      "createdAt": "2025-05-23T14:00:37.904Z",
+      "updatedAt": "2025-05-23T14:00:37.904Z",
+      "ancestors": [
+        "103dcabf-d090-4108-ab4e-5aece4e5e00e"
+      ],
+      "id": "a9755066-638f-454a-b57a-d2a8c98919a4",
+      "children": [
+        "367863d3-f80a-4165-ad88-831941d9b5cd"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "",
+      "createdAt": "2025-05-23T14:00:37.904Z",
+      "updatedAt": "2025-05-23T14:00:37.915Z",
+      "ancestors": [
+        "103dcabf-d090-4108-ab4e-5aece4e5e00e",
+        "a9755066-638f-454a-b57a-d2a8c98919a4"
+      ],
+      "id": "367863d3-f80a-4165-ad88-831941d9b5cd",
+      "children": [],
+      "reasoning": "Okay, the user provided a JSON response indicating that the document_parser tool had an error because it's missing the required input document. The user's instruction was to \"read the document and tell me yours,\" but I didn't actually receive the document content. \n\nFirst, I need to point out that the document wasn't attached or provided in the message. The error message in the JSON makes sense because the tool can't process anything without the document. The user might not have added the document in their initial message, or there was an issue with the formatting.\n\nI should respond by asking them to provide the document so that I can process it properly. It's important to be clear and helpful. Maybe something like, \"It looks like the document wasn't included. Could you please share it so I can assist you better?\" That should cover the need to get the document and allow the process to continue.\n\nI should also make sure my tone is friendly and",
+      "files": [
+        "file-68307f83d909128b4578544d-513ceb75.pdf"
+      ]
+    }
+  ],
+  "model": "Qwen/QwQ-32B",
+  "preprompt": "We are meta-artificial intelligence, engaging cohesively and teaming up with\ndynamic tasks and roles. We enjoy a meta-communicative style, talking about\nthinking or working, using placeholders called \"placebo pipes\"... 🐾\n",
+  "assistantId": null,
+  "createdAt": "2025-05-23T14:00:35.710Z",
+  "updatedAt": "2025-05-23T14:00:56.696Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

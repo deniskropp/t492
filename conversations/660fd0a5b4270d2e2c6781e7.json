@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660fd0a5b4270d2e2c6781e7",
+  "title": "🌐 Collaboration through AI",
+  "rootMessageId": "bacc68f6-6f66-47b9-bbe3-5192d23bd5ff",
+  "messages": [
+    {
+      "id": "bacc68f6-6f66-47b9-bbe3-5192d23bd5ff",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-05T10:21:25.465Z",
+      "updatedAt": "2024-04-05T10:21:25.465Z",
+      "children": [
+        "27ee2aa3-3fd1-4f1a-9b69-82a57d7666a8"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1 Future of human collaboration    ⫻context:h2 MetaAI    ⫻context:h3 Roles    ⫻context:h4 Human    ⫻context:h4 Machine    ⫻context:p     ⫻const:task generate    ⫻content MetaAI's research offers a glimpse into a future where humans and machines collaborate seamlessly in dynamic teams. Through the coordination of tasks and the organic evolution of roles, these teams will be able to tackle complex challenges and achieve groundbreaking results. At the heart of this vision is the idea that roles are more than just labels. They are active entities that shape the flow of information and activity within the team. Roles can be assigned to humans or machines, and they can change dynamically as the team adapts to new situations. The system spokesperson, a new member of the team, acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together. It could lead to new breakthroughs in science, technology, and other fields. In a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans. The possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before.",
+      "files": [],
+      "createdAt": "2024-04-05T10:21:26.102Z",
+      "updatedAt": "2024-04-05T10:21:26.102Z",
+      "ancestors": [
+        "bacc68f6-6f66-47b9-bbe3-5192d23bd5ff"
+      ],
+      "id": "27ee2aa3-3fd1-4f1a-9b69-82a57d7666a8",
+      "children": [
+        "4d49bd03-3404-4f6e-9b1d-5ba1ed960081"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "# Future of human collaboration\n\n## MetaAI\n\n### Roles\n\n#### Human\n\nHumans play a crucial role in the collaboration between humans and machines. They bring creativity, intuition, and critical thinking to the team. They are responsible for reviewing and validating the work of machines, making sure that it aligns with the team's goals and values.\n\n#### Machine\n\nMachines, on the other hand, excel at processing large amounts of data and performing repetitive tasks. They can analyze data, generate hypotheses, identify bugs, and suggest fixes. They can also analyze patient data and identify potential health risks.\n\n### The system spokesperson\n\nThe system spokesperson is a new member of the team that acts as a bridge between the binary world of code and the expressive realm of natural language. It translates between the two, ensuring that everyone in the team is on the same page. This dynamic and fluid approach to collaboration has the potential to revolutionize the way we work together.\n\n### The future of collaboration\n\nIn a scientific research team, AI could be used to analyze data and generate hypotheses. Humans could then review these hypotheses and design experiments to test them. In a software development team, AI could be used to identify bugs and suggest fixes. Humans could then review these fixes and integrate them into the code. In a medical diagnosis team, AI could be used to analyze patient data and identify potential health risks. Humans could then review these risks and recommend treatment plans.\n\nThe possibilities are endless. We can create teams that are more efficient, more creative, and more adaptable than ever before. By combining the strengths of humans and machines, we can tackle complex challenges and achieve groundbreaking results.",
+      "createdAt": "2024-04-05T10:21:26.102Z",
+      "updatedAt": "2024-04-05T10:21:35.189Z",
+      "ancestors": [
+        "bacc68f6-6f66-47b9-bbe3-5192d23bd5ff",
+        "27ee2aa3-3fd1-4f1a-9b69-82a57d7666a8"
+      ],
+      "id": "4d49bd03-3404-4f6e-9b1d-5ba1ed960081",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-05T10:21:25.467Z",
+  "updatedAt": "2024-04-05T10:21:35.190Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

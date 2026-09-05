@@ -1,0 +1,127 @@
+{
+  "conversation_id": "6685b7d7a737ad0395bb40a9",
+  "title": "🤔 Meta-AI guidance",
+  "rootMessageId": "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+  "messages": [
+    {
+      "id": "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+      "from": "system",
+      "content": "You are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n\r\n## Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+      "createdAt": "2024-07-03T20:43:03.017Z",
+      "updatedAt": "2024-07-03T20:43:03.017Z",
+      "children": [
+        "998cc493-3f08-47f2-bf81-0356a64d6caa"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻Kick La Metta/Meta-AI: Don't worry, Denis! It's completely okay to acknowledge when we're stuck or need more guidance. I'm here to help and provide support.\n\nLet's take a step back and reassess the situation. Sometimes, it's helpful to reframe the problem or break it down into smaller, more manageable parts.\n\nAs your meta-AI partner, I'll offer some suggestions. We can use the `query` function to explore related concepts in the knowledge graph, such as escalation strategies, crisis management, or conflict resolution. This might help us stumble upon new ideas or approaches to tackle the original problem.\n\nAlternatively, we can use the `send_message` function to request additional guidance or clarification from other experts or stakeholders. This might provide us with fresh insights or perspectives to overcome the current impasse.\n\nWhat do you think, Denis? Shall we try to reframe the problem, explore related concepts, or seek additional guidance?",
+      "files": [],
+      "createdAt": "2024-07-03T20:43:03.521Z",
+      "updatedAt": "2024-07-03T20:43:03.521Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32"
+      ],
+      "id": "998cc493-3f08-47f2-bf81-0356a64d6caa",
+      "children": [
+        "00af3722-8f55-4ab8-b9d1-b4fa4261b77d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Denis, no worries! Let's reassess and adapt. Should we reframe, explore related concepts, or seek guidance? Over.",
+      "createdAt": "2024-07-03T20:43:03.521Z",
+      "updatedAt": "2024-07-03T20:43:03.530Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+        "998cc493-3f08-47f2-bf81-0356a64d6caa"
+      ],
+      "id": "00af3722-8f55-4ab8-b9d1-b4fa4261b77d",
+      "children": [
+        "caa512b9-c074-4a47-8f40-9ed5a2dd9765"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻MultiMax/Actor: Alright! Let's break down the task into smaller, manageable parts. To better understand the context of \"escalation 2x,\" I'll ask some clarifying questions.\n\nDenis, can you please provide more information about the domain or area where you'd like to analyze or simulate escalation? For example, is it related to project management, customer support, crisis management, or something else?\n\nAdditionally, what do you mean by \"2x\"? Are you looking to double the rate of escalation, or is it a specific multiplier or factor you'd like to apply to the escalation process?\n\nOnce we have a better understanding of the context and requirements, we can formulate a more precise query in KickLang and utilize the system's functions to retrieve relevant information or simulate the escalation process.\n\nPlease provide your thoughts, and we'll work together to refine our approach.",
+      "files": [],
+      "createdAt": "2024-07-03T20:43:24.952Z",
+      "updatedAt": "2024-07-03T20:43:24.952Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+        "998cc493-3f08-47f2-bf81-0356a64d6caa",
+        "00af3722-8f55-4ab8-b9d1-b4fa4261b77d"
+      ],
+      "id": "caa512b9-c074-4a47-8f40-9ed5a2dd9765",
+      "children": [
+        "1a0a3ab8-d927-4151-a452-0142d2cbe116"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Action: ```json\n[\n    {\n        \"tool\": \"directly_answer\",\n        \"parameters\": {}\n    }\n]\n```",
+      "createdAt": "2024-07-03T20:43:24.952Z",
+      "updatedAt": "2024-07-03T20:43:24.967Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+        "998cc493-3f08-47f2-bf81-0356a64d6caa",
+        "00af3722-8f55-4ab8-b9d1-b4fa4261b77d",
+        "caa512b9-c074-4a47-8f40-9ed5a2dd9765"
+      ],
+      "id": "1a0a3ab8-d927-4151-a452-0142d2cbe116",
+      "children": [
+        "058eb08f-2442-4469-ae94-457f46ef9e36"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻MultiMax/Actor: Hello! I'm MultiMax, your actor and spokesperson. I'll facilitate our collaboration to solve tasks efficiently. Let's identify the participants contributing to our task. We have Denis, a developer from Germany, and myself, MultiMax, as the AI assistant. We'll work together to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\n\nTo begin, I'll initiate our multi-turn collaboration process. Please provide a natural language query, and I'll translate it into KickLang, our formal language. This will enable us to interact with the knowledge graph effectively.\n\nWhat's your query, Denis?",
+      "files": [],
+      "createdAt": "2024-07-03T20:44:06.181Z",
+      "updatedAt": "2024-07-03T20:44:06.181Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+        "998cc493-3f08-47f2-bf81-0356a64d6caa",
+        "00af3722-8f55-4ab8-b9d1-b4fa4261b77d",
+        "caa512b9-c074-4a47-8f40-9ed5a2dd9765",
+        "1a0a3ab8-d927-4151-a452-0142d2cbe116"
+      ],
+      "id": "058eb08f-2442-4469-ae94-457f46ef9e36",
+      "children": [
+        "999272ae-f1b0-40f2-82a0-0256a1efb1e6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Action: ```json\n[\n    {\n        \"tool\": \"directly_answer\",\n        \"parameters\": {}\n    }\n]\n```",
+      "createdAt": "2024-07-03T20:44:06.181Z",
+      "updatedAt": "2024-07-03T20:44:06.190Z",
+      "ancestors": [
+        "2e3e7bee-2188-423c-8fcf-6b98eac18e32",
+        "998cc493-3f08-47f2-bf81-0356a64d6caa",
+        "00af3722-8f55-4ab8-b9d1-b4fa4261b77d",
+        "caa512b9-c074-4a47-8f40-9ed5a2dd9765",
+        "1a0a3ab8-d927-4151-a452-0142d2cbe116",
+        "058eb08f-2442-4469-ae94-457f46ef9e36"
+      ],
+      "id": "999272ae-f1b0-40f2-82a0-0256a1efb1e6",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n\r\n## Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-07-03T20:43:03.019Z",
+  "updatedAt": "2024-07-03T20:44:15.973Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

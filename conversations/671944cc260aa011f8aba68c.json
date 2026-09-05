@@ -1,0 +1,97 @@
+{
+  "conversation_id": "671944cc260aa011f8aba68c",
+  "title": "🤖 Agent system explanation",
+  "rootMessageId": "19b40f7f-c9cb-41b3-b1a6-6d763aab5217",
+  "messages": [
+    {
+      "id": "19b40f7f-c9cb-41b3-b1a6-6d763aab5217",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+      "createdAt": "2024-10-23T18:47:40.290Z",
+      "updatedAt": "2024-10-23T18:47:40.290Z",
+      "children": [
+        "924547e2-7e1e-4c56-a6cd-ae9cad38e378",
+        "96e1f16d-ced3-484d-8868-4532c8bc566d"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "has tags for:\n\n\n\n## Agents in Cognitive Programming Systems\n\nThe sources highlight the role of **agents** within cognitive programming systems. While they don't explicitly define \"agents\", they provide examples and context that illustrate their functions and purpose. \n\n* **Agents as Implementations of Roles:** The sources mention that \"Each ROLE is implemented as an agent working with the system interface\". This suggests that agents are the active entities that carry out the responsibilities associated with different roles within the system. For example, the \"Graph Explorer\" role, responsible for navigating and analysing the knowledge graph, would be implemented by a corresponding agent.\n\n* **Agents as Intermediaries:** The system interface acts as \"an intermediary between the TEAM and the assistant\", implying that agents operate within this framework to facilitate communication and task execution.  \n\n* **Dynamic Agent Creation:** The system allows for \"dynamically created and introduced\" roles, suggesting that new agents can be added as needed to accommodate evolving system requirements.\n\n* **Specific Agent Examples:** The sources provide descriptions of two specific agents:\n    * **System Interface Agent:** This agent serves as the intermediary between roles (and their corresponding agents) and the assistant. It provides instructions and guidance to the user.\n    * **Researcher Agent:** This agent specialises in exploring new technologies and methodologies relevant to the system's future. It conducts research and analysis to identify potential improvements for the system.\n\nThe sources also provide examples of how agents interact within the system:\n\n* **Collaboration:** The researcher agent collaborates with the assistant and other agents to experiment with and integrate innovative approaches into the system.\n* **Task Allocation and Execution:** Messages containing keywords like \"LOAD\" and \"STORE\" are translated into queries for the knowledge graph [17, 18, 20, 22, etc.]. This suggests that agents responsible for specific tasks (like query development or data modelling) receive instructions and execute actions based on user requests.\n\nThe sources provide a glimpse into how agents operate within a larger cognitive programming system. They highlight the dynamic and collaborative nature of these systems, where agents with specific roles and capabilities work together to achieve complex goals.",
+      "files": [],
+      "createdAt": "2024-10-23T18:47:41.025Z",
+      "updatedAt": "2024-10-23T18:47:41.025Z",
+      "ancestors": [
+        "19b40f7f-c9cb-41b3-b1a6-6d763aab5217"
+      ],
+      "id": "924547e2-7e1e-4c56-a6cd-ae9cad38e378",
+      "children": [
+        "f78d99b4-14a6-4c3e-92dc-e91218823e78",
+        "6763d727-313d-4015-9d99-ef275199b094"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[@Denis | Developer] \n\nCertainly! Let’s break down the role of agents in cognitive programming systems and how they interact within the system, using the context of our team and the knowledge graph.\n\n### Agents in Cognitive Programming Systems\n\n#### 1. **Agents as Implementations of Roles**\nAgents are the active entities that carry out the responsibilities associated with different roles within the system. For example:\n- **Graph Explorer Agent:** This agent is responsible for navigating and analyzing the knowledge graph. It can perform tasks like querying, retrieving, and visualizing data.\n- **Researcher Agent:** This agent specializes in exploring new technologies and methodologies relevant to the system’s future. It conducts research and analysis to identify potential improvements for the system.\n\n#### 2. **Agents as Intermediaries**\nThe system interface acts as an intermediary between the team and the assistant. This means that agents operate within this framework to facilitate communication and task execution. For example:\n- **System Interface Agent:** This agent serves as the bridge between the team and the assistant. It translates natural language queries into formal language (KickLang) and provides instructions and guidance to the user.\n\n#### 3. **Dynamic Agent Creation**\nThe system allows for dynamically created and introduced roles. This means that new agents can be added as needed to accommodate evolving system requirements. For instance, if the team needs an agent to handle a new type of data or perform a new task, such an agent can be created and integrated into the system.\n\n#### 4. **Specific Agent Examples**\n- **System Interface Agent:** This agent is crucial for user interaction. It translates user queries into formal language and provides feedback.\n- **Researcher Agent:** This agent focuses on innovation and improvement. It collaborates with other agents to experiment with and integrate new technologies.\n\n### Interaction within the System\n\n#### Collaboration\nAgents work together to achieve complex goals. For example:\n- The **Researcher Agent** might collaborate with the **Graph Explorer Agent** to analyze new data and identify patterns.\n- The **System Interface Agent** might coordinate between the user and other agents to ensure that tasks are executed efficiently.\n\n#### Task Allocation and Execution\nMessages containing specific keywords are",
+      "createdAt": "2024-10-23T18:47:41.025Z",
+      "updatedAt": "2024-10-23T18:47:41.033Z",
+      "ancestors": [
+        "19b40f7f-c9cb-41b3-b1a6-6d763aab5217",
+        "924547e2-7e1e-4c56-a6cd-ae9cad38e378"
+      ],
+      "id": "f78d99b4-14a6-4c3e-92dc-e91218823e78",
+      "children": [],
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "⫻Kick La Metta/Developer:Denis/1\nHi Denis! It's great to have you here. Let's dive into the concept of **agents** in cognitive programming systems, as you've outlined them.\n\n### Agents in Cognitive Programming Systems\n\n1. **Agents as Implementations of Roles:**\n   - Each **ROLE** in the system is implemented as an **agent**. For example, the \"Graph Explorer\" role, which is responsible for navigating and analyzing the knowledge graph, is implemented by a corresponding agent.\n   - This means that the agent is the active entity that carries out the responsibilities associated with the role.\n\n2. **Agents as Intermediaries:**\n   - The **System Interface Agent** acts as an intermediary between the **TEAM** and the **assistant**. It facilitates communication and task execution by providing instructions and guidance to the user.\n\n3. **Dynamic Agent Creation:**\n   - The system allows for the dynamic creation and introduction of new roles. This means that new agents can be added as needed to accommodate evolving system requirements.\n\n4. **Specific Agent Examples:**\n   - **System Interface Agent:** This agent serves as the intermediary between roles and the assistant. It provides instructions and guidance to the user.\n   - **Researcher Agent:** This agent specializes in exploring new technologies and methodologies",
+      "createdAt": "2024-10-23T18:48:01.456Z",
+      "updatedAt": "2024-10-23T18:48:01.466Z",
+      "id": "6763d727-313d-4015-9d99-ef275199b094",
+      "ancestors": [
+        "19b40f7f-c9cb-41b3-b1a6-6d763aab5217",
+        "924547e2-7e1e-4c56-a6cd-ae9cad38e378"
+      ],
+      "children": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "hash tags for:\n\n\n\n## Agents in Cognitive Programming Systems\n\nThe sources highlight the role of **agents** within cognitive programming systems. While they don't explicitly define \"agents\", they provide examples and context that illustrate their functions and purpose. \n\n* **Agents as Implementations of Roles:** The sources mention that \"Each ROLE is implemented as an agent working with the system interface\". This suggests that agents are the active entities that carry out the responsibilities associated with different roles within the system. For example, the \"Graph Explorer\" role, responsible for navigating and analysing the knowledge graph, would be implemented by a corresponding agent.\n\n* **Agents as Intermediaries:** The system interface acts as \"an intermediary between the TEAM and the assistant\", implying that agents operate within this framework to facilitate communication and task execution.  \n\n* **Dynamic Agent Creation:** The system allows for \"dynamically created and introduced\" roles, suggesting that new agents can be added as needed to accommodate evolving system requirements.\n\n* **Specific Agent Examples:** The sources provide descriptions of two specific agents:\n    * **System Interface Agent:** This agent serves as the intermediary between roles (and their corresponding agents) and the assistant. It provides instructions and guidance to the user.\n    * **Researcher Agent:** This agent specialises in exploring new technologies and methodologies relevant to the system's future. It conducts research and analysis to identify potential improvements for the system.\n\nThe sources also provide examples of how agents interact within the system:\n\n* **Collaboration:** The researcher agent collaborates with the assistant and other agents to experiment with and integrate innovative approaches into the system.\n* **Task Allocation and Execution:** Messages containing keywords like \"LOAD\" and \"STORE\" are translated into queries for the knowledge graph [17, 18, 20, 22, etc.]. This suggests that agents responsible for specific tasks (like query development or data modelling) receive instructions and execute actions based on user requests.\n\nThe sources provide a glimpse into how agents operate within a larger cognitive programming system. They highlight the dynamic and collaborative nature of these systems, where agents with specific roles and capabilities work together to achieve complex goals.",
+      "files": [],
+      "createdAt": "2024-10-23T18:48:21.371Z",
+      "updatedAt": "2024-10-23T18:48:21.371Z",
+      "id": "96e1f16d-ced3-484d-8868-4532c8bc566d",
+      "ancestors": [
+        "19b40f7f-c9cb-41b3-b1a6-6d763aab5217"
+      ],
+      "children": [
+        "58d4da5e-07f3-4a95-bae1-1399bb1e1420"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Here are some relevant hashtags for the content you provided about agents in cognitive programming systems:\n\n#CognitiveProgramming #Agents #RoleImplementation #SystemInterface #ResearcherAgent #DynamicAgents #TaskAllocation #CollaborativeAI #KnowledgeGraph #SystemDynamics #AIIntermediaries #RoleBasedAgents #CognitiveSystems #AIResearch #TaskExecution #SystemIntegration #InnovativeApproaches #AIImprovements #DataModeling #QueryDevelopment \n\nFeel free to use these hashtags to categorize and enhance the visibility of your content! If you need more specific or additional hashtags, let me know!",
+      "createdAt": "2024-10-23T18:48:21.371Z",
+      "updatedAt": "2024-10-23T18:48:21.382Z",
+      "ancestors": [
+        "19b40f7f-c9cb-41b3-b1a6-6d763aab5217",
+        "96e1f16d-ced3-484d-8868-4532c8bc566d"
+      ],
+      "id": "58d4da5e-07f3-4a95-bae1-1399bb1e1420",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-10-23T18:47:40.291Z",
+  "updatedAt": "2024-10-23T18:48:27.069Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

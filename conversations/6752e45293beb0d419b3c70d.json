@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6752e45293beb0d419b3c70d",
+  "title": "📝 Code analysis",
+  "rootMessageId": "9ec2b274-a5fd-4b5a-8dbf-c993cd4c43be",
+  "messages": [
+    {
+      "id": "9ec2b274-a5fd-4b5a-8dbf-c993cd4c43be",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+      "createdAt": "2024-12-06T11:47:30.627Z",
+      "updatedAt": "2024-12-06T11:47:30.627Z",
+      "children": [
+        "6973bf50-44b8-4e9e-9e47-c3fcd048663a"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-12-06T11:47:33.429Z",
+      "updatedAt": "2024-12-06T11:47:33.429Z",
+      "ancestors": [
+        "9ec2b274-a5fd-4b5a-8dbf-c993cd4c43be"
+      ],
+      "id": "6973bf50-44b8-4e9e-9e47-c3fcd048663a",
+      "children": [
+        "21f02d72-3514-422c-9e58-fbd19785d236"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "plandex new -n code_base_concept_extraction\nplandex load -r path/to/codebase\nplandex summarize --high-level-concepts",
+      "createdAt": "2024-12-06T11:47:33.429Z",
+      "updatedAt": "2024-12-06T11:47:33.436Z",
+      "ancestors": [
+        "9ec2b274-a5fd-4b5a-8dbf-c993cd4c43be",
+        "6973bf50-44b8-4e9e-9e47-c3fcd048663a"
+      ],
+      "id": "21f02d72-3514-422c-9e58-fbd19785d236",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-12-06T11:47:30.628Z",
+  "updatedAt": "2024-12-06T11:47:37.143Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

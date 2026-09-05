@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66677c7503b19371b0477522",
+  "title": "📄 Research papers",
+  "rootMessageId": "b4814f94-82b6-4481-9c3c-3a76380a236e",
+  "messages": [
+    {
+      "id": "b4814f94-82b6-4481-9c3c-3a76380a236e",
+      "from": "system",
+      "content": "⫻meta/conversation:Kick/Template\n\nExcellent! It sounds like we're on the same page. The context from API specs and components is indeed the solution space from which the content template will select. This means we can leverage the information from these APIs and components to generate markdown content that's relevant and accurate.\n\nTo further refine our approach, I'd like to propose the following:\n\n1. Let's identify the key elements from the API specs and components that we want to feature in the markdown content. This could include API endpoints, request/response formats, component descriptions, and so on.\n2. We can then define a set of placeholders or variables that will be used to populate the markdown template. These placeholders will be replaced with actual values from the API specs and components.\n3. Using the KickLang formal language, we can create a cognitive computational linguistic transport/transform that will generate the markdown content based on the placeholders and the selected context.\n\nTo get started, could you provide some examples of the API specs and components that we'll be working with? This will help me better understand the structure and content of the solution space.\n\nAdditionally, are there any specific markdown elements or structures that you'd like to include in the generated content, such as headings, lists, code blocks, or tables?",
+      "createdAt": "2024-06-10T22:21:41.006Z",
+      "updatedAt": "2024-06-10T22:21:41.006Z",
+      "children": [
+        "9db2ab96-6de7-4b92-bf74-b427108bb8fb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "show me the latest papers about computation and language",
+      "files": [],
+      "createdAt": "2024-06-10T22:21:41.579Z",
+      "updatedAt": "2024-06-10T22:21:41.579Z",
+      "ancestors": [
+        "b4814f94-82b6-4481-9c3c-3a76380a236e"
+      ],
+      "id": "9db2ab96-6de7-4b92-bf74-b427108bb8fb",
+      "children": [
+        "308a3cc9-1567-4711-8ed3-d0dded5aae29"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here are the latest papers on computation and language as of June 10, 2024:\n\n- **Phased Instruction Fine-Tuning for Large Language Models** by Chuan Zhou, Xiao-Hua Zhou, and Xiaojie Wang. Accepted to be published in ACL 2024 Findings.\n- **WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild** by Bill Yuchen Lin, Yuntian Deng, Khyathi Chandu, and others.\n- **VHDL-Eval: A Framework for Evaluating Large Language Models in VHDL Code Generation** by Prashanth Vijayaraghavan, Stefano Ambrogio, Charles Mackin, and others. Presented at LAD'24.\n- **DiNADO: Norm-Disentangled Neurally-Decomposed Oracles for Controlling Language Models** by Wenbo Zhao, Chenyang Tao, Arpit Gupta, and others. Accepted as a poster at ICML 2024.\n- **Branch-Solve-Merge Improves Large Language Model Evaluation and Generation** by Swarnadeep Saha, Asli Celikyilmaz, Mohit Bansal, and Jason Weston. Presented at NAACL 2024.\n- **CLOMO: Counterfactual Logical Modification with Large Language Models** by Yinya Huang, Ruixin Hong, Hongming Zhang, and others. Published in the Proceedings of ACL 2024.\n\nThese papers primarily focus on various aspects of large language models, including fine-tuning techniques, evaluation frameworks, controlling language generation, and counterfactual modifications. They were submitted to or published in renowned conferences and journals related to computation and language, such as ACL, ICML, and NAACL.",
+      "createdAt": "2024-06-10T22:21:41.579Z",
+      "updatedAt": "2024-06-10T22:21:41.585Z",
+      "ancestors": [
+        "b4814f94-82b6-4481-9c3c-3a76380a236e",
+        "9db2ab96-6de7-4b92-bf74-b427108bb8fb"
+      ],
+      "id": "308a3cc9-1567-4711-8ed3-d0dded5aae29",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "⫻meta/conversation:Kick/Template\n\nExcellent! It sounds like we're on the same page. The context from API specs and components is indeed the solution space from which the content template will select. This means we can leverage the information from these APIs and components to generate markdown content that's relevant and accurate.\n\nTo further refine our approach, I'd like to propose the following:\n\n1. Let's identify the key elements from the API specs and components that we want to feature in the markdown content. This could include API endpoints, request/response formats, component descriptions, and so on.\n2. We can then define a set of placeholders or variables that will be used to populate the markdown template. These placeholders will be replaced with actual values from the API specs and components.\n3. Using the KickLang formal language, we can create a cognitive computational linguistic transport/transform that will generate the markdown content based on the placeholders and the selected context.\n\nTo get started, could you provide some examples of the API specs and components that we'll be working with? This will help me better understand the structure and content of the solution space.\n\nAdditionally, are there any specific markdown elements or structures that you'd like to include in the generated content, such as headings, lists, code blocks, or tables?",
+  "assistantId": null,
+  "createdAt": "2024-06-10T22:21:41.007Z",
+  "updatedAt": "2024-06-10T22:22:07.083Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669a8152b6ac81cb83116280",
+  "title": "💬 I'd be happy to help with the conversation! However, I need more",
+  "rootMessageId": "88005995-23a3-420c-a748-e9f648d8c330",
+  "messages": [
+    {
+      "id": "88005995-23a3-420c-a748-e9f648d8c330",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+      "createdAt": "2024-07-19T15:08:02.898Z",
+      "updatedAt": "2024-07-19T15:08:02.898Z",
+      "children": [
+        "4227623b-31a0-49a7-b0bd-9107a11bedcc"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Offer a conversation suited for the following prompt:   ⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-07-19T15:08:03.410Z",
+      "updatedAt": "2024-07-19T15:08:03.410Z",
+      "ancestors": [
+        "88005995-23a3-420c-a748-e9f648d8c330"
+      ],
+      "id": "4227623b-31a0-49a7-b0bd-9107a11bedcc",
+      "children": [
+        "d7003325-7def-45bb-a348-7529a258def6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻context/klmx:Kick/Template\r\n\r\nThis is an example of how content can be organized and generated following the specified rules. The goal is to create a clear structure for content creation and ensure consistency across different formats. \r\n\r\n⫻\r\nconst/json:0\r\n{\r\n  \"greeting\": \"Hello, I'm KickBuzz!\",\r\n  \"purpose\": \"I'm here to help you with your content generation needs.\",\r\n  \"format\": \"This conversation will be structured in Markdown format.\"\r\n}\r\n\r\n⫻\r\ncontent/md:1\r\n\r\n**User:** Hi, I'm interested in creating some content. Can you guide me through the process?\r\n\r\n**KickBuzz:** Of course! I'm KickBuzz, and I'm here to help. I can generate content according to your specifications. To get started, provide me with the context and any relevant constants. We'll use Markdown formatting for this conversation.\r\n\r\n**User:** Great! For context, I'm creating a blog post about the latest updates in the tech industry. I want to include an introduction, a summary of the updates, and a conclusion. Can you help me structure the content?\r\n\r\n**KickBuzz:** Absolutely! Let's break it down:\r\n\r\n## Context:\r\n- Type of content: Blog post\r\n- Topic: Latest tech industry updates\r\n- Structure: Introduction, summary of updates, conclusion\r\n\r\n## Constants:\r\n- None required for now, but we can add them later if needed.\r\n\r\n## Content:\r\n\r\n**Introduction:** \r\nThe tech industry is ever-evolving, and it can be challenging to keep up with the latest developments. In this blog post, we'll explore the recent trends and updates that are shaping the industry.\r\n\r\n**Summary of Updates:** \r\n- [Provide a list of recent updates here, with a brief description of each. You can use constants to define the updates if needed.]\r\n\r\n**Conclusion:** \r\nIn conclusion, the tech industry continues to innovate and evolve at a rapid pace. By staying informed and adapting to these changes, we can ensure that we're at the forefront of this exciting industry.\r\n\r\n**User:** That looks great! I'll fill in the details for the updates section. Are there any best practices or tips I should keep in mind when using this content structure?\r\n\r\n**KickBuzz:** Certainly! Here are a few tips:\r\n\r\n- Keep your content concise and easy to understand.\r\n- Use headings and bullet points to improve readability.\r\n- Ensure your content is accurate and up-to-date.\r\n- Feel free to use constants to define reusable pieces of content that can be easily updated or modified.\r\n\r\nLet me know if you need further assistance or if you'd like to generate content for a different section. I'm here to help!\r\n\r\n---\r\n\r\nFeel free to adapt and modify the generated content as needed. The structure and format can be adjusted to suit your preferences, and additional sections can be added to accommodate more complex content generation tasks.",
+      "createdAt": "2024-07-19T15:08:03.410Z",
+      "updatedAt": "2024-07-19T15:08:03.418Z",
+      "ancestors": [
+        "88005995-23a3-420c-a748-e9f648d8c330",
+        "4227623b-31a0-49a7-b0bd-9107a11bedcc"
+      ],
+      "id": "d7003325-7def-45bb-a348-7529a258def6",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-19T15:08:02.899Z",
+  "updatedAt": "2024-07-19T15:08:38.976Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

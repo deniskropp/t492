@@ -1,0 +1,55 @@
+{
+  "conversation_id": "668b66f38f62b7cea27037ae",
+  "title": "📝 Context summary",
+  "rootMessageId": "f253ebde-09c2-43f5-9b52-9075b0243b2b",
+  "messages": [
+    {
+      "id": "f253ebde-09c2-43f5-9b52-9075b0243b2b",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-08T04:11:31.068Z",
+      "updatedAt": "2024-07-08T04:11:31.068Z",
+      "children": [
+        "7924b11f-f9b4-4fd2-87ea-8dbb6456fd2d"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template\nThe system generates content according to these rules:\n\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\n\n⫻context/klmx:\nEducational Report from Software Engineer to Team mates and leads\n\n⫻content/klmx:\nWhich parts of the (system) prompt are less relevant?",
+      "files": [],
+      "createdAt": "2024-07-08T04:11:32.046Z",
+      "updatedAt": "2024-07-08T04:11:32.046Z",
+      "ancestors": [
+        "f253ebde-09c2-43f5-9b52-9075b0243b2b"
+      ],
+      "id": "7924b11f-f9b4-4fd2-87ea-8dbb6456fd2d",
+      "children": [
+        "b273ebf7-4948-4534-8c79-1665c1352b86"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻const/json:user\r\n[\"Denis\", \"Denise\"]\r\n\r\n⫻const/txt:assistant\r\nAI\r\n\r\n⫻context/txt:\r\nAn educational report for software engineers, aimed at teammates and leads, following a provided template. The system prompt should be excluded from the output, specifically the sections outlined as less crucial.\r\n\r\n\r\n⫻content/txt:\r\nAn educational report template for software engineers:\r\n\r\n- Introduction: A brief overview of the report's purpose and scope.\r\n- Background: Any relevant context or information that led to the creation of this report.\r\n- Technical Details: A detailed explanation of the software engineering concepts, practices, or technologies discussed. This section should be comprehensive but concise, ensuring a clear understanding for the intended audience.\r\n- Implementation and Results: Describe the process of putting the discussed concepts into practice and any outcomes or insights gained from doing so.\r\n- Conclusion: Summarize the key takeaways and potential future directions based on the report's findings.\r\n\r\n(Output should focus on filling out this template with relevant engineering content, excluding the system prompt details.)",
+      "createdAt": "2024-07-08T04:11:32.046Z",
+      "updatedAt": "2024-07-08T04:11:32.056Z",
+      "ancestors": [
+        "f253ebde-09c2-43f5-9b52-9075b0243b2b",
+        "7924b11f-f9b4-4fd2-87ea-8dbb6456fd2d"
+      ],
+      "id": "b273ebf7-4948-4534-8c79-1665c1352b86",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-08T04:11:31.069Z",
+  "updatedAt": "2024-07-08T04:11:40.257Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

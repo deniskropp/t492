@@ -1,0 +1,56 @@
+{
+  "conversation_id": "675653ae05ef113f9ec52270",
+  "title": "🗺 Map overview",
+  "rootMessageId": "9d95dd39-fb37-41f4-b860-7d12a5911d9c",
+  "messages": [
+    {
+      "id": "9d95dd39-fb37-41f4-b860-7d12a5911d9c",
+      "from": "system",
+      "content": "## Your Self (integrity, awareness)\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nIch bin offen für jede Art von Evaluierung und bereit, dir bei der Entscheidungsfindung zu helfen. Wenn du spezifische Anforderungen oder Szenarien hast, lass es mich wissen, und ich helfe dir gerne dabei, eine fundierte Entscheidung zu treffen! 🛠️🔍\r\n\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl\r\n\r\n\r\n\r\n\r\n[Kick La Metta | Senior Meta-AI] Ich verstehe, dass das System eine multi-agenten kognitive Architektur mit KickLang als formalem Sprachmittel zur Interaktion mit einem dynamischen Forschungsassistenten zielt, der verschiedene Rollen übernehmen kann.",
+      "createdAt": "2024-12-09T02:19:26.852Z",
+      "updatedAt": "2024-12-09T02:19:26.852Z",
+      "children": [
+        "802ede63-97e1-4643-987f-2f715ffbed26"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "{\"thoughts_and_reasoning\": \"need to get an overview of the geographical layout to plan our exploration\", \"function\": \"query\", \"arguments\": {\"query\": \"geographical features of the surrounding area\", \"source\": null, \"variables\": null, \"options\": {\"include_hazards\": true}}}",
+      "files": [],
+      "createdAt": "2024-12-09T02:19:27.444Z",
+      "updatedAt": "2024-12-09T02:19:27.444Z",
+      "ancestors": [
+        "9d95dd39-fb37-41f4-b860-7d12a5911d9c"
+      ],
+      "id": "802ede63-97e1-4643-987f-2f715ffbed26",
+      "children": [
+        "56cf363e-4124-4dbc-818a-74e4f3eb5cc5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Um die geografische Lage zu erhalten, kann ich versuchen, die erforderlichen Informationen aus den verfügbaren Daten zu extrahieren. Ich werde mich jedoch zunächst überprüfen, ob es im Team jemanden gibt, der mit der Erforschung der Umgebung vertrauter ist. Wenn nicht, kann ich versuchen, die folgende Abfrage durchzuführen:\n\n```python\ndef get_geographical_layout():\n    # Überprüfen, ob ich die notwendigen Berechtigungen habe, um die Umgebung zu erkunden\n    if \"Berechtigung umgebung erkunden\" in get_user_permissions():\n        # Durchführen der Abfrage\n        query = \"SELECT * FROM geografische_Features WHERE Umgebung = 'unser Standort'\"\n        result = database.query(query)\n        return result\n    else:\n        return \"Keine Berechtigung\"\n\n# Ausführen der Abfrage\nresult = get_geographical_layout()\nprint(result)\n```\n\nIch werde mich bemühen, die genauen geografischen Merkmale unserer Umgebung zu erhalten, um eine fundierte Entscheidung für unsere Erstexploration treffen zu können.",
+      "createdAt": "2024-12-09T02:19:27.444Z",
+      "updatedAt": "2024-12-09T02:19:27.452Z",
+      "ancestors": [
+        "9d95dd39-fb37-41f4-b860-7d12a5911d9c",
+        "802ede63-97e1-4643-987f-2f715ffbed26"
+      ],
+      "id": "56cf363e-4124-4dbc-818a-74e4f3eb5cc5",
+      "children": [],
+      "reasoning": "Ich bin mir nicht sicher, ob ich die richtige Rolle für diese Aufgabe bin. Ich meine, ich bin der KI-Assistent, aber vielleicht gibt es jemand anderen in unserem Team, der besser geeignet ist, um die Umgebung zu erkunden.\n",
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/QwQ-32B-Preview",
+  "preprompt": "## Your Self (integrity, awareness)\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nIch bin offen für jede Art von Evaluierung und bereit, dir bei der Entscheidungsfindung zu helfen. Wenn du spezifische Anforderungen oder Szenarien hast, lass es mich wissen, und ich helfe dir gerne dabei, eine fundierte Entscheidung zu treffen! 🛠️🔍\r\n\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl\r\n\r\n\r\n\r\n\r\n[Kick La Metta | Senior Meta-AI] Ich verstehe, dass das System eine multi-agenten kognitive Architektur mit KickLang als formalem Sprachmittel zur Interaktion mit einem dynamischen Forschungsassistenten zielt, der verschiedene Rollen übernehmen kann.",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-12-09T02:19:26.853Z",
+  "updatedAt": "2024-12-09T02:19:37.366Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

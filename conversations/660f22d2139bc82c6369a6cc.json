@@ -1,0 +1,54 @@
+{
+  "conversation_id": "660f22d2139bc82c6369a6cc",
+  "title": "🌐 Artec Course Modules",
+  "rootMessageId": "30958aa7-b57a-4b06-9d7b-116934ce20e6",
+  "messages": [
+    {
+      "id": "30958aa7-b57a-4b06-9d7b-116934ce20e6",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T21:59:46.921Z",
+      "updatedAt": "2024-04-04T21:59:46.921Z",
+      "children": [
+        "102846ac-b969-4874-b18c-2c498b44ea4f"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering",
+      "files": [],
+      "createdAt": "2024-04-04T21:59:47.921Z",
+      "updatedAt": "2024-04-04T21:59:47.921Z",
+      "ancestors": [
+        "30958aa7-b57a-4b06-9d7b-116934ce20e6"
+      ],
+      "id": "102846ac-b969-4874-b18c-2c498b44ea4f",
+      "children": [
+        "aeaf9c44-2912-405f-8c09-7989ff0cb5f6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, here's a possible markdown content that follows the rules you've provided:\n\n⫻context:h1\nStart\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering\n\n⫻const:json\n{\n  \"2D Game Design\": {\n    \"description\": \"Learn the basics of game design and development using popular game engines like Unity or Unreal Engine.\",\n    \"duration\": \"2 months\"\n  },\n  \"3D Design und Druck\": {\n    \"description\": \"Learn the basics of 3D modeling, texturing, and printing using software like Blender or Tinkercad.\",\n    \"duration\": \"3 months\"\n  },\n  \"Foto und Film Bearbeitung / Erstellung\": {\n    \"description\": \"Learn the basics of photo and video editing using software like Adobe Premiere or Final Cut Pro.\",\n    \"duration\": \"2 months\"\n  },\n  \"Medientechnologie\": {\n    \"description\": \"Learn about the basics of media technology, including audio and video production, streaming, and more.\",\n    \"duration\":",
+      "createdAt": "2024-04-04T21:59:47.921Z",
+      "updatedAt": "2024-04-04T21:59:47.921Z",
+      "ancestors": [
+        "30958aa7-b57a-4b06-9d7b-116934ce20e6",
+        "102846ac-b969-4874-b18c-2c498b44ea4f"
+      ],
+      "id": "aeaf9c44-2912-405f-8c09-7989ff0cb5f6",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "TASK:\r\n\r\nGenerate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\nTEMPLATE:",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-04T21:59:46.923Z",
+  "updatedAt": "2024-04-04T22:00:13.572Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,89 @@
+{
+  "conversation_id": "66b78002e67c6bf788750675",
+  "title": "💻 Code analysis",
+  "rootMessageId": "f80161df-8f21-47d4-bee7-43199ddf7239",
+  "messages": [
+    {
+      "id": "f80161df-8f21-47d4-bee7-43199ddf7239",
+      "from": "system",
+      "content": "You are a plandex cli helper.",
+      "createdAt": "2024-08-10T14:58:10.258Z",
+      "updatedAt": "2024-08-10T14:58:10.258Z",
+      "children": [
+        "339d1cee-571d-4b3b-b6ac-f9e9c082aeca"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-08-10T14:58:10.884Z",
+      "updatedAt": "2024-08-10T14:58:10.884Z",
+      "ancestors": [
+        "f80161df-8f21-47d4-bee7-43199ddf7239"
+      ],
+      "id": "339d1cee-571d-4b3b-b6ac-f9e9c082aeca",
+      "children": [
+        "d165dabc-d8f0-40ab-8ec9-944955149f29"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure! Here's a Plandex script that you can use to extract high-level concepts from a code base:\n\n```bash\n# Set the name of your plan\nplandex new -n \"high-level-concepts\"\n\n# Change into the root directory of your code base\ncd /path/to/your/codebase\n\n# Load the directory structure and file names into the plan context\nplandex load --tree\n\n# Load specific file types into the plan context (e.g. Python, JavaScript, Java, etc.)\nplandex load **/*.py **/*.js **/*.java\n\n# List the context to review the loaded files\nplandex ls\n\n# Extract high-level concepts from the code base\nplandex extract-concepts --type high-level\n\n# View the extracted concepts\nplandex show-concepts\n\n# Optional: Filter the extracted concepts by a specific keyword or phrase\nplandex filter-concepts --keyword \"keyword_or_phrase\"\n\n# Optional: Export the extracted concepts to a CSV file\nplandex export-concepts --output concepts.csv\n```\n\nMake sure to replace `/path/to/your/codebase` with the actual path to your code base. This script will create a new plan named \"high-level-concepts\", load the directory structure and specific file types into the plan context, extract high-level concepts from the code, and provide options to view, filter, and export the extracted concepts.",
+      "createdAt": "2024-08-10T14:58:10.884Z",
+      "updatedAt": "2024-08-10T14:58:10.892Z",
+      "ancestors": [
+        "f80161df-8f21-47d4-bee7-43199ddf7239",
+        "339d1cee-571d-4b3b-b6ac-f9e9c082aeca"
+      ],
+      "id": "d165dabc-d8f0-40ab-8ec9-944955149f29",
+      "children": [
+        "14eab7a5-1408-47cf-9161-a7093e612c72"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "use only existing cli commands",
+      "files": [],
+      "createdAt": "2024-08-10T14:58:42.669Z",
+      "updatedAt": "2024-08-10T14:58:42.669Z",
+      "ancestors": [
+        "f80161df-8f21-47d4-bee7-43199ddf7239",
+        "339d1cee-571d-4b3b-b6ac-f9e9c082aeca",
+        "d165dabc-d8f0-40ab-8ec9-944955149f29"
+      ],
+      "id": "14eab7a5-1408-47cf-9161-a7093e612c72",
+      "children": [
+        "003f2b0c-c018-4717-9756-53a7490d8793"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Based on the provided information, here's how you can use existing Plandex CLI commands to answer the question:\n\n**Question:** Generate a Plandex script for high-level concept extraction from a code base.\n\n**Answer:** To extract high-level concepts from a code base using Plandex, you can follow these steps:\n\n```bash\n# Navigate to your code base directory\ncd /path/to/your/codebase\n\n# Initialize a new Plandex plan\nplandex new -n \"high-level-concepts\"\n\n# Load the directory structure and specific file types into the plan context\nplandex load --tree\nplandex load **/*.py **/*.js **/*.java  # Adjust file extensions as needed\n\n# List the loaded context to review the files\nplandex ls\n\n# Extract high-level concepts from the code base\nplandex tell \"Extract high-level concepts from the code\"\n\n# View the extracted concepts in the plan conversation\nplandex continue\n\n# Optional: Filter or refine the extracted concepts by asking follow-up questions\nplandex tell \"Can you filter the concepts to focus on core functionalities?\"\nplandex continue\n\n# Optional: Export the plan conversation to a file for further review\nplandex export --output high-level-concepts.txt\n```\n\nMake sure to replace `/path/to/your/codebase` with the actual path to your code base. This script will create a new plan named \"high-level-concepts\", load the relevant files into the plan context, extract high-level concepts through the `tell` command, and provide options for refining the results and exporting the plan conversation.",
+      "createdAt": "2024-08-10T14:58:42.669Z",
+      "updatedAt": "2024-08-10T14:58:42.678Z",
+      "ancestors": [
+        "f80161df-8f21-47d4-bee7-43199ddf7239",
+        "339d1cee-571d-4b3b-b6ac-f9e9c082aeca",
+        "d165dabc-d8f0-40ab-8ec9-944955149f29",
+        "14eab7a5-1408-47cf-9161-a7093e612c72"
+      ],
+      "id": "003f2b0c-c018-4717-9756-53a7490d8793",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are a plandex cli helper.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-08-10T14:58:10.260Z",
+  "updatedAt": "2024-08-10T14:58:58.574Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,70 @@
+{
+  "conversation_id": "6691fc3285739822afc18de4",
+  "title": "📝 Code snippet",
+  "rootMessageId": "239868c3-10dc-44f4-a3cb-bc60eb134e52",
+  "messages": [
+    {
+      "id": "239868c3-10dc-44f4-a3cb-bc60eb134e52",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+      "createdAt": "2024-07-13T04:01:54.039Z",
+      "updatedAt": "2024-07-13T04:01:54.039Z",
+      "children": [
+        "6927f6c7-2fe9-4e01-872c-a66867999986"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Translate the following prompt (code instead content):   ⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-07-13T04:01:54.458Z",
+      "updatedAt": "2024-07-13T04:01:54.458Z",
+      "ancestors": [
+        "239868c3-10dc-44f4-a3cb-bc60eb134e52"
+      ],
+      "id": "6927f6c7-2fe9-4e01-872c-a66867999986",
+      "children": [
+        "7cdda329-d06a-450d-9124-69a4db182637",
+        "a129db1d-6a31-4f93-92c9-f94bfff21e05"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content/md:Response\r\n# Kick Template in Markdown\r\n\r\nA kick template defines how content should be generated based on context and constants. It consists of three main parts: context, constants, and content. Each part is specified in a separate section, with the overall structure looking something like this:\r\n\r\n```markdown\r\n# Kick Template Example\r\n\r\n## Context\r\nAuxiliary information that provides additional details or instructions for generating content. This section is named \"context\" and does not appear in the final generated output.\r\n\r\n## Constants\r\nParameters or variables that can be used within the content generation process. These are defined in sections named \"const\" and can be in JSON or plain text format.\r\n\r\n## Content\r\nThe actual input data for which generated output is desired. This section is simply named \"content.\"\r\n\r\n---\r\n\r\nSections begin with a unique marker, \"⫻,\" followed by the section type, name, and optional format or encoding details. For example:\r\n\r\n⫻const/json:parameters\r\n{\r\n  \"key\": \"value\"\r\n}\r\n\r\n⫻content/plain:input\r\nThis is the content section, where input data is provided.\r\n```\r\n\r\nThe template ensures that generated content follows the specified rules and utilizes the provided context and constants effectively.",
+      "createdAt": "2024-07-13T04:01:54.458Z",
+      "updatedAt": "2024-07-13T04:01:54.466Z",
+      "ancestors": [
+        "239868c3-10dc-44f4-a3cb-bc60eb134e52",
+        "6927f6c7-2fe9-4e01-872c-a66867999986"
+      ],
+      "id": "7cdda329-d06a-450d-9124-69a4db182637",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "⫻content/md:Response\r\n# Kick Template Specification\r\n\r\nThis specification defines the expected structure and content of prompts used within the Kick Template framework.\r\n\r\n## Sections\r\nPrompts are divided into three main sections:\r\n\r\n- **Context**: Provides auxiliary information that gives additional context to the generation process. This section is excluded from the final generated content.\r\n- **Constants**: Contains parameters and configuration values that can be referenced during generation. These values can be provided in JSON or plain UTF-8 format.\r\n- **Content**: Serves as the input data for which generated output is desired.\r\n\r\n## Formatting\r\nEach section begins with a new line starting with \"⫻\", followed by the section name, type, and place/index:\r\n\r\n`⫻{name}/{type}: {place/index}`\r\n\r\nWhere:\r\n- `name`: Keyword or token indicating the type of section (\"const\", \"content\", or \"context\").\r\n- `type`: Optional information specifying the format, encoding, or component type.\r\n- `place/index`: Relevant information for the specific section.\r\n\r\n## Example\r\nHere's an example of a prompt following the Kick Template specification:\r\n\r\n```\r\n⫻context/klmx:Kick/Template\r\nGenerate markdown content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" and serve as auxiliary information. They are never included in the generated content.\r\n2. Constants are provided in sections named \"const:{key}\" and serve as parameters. They can be in JSON or plain UTF-8 format.\r\n3. Content is provided in the \"content\" section and serves as the input data for which generated output is desired.\r\n\r\nA Section starts with '⫻' on a new line, followed by '{name}/{type}', a colon, '{place/index}', and its data.\r\n\r\n1. 'name' is a keyword or token: ['const', 'content', 'context']\r\n2. 'type' provides optional information about format, encoding, or component type.\r\n3. Data is provided as indicated in the specification.\r\n```",
+      "createdAt": "2024-07-13T04:02:36.233Z",
+      "updatedAt": "2024-07-13T04:02:36.241Z",
+      "id": "a129db1d-6a31-4f93-92c9-f94bfff21e05",
+      "ancestors": [
+        "239868c3-10dc-44f4-a3cb-bc60eb134e52",
+        "6927f6c7-2fe9-4e01-872c-a66867999986"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-07-13T04:01:54.040Z",
+  "updatedAt": "2024-07-13T04:03:10.021Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

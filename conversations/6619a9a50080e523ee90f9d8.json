@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6619a9a50080e523ee90f9d8",
+  "title": "💻 TypeScript code for Code74k-serve",
+  "rootMessageId": "f632f02a-f43a-4319-b74f-0623ca899a1b",
+  "messages": [
+    {
+      "id": "f632f02a-f43a-4319-b74f-0623ca899a1b",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+      "createdAt": "2024-04-12T21:37:41.361Z",
+      "updatedAt": "2024-04-12T21:37:41.361Z",
+      "children": [
+        "12743943-b83c-46bf-996a-bdcf603c6456"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k-serve.ts",
+      "files": [],
+      "createdAt": "2024-04-12T21:37:42.824Z",
+      "updatedAt": "2024-04-12T21:37:42.824Z",
+      "ancestors": [
+        "f632f02a-f43a-4319-b74f-0623ca899a1b"
+      ],
+      "id": "12743943-b83c-46bf-996a-bdcf603c6456",
+      "children": [
+        "d94af037-d615-49ff-8c73-4595cf551fc8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure! Here is a possible implementation of Code74k-serve.ts:\n\n```typescript\nimport { createServer } from \"http\";\r\nimport { readFileSync } from \"fs\";\r\nimport { parse } from \"kicklang\";\r\n\r\nconst server = createServer((req, res) => {\r\n  if (req.url === \"/\") {\r\n    res.writeHead(200, { \"Content-Type\": \"text/plain\" });\r\n    res.end(\"Code74k Server\");\r\n  } else if (req.url === \"/Code74k.json\") {\r\n    res.writeHead(200, { \"Content-Type\": \"application/json\" });\r\n    res.end(JSON.stringify(parse(readFileSync(\"Code74k.json\").toString())));\r\n  } else {\r\n    res.writeHead(404, { \"Content-Type\": \"text/plain\" });\r\n    res.end(\"Not Found\");\r\n  }\r\n});\r\n\r\nserver.listen(8080, () => {\r\n  console.log(\"Server running on http://localhost:8080/\");\r\n});\r\n```\n\nThis code sets up a simple HTTP server using Node.js that serves the Code74k data. It listens on port 8080 and defines three endpoints:\r\n\r\n- The root URL (`/`): Responds with a plain text message \"Code74k Server\".\r\n- `/Code74k.json`: Reads the `Code74k.json` file, parses it using the `parse` function (assuming the `parse` function is defined elsewhere), and responds with the parsed data in JSON format.\r\n- Any other URL: Responds with a 404 Not Found message.\r\n\r\nMake sure to have the necessary dependencies (`http` and `fs` modules) installed before running this code. Also, ensure that the `Code74k.json` file is in the same directory as this script.",
+      "createdAt": "2024-04-12T21:37:42.824Z",
+      "updatedAt": "2024-04-12T21:37:59.607Z",
+      "ancestors": [
+        "f632f02a-f43a-4319-b74f-0623ca899a1b",
+        "12743943-b83c-46bf-996a-bdcf603c6456"
+      ],
+      "id": "d94af037-d615-49ff-8c73-4595cf551fc8",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.ts\r\n\r\n\r\n\r\n\r\n///README// \r\n# Code74k \r\n \r\nThis util serves Code74k entries through KickLang. \r\n \r\n \r\n \r\n///Code74k.json// \r\n[ \r\n { \r\n   \"id\": \"1\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"What?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Nothing.\" \r\n     } \r\n   ] \r\n }, \r\n { \r\n   \"id\": \"2\", \r\n   \"conversations\": [ \r\n     { \r\n       \"from\": \"human\", \r\n       \"value\": \"When?\" \r\n     }, \r\n     { \r\n       \"from\": \"gpt\", \r\n       \"value\": \"Now.\" \r\n     } \r\n   ] \r\n }, \r\n] \r\n",
+  "assistantId": "66079b502d7b53233ca4d675",
+  "createdAt": "2024-04-12T21:37:41.365Z",
+  "updatedAt": "2024-04-12T21:37:59.610Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

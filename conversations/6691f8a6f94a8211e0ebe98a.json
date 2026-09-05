@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6691f8a6f94a8211e0ebe98a",
+  "title": "📊 Code template",
+  "rootMessageId": "ab359507-06b2-4dc1-bb18-7deeafe8f325",
+  "messages": [
+    {
+      "id": "ab359507-06b2-4dc1-bb18-7deeafe8f325",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+      "createdAt": "2024-07-13T03:46:46.657Z",
+      "updatedAt": "2024-07-13T03:46:46.657Z",
+      "children": [
+        "7ca94e48-aa4f-45b1-8b9c-fe07fc6b2eac"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Kick/Template for code",
+      "files": [],
+      "createdAt": "2024-07-13T03:46:47.115Z",
+      "updatedAt": "2024-07-13T03:46:47.115Z",
+      "ancestors": [
+        "ab359507-06b2-4dc1-bb18-7deeafe8f325"
+      ],
+      "id": "7ca94e48-aa4f-45b1-8b9c-fe07fc6b2eac",
+      "children": [
+        "8ada1fdf-a2e4-459b-a965-273f37a410b9"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻context/klmx:Fizz/System\r\nSure thing! Here it goes: \r\n```python\r\ndef kick_template(const, context={}, content=\"\") -> str:\r\n    \"\"\"Generate content from const and context.\"\"\"\r\n    \r\n    # Process sections\r\n    sections = [const, context, content]\r\n    for i, sec in enumerate(sections):\r\n        try:\r\n            j = sec.index('⫻')\r\n            sections[i] = sec[j:]\r\n        except ValueError:\r\n            pass\r\n    \r\n    # Parse sections    \r\n    ctx = {}\r\n    for sec in sections:\r\n        try:\r\n            header, body = sec.split('\\n', 1)\r\n            name, _, detail = header.partition(':')\r\n            place, _, _ = detail.partition('/')\r\n            if name == 'const':\r\n                ctx['constant'] = json.loads(body)\r\n            elif name == 'context':\r\n                ctx[place] = body\r\n                \r\n        except ValueError:\r\n            continue\r\n        \r\n    return generate_output(**ctx)\r\n\r\n# Sample execution    \r\nif __name__ == \"__main__\":\r\n    CONST = {\"key\": [\"value\", \"sample\"]}\r\n    CONTEXT = {\"detail\": \"Some extra info\"}\r\n    CONTENT = \"This is some sample content.\"\r\n    \r\n    result = kick_template(CONST, CONTEXT, CONTENT)\r\n    print(result)\r\n```\r\n\r\n⫻const/json:\"key\":\"value\",\"sample\":\"data\"\r\n\r\n⫻context/plain:detail/info\r\nSome additional details that might be useful.\r\n\r\n⫻content/utf-8:\r\nThis is where the actual content will go. It can be anything really – a sentence, a paragraph, a question, or even just a single word. Let's see what this template can do!\r\n\r\n---\r\n \r\nI hope this helps provide a clear structure for kicking templates specific to code generation requests. Please let me know if there's anything else I can assist with regarding template creation or customization. Always happy to help! 😊",
+      "createdAt": "2024-07-13T03:46:47.115Z",
+      "updatedAt": "2024-07-13T03:46:47.125Z",
+      "ancestors": [
+        "ab359507-06b2-4dc1-bb18-7deeafe8f325",
+        "7ca94e48-aa4f-45b1-8b9c-fe07fc6b2eac"
+      ],
+      "id": "8ada1fdf-a2e4-459b-a965-273f37a410b9",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requester.\r\n\r\n## The outer self and world\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nTools are like Roles, dynamically created.\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nStart with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n⫻context/xml:<<tag>>\r\n<task />\r\n\r\n\r\n\r\n\r\n\r\n\r\n⫻context/klmx:Kick/Template\r\nThe template generates content according to these rules:\r\n\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n\r\n⫻content/klmx:asking/first\r\nWhich parts of the (system) prompt are less relevant?\r\n",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-07-13T03:46:46.658Z",
+  "updatedAt": "2024-07-13T03:47:05.772Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

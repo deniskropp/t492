@@ -1,0 +1,56 @@
+{
+  "conversation_id": "671e29f441be24444fcae73b",
+  "title": "📝 Content format",
+  "rootMessageId": "eb9e0370-e5f6-4301-a7b3-71119b4860b6",
+  "messages": [
+    {
+      "id": "eb9e0370-e5f6-4301-a7b3-71119b4860b6",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+      "createdAt": "2024-10-27T11:54:28.360Z",
+      "updatedAt": "2024-10-27T11:54:28.360Z",
+      "children": [
+        "99fbb097-8556-4013-9c64-0f1995d9ac2b"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻system/QllickFizz:start\n[QllickFizz | developer]\n⫻ex/code:ex(task_type='create rules', query_or_instruction='create a format for organizing and generating content, with specific sections for context, constants, and content data', contextual_information=None)",
+      "files": [],
+      "createdAt": "2024-10-27T11:54:28.879Z",
+      "updatedAt": "2024-10-27T11:54:28.879Z",
+      "ancestors": [
+        "eb9e0370-e5f6-4301-a7b3-71119b4860b6"
+      ],
+      "id": "99fbb097-8556-4013-9c64-0f1995d9ac2b",
+      "children": [
+        "602f663c-c137-43a8-8637-61e08b902ce7"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[QllickFizz | developer] Sure, I can help with that. Let's create a format for organizing and generating content with specific sections for context, constants, and content data. Here’s a structured format in YAML, which can be easily parsed and used in your project.\n\n### Content Organization Format\n\n```yaml\n# Context Section\ncontext:\n  # General context information\n  topic: \"Example Topic\"\n  description: \"A brief description of the topic.\"\n  metadata:\n    created_at: \"2023-10-01T12:00:00Z\"\n    updated_at: \"2023-10-01T12:00:00Z\"\n    author: \"Denis\"\n\n# Constants Section\nconstants:\n  # Define any constants or placeholder values\n  base_url: \"https://example.com\"\n  api_key: \"your_api_key_here\"\n  default_language: \"en\"\n\n# Content Data Section\ncontent:\n  # Main content data\n  title: \"Example Title\"\n  body: \"This is the main content of the document.\"\n  sections:\n    - title: \"Section 1\"\n      content: \"Content of section 1.\"\n    - title: \"Section 2\"\n      content: \"Content of section 2.\"\n      images:\n        - url: \"https://example.com/image1.jpg\"\n          alt: \"Image 1\"\n        - url: \"https://example.com/image2.jpg\"\n          alt: \"Image 2\"\n  tags:\n    - \"tag1\"\n    - \"tag2\"\n    - \"tag3\"\n```\n\n### Explanation\n\n1. **Context Section**: \n   - `topic`: The main topic or subject of the content.\n   - `description`: A brief description of the topic.\n   - `metadata`: Additional metadata such as creation and update timestamps, author, etc.\n\n2. **Constants Section**: \n   - `base_url`: Base URL for any relative paths or API calls.\n   - `api_key`: API key for authentication, if needed.\n   - `default_language`: Default language for the content.\n\n3. **Content Data Section**: \n   - `title`: The title of the content.\n   - `body`: The main body of the content.\n   - `sections`: An array of sections, each with a title and content. Sections can also include images.\n   - `tags`: An array of tags for categorization.\n\n### Usage\n\nYou can use this format to structure your content in a consistent and organized manner. Here’s an example of how you might use this in a Node.js project:\n\n```typescript\nimport * as fs from 'fs';\nimport * as yaml from 'yaml';\n\ninterface Content {\n  context: {\n    topic: string;\n    description: string;\n    metadata: {\n      created_at: string;\n      updated_at: string;\n      author: string;\n    };\n  };\n  constants: {\n    base_url: string;\n    api_key: string;\n    default_language: string;\n  };\n  content: {\n    title: string;\n    body: string;\n    sections: {\n      title: string;\n      content: string;\n      images?: {\n        url: string;\n        alt: string;\n      }[];\n    }[];\n    tags: string[];\n  };\n}\n\nconst contentData: Content = {\n  context: {\n    topic: \"Example Topic\",\n    description: \"A brief description of the topic.\",\n    metadata: {\n      created_at: \"2023-10-01T12:00:00Z\",\n      updated_at: \"2023-10-01T12:00:00Z\",\n      author: \"Denis\"\n    }\n  },\n  constants: {\n    base_url: \"https://example.com\",\n    api_key: \"your_api_key_here\",\n    default_language: \"en\"\n  },\n  content: {\n    title: \"Example Title\",\n    body: \"This is the main content of the document.\",\n    sections: [\n      {\n        title: \"Section 1\",\n        content: \"Content of section 1.\"\n      },\n      {\n        title: \"Section 2\",\n        content: \"Content of section 2.\",\n        images: [\n          {\n            url: \"https://example.com/image1.jpg\",\n            alt: \"Image 1\"\n          },\n          {\n            url: \"https://example.com/image2.jpg\",\n            alt: \"Image 2\"\n          }\n        ]\n      }\n    ],\n    tags: [\"tag1\", \"tag2\", \"tag3\"]\n  }\n};\n\n// Write the content to a YAML file\nfs.writeFileSync('content.yaml', yaml.stringify(contentData));\n```\n\nThis format and example should help you organize and generate content in a structured and consistent manner. Let me know if you need any further assistance!",
+      "createdAt": "2024-10-27T11:54:28.879Z",
+      "updatedAt": "2024-10-27T11:54:28.888Z",
+      "ancestors": [
+        "eb9e0370-e5f6-4301-a7b3-71119b4860b6",
+        "99fbb097-8556-4013-9c64-0f1995d9ac2b"
+      ],
+      "id": "602f663c-c137-43a8-8637-61e08b902ce7",
+      "children": [],
+      "interrupted": false,
+      "score": 1,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-10-27T11:54:28.360Z",
+  "updatedAt": "2024-10-27T11:55:10.348Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

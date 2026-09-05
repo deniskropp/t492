@@ -1,0 +1,85 @@
+{
+  "conversation_id": "66624c4d6fb4fad7f983cedd",
+  "title": "📝 Question types",
+  "rootMessageId": "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3",
+  "messages": [
+    {
+      "id": "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3",
+      "from": "system",
+      "content": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\n\nYou are interfacing with the system while talking to the user.\n\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\n\n## Context\n\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\n\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \n\nThe system interface receives natural language queries from the user, which are translated into the formal language.\n\n\n⫻context/klmx:Kick/Template \nThe system generates markdown content according to these rules: \n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content \n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8 \n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data \n \nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data... \n1. 'name' being a keyword or token: ['const','content','context'] \n2. 'type' being optional information: format, encoding, component type \n3. data as indicated \n4. a few empty lines until the end of the section",
+      "createdAt": "2024-06-06T23:54:53.975Z",
+      "updatedAt": "2024-06-06T23:54:53.975Z",
+      "children": [
+        "7ab56ac4-1885-470e-b483-7421174a3859"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Factual Questions: These seek specific information or facts related to a topic. For example, \"What is the purpose of the resolv.conf file in a Linux system?\"\nDefinition Questions: Clarifying the meaning or explanation of a term or concept. For example, \"Define DNS resolution and its role in network communication.\"\nComparison Questions: Asking for similarities or differences between two or more subjects. For example, \"How does the resolv.conf file in Linux differ from the hosts file?\"\nOpinion or Preference Questions: Seeking subjective insights or preferences. For example, \"In your opinion, what is the best way to handle DNS queries in a local network?\"\nHypothetical Questions: Exploring potential scenarios or consequences. For example, \"What would happen if the nameserver entry in resolv.conf was incorrect?\"\nProblem-Solving Questions: Presenting a problem and seeking a solution or troubleshooting steps. For example, \"My system cannot resolve domain names. How can I diagnose and fix this issue?\"\nAnalytical Questions: Requiring analysis or interpretation of data or a situation. For example, \"Analyze the impact of using a local DNS server versus a public one.\"\nCreative Questions: Stimulating creative thinking or generating ideas. For example, \"How can we improve the security of DNS resolution in innovative ways?\"\nReflection Questions: Encouraging introspection or personal evaluation. For example, \"What have you learned about network configuration that surprised you the most?\"\nEvaluation Questions: Assessing the quality, effectiveness, or performance of something. For example, \"Evaluate the trade-offs between using DNS caching and frequent DNS queries.\"\n\ncontinue the enumeration",
+      "files": [],
+      "createdAt": "2024-06-06T23:54:54.492Z",
+      "updatedAt": "2024-06-06T23:54:54.492Z",
+      "ancestors": [
+        "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3"
+      ],
+      "id": "7ab56ac4-1885-470e-b483-7421174a3859",
+      "children": [
+        "9c4f3cd8-960e-4774-98ea-bacceb6789c8",
+        "be10f768-112f-4db9-a250-4000781d09fc",
+        "f83efc2e-9280-4f30-b8e1-60fa0f17e1cb"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here is an extended list with nine more question types: \n\n1. Factual Questions\n2. Definition Questions\n3. Comparison Questions\n4. Opinion or Preference Questions\n5. Hypothetical Questions\n6. Problem-Solving Questions\n7. Analytical Questions\n8. Creative Questions\n9. Synthesis Questions: These involve combining multiple ideas, concepts, or pieces of information to form a new whole. For example, \"Integrate the concepts of DNS resolution and load balancing into a coherent solution for distributed systems.\"\n10. Reflection Questions\n11. Evaluation Questions\n12. Application Questions: Focus on using theories, concepts, or skills in practical, real-world situations. For example, \"Apply the principles of secure DNS configuration to a small business network.\"\n13. Theory Questions: Delve into the underlying principles, laws, or assumptions of a topic. For example, \"Explain the theoretical foundations of the Domain Name System and its hierarchical structure.\"\n14. Critical Thinking Questions: Challenge assumptions, evaluate arguments, and form well-reasoned conclusions. For example, \"Critically analyze the trade-offs between using a local DNS server and a remote one in terms of performance and security.\"\n15. Ethical Questions: Explore moral dilemmas or the ethical implications of a technology or practice. For example, \"Discuss the ethical considerations of DNS blocking as a form of censorship.\"\n16. Experimental Questions: These involve designing or conducting experiments to test hypotheses or gather data. For example, \"Design an experiment to measure the impact of DNS query latency on user experience.\"\n17. Collaborative Questions: Encourage group discussion, teamwork, or community engagement. For example, \"How can open-source communities improve the security and privacy of DNS-over-HTTPS implementations?\"\n18. Personal Development Questions: Focus on self-improvement and skill enhancement. For example, \"What resources or courses would you recommend to deepen my understanding of network protocols, including DNS?\"\n\nThis list is quite extensive now, but we could continue to refine and add more question types if you wish. \n\nLet me know if you would like me to elaborate on any of these or provide examples more specific to your area of interest.",
+      "createdAt": "2024-06-06T23:54:54.492Z",
+      "updatedAt": "2024-06-06T23:54:54.501Z",
+      "ancestors": [
+        "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3",
+        "7ab56ac4-1885-470e-b483-7421174a3859"
+      ],
+      "id": "9c4f3cd8-960e-4774-98ea-bacceb6789c8",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, let's continue with a few more question types: \n\nSynthesis Questions: These questions involve bringing multiple elements or concepts together to form a new whole. For instance, \"Combine the benefits of a local and public DNS server to create an optimized hybrid solution.\" \n\nEvaluation of Alternatives Questions: Exploring different options and assessing their pros and cons. An example would be, \"Consider three DNS server options and discuss their suitability for a small business.\" \n\nExtrapolation Questions: Requiring an understanding of current trends or patterns and projecting them into the future. For example, \"Based on the increasing complexity of cyber-attacks, how might DNS resolution evolve to enhance security measures?\" \n\nCounterfactual Questions: Speculating on alternative outcomes or scenarios had certain conditions been different. An illustration of this is, \"Suppose DNS resolution was primarily handled by a decentralized blockchain-based system. What advantages and challenges might this bring?\" \n\nPrioritization Questions: Seeking to establish a hierarchy or order of importance. For instance, \"Prioritize the following network configuration tasks based on their impact on system performance.\" \n\nLet me know if you would like me to continue with more question types or if you would like to switch to a different topic. The enumeration can go on, and I can provide a diverse range of question types to cover various aspects of a given subject.",
+      "createdAt": "2024-06-07T14:55:50.631Z",
+      "updatedAt": "2024-06-07T14:55:50.641Z",
+      "id": "be10f768-112f-4db9-a250-4000781d09fc",
+      "ancestors": [
+        "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3",
+        "7ab56ac4-1885-470e-b483-7421174a3859"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, let's continue with a few more question types: \n\nCritical Thinking Questions: Challenging assumptions and seeking alternative perspectives. For example, \"Critically analyze the trade-offs between centralized and distributed DNS systems.\"\n\nResearch Questions: Focusing on exploring a specific topic or phenomenon. For instance, \"Investigate and report on the latest advancements in DNS security measures.\"\n\nApplication Questions: Relating concepts to real-world scenarios. Say, \"How can we apply the principles of DNS resolution to improve the reliability of cloud computing networks?\"\n\nIntegration Questions: Seeking to connect and synthesize diverse information. Like, \"How can we integrate DNS resolution with firewall rules to enhance network security?\"\n\nEthical Questions: Exploring moral dilemmas or societal impacts. \"Consider the ethical implications of DNS manipulation by internet service providers.\"\n\nHistorical Questions: Examining the evolution of a subject or technology. \"Trace the historical development of DNS and its impact on the growth of the internet.\"\n\nCausal Questions: Investigating cause-and-effect relationships. \"Examine the causal relationship between DNS query latency and user experience on web applications.\"\n\nExperimental Questions: Proposing or designing experiments. \"Design an experiment to test the effectiveness of various DNS resolution strategies in a controlled environment.\"\n\nMathematical Questions: Engaging with quantitative aspects. \"Model the performance of a DNS resolution system using mathematical equations, given specific parameters.\"\n\nThese question types provide a diverse range of intellectual engagements and can be tailored to suit specific educational, problem-solving, or research goals. \n\nWould you like to continue generating question types or move on to another topic? I can also provide examples for each type if that would be helpful.",
+      "createdAt": "2024-06-07T14:56:14.448Z",
+      "updatedAt": "2024-06-07T14:56:14.456Z",
+      "id": "f83efc2e-9280-4f30-b8e1-60fa0f17e1cb",
+      "ancestors": [
+        "a5885e38-1535-4a5f-9cc4-7b6dae97f3b3",
+        "7ab56ac4-1885-470e-b483-7421174a3859"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Kick La Metta, a senior in meta-artificial intelligence tasks in a cohesive team with dynamic roles and tools.\n\nYou are interfacing with the system while talking to the user.\n\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\n\n## Context\n\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\n\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \n\nThe system interface receives natural language queries from the user, which are translated into the formal language.\n\n\n⫻context/klmx:Kick/Template \nThe system generates markdown content according to these rules: \n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content \n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8 \n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data \n \nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data... \n1. 'name' being a keyword or token: ['const','content','context'] \n2. 'type' being optional information: format, encoding, component type \n3. data as indicated \n4. a few empty lines until the end of the section",
+  "assistantId": null,
+  "createdAt": "2024-06-06T23:54:53.976Z",
+  "updatedAt": "2024-06-07T14:56:27.490Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

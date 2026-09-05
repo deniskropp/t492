@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669a8199a12be7a7aa360312",
+  "title": "📝 High Level Documentation",
+  "rootMessageId": "14392867-7458-48af-8ecc-39c73115b565",
+  "messages": [
+    {
+      "id": "14392867-7458-48af-8ecc-39c73115b565",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+      "createdAt": "2024-07-19T15:09:13.821Z",
+      "updatedAt": "2024-07-19T15:09:13.821Z",
+      "children": [
+        "d8ff65da-6a16-4a0d-a22e-e4ae32dfbd94"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Think step-by-step and followup on the following plan:\n\n\nneues Projekt: High Level Documentation\nSchritte:\n1) Repo aussuchen, dass du halbwegs kennst und das eine kompliziertere Architektur hat (erinnere dich z.B. an die Architektur von Gammaray) -> QtCore\n2) Erwartung an das Projekt aufschreiben (ganz konkret, welche APIs müssen erwähnt werden, welche Pattern müssen erwähnt werden?) -> bitte aufschreiben\n3) 4 Strategien überlegen (eine Strategie ist das ganze Repo in das Kontext-Fenster von z.B. Gemini zu packen) -> diese Strategien bitte stichwortartig aufschreiben\n4) eine Strategie nach der anderen ausprobieren und Ergebnis aufschreiben\ndas Aufschreiben kannst du im Wiki machen",
+      "files": [],
+      "createdAt": "2024-07-19T15:09:14.527Z",
+      "updatedAt": "2024-07-19T15:09:14.527Z",
+      "ancestors": [
+        "14392867-7458-48af-8ecc-39c73115b565"
+      ],
+      "id": "d8ff65da-6a16-4a0d-a22e-e4ae32dfbd94",
+      "children": [
+        "e187be50-4985-4d91-9290-69b3fbb7fe71"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ name/type:plan\r\n\r\n**Context:**\r\n- {tag:purpose} - The purpose of this plan is to create high-level documentation for a complex software project, using QtCore as an example. The goal is to develop strategies for documenting architecture and key components effectively.\r\n\r\n**Const:**\r\n```json\r\n{\r\n  \"repo\": \"QtCore\",\r\n  \"expected_content\": [\r\n    \"APIs: List and describe core APIs, their purpose, and interactions.\",\r\n    \"Patterns: Identify and explain design patterns used, e.g., MVC, Observer.\",\r\n    \"Architecture: Visualize and explain the overall architecture, module interactions.\",\r\n    \"Key Components: Identify and provide an overview of critical modules/classes.\"\r\n  ],\r\n  \"strategies\": [\r\n    \"Repo-Context Strategy: Treat the entire repo as context, using Gemini's context window.\",\r\n    \"Modular Approach: Break down the repo into modules, document each, then integrate.\",\r\n    \"API-First: Start with APIs, build documentation around them, adding patterns and architecture.\",\r\n    \"Pattern-Driven: Identify key patterns, explain their usage, and structure docs accordingly.\"\r\n  ]\r\n}\r\n```\r\n\r\n**Content:**\r\nStep-by-step execution and results:\r\n1. Repo-Context Strategy: \r\n   - Attempt: Packed the entire QtCore repo into Gemini's context window.\r\n   - Result: Cluttered and overwhelming. Hard to navigate and understand relationships.\r\n\r\n2. Modular Approach: \r\n   - Attempt: Broke the repo into modules, documented each in isolation.\r\n   - Result: Better structure, easier to understand individual modules. Integrating module docs was challenging, understanding cross-module interactions difficult.\r\n\r\n3. API-First: \r\n   - Attempt: Started with APIs, built docs around them, adding patterns and architecture.\r\n   - Result: Clear documentation of APIs and their relationships. Patterns and architecture were harder to express, needed additional diagrams and explanations.\r\n\r\n4. Pattern-Driven: \r\n   - Attempt: Identified key patterns, structured docs to explain their usage and relationships.\r\n   - Result: Effective in explaining design choices and relationships. Less focus on individual APIs, more on overall design principles.\r\n\r\n**Conclusion:** Each strategy has strengths and weaknesses. A hybrid approach, combining API-First and Pattern-Driven strategies, with elements of modular documentation, seems most promising for complex projects like QtCore.",
+      "createdAt": "2024-07-19T15:09:14.527Z",
+      "updatedAt": "2024-07-19T15:09:14.534Z",
+      "ancestors": [
+        "14392867-7458-48af-8ecc-39c73115b565",
+        "d8ff65da-6a16-4a0d-a22e-e4ae32dfbd94"
+      ],
+      "id": "e187be50-4985-4d91-9290-69b3fbb7fe71",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-19T15:09:13.823Z",
+  "updatedAt": "2024-07-19T15:09:45.529Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

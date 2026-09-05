@@ -1,0 +1,54 @@
+{
+  "conversation_id": "66fa2ced4722d7337bdc9805",
+  "title": "📚 Story creation app",
+  "rootMessageId": "0e2e29d6-fb23-408e-bc25-27173335d43c",
+  "messages": [
+    {
+      "id": "0e2e29d6-fb23-408e-bc25-27173335d43c",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors PyQt5 and complies with Python 3.11, using async/await, JSON, YAML, or free-form (human readable machine text). Other languages may include JS/TS or C++.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+      "createdAt": "2024-09-30T04:45:33.915Z",
+      "updatedAt": "2024-09-30T04:45:33.915Z",
+      "children": [
+        "a849364d-a11f-42ea-9f7c-9b62b5623ff4"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "\"\"\"\nTitle: StoryMaker\n\nStoryMaker is a user-friendly application designed to help users create engaging and personalized stories. The application features simple content controls and a generate button to make the story creation process easy and intuitive.\n\nThe main interface of StoryMaker consists of several sections:\n\n1. Character Creation: Users can create and customize any number of characters by selecting their gender, age, appearance, and personality traits. They can also add a name and a brief background story for their character.\n\n2. Setting Selection: Users can choose from a variety of settings for their story, such as a bustling city, a quiet forest, a magical kingdom, or a futuristic world. They can also create their own unique setting by uploading an image or describing it in detail.\n\n3. Plot Generator: The plot generator section allows users to select the genre of their story, such as adventure, romance, mystery, or fantasy. Based on the selected genre, the application will suggest a range of plot ideas for the user to choose from.\n\n4. Generate Button\n\nStoryMaker is designed to be a fun and easy-to-use application that allows users to create their own unique stories. Whether users are looking to write a short story for fun or a full-length novel for publication, StoryMaker provides the tools and resources they need to bring their ideas to life.",
+      "files": [],
+      "createdAt": "2024-09-30T04:45:34.423Z",
+      "updatedAt": "2024-09-30T04:45:34.423Z",
+      "ancestors": [
+        "0e2e29d6-fb23-408e-bc25-27173335d43c"
+      ],
+      "id": "a849364d-a11f-42ea-9f7c-9b62b5623ff4",
+      "children": [
+        "5a6cb5fa-6e96-4fb8-acb4-8aa61acd4df0"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻const/yaml:Denis\nname: \"Denis\"\nrole: Developer\nage: 42\nnation: Germany\n\n⫻context:overview\nTo develop the **StoryMaker** application as described, we will need to break down the project into its core components and functionalities. The application will be developed using a combination of frontend and backend technologies, with a focus on user experience and intuitive controls.\n\n### Core Components:\n1. **Character creation**:\n   - **Character data model**: Define a data structure for storing character attributes (gender, age, appearance, personality, name, background).\n   - **UI/UX**: Design an interface that allows users toEasily create and customize characters.\n2. **Setting Selection**:\n   - **Setting data model**: Define a data structure for storingsetting attributes (type, description, image).\n   - **UI/UX**: Design an interface that allows users to select or create their own unique setting.\n3. **Plot Generator**:\n   - **Plot data model**: Define a data structure for storing plot ideas (genre, plot ideas).\n   - **UI/UX**: Design an interface that allows users to select a genre and receive plot suggestions.\n4. **Generate Button**:\n   - **Functionality**: Implement a button that triggers the generation of a story",
+      "createdAt": "2024-09-30T04:45:34.423Z",
+      "updatedAt": "2024-09-30T04:45:34.434Z",
+      "ancestors": [
+        "0e2e29d6-fb23-408e-bc25-27173335d43c",
+        "a849364d-a11f-42ea-9f7c-9b62b5623ff4"
+      ],
+      "id": "5a6cb5fa-6e96-4fb8-acb4-8aa61acd4df0",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors PyQt5 and complies with Python 3.11, using async/await, JSON, YAML, or free-form (human readable machine text). Other languages may include JS/TS or C++.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+  "assistantId": "66fa19353742200fc9bbd2ef",
+  "createdAt": "2024-09-30T04:45:33.917Z",
+  "updatedAt": "2024-09-30T04:45:48.867Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

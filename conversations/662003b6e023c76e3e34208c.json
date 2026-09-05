@@ -1,0 +1,55 @@
+{
+  "conversation_id": "662003b6e023c76e3e34208c",
+  "title": "💻 Prompting CodeGemma-7B",
+  "rootMessageId": "a4285909-5567-458c-893a-511d5ac48d0f",
+  "messages": [
+    {
+      "id": "a4285909-5567-458c-893a-511d5ac48d0f",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-17T17:15:34.619Z",
+      "updatedAt": "2024-04-17T17:15:34.619Z",
+      "children": [
+        "7a252c1e-8fe2-4d1b-b589-9967665228c4"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "how to prompt a codegemma-7b ?",
+      "files": [],
+      "createdAt": "2024-04-17T17:15:35.364Z",
+      "updatedAt": "2024-04-17T17:15:35.364Z",
+      "ancestors": [
+        "a4285909-5567-458c-893a-511d5ac48d0f"
+      ],
+      "id": "7a252c1e-8fe2-4d1b-b589-9967665228c4",
+      "children": [
+        "d57a2834-a357-48d8-8038-a0469c20171a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "**Prompting CodeGemma-7b:**\n\n**1. Provide context and requirements:**\n\n* Clearly explain the task or problem you want the code to solve.\n* Describe the desired input and output formats.\n* Specify any constraints or limitations.\n\n**2. Add specific instructions:**\n\n* Choose the programming language you want the code to be written in.\n* Mention any libraries or frameworks that should be used.\n* Include any relevant code snippets or examples.\n\n**3. Use natural language:**\n\n* Write clear and concise instructions in complete sentences.\n* Avoid using jargon or technical terms that CodeGemma-7b may not understand.\n* Provide enough detail to guide the code generation process.\n\n**4. Provide examples:**\n\n* Include specific input-output pairs to illustrate the desired behavior.\n* Provide test cases to validate the correctness of the generated code.\n\n**5. Refine your prompt:**\n\n* Review your prompt and make any necessary adjustments.\n* Use a clear and consistent language.\n* Provide additional context and requirements as needed.\n\n**Example Prompt:**\n\n```\nGenerate a Python function that takes a list of numbers as input and returns the sum of the even numbers in the list. The function should handle lists of any length and should avoid using any external libraries.\n```\n\n**Additional Tips:**\n\n* Keep your prompts concise and focused.\n* Use specific keywords and concepts that CodeGemma-7b can understand.\n* Provide feedback and adjust your prompts iteratively until you get the desired results.\n\n**Possible Prompts:**\n\n* Create a JavaScript function that reverses a string.\n* Generate a Python class representing a Point in 3D space.\n* Write a Java program to calculate the factorial of a number.\n* Produce an SQL query to select all customers from a database.\n* Design an HTML page with a login form.\n\n**Remember:**\n\n* The quality and clarity of your prompt will significantly impact the effectiveness of CodeGemma-7b.\n* Use your knowledge of the programming language and coding principles to guide the code generation process.",
+      "createdAt": "2024-04-17T17:15:35.364Z",
+      "updatedAt": "2024-04-17T17:15:41.818Z",
+      "ancestors": [
+        "a4285909-5567-458c-893a-511d5ac48d0f",
+        "7a252c1e-8fe2-4d1b-b589-9967665228c4"
+      ],
+      "id": "d57a2834-a357-48d8-8038-a0469c20171a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "google/gemma-1.1-7b-it",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-04-17T17:15:34.623Z",
+  "updatedAt": "2024-04-17T17:15:41.819Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

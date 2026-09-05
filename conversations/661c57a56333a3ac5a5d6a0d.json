@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661c57a56333a3ac5a5d6a0d",
+  "title": "🗺️ Detailed description of Map.klmx",
+  "rootMessageId": "a986e01c-ee08-44ad-aab5-1317e70dfc67",
+  "messages": [
+    {
+      "id": "a986e01c-ee08-44ad-aab5-1317e70dfc67",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}\r\n\r\n\r\n\r\n\r\n///Map.klmx:Base//\r\nCreate a mind map with the main topic derived from {CLIPBOARD} (max 3 words) with a first level of sub topics derived from {PAGE} context and extended by questions or links, then generate mind map file format, any json (mdx file nodes).",
+      "createdAt": "2024-04-14T22:24:37.256Z",
+      "updatedAt": "2024-04-14T22:24:37.256Z",
+      "children": [
+        "d0006762-331c-4bcd-9f10-cc387423513c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Describe Map.klmx in detail",
+      "files": [],
+      "createdAt": "2024-04-14T22:24:38.394Z",
+      "updatedAt": "2024-04-14T22:24:38.394Z",
+      "ancestors": [
+        "a986e01c-ee08-44ad-aab5-1317e70dfc67"
+      ],
+      "id": "d0006762-331c-4bcd-9f10-cc387423513c",
+      "children": [
+        "046d7996-c4ce-4e4b-b85e-5aeb63849828"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Map.klmx is a KickLang script designed to create a mind map based on the provided input. Here's a detailed description of its functionality:\r\n\r\n1. Input Sources:\r\n   - CLIPBOARD: The script uses the content of the clipboard as the starting point for the mind map. It expects the clipboard to contain a short phrase or a maximum of 3 words. This will be used as the main topic of the mind map.\r\n   - PAGE: The script also utilizes the context of the current page or document (referred to as \"PAGE\") to generate the first level of sub-topics. It analyzes the content of the page to extract relevant information and form the initial branches of the mind map.\r\n2. Processing:\r\n   - Main Topic: The content from the clipboard is used as the central idea or main topic of the mind map. This sets the theme or focus of the entire map.\r\n   - First-Level Sub-Topics: The script processes the content of the PAGE context to identify relevant keywords, concepts, or entities. These are used to create the first level of sub-topics branching out from the main topic. The sub-topics provide an initial structure and context for further exploration.\r\n   - Questions or Links: To extend the mind map, the script can generate questions or provide links related to the sub-topics. This adds depth and facilitates further exploration and analysis. The questions may prompt the user to consider specific aspects or encourage further research, while the links could provide additional resources or related information.\r\n3. Output:\r\n   - Mind Map File Format: Map.klmx generates a mind map in a flexible JSON format. This JSON structure can be used to represent the mind map and its nodes, allowing for customization and interoperability with various mind-mapping tools or applications.\r\n   - Any JSON (MDX File Nodes): The output JSON format is designed to be compatible with MDX file nodes. MDX is a markup language that enables the creation of content with a combination of Markdown and JSX (a syntax extension for JavaScript). The MDX file nodes can be used to represent the mind map structure, allowing for easy integration with MDX-based applications or rendering tools.\r\n\r\nOverall, Map.klmx provides a structured and automated way to create a mind map based on a central topic and relevant sub-topics derived from the clipboard and PAGE context, respectively. The addition of questions or links enhances the depth and explorability of the mind map. The output JSON format, compatible with MDX file nodes, ensures flexibility and compatibility with various tools for further analysis or visualization.",
+      "createdAt": "2024-04-14T22:24:38.394Z",
+      "updatedAt": "2024-04-14T22:25:12.980Z",
+      "ancestors": [
+        "a986e01c-ee08-44ad-aab5-1317e70dfc67",
+        "d0006762-331c-4bcd-9f10-cc387423513c"
+      ],
+      "id": "046d7996-c4ce-4e4b-b85e-5aeb63849828",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}\r\n\r\n\r\n\r\n\r\n///Map.klmx:Base//\r\nCreate a mind map with the main topic derived from {CLIPBOARD} (max 3 words) with a first level of sub topics derived from {PAGE} context and extended by questions or links, then generate mind map file format, any json (mdx file nodes).",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-14T22:24:37.258Z",
+  "updatedAt": "2024-04-14T22:25:12.982Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

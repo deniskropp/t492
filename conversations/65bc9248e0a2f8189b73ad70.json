@@ -1,0 +1,47 @@
+{
+  "conversation_id": "65bc9248e0a2f8189b73ad70",
+  "title": "💻 Civitai REST API documentation",
+  "messages": [
+    {
+      "content": "REST API Reference\nSean Sube edited this page Jan 26, 2024 · 40 revisions\nIntroduction\n\nThis article describes how to use the Civitai REST API. We are going to be describing the HTTP method, path, and parameters for every operation. The API will return the response status code, response headers, and a response body.\n\n    This is still in active development and will be updated once more endpoints are made available for the public\n\nCivitai API v1\n\n    Authorization\n\nCreators\n\n    GET /api/v1/creators\n\nImages\n\n    GET /api/v1/images\n\nModels\n\n    GET /api/v1/models\n\nModel\n\n    GET /api/v1/models/:modelId\n\nModel Version\n\n    GET /api/v1/model-versions/:modelVersionId\n    GET /api/v1/model-versions/by-hash/:hash\n\nTags\n\n    GET /api/v1/tags\n\nAuthorization\n\nTo make authorized requests as a user you must use an API Key. You can generate an API Key from your User Account Settings.\n\nOnce you have an API Key you can authenticate with either an Authorization Header or Query String.\n\nCreators can require that people be logged in to download their resources. That is an option we provide but not something we require – it's entirely up to the resource owner.\n\nPlease see the Guide to Downloading via API for more details and open an issue if you are still having trouble downloading.\nAuthorization Header\n\nYou can pass the API token as a Bearer token using the Authorization header:\n\nGET https://civitai.com/api/v1/models\nContent-Type: application/json\nAuthorization: Bearer {api_key}\n\nQuery String\n\nYou can pass the API token as a query parameter using the ?token= parameter:\n\nGET https://civitai.com/api/v1/models?token={api_key}\nContent-Type: application/json\n\nThis method may be easier in some notebooks and scripts.\nGET /api/v1/creators\nEndpoint URL\n\nhttps://civitai.com/api/v1/creators\nQuery Parameters\nName \tType \tDescription\nlimit (OPTIONAL) \tnumber \tThe number of results to be returned per page. This can be a number between 0 and 200. By default, each page will return 20 results. If set to 0, it'll return all the creators\npage (OPTIONAL) \tnumber \tThe page from which to start fetching creators\nquery (OPTIONAL) \tstring \tSearch query to filter creators by username\nResponse Fields\nName \tType \tDescription\nusername \tstring \tThe username of the creator\nmodelCount \tnumber \tThe amount of models linked to this user\nlink \tstring \tUrl to get all models from this user\nmetadata.totalItems \tstring \tThe total number of items available\nmetadata.currentPage \tstring \tThe the current page you are at\nmetadata.pageSize \tstring \tThe the size of the batch\nmetadata.totalPages \tstring \tThe total number of pages\nmetadata.nextPage \tstring \tThe url to get the next batch of items\nmetadata.prevPage \tstring \tThe url to get the previous batch of items\nExample\n\nThe following example shows a request to get the first 3 model tags from our database:\n\ncurl https://civitai.com/api/v1/creators?limit=3 \\\n-H \"Content-Type: application/json\" \\\n-X GET\n\nThis would yield the following response:\n\n{\n  \"items\": [\n    {\n      \"username\": \"Civitai\",\n      \"modelCount\": 848,\n      \"link\": \"https://civitai.com/api/v1/models?username=Civitai\"\n    },\n    {\n      \"username\": \"JustMaier\",\n      \"modelCount\": 8,\n      \"link\": \"https://civitai.com/api/v1/models?username=JustMaier\"\n    },\n    {\n      \"username\": \"maxhulker\",\n      \"modelCount\": 2,\n      \"link\": \"https://civitai.com/api/v1/models?username=maxhulker\"\n    }\n  ],\n  \"metadata\": {\n    \"totalItems\": 46,\n    \"currentPage\": 1,\n    \"pageSize\": 3,\n    \"totalPages\": 16,\n    \"nextPage\": \"https://civitai.com/api/v1/creators?limit=3&page=2\"\n  }\n}",
+      "from": "user",
+      "id": "17a098b2-c345-4fa4-9c07-b376c93b5581",
+      "createdAt": "2024-02-02T06:57:13.261Z",
+      "updatedAt": "2024-02-02T06:57:13.261Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "1. **Getting Started**\n\n    To begin working with the Civitai API, please follow these steps:\n\n    1. Create a free account on civitai.com.\n    2. Generate an API key under 'User settings'.\n    3. Use the generated API key when making calls to the API.\n\n    Please note that only registered users can access certain features such as private content and advanced search options.\n\n 2. **Endpoints Overview**\n\n    Here is a list of common endpoints used in the Civitai API:\n\n    * `/api/v1/creators` - Get information about Creators.\n    * `/api/v1/images` - Search images based on various criteria like tag, category, etc.\n    * `/api/v1/models` - List popular Models.\n    * `/api/v1/model-versions` - Retrieve specific Model versions.\n    * `/api/v1/tags` - Browse through Tags related to different categories.\n\n    For detailed documentation on individual endpoints, refer to the official website.\n\n 3. **Authentication Methods**\n\n    There are two ways to authenticate with the Civitai API:\n\n    * Using an authorization header (`Authorization: Bearer <API KEY>`).\n    * Passing the API key as a query string parameter (?token=`<API KEY>`)\n\n    It is recommended to use the authorization header approach whenever possible.\n\n 4. **Pagination**\n\n    Most responses contain paginated data. Each endpoint has its own limit and offset values. You can adjust them according to your needs.\n\n    Some examples include:\n\n    ```\n    # Fetch the first three creators\n    curl https://civitai.com/api/v1/creators?limit=3\n\n    # Fetch the second page of models\n    curl https://civitai.com/api/v1/models?offset=50&limit=50\n    ```\n\n 5. **Error Handling**\n\n    In case of errors, the Civitai API returns descriptive error messages along with appropriate HTTP status codes. Common error scenarios include invalid authentication credentials, missing required fields, etc.\n\n    Example Error Response:\n\n    ```\n    Status Code: 401 Unauthorized\n    Content Type: application/json\n    Body: {\"error\":\"Invalid apiKey\"}\n    ```\n\nIn summary, here are the essential elements to consider while interacting with the Civitai API:\n\n* Register an account and obtain an API key.\n* Familiarize yourself with the available endpoints and their functionality.\n* Authenticate your requests using one of the supported methods.\n* Adjust pagination limits and offsets as needed.\n* Handle potential errors gracefully. ",
+      "id": "281ad590-2048-4d7a-a61d-0282f6ff449c",
+      "createdAt": "2024-02-02T06:57:13.833Z",
+      "updatedAt": "2024-02-02T06:57:59.111Z",
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "content": "generate typescript sdk code with at least the authentication process working",
+      "from": "user",
+      "id": "f7798ccc-b90a-4d4e-b025-6daecd812c17",
+      "createdAt": "2024-02-02T07:03:58.959Z",
+      "updatedAt": "2024-02-02T07:03:58.959Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "1. Installation\n\n    Before getting started, install Node.js and npm. Then run `npm init` to create a new project directory.\n\n 2. Dependencies\n\n    Add the necessary dependencies to your package.json file:\n\n```javascript\n// package.json\n...\n\"dependencies\": {\n   \"@typescript-eslint/parser\": \"^5.9.1\",\n   \"axios\": \"^0.27.2\",\n},\n...\n```\nRun `npm i` to install the packages.\n\n 3. Setup Typescript SDK\n\nCreate a folder called src where you want to store your source files. Inside src, create a file named index.ts.\n\nAdd the following code to initialize Axios and setup basic configuration:\n\n```javascript\nimport axios, {AxiosInstance, AxiosRequestConfig} from 'axios';\nconst baseURL = 'http://localhost:3000'; // Replace with actual server address\nexport const client: AxiosInstance = axios.create({baseURL});\nclient.defaults.headers['Accept'] = 'application/json';\nclient.interceptors.request.use((config: AxiosRequestConfig): any => config);\nclient.interceptors.response.use(res => res.data);\n```\n\n 4. Authentication Process\n\nHere's an example function to handle login and authentication:\n\n```javascript\nfunction Login() {\n    let email = document.getElementById('email').value;\n    let password = document.getElementById('password').value;\n    var formData = JSON.stringify({\n        EmailAddress: email,\n        Password: password\n    });\n    try {\n        await client.post('/login', formData).then(()=> {\n            console.log(\"Login successful\");\n        }).catch((err)=>{\n            throw err;\n        })\n    } catch (ex){\n        alert(`An exception occurred during login:\\n${JSON.stringify(ex)}`);\n    }\n};\n```\n\nNow, you should be able to successfully log into the system and perform other operations within the context of your session. ",
+      "id": "4012c17f-54bf-4035-b026-0db61f30c3c5",
+      "createdAt": "2024-02-02T07:03:59.668Z",
+      "updatedAt": "2024-02-02T07:04:28.669Z",
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-02-02T06:57:12.415Z",
+  "updatedAt": "2024-02-02T07:04:28.671Z",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

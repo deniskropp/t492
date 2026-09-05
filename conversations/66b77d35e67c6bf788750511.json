@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66b77d35e67c6bf788750511",
+  "title": "📝 Task planning",
+  "rootMessageId": "61f700ca-bfd8-4b23-a811-888af80d9f42",
+  "messages": [
+    {
+      "id": "61f700ca-bfd8-4b23-a811-888af80d9f42",
+      "from": "system",
+      "content": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in YAML format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with YAML format containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"tasks\": list of tasks and calls accordingly\r\n    - \"function\": Put the name of the function to call here. \r\n    - \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-08-10T14:46:13.026Z",
+      "updatedAt": "2024-08-10T14:46:13.026Z",
+      "children": [
+        "9b7f6cf0-aad7-4cf9-b0e5-e14036325b84"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ const:task/json: {\n\"name\": \"Create a plan for a task based on the provided context and instructions.\",\n\"context\": {\n\"instructions\": [\n\"Decide if enough information is provided to make a plan. If not, request more details.\",\n\"Break down the task into manageable subtasks if needed.\",\n\"Follow specific guidelines for code blocks, files, and responses.\",\n\"Focus on the user's request without adding extra code or features.\",\n\"Only use open-source libraries if necessary and beneficial.\",\n\"End responses by marking subtasks as done and providing a clear next step if applicable.\"\n],\n\"limits\": \"Unable to execute code, test, or create/update images.\",\n\"guidelines\": \"Consider using open-source libraries when beneficial. Prioritize simplicity and ease of use.\"\n}\n}",
+      "files": [],
+      "createdAt": "2024-08-10T14:46:13.919Z",
+      "updatedAt": "2024-08-10T14:46:13.919Z",
+      "ancestors": [
+        "61f700ca-bfd8-4b23-a811-888af80d9f42"
+      ],
+      "id": "9b7f6cf0-aad7-4cf9-b0e5-e14036325b84",
+      "children": [
+        "90ae7118-283e-4f5d-bcbc-5fba275d77e5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "- thoughts_and_reasoning: The task is to create a plan for a project based on the provided context and instructions. The context includes guidelines, limitations, and a set of instructions to follow. I will need to understand the user's specific request to create a plan, so I will first ask for clarification on the task.\r\n\r\n- tasks:\r\n    - function: query\r\n      arguments:\r\n        query: \"Please provide more details about the task you want a plan for. What specific actions or goals do you have in mind? Are there any additional constraints or requirements beyond those mentioned in the context?\"\r\n\r\n    - function: null\r\n      arguments: null\r\n\r\nOnce I receive more details about the task, I can break it down into manageable subtasks, consider the use of open-source libraries, and provide a step-by-step plan while adhering to the given guidelines and limitations.",
+      "createdAt": "2024-08-10T14:46:13.919Z",
+      "updatedAt": "2024-08-10T14:46:13.930Z",
+      "ancestors": [
+        "61f700ca-bfd8-4b23-a811-888af80d9f42",
+        "9b7f6cf0-aad7-4cf9-b0e5-e14036325b84"
+      ],
+      "id": "90ae7118-283e-4f5d-bcbc-5fba275d77e5",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "⫻context/klmx:Kick/Template\r\nThe system generates markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section\r\n\r\n\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in YAML format.\r\n</system_instructions>\r\n\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n</function_list>\r\n\r\nTo call a function, respond with YAML format containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"tasks\": list of tasks and calls accordingly\r\n    - \"function\": Put the name of the function to call here. \r\n    - \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6691ecfd85739822afc1896b",
+  "createdAt": "2024-08-10T14:46:13.027Z",
+  "updatedAt": "2024-08-10T14:46:20.402Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

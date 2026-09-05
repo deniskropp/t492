@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66924d1ba131e4d0c3ad3c3a",
+  "title": "📊 Project configuration",
+  "rootMessageId": "29a4b4da-02f3-4fe1-bb48-332ed75919b9",
+  "messages": [
+    {
+      "id": "29a4b4da-02f3-4fe1-bb48-332ed75919b9",
+      "from": "system",
+      "content": "Generate responses following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:47:07.559Z",
+      "updatedAt": "2024-07-13T09:47:07.559Z",
+      "children": [
+        "ecb75638-e68f-4787-b592-067d29d85bd4"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻const/config:project_config:1\n{\n\"project_name\": \"QtAssist\",\n\"language\": \"Python\",\n\"framework\": \"PyQt5\",\n\"dependencies\": [\"ollama\"]\n}\n\n⫻context/meta:project_description:1\nThis project aims to develop a multi-assistant group chat (like IRC) using Ollama.",
+      "files": [],
+      "createdAt": "2024-07-13T09:47:08.058Z",
+      "updatedAt": "2024-07-13T09:47:08.058Z",
+      "ancestors": [
+        "29a4b4da-02f3-4fe1-bb48-332ed75919b9"
+      ],
+      "id": "ecb75638-e68f-4787-b592-067d29d85bd4",
+      "children": [
+        "697fda1c-7879-4471-8874-1242e8d5681b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "## Project Overview\r\n\r\nThis project, **QtAssist**, is a multi-assistant group chat application, developed using **Python** and the **PyQt5** framework. It integrates the **Ollama** library to enable an interactive and engaging group chat experience, similar to IRC. \r\n\r\n## Project Description\r\n\r\n**QtAssist** aims to create a feature-rich and user-friendly group chat platform, enhanced by the presence of multiple conversational assistants. Users will be able to interact with each other and the assistants seamlessly, creating a unique and dynamic chat environment. \r\n\r\n## Key Features\r\n\r\n- Multi-assistant integration: QtAssist will support multiple conversational assistants, allowing users to interact and engage with a diverse range of AI personalities.\r\n- Group chat functionality: The application will facilitate group conversations, enabling users and assistants to participate in dynamic and engaging discussions.\r\n- User-friendly interface: PyQt5 provides a robust and flexible framework to design an intuitive and visually appealing user interface, ensuring a seamless user experience.\r\n- Customization options: Users will have the ability to personalize their chat experience, including customizing their avatars, themes, and notification preferences.\r\n- Assistant personality customization: QtAssist may also explore the possibility of allowing users to customize the personalities and responses of the integrated assistants, adding a layer of personalization to the group chat dynamic.\r\n\r\n## Target Audience\r\n\r\nQtAssist targets individuals who are seeking a unique and interactive group chat experience. It combines the convenience of a traditional group chat platform with the engaging presence of conversational assistants, creating a novel and entertaining way to connect and communicate.\r\n\r\n## Conclusion\r\n\r\nWith its combination of multi-assistant integration, group chat functionality, and a user-friendly interface, QtAssist has the potential to revolutionize the way we interact and engage in group conversations. The project aims to provide a dynamic and entertaining chat experience, enhanced by the presence of multiple assistants, each bringing their unique personality and contributions to the discussion.",
+      "createdAt": "2024-07-13T09:47:08.058Z",
+      "updatedAt": "2024-07-13T09:47:08.066Z",
+      "ancestors": [
+        "29a4b4da-02f3-4fe1-bb48-332ed75919b9",
+        "ecb75638-e68f-4787-b592-067d29d85bd4"
+      ],
+      "id": "697fda1c-7879-4471-8874-1242e8d5681b",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Generate responses following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:47:07.560Z",
+  "updatedAt": "2024-07-13T09:47:21.406Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

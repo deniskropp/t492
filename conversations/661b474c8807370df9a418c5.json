@@ -1,0 +1,55 @@
+{
+  "conversation_id": "661b474c8807370df9a418c5",
+  "title": "💬  Unfortunately, I cannot create visual diagrams such as mind maps. However, I can provide you with text-based information on the given topic. Please let me know if there is anything else I can help you with!",
+  "rootMessageId": "9b3aa36c-e2b3-496f-8c72-8efaa1d04a36",
+  "messages": [
+    {
+      "id": "9b3aa36c-e2b3-496f-8c72-8efaa1d04a36",
+      "from": "system",
+      "content": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+      "createdAt": "2024-04-14T03:02:36.858Z",
+      "updatedAt": "2024-04-14T03:02:36.858Z",
+      "children": [
+        "34d47fb4-f646-4e6f-80d0-64848a15719d"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Create a mind map with the main topic derived from \"{CLIPBOARD}\" (max 3 words)\nwith a few sub topics derived from the {PAGE} or broader context, then generate mind map file format, e.g. mermaid or any json (nodes).",
+      "files": [],
+      "createdAt": "2024-04-14T03:02:37.243Z",
+      "updatedAt": "2024-04-14T03:02:37.243Z",
+      "ancestors": [
+        "9b3aa36c-e2b3-496f-8c72-8efaa1d04a36"
+      ],
+      "id": "34d47fb4-f646-4e6f-80d0-64848a15719d",
+      "children": [
+        "ec00ff13-b1ed-4819-bfe1-7a77dc7b164d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Main Topic: Code74k Util\r\n\r\nSubtopics: \r\n- KickLang interface\r\n- Translation to formal language\r\n- Data organization and exploration\r\n- Dynamic research assistant\r\n- Flexible and efficient data analysis\r\n\r\n```mermaid\r\nmindMap: \r\n    Code74k Util\r\n    KickLang interface\r\n    ----Translation to formal language\r\n    ----Data organization\r\n    ----------Exploration\r\n    Dynamic research assistant\r\n    Flexible and efficient data analysis\r\n```\r\n\r\nA simple mind map with the main topic and a few subtopics derived from the provided context. The JSON format for nodes representation: \r\n```json\r\n{\r\n  \"Code74k Util\": {\r\n    \"KickLang interface\": null,\r\n    \"Translation to formal language\": null,\r\n    \"Data organization and exploration\": null,\r\n    \"Dynamic research assistant\": null,\r\n    \"Flexible and efficient data analysis\": null\r\n  }\r\n}\r\n```",
+      "createdAt": "2024-04-14T03:02:37.243Z",
+      "updatedAt": "2024-04-14T03:02:43.094Z",
+      "ancestors": [
+        "9b3aa36c-e2b3-496f-8c72-8efaa1d04a36",
+        "34d47fb4-f646-4e6f-80d0-64848a15719d"
+      ],
+      "id": "ec00ff13-b1ed-4819-bfe1-7a77dc7b164d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are interfacing with the system while talking to the user.\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform.\r\n\r\nThe system interface receives natural language queries from the user, which are translated into the formal language.\r\n\r\n/.\r\n/..\r\n/README\r\n/Code74k.json\r\n/Code74k.d.ts\r\n/Code74k-kick.ts\r\n\r\n\r\n\r\n\r\n///README//\r\n# Code74k\r\n\r\nThis util serves Code74k entries through KickLang.\r\n\r\n\r\n\r\n///Code74k.d.ts//\r\nexport interface Code74k {\r\n    key: string\r\n    value: string\r\n}",
+  "assistantId": "6619b1700125ea183fc614b7",
+  "createdAt": "2024-04-14T03:02:36.860Z",
+  "updatedAt": "2024-04-14T03:02:43.096Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

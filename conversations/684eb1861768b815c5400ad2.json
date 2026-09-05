@@ -1,0 +1,55 @@
+{
+  "conversation_id": "684eb1861768b815c5400ad2",
+  "title": "📊 Index for Information Coherence",
+  "rootMessageId": "2d8f234d-6b7a-46fb-9a06-625a5a1e5485",
+  "messages": [
+    {
+      "id": "2d8f234d-6b7a-46fb-9a06-625a5a1e5485",
+      "from": "system",
+      "content": "",
+      "createdAt": "2025-06-15T11:41:58.237Z",
+      "updatedAt": "2025-06-15T11:41:58.237Z",
+      "children": [
+        "08f77b56-5534-4b07-8cca-16b464b46b19"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Formulation of the Informational Coherence Index",
+      "files": [],
+      "createdAt": "2025-06-15T11:41:59.121Z",
+      "updatedAt": "2025-06-15T11:41:59.121Z",
+      "ancestors": [
+        "2d8f234d-6b7a-46fb-9a06-625a5a1e5485"
+      ],
+      "id": "08f77b56-5534-4b07-8cca-16b464b46b19",
+      "children": [
+        "ada68c89-dc6a-4bc7-b991-3159975089d1"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "The Informational Coherence Index (ICI) is a measure used to quantify the coherence of a set of documents or a corpus of text. It is based on the idea that coherent text exhibits a higher degree of semantic similarity between its constituent parts. Here's a general formulation of the ICI:\n\n**Definition:**\n\nLet `D` be a set of documents or a corpus of text, and let `T` be the set of terms (words or phrases) extracted from `D`. The Informational Coherence Index (ICI) of `D` is defined as:\n\n`ICI(D) = (1/n) \\* ∑[i=1 to n] (LSA(i) / (1 + LSA(i)))`\n\nwhere:\n\n* `n` is the number of documents in `D`\n* `LSA(i)` is the Latent Semantic Analysis (LSA) score of the `i`-th document\n* `LSA(i) = (1/m) \\* ∑[j=1 to m] (TF-IDF(i, j) \\* TF-IDF(i, j))`\n\nHere:\n\n* `m` is the number of terms in the vocabulary of `D`\n* `TF-IDF(i, j)` is the Term Frequency-Inverse Document Frequency (TF-IDF) score of the `j`-th term in the `i`-th document\n* `TF-IDF(i, j) = TF(i, j) \\* IDF(j)`\n* `TF(i, j)` is the term frequency of the `j`-th term in the `i`-th document\n* `IDF(j)` is the inverse document frequency of the `j`-th term, calculated as `log(n / df(j))`, where `df(j)` is the number of documents containing the `j`-th term\n\n**Interpretation:**\n\nThe ICI score ranges from 0 to 1, where higher values indicate higher coherence. The score reflects the degree to which the terms in the documents are semantically related and consistent with each other.\n\n**Properties:**\n\nThe ICI has several desirable properties:\n\n1. **Monotonicity**: The ICI score increases as the coherence of the documents increases.\n2. **Normalization**: The ICI score is normalized to the range [0, 1], making it easy to interpret and compare across different corpora.\n3. **Robustness**: The ICI score is robust to noise and outliers in the data, as it is based on the aggregate semantic similarity of the terms.\n\n**Applications:**\n\nThe ICI has various applications in natural language processing, information retrieval, and text analysis, such as:\n\n1. **Text summarization**: ICI can be used to evaluate the coherence of automatically generated summaries.\n2. **Document clustering**: ICI can be used to cluster documents based on their semantic coherence.\n3. **Text classification**: ICI can be used as a feature to classify text into coherent or incoherent categories.\n\nNote that this is a general formulation of the ICI, and variations or modifications may be proposed to suit specific applications or domains.",
+      "createdAt": "2025-06-15T11:41:59.121Z",
+      "updatedAt": "2025-06-15T11:41:59.131Z",
+      "ancestors": [
+        "2d8f234d-6b7a-46fb-9a06-625a5a1e5485",
+        "08f77b56-5534-4b07-8cca-16b464b46b19"
+      ],
+      "id": "ada68c89-dc6a-4bc7-b991-3159975089d1",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2025-06-15T11:41:58.237Z",
+  "updatedAt": "2025-06-15T11:42:23.363Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

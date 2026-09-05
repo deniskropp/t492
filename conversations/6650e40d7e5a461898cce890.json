@@ -1,0 +1,60 @@
+{
+  "conversation_id": "6650e40d7e5a461898cce890",
+  "title": "📊 Code interface",
+  "rootMessageId": "fd625b23-4068-45c0-8334-64d764eb7a79",
+  "messages": [
+    {
+      "id": "fd625b23-4068-45c0-8334-64d764eb7a79",
+      "from": "system",
+      "content": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+      "createdAt": "2024-05-24T19:01:33.458Z",
+      "updatedAt": "2024-05-24T19:01:33.458Z",
+      "children": [
+        "743bdebc-f9a2-423b-9ee6-49db9bc39af0"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T19:01:33.979Z",
+      "updatedAt": "2024-05-24T19:01:33.979Z",
+      "ancestors": [
+        "fd625b23-4068-45c0-8334-64d764eb7a79"
+      ],
+      "id": "743bdebc-f9a2-423b-9ee6-49db9bc39af0",
+      "children": [
+        "c77c140c-7cce-435b-a0c1-45146436c7f0"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, here's an example of how the runtime interface for Code74k.ts might look:\r\n\r\n```typescript\r\n// Code74k.ts\r\n\r\n// Import statements\r\nimport axios from 'axios';\r\nimport express from 'express';\r\nimport { render } from 'preact-render-to-string';\r\nimport { h } from 'preact';\r\nimport { CohereAI } from './cohere-ai';\r\nimport { Tool1, Tool2, Tool3 } from './tools';\r\n\r\n// Interface for runtime configuration\r\ninterface Config {\r\n  port: number;\r\n  databaseURL: string;\r\n  cohereAI: {\r\n    model: string;\r\n    authToken: string;\r\n  };\r\n}\r\n\r\n// Declare the runtime configuration\r\nconst config: Config = {\r\n  port: 3000,\r\n  databaseURL: 'https://example.com/database',\r\n  cohereAI: {\r\n    model: 'custom-model-name',\r\n    authToken: 'your-auth-token',\r\n  },\r\n};\r\n\r\n// Create an instance of CohereAI with the provided configuration\r\nconst cohere = new CohereAI(config.cohereAI);\r\n\r\n// Interface for the express application\r\ninterface App {\r\n  [key: string]: any;\r\n  use: Function;\r\n  get: Function;\r\n  post: Function;\r\n  put: Function;\r\n  delete: Function;\r\n}\r\n\r\n// Create an instance of the express application\r\nconst app: App = express();\r\n\r\n// Middlewares and configurations for the express app\r\napp.use(express.json()); // Parse JSON bodies\r\napp.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies\r\n\r\n// Sample route to test the server\r\napp.get('/', (req, res) => {\r\n  res.send('Code74k is up and running!');\r\n});\r\n\r\n// Interface for the tool descriptors\r\ninterface ToolDescriptor {\r\n  name: string;\r\n  description: string;\r\n  specifications: any; // Flexible specifications object\r\n}\r\n\r\n// Sample tool descriptors\r\nconst tool1Descriptor: ToolDescriptor = {\r\n  name: 'Tool 1',\r\n  description: 'Tool for providing detailed descriptions of required tools',\r\n  specifications: {\r\n    inputs: ['Free-form text input'],\r\n    outputs: ['Natural language processed description'],\r\n    features: ['Prompt for additional information', 'Clarification handling'],\r\n  },\r\n};\r\n\r\nconst tool2Descriptor: ToolDescriptor = {\r\n  name: 'Tool 2',\r\n  description: 'Task generator for tool development',\r\n  specifications: {\r\n    inputs: ['Output from Tool 1'],\r\n    outputs: ['High-level tasks for engineers'],\r\n    features: ['Manageable task breakdown', 'Well-defined tasks'],\r\n  },\r\n};\r\n\r\nconst tool3Descriptor: ToolDescriptor = {\r\n  name: 'Tool 3',\r\n  description: 'Deliverable integrator',\r\n  specifications: {\r\n    inputs: ['Deliverables from engineers', 'Output from Tool 2'],\r\n    outputs: ['Integrated and validated product'],\r\n    features: ['Conflict handling', 'Quality checks'],\r\n  },\r\n};\r\n\r\n// Instantiate the tools with their respective descriptors\r\nconst tool1 = new Tool1(tool1Descriptor, cohere);\r\nconst tool2 = new Tool2(tool2Descriptor, cohere);\r\nconst tool3 = new Tool3(tool3Descriptor, cohere);\r\n\r\n// Sample route to demonstrate tool usage\r\napp.post('/describe-tool', async (req, res) => {\r\n  try {\r\n    const { inputText } = req.body;\r\n    const toolDescription = await tool1.describeTool(inputText);\r\n    res.json(toolDescription);\r\n  } catch (error) {\r\n    res.status(500).send(error.message);\r\n  }\r\n});\r\n\r\n// Start the server\r\napp.listen(config.port, () => {\r\n  console.log(`Server started on http://localhost:${config.port}/`);\r\n});\r\n```\r\n\r\nIn this example, we have set up a basic Node.js server using Express. We import the necessary modules, define tool descriptors, and instantiate the tools. The `/describe-tool` route demonstrates how Tool 1 can be used to generate a tool description based on user input. This is just a simplified example, and you can extend and customize the runtime interface based on your specific requirements and tool functionalities. The placeholders (placebo pipes) indicate potential integration points with the tools and other modules.\r\n\r\nRemember to replace the `cohereAI` configuration with your actual Cohere AI model and authentication token.",
+      "createdAt": "2024-05-24T19:01:33.979Z",
+      "updatedAt": "2024-05-24T19:01:33.988Z",
+      "ancestors": [
+        "fd625b23-4068-45c0-8334-64d764eb7a79",
+        "743bdebc-f9a2-423b-9ee6-49db9bc39af0"
+      ],
+      "id": "c77c140c-7cce-435b-a0c1-45146436c7f0",
+      "children": [],
+      "webSearch": {
+        "prompt": "Write Code74k.ts - runtime interface",
+        "searchQuery": "",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-24T19:01:33.460Z",
+  "updatedAt": "2024-05-24T19:02:09.767Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

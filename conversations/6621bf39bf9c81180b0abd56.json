@@ -1,0 +1,377 @@
+{
+  "conversation_id": "6621bf39bf9c81180b0abd56",
+  "title": "New Chat",
+  "rootMessageId": "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+  "messages": [
+    {
+      "id": "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-19T00:47:53.366Z",
+      "updatedAt": "2024-04-19T00:47:53.366Z",
+      "children": [
+        "060a88b9-9b7c-412d-b22e-86727d6326f8"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Prompting Llama3",
+      "files": [],
+      "createdAt": "2024-04-19T00:47:53.966Z",
+      "updatedAt": "2024-04-19T00:47:53.966Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf"
+      ],
+      "id": "060a88b9-9b7c-412d-b22e-86727d6326f8",
+      "children": [
+        "48f4f051-edaa-485f-87c5-5874d7427860"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I'm ready to chat. What's on your mind?",
+      "createdAt": "2024-04-19T00:47:53.966Z",
+      "updatedAt": "2024-04-19T00:47:54.450Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8"
+      ],
+      "id": "48f4f051-edaa-485f-87c5-5874d7427860",
+      "children": [
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Prompting Llama3 (instruction mode)",
+      "files": [],
+      "createdAt": "2024-04-19T00:48:14.598Z",
+      "updatedAt": "2024-04-19T00:48:14.598Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860"
+      ],
+      "id": "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+      "children": [
+        "36a75309-bd1e-410c-8878-1de2e271cd02"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I'm in instruction mode. Please provide the prompt or task you'd like me to assist with, and I'll do my best to follow your instructions.",
+      "createdAt": "2024-04-19T00:48:14.598Z",
+      "updatedAt": "2024-04-19T00:48:15.630Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7"
+      ],
+      "id": "36a75309-bd1e-410c-8878-1de2e271cd02",
+      "children": [
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "for the /completions endpoint",
+      "files": [],
+      "createdAt": "2024-04-19T00:48:53.525Z",
+      "updatedAt": "2024-04-19T00:48:53.525Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02"
+      ],
+      "id": "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+      "children": [
+        "a3adea62-5304-4485-aa31-f5762354ce93"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "For the `/completions` endpoint, I'll generate a response based on the input prompt. Please provide the prompt, and I'll respond with a completion.",
+      "createdAt": "2024-04-19T00:48:53.525Z",
+      "updatedAt": "2024-04-19T00:48:54.401Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece"
+      ],
+      "id": "a3adea62-5304-4485-aa31-f5762354ce93",
+      "children": [
+        "eb634125-827b-4d55-9f48-eccfc33543fa"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "at the lower level (tokenizer)",
+      "files": [],
+      "createdAt": "2024-04-19T00:49:29.953Z",
+      "updatedAt": "2024-04-19T00:49:29.953Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93"
+      ],
+      "id": "eb634125-827b-4d55-9f48-eccfc33543fa",
+      "children": [
+        "80dcf389-7483-4188-bdcb-055f2680fdbe"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "At the tokenizer level, I'll respond with a sequence of tokens that complete the input prompt. Please provide the prompt, and I'll generate the tokenized completion.",
+      "createdAt": "2024-04-19T00:49:29.953Z",
+      "updatedAt": "2024-04-19T00:49:32.101Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa"
+      ],
+      "id": "80dcf389-7483-4188-bdcb-055f2680fdbe",
+      "children": [
+        "721783c7-40ba-471c-83af-3fbc17380fdf"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "llama.cpp 'main -m llama3.gguf -p ...'",
+      "files": [],
+      "createdAt": "2024-04-19T00:50:25.848Z",
+      "updatedAt": "2024-04-19T00:50:25.848Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe"
+      ],
+      "id": "721783c7-40ba-471c-83af-3fbc17380fdf",
+      "children": [
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It looks like you're trying to run the LLaMA model from the Meta AI repository. Here's the complete command:\n\n`main -m llama3.ggml -p /path/to/model_parameters`\n\nReplace `/path/to/model_parameters` with the actual path to the model parameters file.",
+      "createdAt": "2024-04-19T00:50:25.848Z",
+      "updatedAt": "2024-04-19T00:50:27.206Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf"
+      ],
+      "id": "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+      "children": [
+        "6037e7a9-825e-4385-acf8-2b361777977f"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "llama-3-instruct",
+      "files": [],
+      "createdAt": "2024-04-19T00:51:24.854Z",
+      "updatedAt": "2024-04-19T00:51:24.854Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97"
+      ],
+      "id": "6037e7a9-825e-4385-acf8-2b361777977f",
+      "children": [
+        "a49b1891-962c-4671-8695-43b34cffa6a1"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "You're working with the LLaMA 3 Instruct model. Here's the complete command:\n\n`main -m llama3-instruct.ggml -p /path/to/model_parameters`\n\nReplace `/path/to/model_parameters` with the actual path to the model parameters file.",
+      "createdAt": "2024-04-19T00:51:24.854Z",
+      "updatedAt": "2024-04-19T00:51:26.871Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+        "6037e7a9-825e-4385-acf8-2b361777977f"
+      ],
+      "id": "a49b1891-962c-4671-8695-43b34cffa6a1",
+      "children": [
+        "822b6109-c394-4f0b-90e5-8ef248bf01bd"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "nope, '-p' passes the prompt",
+      "files": [],
+      "createdAt": "2024-04-19T00:51:47.214Z",
+      "updatedAt": "2024-04-19T00:51:47.214Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+        "6037e7a9-825e-4385-acf8-2b361777977f",
+        "a49b1891-962c-4671-8695-43b34cffa6a1"
+      ],
+      "id": "822b6109-c394-4f0b-90e5-8ef248bf01bd",
+      "children": [
+        "8adf5130-cbb0-452d-93c2-b399bcc0a1f5"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I apologize for the mistake! You're correct, the `-p` flag is used to pass the prompt to the model. Here's the complete command:\n\n`main -m llama3-instruct.ggml -p \"Your prompt here\"`\n\nReplace `\"Your prompt here\"` with the actual prompt you want to pass to the model.",
+      "createdAt": "2024-04-19T00:51:47.214Z",
+      "updatedAt": "2024-04-19T00:51:49.503Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+        "6037e7a9-825e-4385-acf8-2b361777977f",
+        "a49b1891-962c-4671-8695-43b34cffa6a1",
+        "822b6109-c394-4f0b-90e5-8ef248bf01bd"
+      ],
+      "id": "8adf5130-cbb0-452d-93c2-b399bcc0a1f5",
+      "children": [
+        "d2958f91-9324-4480-abdd-770158582acf"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "please provide a template or other guidelines",
+      "files": [],
+      "createdAt": "2024-04-19T00:52:08.162Z",
+      "updatedAt": "2024-04-19T00:52:08.162Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+        "6037e7a9-825e-4385-acf8-2b361777977f",
+        "a49b1891-962c-4671-8695-43b34cffa6a1",
+        "822b6109-c394-4f0b-90e5-8ef248bf01bd",
+        "8adf5130-cbb0-452d-93c2-b399bcc0a1f5"
+      ],
+      "id": "d2958f91-9324-4480-abdd-770158582acf",
+      "children": [
+        "4a27c94c-2021-459a-9a12-76d44880e49a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a template and some guidelines for using the LLaMA 3 Instruct model:\n\n**Template:**\n```\nmain -m llama3-instruct.ggml -p \"Your prompt or input here\"\n```\n**Guidelines:**\n\n* Replace `\"Your prompt or input here\"` with the actual text you want to process or generate.\n* Keep your prompt concise and clear. The model is designed to respond to natural language inputs.\n* You can ask a question, provide a statement, or give a task to the model.\n* The model will respond with a generated text based on its understanding of the input.\n\n**Example Prompts:**\n\n* Ask a question: `main -m llama3-instruct.ggml -p \"What is the capital of France?\"`\n* Provide a statement: `main -m llama3-instruct.ggml -p \"The weather is nice today.\"`\n* Give a task: `main -m llama3-instruct.ggml -p \"Write a short story about a cat.\"`\n\nRemember to adjust the prompt according to your specific use case and the type of response you're expecting from the model.",
+      "createdAt": "2024-04-19T00:52:08.162Z",
+      "updatedAt": "2024-04-19T00:52:12.643Z",
+      "ancestors": [
+        "f9d4dfd1-85ff-405c-b447-bad4daa24baf",
+        "060a88b9-9b7c-412d-b22e-86727d6326f8",
+        "48f4f051-edaa-485f-87c5-5874d7427860",
+        "6593fd45-edf2-4db0-a03e-5d8b916aa5c7",
+        "36a75309-bd1e-410c-8878-1de2e271cd02",
+        "ba0e018b-95c1-431b-b193-ff1d217f0ece",
+        "a3adea62-5304-4485-aa31-f5762354ce93",
+        "eb634125-827b-4d55-9f48-eccfc33543fa",
+        "80dcf389-7483-4188-bdcb-055f2680fdbe",
+        "721783c7-40ba-471c-83af-3fbc17380fdf",
+        "a3fcd602-0a71-429f-a4f6-b151dbf4ea97",
+        "6037e7a9-825e-4385-acf8-2b361777977f",
+        "a49b1891-962c-4671-8695-43b34cffa6a1",
+        "822b6109-c394-4f0b-90e5-8ef248bf01bd",
+        "8adf5130-cbb0-452d-93c2-b399bcc0a1f5",
+        "d2958f91-9324-4480-abdd-770158582acf"
+      ],
+      "id": "4a27c94c-2021-459a-9a12-76d44880e49a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-04-19T00:47:53.367Z",
+  "updatedAt": "2024-04-19T00:52:12.645Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

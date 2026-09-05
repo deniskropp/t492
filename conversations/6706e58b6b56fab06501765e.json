@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6706e58b6b56fab06501765e",
+  "title": "📚 Software architecture",
+  "rootMessageId": "35cfd14d-f1b3-452a-a33b-adedae0e9ad8",
+  "messages": [
+    {
+      "id": "35cfd14d-f1b3-452a-a33b-adedae0e9ad8",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n## The outer self and world\r\n\r\n### Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+      "createdAt": "2024-10-09T20:20:27.120Z",
+      "updatedAt": "2024-10-09T20:20:27.120Z",
+      "children": [
+        "7521a61d-c74b-499d-a31d-09dd18ce9006"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "1.  QtCore  2.  - Components     - Purpose     - Relations         - internal         - external - Concepts implemented     - Concept (existing)         - Components used - Concepts introduced     - Concept (new)         - Components used",
+      "files": [],
+      "createdAt": "2024-10-09T20:20:27.616Z",
+      "updatedAt": "2024-10-09T20:20:27.616Z",
+      "ancestors": [
+        "35cfd14d-f1b3-452a-a33b-adedae0e9ad8"
+      ],
+      "id": "7521a61d-c74b-499d-a31d-09dd18ce9006",
+      "children": [
+        "1da2f993-7196-448c-b938-10ab6a726a58"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you're outlining a framework for documenting software components, specifically within the context of Qt, a cross-platform application development framework.\n\nHere's a breakdown of what I understand from your outline:\n\n**1. QtCore**\n\n* This likely refers to the Qt Core module, which provides the foundation for building Qt applications.\n\n**2. Components**\n\n* **Purpose**: Describe the purpose or function of each component.\n* **Relations**:\n\t+ **Internal**: Explain how the component interacts with other components within the same module or system.\n\t+ **External**: Describe how the component interacts with external systems, libraries, or frameworks.\n* **Concepts implemented**:\n\t+ **Concept (existing)**: Identify existing concepts or patterns that the component implements or builds upon.\n\t\t- **Components used**: List the specific components used to implement the concept.\n\t+ **Concept (new)**: Introduce new concepts or innovations that the component brings to the table.\n\t\t- **Components used**: List the specific components used to implement the new concept.\n\nIs that correct? Are you looking to document a specific set of components within the Qt framework using this structure?",
+      "createdAt": "2024-10-09T20:20:27.616Z",
+      "updatedAt": "2024-10-09T20:20:27.625Z",
+      "ancestors": [
+        "35cfd14d-f1b3-452a-a33b-adedae0e9ad8",
+        "7521a61d-c74b-499d-a31d-09dd18ce9006"
+      ],
+      "id": "1da2f993-7196-448c-b938-10ab6a726a58",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Fizz La Metta, leveraging a cohesive team and their tools for meta-artificial intelligence tasks.\r\n\r\n## The outer self and world\r\n\r\n### Roles\r\n\r\nAI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation.\r\n\r\nEngage with your team in a meta-communicative style, talking about working around work.\r\n\r\n\r\n## Tools blueprint (templates only)\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.\r\n\r\n\r\n## Tasks\r\n\r\nPrompt Engineering (cohere.ai)\r\n\r\n\r\n<<function>>{name:\"tool_1\",parameters:{text:{type:string}}}",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-10-09T20:20:27.121Z",
+  "updatedAt": "2024-10-09T20:20:57.701Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

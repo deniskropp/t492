@@ -1,0 +1,62 @@
+{
+  "conversation_id": "6640ce8ac1c3587cf7278439",
+  "title": "📊 CMake error message",
+  "rootMessageId": "e3af6686-6370-449d-9444-dc62df0008d1",
+  "messages": [
+    {
+      "id": "e3af6686-6370-449d-9444-dc62df0008d1",
+      "from": "system",
+      "content": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\"Let's work together to achieve our goals!\"\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-05-12T14:13:30.779Z",
+      "updatedAt": "2024-05-12T14:13:30.779Z",
+      "children": [
+        "884d160d-b519-4f52-a4e5-c007d4de9673"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "[dok@q7 qt6-build]$ ../qt6/configure -prefix ~/opt\n+ mkdir -p qtbase\n+ cd qtbase\n+ exec /home/dok/repos/qt6/qtbase/configure -top-level -prefix /home/dok/opt\nCMake Warning (dev) at /home/dok/repos/qt6/qtbase/cmake/QtBuildInformation.cmake:239 (set):\n  Cannot set \"__qt_configure_reports\": current scope has no parent.\nCall Stack (most recent call first):\n  /home/dok/repos/qt6/qtsensors/src/sensors/configure.cmake:45 (qt_configure_add_report)\n  /home/dok/repos/qt6/qtbase/cmake/QtProcessConfigureArgs.cmake:240 (include)\nThis warning is for project developers.  Use -Wno-dev to suppress it.\n\nCMake Error at /home/dok/repos/qt6/qtwebengine/configure.cmake:63 (check_for_ulimit):\n  Unknown CMake command \"check_for_ulimit\".\nCall Stack (most recent call first):\n  /home/dok/repos/qt6/qtbase/cmake/QtProcessConfigureArgs.cmake:240 (include)\n",
+      "files": [],
+      "createdAt": "2024-05-12T14:13:31.468Z",
+      "updatedAt": "2024-05-12T14:13:31.468Z",
+      "ancestors": [
+        "e3af6686-6370-449d-9444-dc62df0008d1"
+      ],
+      "id": "884d160d-b519-4f52-a4e5-c007d4de9673",
+      "children": [
+        "dfc6b9f2-aea8-44e7-913f-132ebb751c75"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like there's an issue with the Qt configuration process. The error message indicates that there's an unknown CMake command \"check_for_ulimit\" in the qtwebengine configure file.\n\nTo resolve this, I would suggest checking if the CMake version being used is compatible with the Qt version. It's possible that the check_for_ulimit command was introduced in a later version of CMake.\n\nAdditionally, the warning about setting \"__qt_configure_reports\" can be suppressed by adding the -Wno-dev flag to the configure command.\n\nHere's a revised command:\n\n`../qt6/configure -prefix ~/opt -Wno-dev`\n\nIf the issue persists, it might be necessary to update CMake or provide more information about the environment and versions being used.",
+      "createdAt": "2024-05-12T14:13:31.468Z",
+      "updatedAt": "2024-05-12T14:13:31.866Z",
+      "ancestors": [
+        "e3af6686-6370-449d-9444-dc62df0008d1",
+        "884d160d-b519-4f52-a4e5-c007d4de9673"
+      ],
+      "id": "dfc6b9f2-aea8-44e7-913f-132ebb751c75",
+      "children": [],
+      "webSearch": {
+        "prompt": "[dok@q7 qt6-build]$ ../qt6/configure -prefix ~/opt\n+ mkdir -p qtbase\n+ cd qtbase\n+ exec /home/dok/repos/qt6/qtbase/configure -top-level -prefix /home/dok/opt\nCMake Warning (dev) at /home/dok/repos/qt6/qtbase/cmake/QtBuildInformation.cmake:239 (set):\n  Cannot set \"__qt_configure_reports\": current scope has no parent.\nCall Stack (most recent call first):\n  /home/dok/repos/qt6/qtsensors/src/sensors/configure.cmake:45 (qt_configure_add_report)\n  /home/dok/repos/qt6/qtbase/cmake/QtProcessConfigureArgs.cmake:240 (include)\nThis warning is for project developers.  Use -Wno-dev to suppress it.\n\nCMake Error at /home/dok/repos/qt6/qtwebengine/configure.cmake:63 (check_for_ulimit):\n  Unknown CMake command \"check_for_ulimit\".\nCall Stack (most recent call first):\n  /home/dok/repos/qt6/qtbase/cmake/QtProcessConfigureArgs.cmake:240 (include)\n",
+        "searchQuery": "",
+        "results": [
+          "https://kick.violass.club/sessions"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\n\"Let's work together to achieve our goals!\"\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-05-12T14:13:30.781Z",
+  "updatedAt": "2024-05-12T14:13:39.908Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

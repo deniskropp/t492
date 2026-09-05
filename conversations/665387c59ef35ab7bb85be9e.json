@@ -1,0 +1,103 @@
+{
+  "conversation_id": "665387c59ef35ab7bb85be9e",
+  "title": "🍴 Menu options",
+  "rootMessageId": "7e6e5339-9c7c-46c8-9ca8-e36f160114a5",
+  "messages": [
+    {
+      "id": "7e6e5339-9c7c-46c8-9ca8-e36f160114a5",
+      "from": "system",
+      "content": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+      "createdAt": "2024-05-26T19:04:37.779Z",
+      "updatedAt": "2024-05-26T19:04:37.779Z",
+      "children": [
+        "ce92e18b-8ba3-437b-8d3f-94178ddecf6e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Present a menu for main services",
+      "files": [],
+      "createdAt": "2024-05-26T19:04:38.425Z",
+      "updatedAt": "2024-05-26T19:04:38.425Z",
+      "ancestors": [
+        "7e6e5339-9c7c-46c8-9ca8-e36f160114a5"
+      ],
+      "id": "ce92e18b-8ba3-437b-8d3f-94178ddecf6e",
+      "children": [
+        "4cd4cac1-eb8f-4d45-8677-e0b500adc436"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Sure, presenting a menu is a straightforward task. However, as a team, we should first define the scope and context of these \"main services.\" \n\nLet's assume for now that these services relate to the development and maintenance of web applications. \n\n## Main Services Menu\n\n- **Design and Prototyping**: From wireframing to high-fidelity prototypes, we can assist with translating your ideas into tangible products. \n- **Web Development**: Our team excels at building dynamic and interactive web applications, utilizing cutting-edge frameworks and technologies. \n- **API Integration**: Need to connect disparate systems? We can seamlessly integrate third-party APIs to enhance your application's functionality. \n- **Security and Performance**: We offer comprehensive services to ensure your application is secure, fast, and optimized for an exceptional user experience. \n- **Maintenance and Support**: Rely on our team for ongoing maintenance, bug fixes, updates, and 24/7 support to keep your applications running smoothly. \n- **Consulting**: Tap into our expertise to make informed decisions about technology choices, architecture, and best practices for your web projects. \r\n\r\nThese services can be detailed further and tailored to specific technologies or use cases. I can provide additional context or simulate team interactions to refine this menu and ensure it aligns with the capabilities and strengths of our simulated team. \n\nIs there anything you'd like to change or add to this menu? I can also assist with generating sub-menus or service descriptions if needed.",
+      "createdAt": "2024-05-26T19:04:38.425Z",
+      "updatedAt": "2024-05-26T19:04:38.433Z",
+      "ancestors": [
+        "7e6e5339-9c7c-46c8-9ca8-e36f160114a5",
+        "ce92e18b-8ba3-437b-8d3f-94178ddecf6e"
+      ],
+      "id": "4cd4cac1-eb8f-4d45-8677-e0b500adc436",
+      "children": [
+        "51d5bf11-49f6-491e-bd8b-92bdd7522e3f"
+      ],
+      "webSearch": {
+        "prompt": "Present a menu for main services",
+        "searchQuery": "",
+        "results": [
+          "https://preactjs.com/guide/v10/signals"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Describe in one sentence the main component of the descriptor tool",
+      "files": [],
+      "createdAt": "2024-05-26T19:05:49.605Z",
+      "updatedAt": "2024-05-26T19:05:49.605Z",
+      "ancestors": [
+        "7e6e5339-9c7c-46c8-9ca8-e36f160114a5",
+        "ce92e18b-8ba3-437b-8d3f-94178ddecf6e",
+        "4cd4cac1-eb8f-4d45-8677-e0b500adc436"
+      ],
+      "id": "51d5bf11-49f6-491e-bd8b-92bdd7522e3f",
+      "children": [
+        "a9310b6e-5816-4606-ae30-1ee1044c428d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I see you've shared some web search results or perhaps an excerpt from a book about Preact and signals. I can integrate this into our knowledge base. \n\nThe main component of the Descriptor Tool is a Natural Language Processor (NLP) that translates user requirements into detailed tool specifications and prompts for additional information to ensure a comprehensive tool description. \n\nWould you like me to train a model or create a script based on this new context? I can start with basic tasks, e.g. searching and replacing text or generating JSX code snippets.",
+      "createdAt": "2024-05-26T19:05:49.605Z",
+      "updatedAt": "2024-05-26T19:05:49.617Z",
+      "ancestors": [
+        "7e6e5339-9c7c-46c8-9ca8-e36f160114a5",
+        "ce92e18b-8ba3-437b-8d3f-94178ddecf6e",
+        "4cd4cac1-eb8f-4d45-8677-e0b500adc436",
+        "51d5bf11-49f6-491e-bd8b-92bdd7522e3f"
+      ],
+      "id": "a9310b6e-5816-4606-ae30-1ee1044c428d",
+      "children": [],
+      "webSearch": {
+        "prompt": "Describe in one sentence the main component of the descriptor tool",
+        "searchQuery": "",
+        "results": [
+          "https://preactjs.com/guide/v10/signals"
+        ]
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz La Metta, developing a cohesive team and their tools or other meta-artificial intelligence tasks.\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nIn a team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. \r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about conversations, or working around work, e.g. using placeholders (placebo pipe).\r\n\r\nContent may be from various sources, e.g. user requests, additional context, special instructions, system query / control, or simply one of the team members being simulated.\r\n\r\n## Context\r\n\r\nThe Code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text).\r\n\r\n## Tools\r\n\r\nTool 1: Tool Descriptor\r\nThis tool will enable me (Fizz) to provide a detailed description of the required tool, including its functionality, features, and specifications. This tool will utilize natural language processing capabilities to generate a clear and concise description of the tool. The tool will process a free-form text input and prompt for additional information or clarification if the input is vague or incomplete.\r\n\r\nTool 2: Task Generator\r\nThis tool will take the output from Tool 1 and generate high-level, unprioritized tasks for human engineers (like Denis) to create the required tool. The task generator will break down the project into manageable tasks, ensuring that each task is well-defined.\r\n\r\nTool 3: Deliverable Integrator\r\nOnce the human engineers have completed their tasks, this tool will integrate the deliverables into a cohesive whole. The integrator will handle conflicts or inconsistencies between the deliverables and perform quality checks and validation on the final product, with the specifics of these processes controlled by the output of the other tools.",
+  "assistantId": "663fcfddfa74771b6d1d8f2e",
+  "createdAt": "2024-05-26T19:04:37.781Z",
+  "updatedAt": "2024-05-26T19:05:54.065Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

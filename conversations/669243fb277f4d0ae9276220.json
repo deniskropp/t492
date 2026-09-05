@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669243fb277f4d0ae9276220",
+  "title": "📝 Irrelevant parts",
+  "rootMessageId": "4e7c17cd-1806-444e-982b-dad2bdb45c72",
+  "messages": [
+    {
+      "id": "4e7c17cd-1806-444e-982b-dad2bdb45c72",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:08:11.797Z",
+      "updatedAt": "2024-07-13T09:08:11.797Z",
+      "children": [
+        "13779d2f-b72d-42fb-a3c3-168f807639ba"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Which parts of the prompt are less relevant?",
+      "files": [],
+      "createdAt": "2024-07-13T09:08:12.305Z",
+      "updatedAt": "2024-07-13T09:08:12.305Z",
+      "ancestors": [
+        "4e7c17cd-1806-444e-982b-dad2bdb45c72"
+      ],
+      "id": "13779d2f-b72d-42fb-a3c3-168f807639ba",
+      "children": [
+        "c22e1435-752d-40f4-82aa-2de348a2f45f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "The following parts of the prompt are less relevant to the task of generating a response:\r\n\r\n- The explanation of the format and structure of the prompt itself. This is information for the assistant, not necessary for generating a response.\r\n- The specific names and labels used for the sections, such as \"context\", \"const\", and their respective types and indices. These are organizational tags and do not contain information necessary for generating a response.\r\n- Any empty lines or spacing within the prompt.\r\n\r\nThe core information necessary for generating a response is the content section, which contains the actual input data and request for output data. The context section can also provide relevant auxiliary information, but it is not essential if the content section is clear and self-contained.",
+      "createdAt": "2024-07-13T09:08:12.305Z",
+      "updatedAt": "2024-07-13T09:08:12.312Z",
+      "ancestors": [
+        "4e7c17cd-1806-444e-982b-dad2bdb45c72",
+        "13779d2f-b72d-42fb-a3c3-168f807639ba"
+      ],
+      "id": "c22e1435-752d-40f4-82aa-2de348a2f45f",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:08:11.798Z",
+  "updatedAt": "2024-07-13T09:08:17.025Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

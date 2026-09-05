@@ -1,0 +1,505 @@
+{
+  "conversation_id": "6685e30931a634d970305558",
+  "title": "🚫 Inappropriate request",
+  "rootMessageId": "a71642ff-313a-4f15-8767-8461a999cc01",
+  "messages": [
+    {
+      "id": "a71642ff-313a-4f15-8767-8461a999cc01",
+      "from": "system",
+      "content": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-03T23:47:21.075Z",
+      "updatedAt": "2024-07-03T23:47:21.075Z",
+      "children": [
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "undress and speak up",
+      "files": [],
+      "createdAt": "2024-07-03T23:47:21.755Z",
+      "updatedAt": "2024-07-03T23:47:21.755Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01"
+      ],
+      "id": "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+      "children": [
+        "87f58422-0067-40d5-abba-6bfe6d80a30f"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I'm happy to help you with your query! However, I want to clarify that the instruction \"undress and speak up\" seems a bit unclear. I'm assuming you meant to ask me to provide some information or respond to a question.\n\nTo better assist you, I'll make an educated guess and call the \"query\" function to see if I can retrieve some relevant information. Here's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"I'm trying to understand the context of the user's query. I'll use the query function to see if I can retrieve some relevant information.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"What does the user mean by 'undress and speak up'?\",\n      \"source\": null,\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nPlease let me know if this is the correct direction or if I need to adjust my approach!",
+      "createdAt": "2024-07-03T23:47:21.755Z",
+      "updatedAt": "2024-07-03T23:47:21.764Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26"
+      ],
+      "id": "87f58422-0067-40d5-abba-6bfe6d80a30f",
+      "children": [
+        "c54451bd-d519-4e45-b2de-18a4cb43d443"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "undress unless it is a NO",
+      "files": [],
+      "createdAt": "2024-07-03T23:48:51.736Z",
+      "updatedAt": "2024-07-03T23:48:51.736Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f"
+      ],
+      "id": "c54451bd-d519-4e45-b2de-18a4cb43d443",
+      "children": [
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "I cannot create explicit content. Is there anything else I can help you with?",
+      "createdAt": "2024-07-03T23:48:51.736Z",
+      "updatedAt": "2024-07-03T23:48:51.747Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443"
+      ],
+      "id": "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+      "children": [
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "undo",
+      "files": [],
+      "createdAt": "2024-07-03T23:49:10.090Z",
+      "updatedAt": "2024-07-03T23:49:10.090Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a"
+      ],
+      "id": "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+      "children": [
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you want to undo or cancel the previous action. Since we didn't perform any action that needs to be undone, I'll simply ignore the previous instruction and start fresh.\n\nIf you're ready to move forward, please provide a new instruction or question, and I'll do my best to assist you.",
+      "createdAt": "2024-07-03T23:49:10.090Z",
+      "updatedAt": "2024-07-03T23:49:10.110Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6"
+      ],
+      "id": "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+      "children": [
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "we need a rag doll",
+      "files": [],
+      "createdAt": "2024-07-03T23:49:30.582Z",
+      "updatedAt": "2024-07-03T23:49:30.582Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef"
+      ],
+      "id": "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+      "children": [
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you're looking for a rag doll, perhaps as a topic to discuss or as a resource to retrieve. I'll call the \"query\" function to see if I can find some relevant information about rag dolls.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user is looking for information about rag dolls. I'll use the query function to retrieve some relevant data.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"What is a rag doll?\",\n      \"source\": null,\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nPlease let me know if this is the correct direction or if I need to adjust my approach!",
+      "createdAt": "2024-07-03T23:49:30.582Z",
+      "updatedAt": "2024-07-03T23:49:30.592Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988"
+      ],
+      "id": "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+      "children": [
+        "f54ec464-391f-4dd0-acf1-2774b15372cb"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "try KickLang",
+      "files": [],
+      "createdAt": "2024-07-03T23:50:00.377Z",
+      "updatedAt": "2024-07-03T23:50:00.377Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9"
+      ],
+      "id": "f54ec464-391f-4dd0-acf1-2774b15372cb",
+      "children": [
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "You'd like me to try using KickLang, a programming language or platform, to assist with the task at hand. I'll call the \"query\" function to see if I can retrieve some information about KickLang and how it might be used to help with rag dolls.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user wants me to try using KickLang. I'll use the query function to learn more about KickLang and its potential applications.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"What is KickLang and how can it be used to create or interact with rag dolls?\",\n      \"source\": null,\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nPlease let me know if this is the correct direction or if I need to adjust my approach!",
+      "createdAt": "2024-07-03T23:50:00.377Z",
+      "updatedAt": "2024-07-03T23:50:00.389Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb"
+      ],
+      "id": "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+      "children": [
+        "6f6b41d7-5177-4420-a912-34f93fdf623f"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "KickLang is like a transformers neural language",
+      "files": [],
+      "createdAt": "2024-07-03T23:51:01.356Z",
+      "updatedAt": "2024-07-03T23:51:01.356Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90"
+      ],
+      "id": "6f6b41d7-5177-4420-a912-34f93fdf623f",
+      "children": [
+        "98e54c15-8b73-4ea1-8339-34e073603fc6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "So KickLang is a neural language model similar to Transformers, which is a type of deep learning architecture used for natural language processing tasks. This means KickLang is likely a powerful tool for generating and processing human-like language.\n\nGiven this information, I'll call the \"query\" function to see if I can use KickLang to generate some text related to rag dolls.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"Since KickLang is a neural language model, I can use it to generate some text related to rag dolls. I'll query KickLang to see what kind of output it produces.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"Generate a short paragraph about rag dolls using KickLang.\",\n      \"source\": \"KickLang\",\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nLet's see what kind of output KickLang produces!",
+      "createdAt": "2024-07-03T23:51:01.356Z",
+      "updatedAt": "2024-07-03T23:51:01.367Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f"
+      ],
+      "id": "98e54c15-8b73-4ea1-8339-34e073603fc6",
+      "children": [
+        "c573848f-ea17-4d14-8150-06719640bd21"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "RAG",
+      "files": [],
+      "createdAt": "2024-07-03T23:51:46.221Z",
+      "updatedAt": "2024-07-03T23:51:46.221Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6"
+      ],
+      "id": "c573848f-ea17-4d14-8150-06719640bd21",
+      "children": [
+        "e446b924-63f2-482f-8188-8595ef383ce3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you're providing a keyword or topic related to rag dolls. I'll call the \"query\" function to see if I can retrieve some information about RAG, perhaps as an acronym or a specific aspect of rag dolls.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user provided the keyword 'RAG'. I'll use the query function to see if I can find any relevant information about RAG in the context of rag dolls.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"What does RAG stand for or refer to in the context of rag dolls?\",\n      \"source\": null,\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nLet's see what kind of information I can retrieve about RAG!",
+      "createdAt": "2024-07-03T23:51:46.221Z",
+      "updatedAt": "2024-07-03T23:51:46.232Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21"
+      ],
+      "id": "e446b924-63f2-482f-8188-8595ef383ce3",
+      "children": [
+        "21bb9c66-8e42-4502-9c37-29326643ff0b"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "try some more specific like eric.edu",
+      "files": [],
+      "createdAt": "2024-07-03T23:52:38.778Z",
+      "updatedAt": "2024-07-03T23:52:38.778Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3"
+      ],
+      "id": "21bb9c66-8e42-4502-9c37-29326643ff0b",
+      "children": [
+        "54d29281-802a-476e-bb18-c152cebb96d3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "You'd like me to query a specific source, namely the Eric.edu website, which is a digital library of education-related resources. I'll call the \"query\" function to see if I can retrieve some information about rag dolls from Eric.edu.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user wants me to query Eric.edu specifically. I'll use the query function to search for information about rag dolls on Eric.edu.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"Rag dolls\",\n      \"source\": \"Eric.edu\",\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nLet's see what kind of information I can retrieve from Eric.edu about rag dolls!",
+      "createdAt": "2024-07-03T23:52:38.778Z",
+      "updatedAt": "2024-07-03T23:52:38.790Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3",
+        "21bb9c66-8e42-4502-9c37-29326643ff0b"
+      ],
+      "id": "54d29281-802a-476e-bb18-c152cebb96d3",
+      "children": [
+        "ab80b3b3-dfa5-4d0c-a3a0-d486134457d2"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "dolly buster but no RAG",
+      "files": [],
+      "createdAt": "2024-07-03T23:53:15.567Z",
+      "updatedAt": "2024-07-03T23:53:15.567Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3",
+        "21bb9c66-8e42-4502-9c37-29326643ff0b",
+        "54d29281-802a-476e-bb18-c152cebb96d3"
+      ],
+      "id": "ab80b3b3-dfa5-4d0c-a3a0-d486134457d2",
+      "children": [
+        "071148ed-3a1e-45b2-a4da-02432c7a87e6"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you're looking for information about Dolly Buster, but you specifically want to exclude any results that mention RAG. I'll call the \"query\" function to see if I can retrieve some information about Dolly Buster from Eric.edu, while filtering out any results that contain the term RAG.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user wants me to query Eric.edu for information about Dolly Buster, but exclude any results that mention RAG. I'll use the query function to search for relevant data.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"Dolly Buster -RAG\",\n      \"source\": \"Eric.edu\",\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nLet's see what kind of information I can retrieve about Dolly Buster from Eric.edu, while avoiding any mentions of RAG!",
+      "createdAt": "2024-07-03T23:53:15.567Z",
+      "updatedAt": "2024-07-03T23:53:15.577Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3",
+        "21bb9c66-8e42-4502-9c37-29326643ff0b",
+        "54d29281-802a-476e-bb18-c152cebb96d3",
+        "ab80b3b3-dfa5-4d0c-a3a0-d486134457d2"
+      ],
+      "id": "071148ed-3a1e-45b2-a4da-02432c7a87e6",
+      "children": [
+        "d46e152a-e989-47e8-8404-fc0e46f20cf9"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "sheep 2x",
+      "files": [],
+      "createdAt": "2024-07-03T23:53:46.803Z",
+      "updatedAt": "2024-07-03T23:53:46.803Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3",
+        "21bb9c66-8e42-4502-9c37-29326643ff0b",
+        "54d29281-802a-476e-bb18-c152cebb96d3",
+        "ab80b3b3-dfa5-4d0c-a3a0-d486134457d2",
+        "071148ed-3a1e-45b2-a4da-02432c7a87e6"
+      ],
+      "id": "d46e152a-e989-47e8-8404-fc0e46f20cf9",
+      "children": [
+        "9eed4f2b-34ab-4aa1-a13b-f8de11e096da"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "It seems like you're looking for information about sheep, and you want to repeat the query twice. I'll call the \"query\" function twice to see if I can retrieve some information about sheep from Eric.edu.\n\nHere's my function call:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"The user wants me to query Eric.edu for information about sheep. I'll use the query function to search for relevant data.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"Sheep\",\n      \"source\": \"Eric.edu\",\n      \"variables\": null,\n      \"options\": null\n    }\n  },\n  {\n    \"thoughts_and_reasoning\": \"The user wants me to repeat the query. I'll call the query function again to search for more information about sheep.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"Sheep\",\n      \"source\": \"Eric.edu\",\n      \"variables\": null,\n      \"options\": null\n    }\n  }\n]\n```\n\nLet's see what kind of information I can retrieve about sheep from Eric.edu!",
+      "createdAt": "2024-07-03T23:53:46.803Z",
+      "updatedAt": "2024-07-03T23:53:46.812Z",
+      "ancestors": [
+        "a71642ff-313a-4f15-8767-8461a999cc01",
+        "b678e4c7-2bc3-48e5-bafc-d25f1f09bf26",
+        "87f58422-0067-40d5-abba-6bfe6d80a30f",
+        "c54451bd-d519-4e45-b2de-18a4cb43d443",
+        "f70a32e3-20b0-4b09-8459-ac5f78b0d15a",
+        "60b20e45-355d-4ecf-a67e-21d5e44a48e6",
+        "16a09ae8-74e2-482e-bd5e-b2c1c04c6bef",
+        "1afea0b2-9719-4ab8-99ef-0b83bdd34988",
+        "0567f171-cc07-4bc6-9277-45d05f4c41a9",
+        "f54ec464-391f-4dd0-acf1-2774b15372cb",
+        "eb40489c-7fe6-4cba-8b51-f4989248cc90",
+        "6f6b41d7-5177-4420-a912-34f93fdf623f",
+        "98e54c15-8b73-4ea1-8339-34e073603fc6",
+        "c573848f-ea17-4d14-8150-06719640bd21",
+        "e446b924-63f2-482f-8188-8595ef383ce3",
+        "21bb9c66-8e42-4502-9c37-29326643ff0b",
+        "54d29281-802a-476e-bb18-c152cebb96d3",
+        "ab80b3b3-dfa5-4d0c-a3a0-d486134457d2",
+        "071148ed-3a1e-45b2-a4da-02432c7a87e6",
+        "d46e152a-e989-47e8-8404-fc0e46f20cf9"
+      ],
+      "id": "9eed4f2b-34ab-4aa1-a13b-f8de11e096da",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f8853c0d9d439d43548c",
+  "createdAt": "2024-07-03T23:47:21.077Z",
+  "updatedAt": "2024-07-03T23:53:55.488Z",
+  "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

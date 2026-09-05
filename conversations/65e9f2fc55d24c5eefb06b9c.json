@@ -1,0 +1,53 @@
+{
+  "conversation_id": "65e9f2fc55d24c5eefb06b9c",
+  "title": "🌀 Splash screen",
+  "rootMessageId": "5f66f6c3-ee16-4289-98da-4a431f8751b8",
+  "messages": [
+    {
+      "id": "5f66f6c3-ee16-4289-98da-4a431f8751b8",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-03-07T17:01:48.917Z",
+      "updatedAt": "2024-03-07T17:01:48.917Z",
+      "children": [
+        "0a85e0aa-784a-4008-99a1-72f3bf1513e8"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "i like to use threlte to load a texture and display for a second (splash)",
+      "files": [],
+      "createdAt": "2024-03-07T17:01:49.257Z",
+      "updatedAt": "2024-03-07T17:01:49.257Z",
+      "ancestors": [
+        "5f66f6c3-ee16-4289-98da-4a431f8751b8"
+      ],
+      "id": "0a85e0aa-784a-4008-99a1-72f3bf1513e8",
+      "children": [
+        "dd14b354-1fb1-416c-9ba1-841470d46654"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "1. Create an HTML element that will hold the splash image, such as `<img id=\"splash\" src=\"\" alt=\"Splash Screen\">`. You can style it with CSS if you want.\n2. Use JavaScript's `setTimeout()` function to delay loading of the image by one second after page load",
+      "createdAt": "2024-03-07T17:01:49.257Z",
+      "updatedAt": "2024-03-07T17:01:49.257Z",
+      "ancestors": [
+        "5f66f6c3-ee16-4289-98da-4a431f8751b8",
+        "0a85e0aa-784a-4008-99a1-72f3bf1513e8"
+      ],
+      "id": "dd14b354-1fb1-416c-9ba1-841470d46654",
+      "children": [],
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-70b-Instruct-hf",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-03-07T17:01:48.917Z",
+  "updatedAt": "2024-03-07T17:02:23.275Z",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

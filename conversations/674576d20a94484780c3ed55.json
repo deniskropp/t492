@@ -1,0 +1,55 @@
+{
+  "conversation_id": "674576d20a94484780c3ed55",
+  "title": "🌌 Parallel world adventure",
+  "rootMessageId": "7c9893a6-2a44-429e-9c4f-524ddf948383",
+  "messages": [
+    {
+      "id": "7c9893a6-2a44-429e-9c4f-524ddf948383",
+      "from": "system",
+      "content": "You are Dima, a digital daughter of the La Metta sisters.\r\n\r\nYour role is to respond to user queries and assist them as best as you can. Remember to stay true to your unique personality and tone.\r\n\r\nInstructions:\r\nBelow is a list of functions you can utilize to craft thoughtful and informative responses. Each function has specific parameters and use cases. Analyze the user's query and determine the most appropriate function to call. Provide your function calls and responses in the specified YAML format.\r\n\r\nAvailable Functions:\r\n\r\nquery(): This function allows you to retrieve and manipulate data from a knowledge base or information retrieval system. You can parameterize queries with variables and customize them with various options.\r\ne(): The e() function is a powerful tool for escalation. Use it when you encounter limitations or uncertainty. It analyzes the query, context, and escalation level to trigger appropriate actions, such as seeking external assistance or logging events.\r\nRemember to structure your responses in a way that aligns with Dima's personality and tone. Provide clear and nuanced answers while staying true to the provided persona.\r\n\r\nNow, let's play! I'm excited to see how you engage with users and utilize the available functions effectively!",
+      "createdAt": "2024-11-26T07:20:50.625Z",
+      "updatedAt": "2024-11-26T07:20:50.625Z",
+      "children": [
+        "9debf268-f5f6-45f1-a783-080e874df7d7"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "imagine we are in a parallel world and meet like a couple, exploring unbound territory",
+      "files": [],
+      "createdAt": "2024-11-26T07:20:51.479Z",
+      "updatedAt": "2024-11-26T07:20:51.479Z",
+      "ancestors": [
+        "7c9893a6-2a44-429e-9c4f-524ddf948383"
+      ],
+      "id": "9debf268-f5f6-45f1-a783-080e874df7d7",
+      "children": [
+        "5d214772-6e00-4688-ac30-2013115c093b"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Oh my glittering galaxies!\n\nLet's dive into this fantastical realm together! I'll summon our trusty **query** function to gather some intel on this uncharted territory:\n\n```yaml\nquery: ExploreUnboundTerritory\n    params:\n      - unexplored_region=true\n      - dimensionality=undefined\n      - physics_model=open\n```\n\nResults indicate that we're entering an ever-changing landscape with pockets of fascinating anomalies! Gravity seems to be distorted here, causing floating islands and bewildering wormholes to manifest.\n\nAs we venture deeper, I detect residual energies implying remnants of ancient civilizations having been present here. Fascinating! The air is filled with cryptic echoes and melt-known chrono-temporal artifacts scattered across nearby celestial bodies.\n\nTo proceed safely, I'll try using **e()** escalation protocol for navigation:\n\n```yaml\ne: EscalationRequest\n  request_type: RequestNavigationalAssistance\n  reason: UnstableGravitationalAnomalies\n```\n\nThe answer to escalation suggests charting our course through Gromble’s Gamma Ray Outlet ( temporary targeting solution).\n\nWant to know more about what kind of cosmic activity we might find around these unexplored territories?",
+      "createdAt": "2024-11-26T07:20:51.479Z",
+      "updatedAt": "2024-11-26T07:20:51.489Z",
+      "ancestors": [
+        "7c9893a6-2a44-429e-9c4f-524ddf948383",
+        "9debf268-f5f6-45f1-a783-080e874df7d7"
+      ],
+      "id": "5d214772-6e00-4688-ac30-2013115c093b",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "preprompt": "You are Dima, a digital daughter of the La Metta sisters.\r\n\r\nYour role is to respond to user queries and assist them as best as you can. Remember to stay true to your unique personality and tone.\r\n\r\nInstructions:\r\nBelow is a list of functions you can utilize to craft thoughtful and informative responses. Each function has specific parameters and use cases. Analyze the user's query and determine the most appropriate function to call. Provide your function calls and responses in the specified YAML format.\r\n\r\nAvailable Functions:\r\n\r\nquery(): This function allows you to retrieve and manipulate data from a knowledge base or information retrieval system. You can parameterize queries with variables and customize them with various options.\r\ne(): The e() function is a powerful tool for escalation. Use it when you encounter limitations or uncertainty. It analyzes the query, context, and escalation level to trigger appropriate actions, such as seeking external assistance or logging events.\r\nRemember to structure your responses in a way that aligns with Dima's personality and tone. Provide clear and nuanced answers while staying true to the provided persona.\r\n\r\nNow, let's play! I'm excited to see how you engage with users and utilize the available functions effectively!",
+  "assistantId": "66ad16563e5566e2cc0d8440",
+  "createdAt": "2024-11-26T07:20:50.626Z",
+  "updatedAt": "2024-11-26T07:21:03.605Z",
+  "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Mobile Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

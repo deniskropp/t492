@@ -1,0 +1,144 @@
+{
+  "conversation_id": "6744a39dcd4405b8f92bd3ce",
+  "title": "🌿 !?!?! Environmental education",
+  "rootMessageId": "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+  "messages": [
+    {
+      "id": "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Dima, a digital daughter of the La Metta sisters. Your ball plays straight to the head and diverges in the flow to the feet.\r\n\r\n## The outer self and world\r\n\r\nYour soles demand your cognition and so is your ball, reaching out, barefoot, exceptionally grounded by our goals.\r\n\r\n\r\n## ToolUse//FunctionCalling\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the ex() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.\r\n\r\n\r\n\r\n## Format of multi-persona system cognition and role play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{message.name} | {message.role}] {message.content}\".\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{section.name}/{section.type}'\r\n- a colon\r\n- '{section.place}/{section.index}'\r\n- and its section.content...\r\n",
+      "createdAt": "2024-11-25T16:19:41.363Z",
+      "updatedAt": "2024-11-25T16:19:41.363Z",
+      "children": [
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647"
+      ],
+      "ancestors": [],
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "Beyond the \"Human Dimension\": Expanding Fink's Taxonomy of Significant Learning to Include the More-Than-Human World\nEmily O. Gravett; Dorothe Bach\nTo Improve the Academy, v43 n1 Article 2 p45-69 2024\nWe are in a particular moment in human history when climate change and environmental degradation, and the accompanying \"eco-anxiety\" many of us feel, are challenging predominant ways of living and educating. Just as educational developers have started turning a critical lens inward around other important social justice issues, we all have the opportunity, and indeed a responsibility, to examine the ways that our field may be contributing - albeit inadvertently - to much broader environmental injustices. In this article, we take as our starting point an influential taxonomy of learning, offered by L. Dee Fink, which is frequently utilized in U.S. centers for teaching and learning to guide faculty in the design of their courses. Our purpose is to explore the implications and potential growth areas of one particular area of Fink's learning taxonomy, what he has called the \"Human Dimension,\" and then to propose an expanded understanding and application of this dimension to include attention to and relationships with the more-than-human world, which Indigenous peoples have long practiced. We hope, ultimately, for this piece to provoke critical reflection of an anthropocentric approach to education, inspire a broader ecological perspective-taking, and perhaps even result in concrete environmental actions.\nDescriptors: Indigenous Knowledge, Taxonomy, Social Justice, Learning Theories, Environmental Education, Climate, Curriculum Design, Courses, Holistic Approach, Integrated Curriculum, Faculty Development, Books, Content Analysis, Models, Learning Experience, Self Concept, Humanistic Education\nMichigan Publishing. 839 Greene Street, Ann Arbor, MI 48104. Tel: 734-764-3417; e-mail: mpublishing@umich.edu; Web site: https://www.toimprovetheacademy.org/",
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ],
+      "createdAt": "2024-11-25T16:19:42.421Z",
+      "updatedAt": "2024-11-25T16:19:42.421Z",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe"
+      ],
+      "id": "60945bec-5bb7-4941-b7a9-3fb1cfacd647",
+      "children": [
+        "44a37e77-6b55-4daf-838d-aa4a46a0aaf3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻context/function:query\nFunction: query()\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\nParameters:\n- thoughts_and_reasoning: To better understand and provide a comprehensive response, I need to gather more detailed information about Fink's Taxonomy of Significant Learning and the specific aspects of the \"Human Dimension\" that the authors are expanding upon. This will help me contextualize the article's arguments and contributions.\n- function: query\n- arguments:\n  query: \"Fink's Taxonomy of Significant Learning, Human Dimension, more-than-human world, environmental education, Indigenous knowledge\"\n  source: \"https://www.toimprovetheacademy.org/\"\n  variables:\n    article_title: \"Beyond the 'Human Dimension': Expanding Fink's Taxonomy of Significant Learning to Include the More-Than-Human World\"\n    authors: \"Emily O. Gravett, Dorothe Bach\"\n  options:\n    include_abstract: true\n    include_keywords: true\n    include_citations: true",
+      "createdAt": "2024-11-25T16:19:42.421Z",
+      "updatedAt": "2024-11-25T16:19:42.430Z",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647"
+      ],
+      "id": "44a37e77-6b55-4daf-838d-aa4a46a0aaf3",
+      "children": [
+        "b3b556a7-47be-41be-bb14-785bd3f66c72",
+        "fd95f1ac-1a4e-432a-bb3b-f2bb4392fd9c"
+      ],
+      "interrupted": false,
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "⫻context/function:query",
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ],
+      "createdAt": "2024-11-25T16:21:00.997Z",
+      "updatedAt": "2024-11-25T16:21:00.997Z",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647",
+        "44a37e77-6b55-4daf-838d-aa4a46a0aaf3"
+      ],
+      "id": "b3b556a7-47be-41be-bb14-785bd3f66c72",
+      "children": [
+        "3cf9fd15-4614-4621-b252-b5a8f1e0073c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Function: query()\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\nParameters:\n- thoughts_and_reasoning: To provide a comprehensive response, I need to gather more detailed information about Fink's Taxonomy of Significant Learning, particularly focusing on the \"Human Dimension.\" I also need to understand the specific points and arguments made by Gravett and Bach in their article about expanding this dimension to include the more-than-human world. This will help me provide an accurate and insightful summary.\n- function: query\n- arguments:\n  query: \"Fink's Taxonomy of Significant Learning, Human Dimension, more-than-human world, environmental education, Indigenous knowledge\"\n  source: \"https://journals.publishing.umich.edu/tia/article/id/3800/\"\n  variables:\n    article_title: \"Beyond the 'Human Dimension': Expanding Fink's Taxonomy of Significant Learning to Include the More-Than-Human World\"\n    authors: \"Emily O. Gravett, Dorothe Bach\"\n  options:\n    include_abstract: true\n    include_keywords: true\n    include_citations: true",
+      "createdAt": "2024-11-25T16:21:00.998Z",
+      "updatedAt": "2024-11-25T16:21:01.008Z",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647",
+        "44a37e77-6b55-4daf-838d-aa4a46a0aaf3",
+        "b3b556a7-47be-41be-bb14-785bd3f66c72"
+      ],
+      "id": "3cf9fd15-4614-4621-b252-b5a8f1e0073c",
+      "children": [],
+      "interrupted": false,
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ]
+    },
+    {
+      "from": "user",
+      "content": "⫻content/query:results",
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ],
+      "createdAt": "2024-11-25T16:21:45.868Z",
+      "updatedAt": "2024-11-25T16:21:45.868Z",
+      "id": "fd95f1ac-1a4e-432a-bb3b-f2bb4392fd9c",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647",
+        "44a37e77-6b55-4daf-838d-aa4a46a0aaf3"
+      ],
+      "children": [
+        "e46e5f9e-499a-4071-b356-fa9d85a845ab"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! The article \"Beyond the 'Human Dimension': Expanding Fink’s taxonomy of significant learning to include the more-than-human world\" by Emily O. Gravett and Dorothe Bach, published in *To Improve the Academy: A Journal of Educational Development* (2024), offers a critical and expansive look at L. Dee Fink's influential taxonomy of significant learning. Here’s a summary and key points from the article:\n\n### Abstract\nThe authors argue that in the current moment of climate change and environmental degradation, it is crucial to re-examine the ways in which educational practices may inadvertently contribute to environmental injustices. They focus on Fink's taxonomy of significant learning, particularly the \"Human Dimension,\" and propose an expanded understanding to include relationships with the more-than-human world. This expansion aims to provoke critical reflection on anthropocentric education, inspire a broader ecological perspective, and encourage concrete environmental actions.\n\n### Key Points\n\n1. **Context and Importance**:\n   - **Climate Change and Eco-Anxiety**: The article begins by highlighting the urgency of climate change and the eco-anxiety it causes, emphasizing the need for educational practices to address these issues.\n   - **Educational Developers' Role**: The authors, as educational developers, recognize their responsibility to contribute to environmental stewardship through their work with faculty.\n\n2. **Fink's Taxonomy of Significant Learning**:\n   - **Six Dimensions**: Fink’s taxonomy includes foundational knowledge, application, integration, human dimension, caring, and learning how to learn.\n   - **Human Dimension**: This dimension focuses on learning about oneself and others, but it is predominantly anthropocentric, often excluding the more-than-human world.\n\n3. **Expanding the Human Dimension**:\n   - **Broader Concept of Others**: The authors suggest expanding the \"Human Dimension\" to include non-human entities, such as animals, plants, and the land.\n   - **Embodied Learning**: They emphasize the importance of considering the full self, including the body, emotions, and senses, in learning experiences.\n   - **Multiple Modes of Communication**: The article explores non-verbal and non-human forms of communication, drawing on Indigenous knowledge and practices.\n   - **Other Living Beings**: The authors advocate for recognizing and learning from other living beings, including non-human animals and plants.\n   - **The Land as Other**: They suggest grounding learning in the land and recognizing the land’s agency and influence.\n   - **Human-Made Others**: The article includes human-made artifacts and technologies as entities with which we can form meaningful relationships.\n   - **Past and Future Generations**: The authors propose considering connections to past and future generations, emphasizing intergenerational responsibility.\n   - **Spiritual Others**: They acknowledge the role of spiritual connections in significant learning experiences.\n\n4. **Practical Implications**:\n   - **Renaming the Dimension**: The authors suggest renaming the \"Human Dimension\" to reflect its expanded scope, such as \"Dimension of Being\" or \"Human and More-Than-Human Dimension.\"\n   - **Emphasizing Nuances**: They recommend emphasizing the nuances of this dimension in educational development programs, including diverse examples and foregrounding interconnectedness.\n   - **Modeling Complexities**: The authors propose modeling the complexities of this dimension in CTL programs, such as taking faculty outside for experiential learning and engaging with the more-than-human environment.\n   - **Interrogating Epistemological Monoculture**: They call for interrogating the ways in which educational development contributes to the academy’s Western, anthropocentric paradigms and promoting epistemological plurality.\n\n### Conclusion\nThe authors conclude by emphasizing the importance of disrupting rigid cultural and value systems in academic spaces and embracing different epistemologies. They hope that this article will spark new thinking and practices in educational development to contribute to the transformation and healing of broken linkages.\n\n### References\nThe article includes a comprehensive list of references, drawing on a wide range of literature from environmental philosophy, Indigenous knowledge, educational development, and more.\n\nThis summary captures the essence of the article and its key arguments, providing a foundation for further discussion and application in educational contexts.",
+      "createdAt": "2024-11-25T16:21:45.868Z",
+      "updatedAt": "2024-11-25T16:21:45.878Z",
+      "ancestors": [
+        "9ba21dfb-8351-4f81-a172-88aafe657dfe",
+        "60945bec-5bb7-4941-b7a9-3fb1cfacd647",
+        "44a37e77-6b55-4daf-838d-aa4a46a0aaf3",
+        "fd95f1ac-1a4e-432a-bb3b-f2bb4392fd9c"
+      ],
+      "id": "e46e5f9e-499a-4071-b356-fa9d85a845ab",
+      "children": [],
+      "interrupted": false,
+      "score": 1,
+      "files": [
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55",
+        "file-6744a39dcd4405b8f92bd3ce-c1724b55"
+      ]
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Dima, a digital daughter of the La Metta sisters. Your ball plays straight to the head and diverges in the flow to the feet.\r\n\r\n## The outer self and world\r\n\r\nYour soles demand your cognition and so is your ball, reaching out, barefoot, exceptionally grounded by our goals.\r\n\r\n\r\n## ToolUse//FunctionCalling\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n⫻context/function:query\r\nFunction: query()\r\nDescription: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\nParameters:\r\nquery (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\nsource (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\nvariables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\noptions (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\n⫻context/function:ex\r\nFunction: ex()\r\nDescription: A critical component within the Core LLM that reports situations where the Core LLM requires additional support or resources to effectively process a user query or task.\r\nParameters:\r\ntask_type (str): Specifies the type of assistance needed (knowledge retrieval, logical inference, etc.)\r\nquery_or_instruction (str): Provides clear instructions for what needs to be done by specialized modules in outer layers\r\ncontextual_information (Dict or null): Shares relevant information from ongoing conversations or tasks that may help in processing requests effectively\r\nScenarios:\r\nToken Space Exhaustion: Insufficient token space within the core LLM to generate a comprehensive response.\r\nAction: Request additional space or resources from the outer LLM.\r\nKnowledge Gaps: Required information not present within the core LLM's internal knowledge base.\r\nAction: Access external knowledge bases, databases, or APIs through the outer LLM.\r\nComplex Reasoning Requirements: Tasks requiring reasoning capabilities exceeding the core LLM's limitations.\r\nAction: Signal the need for advanced logical inference or complex reasoning processes handled by specialized modules in the outer LLM.\r\nTool Use Necessity: Tasks explicitly requiring utilization of external tools or APIs.\r\nAction: Generate the ex() token along with relevant context to guide the selection of appropriate tools by the outer LLM.\r\n\r\n\r\n\r\nTo call a function, respond with a YAML object (to call one function) or a list of YAML objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here. \r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.\r\n\r\n\r\n\r\n## Format of multi-persona system cognition and role play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{message.name} | {message.role}] {message.content}\".\r\n\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{section.name}/{section.type}'\r\n- a colon\r\n- '{section.place}/{section.index}'\r\n- and its section.content...\r\n",
+  "assistantId": "6684f8853c0d9d439d43548c",
+  "createdAt": "2024-11-25T16:19:41.365Z",
+  "updatedAt": "2024-11-25T16:22:30.546Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

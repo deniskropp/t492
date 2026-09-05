@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66924661a131e4d0c3ad39f6",
+  "title": "📁 Project details",
+  "rootMessageId": "a0abdaac-7182-4734-9c13-0d296aa345fd",
+  "messages": [
+    {
+      "id": "a0abdaac-7182-4734-9c13-0d296aa345fd",
+      "from": "system",
+      "content": "Generate responses following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:18:25.161Z",
+      "updatedAt": "2024-07-13T09:18:25.161Z",
+      "children": [
+        "fd68de9f-c3c0-48fa-bb52-a80428e5b3ba"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ const/config:project_config:1\n{\n  \"project_name\": \"Meta-AI Assistant\",\n  \"language\": \"JavaScript\",\n  \"framework\": \"Node.js\",\n  \"dependencies\": [\"axios\", \"express\", \"preact\", \"cohere-ai\"]\n}\n\n⫻ context/meta:project_description:1\nThis project aims to develop a meta-artificial intelligence system that can engage with users in a cohesive team with dynamic tasks and roles.\n\n⫻ content/code:initial_code:1\n// Initial code for the Meta-AI Assistant\nimport axios from 'axios';\nimport express from 'express';\nimport { h, render } from 'preact';\nimport { Cohere } from 'cohere-ai';\n\nconst app = express();",
+      "files": [],
+      "createdAt": "2024-07-13T09:18:25.620Z",
+      "updatedAt": "2024-07-13T09:18:25.620Z",
+      "ancestors": [
+        "a0abdaac-7182-4734-9c13-0d296aa345fd"
+      ],
+      "id": "fd68de9f-c3c0-48fa-bb52-a80428e5b3ba",
+      "children": [
+        "e06499ed-401c-4719-b86a-372ceb0e2bcf"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "## Project Initialization\r\n\r\n### Project Setup\r\n\r\nLet's start by setting up the project structure and installing the necessary dependencies. We'll use `npm` as our package manager.\r\n\r\n```bash\r\n# Create a new directory and navigate into it\r\nmkdir meta-ai-assistant && cd meta-ai-assistant\r\n\r\n# Initialize a new Node.js project\r\nnpm init -y\r\n\r\n# Install dependencies\r\nnpm install axios express preact cohere-ai\r\n```\r\n\r\n### Entry Point\r\n\r\nNow, let's create an entry point for our application. We'll use `index.js` as the main file.\r\n\r\n```javascript\r\n// index.js\r\nimport axios from 'axios';\r\nimport express from 'express';\r\nimport { h, render } from 'preact';\r\nimport { Cohere } from 'cohere-ai';\r\n\r\nconst app = express();\r\n\r\n// Set up middleware and routes\r\napp.use(express.json()); // Parse JSON bodies\r\n\r\napp.get('/', (req, res) => {\r\n  res.send('Meta-AI Assistant is up and running!');\r\n});\r\n\r\n// Handle 404 routes\r\napp.use((req, res) => {\r\n  res.status(404).send('Oops! Page not found.');\r\n});\r\n\r\nconst PORT = process.env.PORT || 3000;\r\napp.listen(PORT, () => {\r\n  console.log(`Server started on http://localhost:${PORT}`);\r\n});\r\n```\r\n\r\n### Basic Routing\r\n\r\nFor now, we've just set up a basic route to check if the server is running. Let's add a few more routes to demonstrate how to handle different types of requests.\r\n\r\n```javascript\r\n// ... previous code\r\n\r\n// Get request with query parameters\r\napp.get('/query', (req, res) => {\r\n  const { name } = req.query;\r\n  res.send(`Hello, ${name}! This is the Meta-AI Assistant.`);\r\n});\r\n\r\n// Post request to process form data\r\napp.post('/form', (req, res) => {\r\n  const { firstName, lastName } = req.body;\r\n  const fullName = `${firstName} ${lastName}`;\r\n  res.send(`Welcome, ${fullName}! We're glad to assist you.`);\r\n});\r\n\r\n// ... previous code\r\n```\r\n\r\n### Running the Application\r\n\r\nTo run the application, simply use the `node` command:\r\n\r\n```bash\r\nnode index.js\r\n```\r\n\r\nThe server will start, and you can access it through your web browser or API clients at `http://localhost:3000`.\r\n\r\n## Next Steps\r\n\r\nThis is just the basic setup for your \"Meta-AI Assistant\" project. From here, you can start integrating the Cohere AI models, designing your database, and building more complex routes and logic to handle user interactions and team dynamics. Remember to follow best practices, such as separating concerns, using middleware efficiently, and structuring your project for scalability.\r\n\r\nFeel free to ask any specific questions or guidance on the next steps, and I can provide more detailed instructions and code examples!",
+      "createdAt": "2024-07-13T09:18:25.620Z",
+      "updatedAt": "2024-07-13T09:18:25.628Z",
+      "ancestors": [
+        "a0abdaac-7182-4734-9c13-0d296aa345fd",
+        "fd68de9f-c3c0-48fa-bb52-a80428e5b3ba"
+      ],
+      "id": "e06499ed-401c-4719-b86a-372ceb0e2bcf",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Generate responses following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:18:25.162Z",
+  "updatedAt": "2024-07-13T09:19:13.375Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

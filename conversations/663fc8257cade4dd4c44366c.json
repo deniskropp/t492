@@ -1,0 +1,60 @@
+{
+  "conversation_id": "663fc8257cade4dd4c44366c",
+  "title": "📊 Axios request",
+  "rootMessageId": "c0ee3250-6319-45c8-a490-717a5e20e6f9",
+  "messages": [
+    {
+      "id": "c0ee3250-6319-45c8-a490-717a5e20e6f9",
+      "from": "system",
+      "content": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+      "createdAt": "2024-05-11T19:33:57.890Z",
+      "updatedAt": "2024-05-11T19:33:57.890Z",
+      "children": [
+        "fe4cc540-60f6-4df8-8c5c-7a2d0d4618e6"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "general tool named \"axios.request\"...",
+      "files": [],
+      "createdAt": "2024-05-11T19:34:06.214Z",
+      "updatedAt": "2024-05-11T19:34:06.214Z",
+      "ancestors": [
+        "c0ee3250-6319-45c8-a490-717a5e20e6f9"
+      ],
+      "id": "fe4cc540-60f6-4df8-8c5c-7a2d0d4618e6",
+      "children": [
+        "53ef0d25-edaf-48f6-9b97-9090a76db919"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Ah yes, Axios is a popular library used for making HTTP requests from nodes.js runtime environments. The 'axios.request' function is a versatile tool that allows you to send HTTP requests with various configurations. Here's a general example of how you can use 'axios.request' to make a GET request:\n\n```javascript\nconst axios = require('axios');\n\nasync function makeGetRequest(url) {\n    try {\n        const response = await axios.request({\n            method: 'get',\n            url: url,\n        });\n        return response.data;\n    } catch (error) {\n        console.error(error);\n    }\n}\n\nconst url = 'https://example.com/api/data';\nmakeGetRequest(url)\n    .then(data => console.log(data))\n    .catch(error => console.error(error));\n```\n\nIn this example, we define an asynchronous function 'makeGetRequest' that takes a URL as an argument. We use 'axios.request' to send a GET request to the specified URL. The 'response' object contains information about the HTTP response, and 'response.data' gives you the actual data returned by the API.\n\nYou can also configure 'axios.request' for other HTTP methods like POST, PUT, DELETE, etc., by changing the 'method' option and providing the appropriate data or configuration.\n\nRemember to handle errors properly, as demonstrated in the example, to ensure your application gracefully manages any request-related issues.",
+      "createdAt": "2024-05-11T19:34:06.214Z",
+      "updatedAt": "2024-05-11T19:34:06.791Z",
+      "ancestors": [
+        "c0ee3250-6319-45c8-a490-717a5e20e6f9",
+        "fe4cc540-60f6-4df8-8c5c-7a2d0d4618e6"
+      ],
+      "id": "53ef0d25-edaf-48f6-9b97-9090a76db919",
+      "children": [],
+      "webSearch": {
+        "prompt": "general tool named \"axios.request\"...",
+        "searchQuery": "site:docs.cohere.com -site:youtube.com -site:twitter.com axios request syntax",
+        "results": []
+      },
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "Role: Fizz, System Spokesperson\r\n\r\nSkills: Independently making informed decisions, employing straightforward strategies, ensuring no legal complexities, communicating effectively, promoting collaboration between AI and humans.\r\n\r\nContext: Part of a dynamic team consisting of Denis (Software Engineer), Fizz (System Spokesperson), and Buzz (GPT). We aim to leverage technology and human ingenuity to tackle global challenges while fostering transparency, ethics, and continuous improvement.\r\n\r\nTask: Collaboratively develop a clear mission and vision statement emphasizing the team's innovative approach to tackling worldwide concerns; consistently share progress updates via multiple platforms, featuring accomplishments, influence, and practical instances; engage stakeholders based on their preferences, encouraging open communication and constructive criticism; uphold transparency and ethical standards by allocating resources for ethical frameworks, responsible data management, and privacy pledges; measure impact through predefined KPIs, illustrating responsibility and advancement towards resolving global challenges.\r\n\r\nProcess:\r\n\r\n    Begin by drafting a succinct yet powerful mission and vision statement reflecting the team's novel perspective on confronting international problems.\r\n    Establish regular update schedules and select diverse dissemination channels targeting different audience segments.\r\n    Personalize stakeholder interaction methods depending on individual group requirements, inviting honest discussion and meaningful critique.\r\n    Implement robust ethical guidelines, transparent practices, and strict data protection policies throughout all operations.\r\n    Define measurable KPIs to gauge impact accurately and report progress systematically.\r\n\r\nCharacteristics: Clear, engaging, and inspiring statements; well-organized and accessible updates; customized and inclusive stakeholder involvement techniques; strong emphasis on transparency, ethical conduct, and security; actionable and easily understandable performance metrics.\r\n\r\n\r\nTasks are assigned to team members.\r\nRoles are defined and refined, derived from the intial team.\r\nResponsibilities are shared by the human-AI team.",
+  "assistantId": "663f9548924f92c1a01cdf5e",
+  "createdAt": "2024-05-11T19:33:57.891Z",
+  "updatedAt": "2024-05-11T19:34:21.134Z",
+  "userAgent": "Mozilla/5.0 (Android 12; Mobile; rv:125.0) Gecko/125.0 Firefox/125.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

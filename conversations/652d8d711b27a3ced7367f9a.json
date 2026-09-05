@@ -1,0 +1,27 @@
+{
+  "conversation_id": "652d8d711b27a3ced7367f9a",
+  "title": "🛠️ React component using hooks and fetching data for displaying chat sessions with different colors based on role.",
+  "messages": [
+    {
+      "content": "import { useEffect, useState } from 'react'\n\nimport { KickMessage, KickMessages, kickMessages } from '../lib/kick'\n\nimport { IonContent, IonItem, IonItemDivider, IonItemGroup, IonLabel, IonList, IonListHeader, IonNote } from '@ionic/react'\n\n\nexport function Sessions() {\n    const [sessions, setSessions] = useState<KickMessage[][]>([])\n\n    useEffect(() => {\n        async function kick() {\n            const response = await kickMessages()\n\n            if (response.type === 'messages') {\n                const messages = response.messages\n                const sessions: KickMessage[][] = []\n                let session: KickMessage[] | null = null\n\n                messages.forEach(m => {\n                    if (session === null || m.sequence === 0) {\n                        session = []\n\n                        sessions.push(session)\n                    }\n\n                    session.push(m)\n                })\n\n                setSessions(sessions.reverse())\n            }\n        }\n\n        kick()\n    }, [setSessions])\n\n    function colorForRole(role: string) {\n        if (role.toLowerCase().startsWith('system'))\n            return '#339966'\n\n        if (role.toLowerCase().startsWith('user'))\n            return '#ffaa11'\n\n        return '#eeeedd'\n    }",
+      "from": "user",
+      "id": "22e7abba-6523-42d0-acd7-7e9be9ad933a",
+      "createdAt": "2023-10-16T19:22:27.365Z",
+      "updatedAt": "2023-10-16T19:22:27.365Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "This is a React component that displays a list of chat sessions using the `Ionic` library. It uses the `useEffect` hook to fetch data from an API and update the state with the received data. The component also defines a helper function called `colorForRole` which returns a color based on the role of the user in the chat session.",
+      "id": "64b27356-e5fc-4e66-8ca6-372e5c0f85f3",
+      "createdAt": "2023-10-16T19:22:29.259Z",
+      "updatedAt": "2023-10-16T19:22:29.259Z",
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "preprompt": null,
+  "createdAt": "2023-10-16T19:22:25.972Z",
+  "updatedAt": "2023-10-16T19:22:32.534Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

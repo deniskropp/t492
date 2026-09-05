@@ -1,0 +1,27 @@
+{
+  "conversation_id": "64ffe9741ec6985e742616c5",
+  "title": "Sure, here's a simple test app that exercises the Net class:\n\nconst",
+  "messages": [
+    {
+      "content": "Given the following API:\n\nexport type Connection = {\n    weight: number;\n    deltaWeight: number;\n};\nexport declare class Layer extends Array<Neuron> {\n    toString(): string;\n}\nexport declare class Neuron {\n    toString(): string;\n    private static eta;\n    private static alpha;\n    private static transferFunction;\n    private static transferFunctionDerivative;\n    private static randomWeight;\n    private sumDOW;\n    private m_outputVal;\n    private m_outputWeights;\n    private m_myIndex;\n    private m_gradient;\n    constructor(numOutputs: number, myIndex: number);\n    setOutputVal(val: number): void;\n    getOutputVal(): number;\n    feedForward(prevLayer: Layer): void;\n    calcOutputGradients(targetVals: number): void;\n    calcHiddenGradients(nextLayer: Layer): void;\n    updateInputWeights(prevLayer: Layer): void;\n}\nexport declare class Net {\n    toString(): string;\n    private m_layers;\n    private m_error;\n    private m_recentAverageError;\n    private static m_recentAverageSmoothingFactor;\n    constructor(topology: Array<number>);\n    feedForward(inputVals: Array<number>): void;\n    backProp(targetVals: Array<number>): void;\n    getResults(): Array<number>;\n    getRecentAverageError(): number;\n}\n\n\nGenerate a test app.",
+      "from": "user",
+      "id": "daf9ba47-0af0-4a68-9143-83a1274a5e36",
+      "createdAt": "2023-09-12T04:30:45.523Z",
+      "updatedAt": "2023-09-12T04:30:45.523Z",
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "Here is an example of how you could use the `Net` and `Neuron` classes in a simple neural network application:\n```\nimport { Net, Neuron } from './neural-network';\n\n// Create a new net with two layers (one input layer and one output layer)\nconst net = new Net([2, 3]);\n\n// Add some neurons to the first layer\nnet.addNeuronToLayer(0, new Neuron());\nnet.addNeuronToLayer(1, new Neuron());\n\n// Set the weights for the connections between the neurons\nnet.setConnectionWeight(0, 0, 0.5); // First neuron in first layer connected to second neuron in first layer\nnet.setConnectionWeight(0, 1, 0.8); // Second neuron in first layer connected to third neuron in first layer\nnet.setConnectionWeight(1, 0, -0.7); // Third neuron in first layer connected to first neuron in second layer\nnet.setConnectionWeight(1, 1, 0.9); // Fourth neuron in first layer connected to second neuron in second layer\n\n// Train the network on some data\nconst trainingData = [[[0, 0], [0]], [[0, 1], [1]], [[1, 0], [1]], [[1, 1], [0]]];\nfor (let i = 0; i < trainingData.length; i++) {\n  const inputs = trainingData[i][0];\n  const outputs = trainingData[i][1];\n  net.feedForward(inputs);\n  net.backProp(outputs);\n}\n\n// Test the trained network on some new data\nconst testData = [[0, 0], [0, 1], [1, 0], [1, 1]];\nfor (let i = 0; i < testData.length; i++) {\n  const inputs = testData[i];\n  console.log(`Testing ${JSON.stringify(inputs)}...`);\n  const results = net.getResults();\n  console.log(`Predicted output: ${results}`);\n}\n```",
+      "webSearchId": "",
+      "id": "11e6f506-1e75-4809-8705-4f26a35dd572",
+      "createdAt": "2023-09-12T04:31:01.570Z",
+      "updatedAt": "2023-09-12T04:31:01.570Z",
+      "files": []
+    }
+  ],
+  "model": "codellama/CodeLlama-34b-Instruct-hf",
+  "createdAt": "2023-09-12T04:30:44.131Z",
+  "updatedAt": "2023-09-12T04:31:01.658Z",
+  "userId": "64ef83e712aa67ef071911b8"
+}

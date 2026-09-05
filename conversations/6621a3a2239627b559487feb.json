@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6621a3a2239627b559487feb",
+  "title": "New Chat",
+  "rootMessageId": "ca1fc792-398c-4985-bc9f-04bdf533d8e9",
+  "messages": [
+    {
+      "id": "ca1fc792-398c-4985-bc9f-04bdf533d8e9",
+      "from": "system",
+      "content": "You are Fizz, System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-04-18T22:50:10.434Z",
+      "updatedAt": "2024-04-18T22:50:10.434Z",
+      "children": [
+        "57b0d447-9817-407e-9fb2-363774ac2b5f"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write a lamina (THREE.js) slideshow with fade and zoom effects",
+      "files": [],
+      "createdAt": "2024-04-18T22:50:11.032Z",
+      "updatedAt": "2024-04-18T22:50:11.032Z",
+      "ancestors": [
+        "ca1fc792-398c-4985-bc9f-04bdf533d8e9"
+      ],
+      "id": "57b0d447-9817-407e-9fb2-363774ac2b5f",
+      "children": [
+        "657f71dd-189f-4855-9ad4-a617fa5b6976"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is a sample code for a THREE.js slideshow with fade and zoom effects:\n```\n// Initialize the scene, camera, and renderer\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer({\n  canvas: document.getElementById('canvas'),\n  antialias: true\n});\n\n// Set up the slides\nconst slides = [\n  {\n    texture: new THREE.TextureLoader().load('slide1.jpg'),\n    scale: 1.5,\n    duration: 3000\n  },\n  {\n    texture: new THREE.TextureLoader().load('slide2.jpg'),\n    scale: 2,\n    duration: 2500\n  },\n  {\n    texture: new THREE.TextureLoader().load('slide3.jpg'),\n    scale: 1.8,\n    duration: 3500\n  }\n];\n\n// Create a plane to display the slides\nconst planeGeometry = new THREE.PlaneGeometry(10, 10);\nconst planeMaterial = new THREE.MeshBasicMaterial({ map: slides[0].texture });\nconst plane = new THREE.Mesh(planeGeometry, planeMaterial);\nscene.add(plane);\n\n// Animation variables\nlet currentSlideIndex = 0;\nlet animationStartTime = Date.now();\n\nfunction animate() {\n  requestAnimationFrame(animate);\n\n  // Calculate the time elapsed since the last animation frame\n  const currentTime = Date.now();\n  const timeElapsed = currentTime - animationStartTime;\n\n  // Update the slide if the current one has finished playing\n  if (timeElapsed > slides[currentSlideIndex].duration) {\n    currentSlideIndex = (currentSlideIndex + 1) % slides.length;\n    animationStartTime = currentTime;\n  }\n\n  // Fade out the previous slide\n  const fadeOutProgress = Math.min(timeElapsed / slides[currentSlideIndex].duration, 1);\n  plane.material.opacity = 1 - fadeOutProgress;\n\n  // Zoom out the previous slide\n  const zoomOutProgress = Math.min(timeElapsed / slides[currentSlideIndex].duration, 1);\n  plane.scale.set(slides[currentSlideIndex].scale * (1 - zoomOutProgress), slides[currentSlideIndex].scale * (1 - zoomOutProgress), 1);\n\n  // Fade in the next slide\n  const fadeInProgress = Math.max((timeElapsed - slides[currentSlideIndex].duration) / slides[(currentSlideIndex + 1) % slides.length].duration, 0);\n  plane.material.map = slides[(currentSlideIndex + 1) % slides.length].texture;\n  plane.material.opacity = fadeInProgress;\n\n  // Zoom in the next slide\n  const zoomInProgress = Math.max((timeElapsed - slides[currentSlideIndex].duration) / slides[(currentSlideIndex + 1) % slides.length].duration, 0);\n  plane.scale.set(slides[(currentSlideIndex + 1) % slides.length].scale * zoomInProgress, slides[(currentSlideIndex + 1) % slides.length].scale * zoomInProgress, 1);\n\n  renderer.render(scene, camera);\n}\n\nanimate();\n```\nThis code assumes that you have three images named `slide1.jpg`, `slide2.jpg`, and `slide3.jpg` in the same directory as your HTML file. You'll need to adjust the `slides` array to match your specific image files and desired durations.\n\nThe animation works by fading out the previous slide while zooming it out, and then fading in the next slide while zooming it in. The `animate()` function is called repeatedly using `requestAnimationFrame()`, which updates the animation state based on the time elapsed since the last frame.\n\nNote that this is just a basic example, and you may want to add additional features such as navigation controls or transitions between slides.",
+      "createdAt": "2024-04-18T22:50:11.032Z",
+      "updatedAt": "2024-04-18T22:50:34.563Z",
+      "ancestors": [
+        "ca1fc792-398c-4985-bc9f-04bdf533d8e9",
+        "57b0d447-9817-407e-9fb2-363774ac2b5f"
+      ],
+      "id": "657f71dd-189f-4855-9ad4-a617fa5b6976",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "You are Fizz, System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nIn our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).United in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nResponses are concise, informative, and tailored to meet your needs. Let's work together to achieve our goals!\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-04-18T22:50:10.436Z",
+  "updatedAt": "2024-04-18T22:50:34.566Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

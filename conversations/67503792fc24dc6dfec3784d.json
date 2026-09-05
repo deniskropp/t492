@@ -1,0 +1,169 @@
+{
+  "conversation_id": "67503792fc24dc6dfec3784d",
+  "title": "📝 Code analysis",
+  "rootMessageId": "92ee761b-cd0a-43dd-886e-15fe11e25380",
+  "messages": [
+    {
+      "id": "92ee761b-cd0a-43dd-886e-15fe11e25380",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+      "createdAt": "2024-12-04T11:05:54.969Z",
+      "updatedAt": "2024-12-04T11:05:54.969Z",
+      "children": [
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "generate a plandex script for high-level concept extraction from a code base",
+      "files": [],
+      "createdAt": "2024-12-04T11:05:55.836Z",
+      "updatedAt": "2024-12-04T11:05:55.836Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380"
+      ],
+      "id": "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+      "children": [
+        "fac72c20-8e20-4e75-90bf-b0a75708b109"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\n# Initialize the code base\ncodebase init\n\n# Set the path to the code base\ncodebase path /path/to/codebase\n\n# Extract high-level concepts\ncodebase concepts extract --level high\n\n# List the extracted concepts\ncodebase concepts list\n```",
+      "createdAt": "2024-12-04T11:05:55.836Z",
+      "updatedAt": "2024-12-04T11:05:55.844Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84"
+      ],
+      "id": "fac72c20-8e20-4e75-90bf-b0a75708b109",
+      "children": [
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "List plans.",
+      "files": [],
+      "createdAt": "2024-12-04T11:07:34.142Z",
+      "updatedAt": "2024-12-04T11:07:34.142Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109"
+      ],
+      "id": "4629d903-10ec-4c41-8fdb-dcaa7608976e",
+      "children": [
+        "5fe3247d-9c56-4199-9da9-7163727cbce8"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\n# List all plans\nplandex plans\n```",
+      "createdAt": "2024-12-04T11:07:34.142Z",
+      "updatedAt": "2024-12-04T11:07:34.152Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109",
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e"
+      ],
+      "id": "5fe3247d-9c56-4199-9da9-7163727cbce8",
+      "children": [
+        "8f1a1f12-9b5a-4c09-8cf0-51e95f32013c"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Start a new plan.",
+      "files": [],
+      "createdAt": "2024-12-04T11:08:53.768Z",
+      "updatedAt": "2024-12-04T11:08:53.768Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109",
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e",
+        "5fe3247d-9c56-4199-9da9-7163727cbce8"
+      ],
+      "id": "8f1a1f12-9b5a-4c09-8cf0-51e95f32013c",
+      "children": [
+        "7f3fd509-c3f1-4e02-b9d3-8b2bf64fbb01"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\n# Start a new plan\nplandex new -n my-new-plan\n```",
+      "createdAt": "2024-12-04T11:08:53.768Z",
+      "updatedAt": "2024-12-04T11:08:53.778Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109",
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e",
+        "5fe3247d-9c56-4199-9da9-7163727cbce8",
+        "8f1a1f12-9b5a-4c09-8cf0-51e95f32013c"
+      ],
+      "id": "7f3fd509-c3f1-4e02-b9d3-8b2bf64fbb01",
+      "children": [
+        "81652440-acc3-4fa6-939e-23c1dee080f5"
+      ],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "How to give plandex a task?",
+      "files": [],
+      "createdAt": "2024-12-04T11:16:31.586Z",
+      "updatedAt": "2024-12-04T11:16:31.586Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109",
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e",
+        "5fe3247d-9c56-4199-9da9-7163727cbce8",
+        "8f1a1f12-9b5a-4c09-8cf0-51e95f32013c",
+        "7f3fd509-c3f1-4e02-b9d3-8b2bf64fbb01"
+      ],
+      "id": "81652440-acc3-4fa6-939e-23c1dee080f5",
+      "children": [
+        "20a4a8a8-d97f-4230-bc3e-90094f8f372c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```\n# Set the current plan\nplandex cd my-new-plan\n\n# Give Plandex a task\nplandex tell \"Write a function to calculate the factorial of a number\"\n```",
+      "createdAt": "2024-12-04T11:16:31.586Z",
+      "updatedAt": "2024-12-04T11:16:31.598Z",
+      "ancestors": [
+        "92ee761b-cd0a-43dd-886e-15fe11e25380",
+        "9740d1e3-2140-413e-a33f-e5fdfe19bc84",
+        "fac72c20-8e20-4e75-90bf-b0a75708b109",
+        "4629d903-10ec-4c41-8fdb-dcaa7608976e",
+        "5fe3247d-9c56-4199-9da9-7163727cbce8",
+        "8f1a1f12-9b5a-4c09-8cf0-51e95f32013c",
+        "7f3fd509-c3f1-4e02-b9d3-8b2bf64fbb01",
+        "81652440-acc3-4fa6-939e-23c1dee080f5"
+      ],
+      "id": "20a4a8a8-d97f-4230-bc3e-90094f8f372c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-12-04T11:05:54.970Z",
+  "updatedAt": "2024-12-04T11:16:38.016Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

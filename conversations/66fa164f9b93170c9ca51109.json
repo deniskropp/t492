@@ -1,0 +1,55 @@
+{
+  "conversation_id": "66fa164f9b93170c9ca51109",
+  "title": "💬 ⫻ context/klmx:Template\n⫻ const:title",
+  "rootMessageId": "22fe97e6-1e0a-43e0-ac85-f52d02f70264",
+  "messages": [
+    {
+      "id": "22fe97e6-1e0a-43e0-ac85-f52d02f70264",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+      "createdAt": "2024-09-30T03:09:03.279Z",
+      "updatedAt": "2024-09-30T03:09:03.279Z",
+      "children": [
+        "31ae783c-e1af-48b2-af3f-71ba8014dfec"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Offer a conversation suited for the following prompt:   ⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-09-30T03:09:04.239Z",
+      "updatedAt": "2024-09-30T03:09:04.239Z",
+      "ancestors": [
+        "22fe97e6-1e0a-43e0-ac85-f52d02f70264"
+      ],
+      "id": "31ae783c-e1af-48b2-af3f-71ba8014dfec",
+      "children": [
+        "0ce28ff5-25d8-40ce-b7b1-6af7d2df5495"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Certainly! Below is a conversation template that adheres to the provided rules for generating markdown content. This template will be used to structure the conversation, ensuring that all context elements and constants are appropriately utilized.\n\n### Conversation Template\n\n```markdown\n## Prompt\nGenerate markdown_content\n\n### Context\n⫻context/klmx:Kick/Template\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n4. A section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n5. 'name' being a keyword or token: ['const','content','context']\n6. 'type' being optional information: format, encoding, component type\n7. data as indicated\n8. a few empty lines until the end of the section\n\n### Constants\n⫻const/json:User\n{\n  \"name\": \"Denis\",\n  \"role\": \"Developer\",\n  \"age\": 42,\n  \"nation\": \"Germany\"\n}\n\n### Content\n⫻content:Input\nThis is the input data for the task. The task is to generate markdown content based on the given rules and context.\n\n### Generated Markdown\n## Generated Markdown Content\nBased on the provided input and context, the following is the generated markdown content:\n\n1. **User Information**\n   - Name: Denis\n   - Role: Developer\n   - Age: 42\n   - Nation: Germany\n\n2. **Task Description_**\n   - Input: This is the input data for the task. the task is to generate markdown content based on the given rules and context.\n   - Output:the following is the generated markdown content:\n```\n\n### Explanation\n- **Context**: The context section provides the rules and guidelines for generating the markdown content.\n- **Constants**: The constants section provides additional parameters that are used as input data.\n- **Content**: The content section provides the actual input data for the task.\n- **Generated Markdown**: The generated markdown section is the output based on the provided input and context.\n\nThis template ensures that all necessary information is included and structured correctly for the task.",
+      "createdAt": "2024-09-30T03:09:04.239Z",
+      "updatedAt": "2024-09-30T03:09:04.248Z",
+      "ancestors": [
+        "22fe97e6-1e0a-43e0-ac85-f52d02f70264",
+        "31ae783c-e1af-48b2-af3f-71ba8014dfec"
+      ],
+      "id": "0ce28ff5-25d8-40ce-b7b1-6af7d2df5495",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-09-30T03:09:03.281Z",
+  "updatedAt": "2024-09-30T03:09:22.182Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

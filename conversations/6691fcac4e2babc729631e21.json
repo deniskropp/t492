@@ -1,0 +1,113 @@
+{
+  "conversation_id": "6691fcac4e2babc729631e21",
+  "title": "📝 Code snippet",
+  "rootMessageId": "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d",
+  "messages": [
+    {
+      "id": "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:03:56.411Z",
+      "updatedAt": "2024-07-13T04:03:56.411Z",
+      "children": [
+        "394ddc4a-78e2-423b-8fb2-7b924db50c10",
+        "d7ec0ee0-07ca-47c1-a3f2-6af6fb978d01",
+        "c6417e1c-58c5-4871-a267-507928d3f401"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Translate the following prompt (code instead content):   ⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section",
+      "files": [],
+      "createdAt": "2024-07-13T04:03:56.942Z",
+      "updatedAt": "2024-07-13T04:03:56.942Z",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d"
+      ],
+      "id": "394ddc4a-78e2-423b-8fb2-7b924db50c10",
+      "children": [
+        "e25e55b1-0030-4bd0-938c-597eb6c6a188"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here is the translated prompt in code:\r\n\r\n```markdown\r\n# Kick/Template Specification:\r\n\r\n- Sections: Start with '⫻', then 'name/type:place', followed by data.\r\n- Context Sections: Auxiliary info, marked as \"context:{tag}\", excluded from output.\r\n- Constant Sections: Parameters, named \"const:{key}\", with JSON or plain text data.\r\n- Content Sections: Input data, marked as \"content\", requests generated output.\r\n\r\n## Example:\r\n\r\n⫻\r\ncontext/info:Kick/Template\r\n\r\nThis is an example of a context section, providing additional information about the template specification.\r\n\r\n\r\n\r\n⫻\r\nconst/json:user\r\n{\r\n  \"name\": \"Denis and Denise\"\r\n}\r\n\r\n\r\n\r\n⫻\r\ncontent/md:output\r\n\r\nThis is the content section, where input data is provided and generated output is requested. Please translate the following code:\r\n\r\n```\r\nCode translation request here...\r\n```\r\n\r\n```\r\n\r\n## Section Format:\r\n\r\n- Name: 'const', 'content', or 'context'\r\n- Type: Optional, e.g., 'json', 'md'\r\n- Place: Index or purpose, e.g., 'user', 'output'\r\n- Data: As indicated, plain text or formatted\r\n\r\n---\r\n\r\nLeave a few empty lines until the end of each section.\r\n```",
+      "createdAt": "2024-07-13T04:03:56.942Z",
+      "updatedAt": "2024-07-13T04:03:56.948Z",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d",
+        "394ddc4a-78e2-423b-8fb2-7b924db50c10"
+      ],
+      "id": "e25e55b1-0030-4bd0-938c-597eb6c6a188",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template  Generate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section\n\n\n\n\n⫻content/klmx:Kick/Template  Generate TypeScript",
+      "files": [],
+      "createdAt": "2024-07-13T04:05:00.255Z",
+      "updatedAt": "2024-07-13T04:05:00.255Z",
+      "id": "d7ec0ee0-07ca-47c1-a3f2-6af6fb978d01",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d"
+      ],
+      "children": [
+        "240987cc-d51d-4e6d-a56b-23f1bd4e5c0e"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\n// Kick Template TS Generator\n\n// Context & Constants\nconst ctx = {}; // context data\nconst consts = {\n  user: \"Denis & Denise\",\n  assistant: \"AI Assistant\",\n}; // constant parameters\n\n// Content Generation\nfunction generateContent() {\n  const content = `// Generated TypeScript Code\n\n// User: ${consts.user}\n// Assistant: ${consts.assistant}\n\ninterface User {\n  name: string;\n  role: string;\n}\n\nconst user: User = {\n  name: \"${consts.user}\",\n  role: \"User\",\n};\n\ninterface Assistant {\n  type: string;\n  model: string;\n}\n\nconst assistant: Assistant = {\n  type: \"${consts.assistant}\",\n  model: \"Gen1\",\n};\n\n// User and Assistant interaction\nfunction interact() {\n  console.log(\\`Hello, I'm \\${assistant.type} ${assistant.model}, nice to meet you \\${user.name}!\\`);\n}\n\ninteract();`;\n\n  return content;\n}\n\n// Output\nconsole.log(generateContent());\n```",
+      "createdAt": "2024-07-13T04:05:00.255Z",
+      "updatedAt": "2024-07-13T04:05:00.264Z",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d",
+        "d7ec0ee0-07ca-47c1-a3f2-6af6fb978d01"
+      ],
+      "id": "240987cc-d51d-4e6d-a56b-23f1bd4e5c0e",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context/klmx:Kick/Template\nGenerate markdown content according to these rules:  1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content  2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8  3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data    A Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...  1. 'name' being a keyword or token: ['const','content','context']  2. 'type' being optional information: format, encoding, component type  3. data as indicated  4. a few empty lines until the end of the section\n\n\n\n\n⫻content/klmx:Kick/Template/TypeScript",
+      "files": [],
+      "createdAt": "2024-07-13T04:05:44.336Z",
+      "updatedAt": "2024-07-13T04:05:44.336Z",
+      "id": "c6417e1c-58c5-4871-a267-507928d3f401",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d"
+      ],
+      "children": [
+        "7f65810b-16e7-4581-8b74-d186bd5cfac1"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "## Constants\n\n- const:user: Denis and Denise\n- const:assistant: AI\n\n## Content\n\n```typescript\n// User and Assistant constants\nconst user = [\"Denis\", \"Denise\"];\r\nconst assistant = \"AI\";\r\n\r\n// Sample function to greet users\r\nfunction greet(name: string) {\r\n  return `Hello, my name is ${name}!`;\r\n}\r\n\r\n// Greet each user and the assistant\r\nconst userGreetings = user.map((userName) => greet(userName));\r\nconst assistantGreeting = greet(assistant);\r\n\r\nconsole.log(userGreetings.join(\", \")); // Hello, my name is Denis!, Hello, my name is Denise!\r\nconsole.log(assistantGreeting); // Hello, my name is AI!\r\n```",
+      "createdAt": "2024-07-13T04:05:44.336Z",
+      "updatedAt": "2024-07-13T04:05:44.345Z",
+      "ancestors": [
+        "1f797297-9d9a-4ca4-9a5f-2b9d3782af7d",
+        "c6417e1c-58c5-4871-a267-507928d3f401"
+      ],
+      "id": "7f65810b-16e7-4581-8b74-d186bd5cfac1",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:03:56.413Z",
+  "updatedAt": "2024-07-13T04:05:50.552Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

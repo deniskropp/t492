@@ -1,0 +1,70 @@
+{
+  "conversation_id": "669206976e86bace83c822b0",
+  "title": "🐍 Django function",
+  "rootMessageId": "ef86dc29-7b95-4772-bfad-d1107fdb5a4f",
+  "messages": [
+    {
+      "id": "ef86dc29-7b95-4772-bfad-d1107fdb5a4f",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:46:15.187Z",
+      "updatedAt": "2024-07-13T04:46:15.187Z",
+      "children": [
+        "46278c48-0c36-45fb-8f7a-73c759ed3761"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻ context:language:python\n⫻ context:framework:django\n\n⫻ const:database_name:json\n\"my_database\"\n\n⫻ content:function_description:plain\nA function to fetch all users from the database.\n\n⫻ content:model_name:plain\nUser",
+      "files": [],
+      "createdAt": "2024-07-13T04:46:15.637Z",
+      "updatedAt": "2024-07-13T04:46:15.637Z",
+      "ancestors": [
+        "ef86dc29-7b95-4772-bfad-d1107fdb5a4f"
+      ],
+      "id": "46278c48-0c36-45fb-8f7a-73c759ed3761",
+      "children": [
+        "c2eca71e-6ec5-4cd6-b24c-6fbdc950631c",
+        "ecc16e82-b27b-4507-8935-853a09138753"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```python\nimport json\r\nfrom django.db import connections\r\n\r\n\r\ndef fetch_all_users():\r\n    \"\"\"\r\n    Fetch all users from the database.\r\n    \"\"\"\r\n    with connections['my_database'].cursor() as cursor:\r\n        cursor.execute(\"SELECT * FROM User;\")\r\n        users = cursor.fetchall()\r\n\r\n    return users\r\n```",
+      "createdAt": "2024-07-13T04:46:15.637Z",
+      "updatedAt": "2024-07-13T04:46:15.644Z",
+      "ancestors": [
+        "ef86dc29-7b95-4772-bfad-d1107fdb5a4f",
+        "46278c48-0c36-45fb-8f7a-73c759ed3761"
+      ],
+      "id": "c2eca71e-6ec5-4cd6-b24c-6fbdc950631c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "```python\nimport json\r\nfrom django.db import models\r\n\r\n\r\n# Constant: Database Name\r\nDATABASE_NAME = \"my_database\"\r\n\r\n\r\nclass User(models.Model):\r\n    \"\"\"User model for Django.\"\"\"\r\n\r\n    # Constants: User Choices\r\n    DENIS = \"Denis\"\r\n    DENISE = \"Denise\"\r\n    USER_CHOICES = [\r\n        (DENIS, \"Denis\"),\r\n        (DENISE, \"Denise\"),\r\n    ]\r\n    name = models.CharField(max_length=255, choices=USER_CHOICES, default=DENIS)\r\n\r\n    def __str__(self):\r\n        return self.name\r\n\r\n\r\ndef fetch_all_users():\r\n    \"\"\"Fetch all users from the database.\"\"\"\r\n    with open(f\"{DATABASE_NAME}.json\", \"r\") as file:\r\n        data = json.load(file)\r\n        return data.get(\"users\", [])\r\n\r\n\r\n# Example Usage:\r\nif __name__ == \"__main__\":\r\n    users = fetch_all_users()\r\n    print(\"All Users:\", users)\r\n```",
+      "createdAt": "2024-07-13T04:47:07.984Z",
+      "updatedAt": "2024-07-13T04:47:07.994Z",
+      "id": "ecc16e82-b27b-4507-8935-853a09138753",
+      "ancestors": [
+        "ef86dc29-7b95-4772-bfad-d1107fdb5a4f",
+        "46278c48-0c36-45fb-8f7a-73c759ed3761"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:46:15.188Z",
+  "updatedAt": "2024-07-13T04:47:31.130Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

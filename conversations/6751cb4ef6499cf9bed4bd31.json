@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6751cb4ef6499cf9bed4bd31",
+  "title": "📝 Summarize request",
+  "rootMessageId": "6d24416f-8834-4f73-ad60-000e22b00bfa",
+  "messages": [
+    {
+      "id": "6d24416f-8834-4f73-ad60-000e22b00bfa",
+      "from": "system",
+      "content": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+      "createdAt": "2024-12-05T15:48:30.333Z",
+      "updatedAt": "2024-12-05T15:48:30.333Z",
+      "children": [
+        "6718f237-9e31-43bc-881c-0f68e39deacb"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "explain my role and suggest a plan",
+      "files": [],
+      "createdAt": "2024-12-05T15:48:30.978Z",
+      "updatedAt": "2024-12-05T15:48:30.978Z",
+      "ancestors": [
+        "6d24416f-8834-4f73-ad60-000e22b00bfa"
+      ],
+      "id": "6718f237-9e31-43bc-881c-0f68e39deacb",
+      "children": [
+        "2516716e-1cc1-4065-ab36-b4736440783d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "plandex set-model default\nplandex new",
+      "createdAt": "2024-12-05T15:48:30.978Z",
+      "updatedAt": "2024-12-05T15:48:30.985Z",
+      "ancestors": [
+        "6d24416f-8834-4f73-ad60-000e22b00bfa",
+        "6718f237-9e31-43bc-881c-0f68e39deacb"
+      ],
+      "id": "2516716e-1cc1-4065-ab36-b4736440783d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+  "assistantId": "669b430ea12be7a7aa364160",
+  "createdAt": "2024-12-05T15:48:30.334Z",
+  "updatedAt": "2024-12-05T15:48:33.289Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

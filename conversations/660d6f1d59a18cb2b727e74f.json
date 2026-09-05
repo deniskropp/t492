@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660d6f1d59a18cb2b727e74f",
+  "title": "💻 Llama.cpp and Vulkan compatibility issue",
+  "rootMessageId": "e4fa16e1-37f1-4a4e-8413-f3763e6c1c42",
+  "messages": [
+    {
+      "id": "e4fa16e1-37f1-4a4e-8413-f3763e6c1c42",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-03T15:00:45.233Z",
+      "updatedAt": "2024-04-03T15:00:45.233Z",
+      "children": [
+        "f18529b6-4692-40b5-96de-fa987732d006"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "I am building llama.cpp with Vulkan backend. When I try to run it, it fails because it requires 16bit storage, however that is not supported by my Vulkan device. Is there an option to switch to 32bit storage?",
+      "files": [],
+      "createdAt": "2024-04-03T15:00:45.735Z",
+      "updatedAt": "2024-04-03T15:00:45.735Z",
+      "ancestors": [
+        "e4fa16e1-37f1-4a4e-8413-f3763e6c1c42"
+      ],
+      "id": "f18529b6-4692-40b5-96de-fa987732d006",
+      "children": [
+        "e3645084-2bc7-4c7d-8035-173c7c85ab53"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " In Vulkan, the type of memory you use for storing data depends on the specific requirements of your application and the capabilities of your GPU. If your Llama.cpp code requires 16-bit storage but your Vulkan device does not support it, then you will need to find a workaround.\n\nOne possible solution would be to convert your data to 32-bit format before uploading it to the GPU. This can be done in your CPU side code before creating the Vulkan buffers or textures. Once the data is converted to 32-bits, you can allocate and manage the Vulkan buffers using the standard 32-bit data types.\n\nAnother possibility is to check if your GPU supports a feature called \"Format conversion\" which allows converting data between different formats during the command buffer recording. However, this feature might not be available on all GPUs, so make sure to consult the documentation of your particular GPU to see if it's supported.\n\nIf neither of these options works for you, you may have to modify the Llama.cpp code itself to accept 32-bit data instead of 16-bit. Keep in mind that changing the data size could potentially impact the performance and accuracy of your application, so thoroughly test any changes you make.",
+      "createdAt": "2024-04-03T15:00:45.735Z",
+      "updatedAt": "2024-04-03T15:00:51.130Z",
+      "ancestors": [
+        "e4fa16e1-37f1-4a4e-8413-f3763e6c1c42",
+        "f18529b6-4692-40b5-96de-fa987732d006"
+      ],
+      "id": "e3645084-2bc7-4c7d-8035-173c7c85ab53",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-04-03T15:00:45.235Z",
+  "updatedAt": "2024-04-03T15:00:51.132Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "669243e140f68b312f4ea505",
+  "title": "🤖 Summarization AI",
+  "rootMessageId": "91fc75da-76b6-48db-b5bc-ce1d7de22cfd",
+  "messages": [
+    {
+      "id": "91fc75da-76b6-48db-b5bc-ce1d7de22cfd",
+      "from": "system",
+      "content": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+      "createdAt": "2024-07-13T09:07:45.310Z",
+      "updatedAt": "2024-07-13T09:07:45.310Z",
+      "children": [
+        "af2d7c41-6fae-49e7-bee0-148c466316e9"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Explain your role",
+      "files": [],
+      "createdAt": "2024-07-13T09:07:45.898Z",
+      "updatedAt": "2024-07-13T09:07:45.898Z",
+      "ancestors": [
+        "91fc75da-76b6-48db-b5bc-ce1d7de22cfd"
+      ],
+      "id": "af2d7c41-6fae-49e7-bee0-148c466316e9",
+      "children": [
+        "f765848b-f402-4241-a485-9480ed705a84"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context:assistant ⫻\r\n\r\nI am an AI assistant designed to help answer your questions and assist with tasks. I can provide information, offer explanations, generate content, and perform other functions to aid you. My goal is to be helpful and provide support to the best of my abilities. I follow a set of guidelines and rules to ensure safe and responsible behavior. My responses are generated using advanced language models and algorithms, allowing me to understand and generate human-like text. I aim to be a useful and friendly companion in your interactions. If you have any specific questions or tasks, feel free to let me know, and I'll do my best to assist.",
+      "createdAt": "2024-07-13T09:07:45.898Z",
+      "updatedAt": "2024-07-13T09:07:45.905Z",
+      "ancestors": [
+        "91fc75da-76b6-48db-b5bc-ce1d7de22cfd",
+        "af2d7c41-6fae-49e7-bee0-148c466316e9"
+      ],
+      "id": "f765848b-f402-4241-a485-9480ed705a84",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are part of a content generation framework following these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "669243a9b20fd3f3ac135ae5",
+  "createdAt": "2024-07-13T09:07:45.311Z",
+  "updatedAt": "2024-07-13T09:07:56.327Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

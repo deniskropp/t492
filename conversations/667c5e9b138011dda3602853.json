@@ -1,0 +1,55 @@
+{
+  "conversation_id": "667c5e9b138011dda3602853",
+  "title": "📸 Download images",
+  "rootMessageId": "3f6754f3-ce55-4354-b76f-ac4dbef4562a",
+  "messages": [
+    {
+      "id": "3f6754f3-ce55-4354-b76f-ac4dbef4562a",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-06-26T18:31:55.826Z",
+      "updatedAt": "2024-06-26T18:31:55.826Z",
+      "children": [
+        "67974d97-b17d-4fba-b3ce-c23eb8624f61"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Following https://github.com/civitai/civitai/wiki/REST-API-Reference for images, write typescript function that uses axios to download all images created by the user 'deniskropp' with API Key '0be1d17f909493be1aa3b7f9224728f2'",
+      "files": [],
+      "createdAt": "2024-06-26T18:31:56.283Z",
+      "updatedAt": "2024-06-26T18:31:56.283Z",
+      "ancestors": [
+        "3f6754f3-ce55-4354-b76f-ac4dbef4562a"
+      ],
+      "id": "67974d97-b17d-4fba-b3ce-c23eb8624f61",
+      "children": [
+        "663e5a77-5da2-4083-87bb-0f3417c914a2"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure! Here is a TypeScript function using Axios to download all images created by the user `deniskropp` from the Civitai API:\n```typescript\nimport axios from \"axios\";\n\nconst apiKey = \"0be1d17f909493be1aa3b7f9224728f2\";\nconst baseUrl = \"https://api.civitai.com/api/v1\";\nconst userName = \"deniskropp\";\n\nasync function downloadImages() {\n  try {\n    const response = await axios.get(`${baseUrl}/users/${userName}`, {\n      headers: {\n        Authorization: `Bearer ${apiKey}`\n      }\n    });\n\n    if (response.data && Array.isArray(response.data.images)) {\n      for (const image of response.data.images) {\n        // You can customize this part based on how you want to handle and save the files\n        console.log(`Downloading image: ${image.name}`);\n        const imageResponse = await axios.get(`${image.file_url}?dl=true`, {\n          responseType: \"arraybuffer\"\n        });\n\n        // Save the file as binary data or convert it into your preferred format before saving\n        require(\"fs\").writeFileSync(`./downloads/${image.name}.png`, imageResponse.data);\n      }\n    } else {\n      throw new Error(\"Unexpected response structure\");\n    }\n  } catch (error) {\n    console.error(\"Error during image retrieval:\", error.message);\n  }\n}\n\n// Call the function\ndownloadImages();\n```\nThis example assumes that you have installed Node.js with its package manager npm. To run this script, install the required packages via:\n```bash\nnpm init -y\nnpm install axios fs\n```\nAfterward, create a file named `index.ts`, paste the code above, replace \"./downloads/\" in the `require('fs').writeFileSync` line with your desired directory path, then execute the following command to compile and run the program:\n```bash\ntsc index.ts && node index.js\n```",
+      "createdAt": "2024-06-26T18:31:56.283Z",
+      "updatedAt": "2024-06-26T18:31:56.292Z",
+      "ancestors": [
+        "3f6754f3-ce55-4354-b76f-ac4dbef4562a",
+        "67974d97-b17d-4fba-b3ce-c23eb8624f61"
+      ],
+      "id": "663e5a77-5da2-4083-87bb-0f3417c914a2",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "preprompt": "",
+  "assistantId": null,
+  "createdAt": "2024-06-26T18:31:55.828Z",
+  "updatedAt": "2024-06-26T18:32:14.429Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

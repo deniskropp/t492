@@ -1,0 +1,55 @@
+{
+  "conversation_id": "660f21945ec6c3cf572fbc7a",
+  "title": "🌐 Artec Course Structure",
+  "rootMessageId": "8d29aedc-1459-4ed8-8f2b-1be3f0a16b28",
+  "messages": [
+    {
+      "id": "8d29aedc-1459-4ed8-8f2b-1be3f0a16b28",
+      "from": "system",
+      "content": "",
+      "createdAt": "2024-04-04T21:54:28.918Z",
+      "updatedAt": "2024-04-04T21:54:28.918Z",
+      "children": [
+        "c99c409f-63bd-45e8-bc73-e53bba16ed74"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:h1\nStart\n\n\n⫻context:p\nArtec Kurse sind aus Modulen zusammengebaut, die...\n\n\n⫻content\nThese modules are already part of Artec Education:\n- 2D Game Design\n- 3D Design und Druck\n- Foto und Film Bearbeitung / Erstellung\n- Medientechnologie\n- TypeScript Einleitung\n- Prompt Engineering",
+      "files": [],
+      "createdAt": "2024-04-04T21:54:29.440Z",
+      "updatedAt": "2024-04-04T21:54:29.440Z",
+      "ancestors": [
+        "8d29aedc-1459-4ed8-8f2b-1be3f0a16b28"
+      ],
+      "id": "c99c409f-63bd-45e8-bc73-e53bba16ed74",
+      "children": [
+        "5ae59dfe-dca9-4f01-95c0-c26d1eb195e3"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": " Sure, here's the generated markdown content based on the given rules:\n\n# Start\n\n## 2D Game Design\n\n## 3D Design und Druck\n\n## Foto und Film Bearbeitung / Erstellung\n\n## Medientechnologie\n\n## TypeScript Einleitung\n\n## Prompt Engineering",
+      "createdAt": "2024-04-04T21:54:29.440Z",
+      "updatedAt": "2024-04-04T21:54:35.387Z",
+      "ancestors": [
+        "8d29aedc-1459-4ed8-8f2b-1be3f0a16b28",
+        "c99c409f-63bd-45e8-bc73-e53bba16ed74"
+      ],
+      "id": "5ae59dfe-dca9-4f01-95c0-c26d1eb195e3",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Llama-2-70b-chat-hf",
+  "preprompt": "Generate markdown content according to these rules:\r\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\r\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\r\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\r\n\r\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - 'place/index' - and its data...\r\n1. 'name' being a keyword or token: ['const','content','context']\r\n2. 'type' being optional information: format, encoding, component type\r\n3. data as indicated\r\n4. a few empty lines until the end of the section",
+  "assistantId": "660f1ca26c82206255ba1b5f",
+  "createdAt": "2024-04-04T21:54:28.919Z",
+  "updatedAt": "2024-04-04T21:54:35.405Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
+  "embeddingModel": "Xenova/gte-small",
+  "userId": "64ef83e712aa67ef071911b8"
+}

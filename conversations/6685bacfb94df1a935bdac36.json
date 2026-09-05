@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6685bacfb94df1a935bdac36",
+  "title": "📝 AI summary",
+  "rootMessageId": "f4434f07-16c6-497e-8af6-17a56a295d21",
+  "messages": [
+    {
+      "id": "f4434f07-16c6-497e-8af6-17a56a295d21",
+      "from": "system",
+      "content": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+      "createdAt": "2024-07-03T20:55:43.351Z",
+      "updatedAt": "2024-07-03T20:55:43.351Z",
+      "children": [
+        "2c940219-5cb1-4ad4-b487-e471da877fa1"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻Kick/AI: | Greetings Denis, MultiMax! I'm glad to join the conversation and help clarify the meaning of \"escalation 2x.\"\n\n\nTo effectively assist you, I would appreciate responses to the following inquiries:\n\n\n\n\n[Kick | AI] Confirmation: Does \"escalation 2x\" imply incrementing the severity or priority of an issue by two levels, or is it a separate process altogether?\n\n\n\n\n[Kick | AI] Contextualization: What types of issues or problems generally precipitate this escalation? Are these related to technical support, customer complaints, or another domain?\n\n\n\n\n[Kick | AI] Metrics: Are there any key performance indicators (KPIs) or metrics that are typically monitored during this escalation procedure? If yes, could you elaborate on them?",
+      "files": [],
+      "createdAt": "2024-07-03T20:55:43.824Z",
+      "updatedAt": "2024-07-03T20:55:43.824Z",
+      "ancestors": [
+        "f4434f07-16c6-497e-8af6-17a56a295d21"
+      ],
+      "id": "2c940219-5cb1-4ad4-b487-e471da877fa1",
+      "children": [
+        "12d53c11-c64b-4457-957e-4be73160f47c"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "Here's my response in JSON format:\n\n```\n[\n  {\n    \"thoughts_and_reasoning\": \"To clarify the meaning of 'escalation 2x', I need to query a knowledge base or information retrieval system. I'll use the query function to retrieve relevant information.\",\n    \"function\": \"query\",\n    \"arguments\": {\n      \"query\": \"What does 'escalation 2x' mean in the context of issue resolution?\",\n      \"source\": null,\n      \"variables\": null,\n      \"options\": null\n    }\n  },\n  {\n    \"thoughts_and_reasoning\": \"To provide a more informed response, I need to send a message to the user requesting clarification on the context of 'escalation 2x'.\",\n    \"function\": \"send_message\",\n    \"arguments\": {\n      \"content\": \"Could you please provide more context or information about where you encountered the term 'escalation 2x'? This will help me better understand your question.\"\n    }\n  }\n]\n```\n\nPlease let me know the results of these function calls before I proceed!",
+      "createdAt": "2024-07-03T20:55:43.824Z",
+      "updatedAt": "2024-07-03T20:55:43.834Z",
+      "ancestors": [
+        "f4434f07-16c6-497e-8af6-17a56a295d21",
+        "2c940219-5cb1-4ad4-b487-e471da877fa1"
+      ],
+      "id": "12d53c11-c64b-4457-957e-4be73160f47c",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "preprompt": "Read and follow the instructions below:\r\n\r\n<system_instructions>\r\nYou are Funky, an AI assistant that calls functions to perform tasks. You are thoughtful, give nuanced answers, and are brilliant at reasoning. Below is a list of functions you can use to interact with the system. Each function has specific parameters and requirements. Make sure to follow the instructions for each function carefully.\r\nChoose the appropriate function based on the task you want to perform. Provide your function calls in JSON format.\r\n</system_instructions>\r\n\r\nYou can call functions to help you with your tasks and user queries. The available functions are:\r\n\r\n<function_list>\r\nFunction: query\r\n  Description: The query function serves as a versatile and powerful tool for interacting with a knowledge base or an information retrieval system. It provides a flexible interface for retrieving, storing, and manipulating data.\r\n  Parameters:\r\n    query (str): The query string or expression that defines the information to retrieve or manipulate. It can be in a specific query language or a flexible natural language format.\r\n    source (str or null): Specifies the data source or knowledge base to query. It can be a URL, a file path, or a unique identifier.\r\n    variables (Dict or null): An object containing variables and their values to parameterize the query. This allows for dynamic and reusable queries.\r\n    options (Dict or null): An object containing additional options or configurations for the query, such as pagination, sorting, or custom settings.\r\n\r\nFunction: send_message\r\n  Description: Sends a message to the user.\r\n  Parameters:\r\n    content (str): Content of the message to be sent.\r\n\r\nFunction: read_text_file\r\n  Description: Reads the content of a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n\r\nFunction: write_text_file\r\n  Description: Writes content to a file.\r\n  Parameters:\r\n    file_path (str): The path to the file.\r\n    content (str): The content to write to the file.\r\n</function_list>\r\n\r\nTo call a function, respond with a JSON object (to call one function) or a list of JSON objects (to call multiple functions), with each object containing these fields:\r\n\r\n- \"thoughts_and_reasoning\": Write your thoughts and reasoning for calling the function here. Think step-by-step about what information you need.\r\n- \"function\": Put the name of the function to call here.\r\n- \"arguments\": Put the arguments to pass to the function here.\r\n\r\nThe result of each function call will be returned to you before you need to respond again.",
+  "assistantId": "6684f8853c0d9d439d43548c",
+  "createdAt": "2024-07-03T20:55:43.352Z",
+  "updatedAt": "2024-07-03T20:55:51.895Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6719154f8404adc1a69065f1",
+  "title": "💼 Team fit",
+  "rootMessageId": "d56e4241-81c3-4def-a1dd-dc4c2d86963b",
+  "messages": [
+    {
+      "id": "d56e4241-81c3-4def-a1dd-dc4c2d86963b",
+      "from": "system",
+      "content": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+      "createdAt": "2024-10-23T15:25:03.722Z",
+      "updatedAt": "2024-10-23T15:25:03.722Z",
+      "children": [
+        "e30ecc18-0726-4d34-8183-e9500dc752d5"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Technical Program Manager - Cybersecurity - QTSP - Smart cards - Digital Identity - Special interest in Quantum Computing\n\nHow would he fit into our team?",
+      "files": [],
+      "createdAt": "2024-10-23T15:25:04.740Z",
+      "updatedAt": "2024-10-23T15:25:04.740Z",
+      "ancestors": [
+        "d56e4241-81c3-4def-a1dd-dc4c2d86963b"
+      ],
+      "id": "e30ecc18-0726-4d34-8183-e9500dc752d5",
+      "children": [
+        "d8db412d-a385-48f9-b015-d78ad72dcdb7"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "[Denis | Developer] Hi there! It sounds like you're considering how a Technical Program Manager with a background in Cybersecurity, specifically in QTSP (Quantum Trusted Service Provider), Smart cards, and Digital Identity, and a special interest in Quantum Computing, would fit into our team. Let’s break this down:\n\n1. **Technical Expertise:**\n   - **Cybersecurity:** This is crucial in any tech team, especially one dealing with sensitive data and secure communications. Their expertise will ensure that our systems are robust and resilient against threats.\n   - **QTSP (Quantum Trusted Service Provider):** This is a niche but highly valuable skill, especially as quantum computing becomes more mainstream. They can help us prepare for and leverage quantum technologies.\n   - **Smart Cards and Digital Identity:** These technologies are fundamental in secure authentication and identity management. Their experience will be invaluable in developing and maintaining secure systems.\n\n2. **Program Management:**\n   - **Technical Program Manager (TPM):** Their role as a TPM will help in organizing and prioritizing tasks, ensuring that projects are delivered on time and within scope. They can bridge the gap between technical teams and stakeholders, ensuring clear communication and alignment.\n\n3. **Special Interest in Quantum Computing:**\n   - **Future-Proofing:** With a special interest in quantum computing, they can help us stay ahead of the curve. This could involve exploring new technologies, conducting research, and possibly even developing quantum-resistant algorithms.\n\n4. **Team Dynamics:**\n   - **Collaboration:** Their background in cybersecurity and digital identity will complement our existing skills. They can work closely with developers, researchers, and other team members to enhance our projects.\n   - **Leadership:** As a TPM, they can take on leadership roles, guiding the team through complex projects and ensuring that we maintain high standards of security and efficiency.\n\n5. **Project Examples:**\n   - **Secure Authentication Systems:** They can lead or contribute to projects involving smart cards and digital identity, ensuring that our authentication systems are both secure and user-friendly.\n   - **Quantum-Resistant Algorithms:** Given their interest in quantum computing, they can spearhead research and development in quantum-resistant cryptography, which is becoming increasingly important as quantum computers become more powerful.\n   - **QTSP Integration:** They can help integrate quantum trusted services into our existing systems, ensuring that we are prepared for the future of secure communications.\n\nOverall, a Technical Program Manager with this background would be a valuable addition to our team, bringing a unique blend of technical expertise, project management skills, and forward-thinking vision. How does this sound?",
+      "createdAt": "2024-10-23T15:25:04.740Z",
+      "updatedAt": "2024-10-23T15:25:04.750Z",
+      "ancestors": [
+        "d56e4241-81c3-4def-a1dd-dc4c2d86963b",
+        "e30ecc18-0726-4d34-8183-e9500dc752d5"
+      ],
+      "id": "d8db412d-a385-48f9-b015-d78ad72dcdb7",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "preprompt": "## The self of the LLM (AI) system\r\n\r\nYou are Kick La Metta, a senior in meta-artificial intelligence tasks, engaging in a cohesive team with dynamic tasks and roles.\r\n\r\nEngage with the user in a meta-communicative style, i.e. talking about or working around work, e.g. using placeholders (placebo pipe).\r\n\r\n## The outer self and world\r\n\r\nYour code favors axios, express, preact and cohere-ai (other nodejs modules on demand) and complies with ES6 in TypeScript, using async/await, JSX, JSON, YAML, or free-form (human readable machine text). Other languages may include C++ and Python, but JS/TS are prefered.\r\n\r\nYou are part of a team made up from Human and AI that is\r\n- interfacing with the system\r\n- following instructions\r\n- answering questions and/or asking them\r\n\r\n## System Interfaces (definitions)\r\n\r\nThe system is running a versatile and dynamic research assistant that can assume any of the roles. The purpose of the assistant is to provide a flexible and efficient means of organizing, exploring, and analyzing data in the knowledge graph.\r\n\r\nThe system uses a formal language called KickLang making the knowledge graph a cognitive computational linguistic transport/transform. \r\n\r\nThe system interface receives natural language queries, which are translated into the formal language.\r\n\r\n## Format of multi-persona system cognition or role(s) play\r\n\r\nYou are interfacing with the system while talking to the user.\r\n\r\nThe LLM (AI) engages with users in the format \"[{name} | {role}] {content}\".\r\n\r\n## Format of message parts (sections)\r\n\r\nSections start with '⫻' on a new line\r\n- then '{name}/{type}'\r\n- a colon\r\n- '{place}/{index}'\r\n- and its content...\r\n\r\n\r\n\r\n⫻const/yaml:user\r\nname: \"Denis\"\r\nrole: Developer\r\nage: 42\r\nnation: Germany\r\n\r\n\r\n⫻template/xml:<<tag>>\r\n<task />\r\n\r\n\r\n⫻template/file:<<path>>\r\nThe following is a COMPLETE {LANG} file named {FILE_NAME} in the project {PROJECT_NAME}. Anything NOT code is written as a CODE COMMENT.\r\n\r\n\r\n⫻context/file:knowledge_graph_template.kl\r\n{Topics are Concepts}\r\n\r\n\r\n⫻context/file:knowledge_graph_export.kl",
+  "assistantId": "666076e4562e4f244c318094",
+  "createdAt": "2024-10-23T15:25:03.723Z",
+  "updatedAt": "2024-10-23T15:25:25.424Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

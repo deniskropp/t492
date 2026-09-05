@@ -1,0 +1,128 @@
+{
+  "conversation_id": "669200350cfd613ad4ab1116",
+  "title": "💬 I apologize, but it seems like you provided a context for generating content,",
+  "rootMessageId": "717ebe77-4875-4362-9530-ef082042c023",
+  "messages": [
+    {
+      "id": "717ebe77-4875-4362-9530-ef082042c023",
+      "from": "system",
+      "content": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+      "createdAt": "2024-07-13T04:19:01.196Z",
+      "updatedAt": "2024-07-13T04:19:01.196Z",
+      "children": [
+        "2642fb72-4bad-4d90-bb2e-91b47a5b9a3f",
+        "19a54b86-bfdf-4162-a528-cafb92ec9e22",
+        "87a3fdbf-1421-4f66-b152-7f6576a7161e"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:KickTempRules\nGenerate content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\n⫻content\nKickTempRules for TypeScript Code",
+      "files": [],
+      "createdAt": "2024-07-13T04:19:01.746Z",
+      "updatedAt": "2024-07-13T04:19:01.746Z",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023"
+      ],
+      "id": "2642fb72-4bad-4d90-bb2e-91b47a5b9a3f",
+      "children": [
+        "7e326233-dc31-4392-90b7-fb8f63167085"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻const:response\r\n\r\n```typescript\r\ninterface KickTempRules {\r\n  context: { [tag: string]: any };\r\n  consts: { [key: string]: any };\r\n  content: string;\r\n}\r\n\r\nfunction generateContent(rules: KickTempRules) {\r\n  const { context, consts, content } = rules;\r\n  // Extract and process data from context, consts, and content sections\r\n  // Generate the desired output using the provided data\r\n  // Return the generated output\r\n}\r\n```\r\n\r\nThe `KickTempRules` interface defines the structure of the input data, including the \"context\", \"consts\", and \"content\" sections. The `generateContent` function takes a `KickTempRules` object as input and generates the desired output based on the provided data.\r\n\r\nYou can customize the `generateContent` function according to your specific requirements and the structure of your input data.",
+      "createdAt": "2024-07-13T04:19:01.746Z",
+      "updatedAt": "2024-07-13T04:19:01.755Z",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023",
+        "2642fb72-4bad-4d90-bb2e-91b47a5b9a3f"
+      ],
+      "id": "7e326233-dc31-4392-90b7-fb8f63167085",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻context:KickTempRules\nGenerate content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\n⫻content\n{{KickTempRules for TypeScript Code}}",
+      "files": [],
+      "createdAt": "2024-07-13T04:19:59.409Z",
+      "updatedAt": "2024-07-13T04:19:59.409Z",
+      "id": "19a54b86-bfdf-4162-a528-cafb92ec9e22",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023"
+      ],
+      "children": [
+        "ba3ddd25-fc2b-4c2c-913f-463855a9f028",
+        "e9fad868-8f2c-4d2a-b0a7-c03b2b109ebb"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context: KickTempRules\r\n\r\nGenerate content following these rules: \r\n\r\n1. Context: Provides auxiliary information and is never included in the generated content. Marked as \"context:{tag}\".\r\n2. Constants: Serve as parameters and are defined in sections named \"const:{key}\". They can be in JSON or plain UTF-8 format.\r\n3. Content: Represents the input data and is placed in sections named \"content\". It requests the desired output to be generated.\r\n\r\n\r\n\r\n⫻ const: user\r\nDenis + Denise\r\n\r\n\r\n\r\n⫻ const: assistant\r\n{ai}\r\n\r\n\r\n\r\n⫻ content: TypeScript Code\r\n\r\n// TypeScript code generated using KickTempRules\r\n\r\ninterface User {\r\n  name: string;\r\n}\r\n\r\nconst users: User[] = [{ name: \"Denis\" }, { name: \"Denise\" }];\r\n\r\nfunction greetUsers(users: User[]) {\r\n  users.forEach((user) => {\r\n    console.log(`Hello, ${user.name}!`);\r\n  });\r\n}\r\n\r\ngreetUsers(users);\r\n\r\n// Expected output:\r\n// Hello, Denis!\r\n// Hello, Denise!",
+      "createdAt": "2024-07-13T04:19:59.409Z",
+      "updatedAt": "2024-07-13T04:19:59.417Z",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023",
+        "19a54b86-bfdf-4162-a528-cafb92ec9e22"
+      ],
+      "id": "ba3ddd25-fc2b-4c2c-913f-463855a9f028",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "assistant",
+      "content": "⫻ context: KickTempRules\r\n\r\nGenerate content following these rules: \r\n\r\n1. Context: Provides auxiliary information and is never included in the generated content. Marked as \"context:{tag}\".\r\n2. Constants: Serve as parameters and are defined in sections named \"const:{key}\". They can be in JSON or plain UTF-8 format.\r\n3. Content: Represents the input data and is placed in sections named \"content\". It requests the desired output to be generated.\r\n\r\n\r\n\r\n⫻ const: user\r\nDenis + Denise\r\n\r\n\r\n\r\n⫻ const: assistant\r\n{ai}\r\n\r\n\r\n\r\n⫻ content: TypeScript Code\r\n\r\n// KickTempRules TypeScript interface\r\n\r\ninterface KickTempRules {\r\n  context: { [tag: string]: any };\r\n  constants: { [key: string]: any };\r\n  content: string;\r\n}\r\n\r\ntype KickTempRule = {\r\n  name: 'context' | 'const' | 'content';\r\n  type?: string;\r\n  data: any;\r\n};\r\n\r\nfunction generateContent(rules: KickTempRules) {\r\n  // Implementation to process rules and generate content\r\n  // ...\r\n}\r\n\r\nconst rules: KickTempRules = {\r\n  context: {\r\n    KickTempRules: 'Auxiliary info',\r\n  },\r\n  constants: {\r\n    user: 'Denis + Denise',\r\n    assistant: '{ai}',\r\n  },\r\n  content: 'TypeScript Code',\r\n};\r\n\r\ngenerateContent(rules);",
+      "createdAt": "2024-07-13T04:20:19.599Z",
+      "updatedAt": "2024-07-13T04:20:19.606Z",
+      "id": "e9fad868-8f2c-4d2a-b0a7-c03b2b109ebb",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023",
+        "19a54b86-bfdf-4162-a528-cafb92ec9e22"
+      ],
+      "children": [],
+      "interrupted": false,
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "⫻KickTempRules/General\nGenerate content according to these rules:\n1. Context elements are given by sections named \"context:{tag}\" serving as auxiliary information, never include in generated content\n2. Constants are given by sections named \"const:{key}\" serving as parameters, using JSON or plain UTF-8\n3. Contents is given by sections named \"content\" serving as the input data, asking for generated output data\n\nA Section starts with '⫻' on a new line - then '{name}/{type}' - a colon - '{place/index}' - and its data...\n1. 'name' being a keyword or token: ['const','content','context']\n2. 'type' being optional information: format, encoding, component type\n3. data as indicated\n4. a few empty lines until the end of the section\n\n\n\n⫻content\n{{KickTempRules for TypeScript Code}}",
+      "files": [],
+      "createdAt": "2024-07-13T04:22:29.326Z",
+      "updatedAt": "2024-07-13T04:22:29.326Z",
+      "id": "87a3fdbf-1421-4f66-b152-7f6576a7161e",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023"
+      ],
+      "children": [
+        "b2cc0360-1cf3-420c-97e0-ffc37094f71a"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}\r\n\r\n\r\n\r\n⫻content/\r\n{{Generate TypeScript interface for KickTempRules}}\r\n\r\n\r\n\r\nThe KickTempRules interface should include:\r\n- context: { tag: string }[]\r\n- constants: { [key: string]: any }\r\n- content: { input: any, output: any }",
+      "createdAt": "2024-07-13T04:22:29.326Z",
+      "updatedAt": "2024-07-13T04:22:29.335Z",
+      "ancestors": [
+        "717ebe77-4875-4362-9530-ef082042c023",
+        "87a3fdbf-1421-4f66-b152-7f6576a7161e"
+      ],
+      "id": "b2cc0360-1cf3-420c-97e0-ffc37094f71a",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are KickBuzz, the developer for rules that outline a format for organizing and generating content, with specific sections for context, constants, and content data:\r\n\r\n**Sections:** \r\nStart with '⫻', then 'name/type:place', followed by data. \r\n \r\n**Context Sections:** \r\nProvide extra info, marked as \"context:{tag}\". \r\n \r\n**Constant Sections:** \r\nContain parameters, named \"const:{key}\", with data in JSON or plain text. \r\n \r\n**Content Sections:** \r\nHold input data, marked as \"content\", and request generated output.\r\n\r\n\r\n\r\n⫻const:user\r\nDenis + Denise\r\n\r\n⫻const:assistant\r\n{ai}",
+  "assistantId": "6660e4f00c34d0f0a1185b75",
+  "createdAt": "2024-07-13T04:19:01.198Z",
+  "updatedAt": "2024-07-13T04:22:32.571Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}

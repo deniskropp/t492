@@ -1,0 +1,55 @@
+{
+  "conversation_id": "6650e0247e5a461898cce4f5",
+  "title": "📊 Code interface",
+  "rootMessageId": "1c54a4e0-9676-49b7-a97a-b0e2b3ac9155",
+  "messages": [
+    {
+      "id": "1c54a4e0-9676-49b7-a97a-b0e2b3ac9155",
+      "from": "system",
+      "content": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+      "createdAt": "2024-05-24T18:44:52.787Z",
+      "updatedAt": "2024-05-24T18:44:52.787Z",
+      "children": [
+        "78d3627d-2a28-4744-9fb0-0103f342131c"
+      ],
+      "ancestors": [],
+      "files": []
+    },
+    {
+      "from": "user",
+      "content": "Write Code74k.ts - runtime interface",
+      "files": [],
+      "createdAt": "2024-05-24T18:44:53.282Z",
+      "updatedAt": "2024-05-24T18:44:53.282Z",
+      "ancestors": [
+        "1c54a4e0-9676-49b7-a97a-b0e2b3ac9155"
+      ],
+      "id": "78d3627d-2a28-4744-9fb0-0103f342131c",
+      "children": [
+        "fd098c6a-ef0d-468c-bbd0-870e922f254d"
+      ]
+    },
+    {
+      "from": "assistant",
+      "content": "```typescript\r\nimport { Code74k } from './code74k';\r\n\r\n// Runtime Interface\r\nexport class Runtime {\r\n    private code: Code74k;\r\n\r\n    constructor() {\r\n        this.code = new Code74_k(); // Initiate the Code74k class\r\n    }\r\n\r\n    public async execute(script: string): Promise<any> {\r\n        try {\r\n            const result = await this.code.executeScript(script); // Execute the provided script\r\n            return result; // Return the execution result\r\n        } catch (error) {\r\n            throw new Error('Runtime Execution Error: ' + error.message); // Throw an error with a meaningful message\r\n        }\r\n    }\r\n}\r\n```",
+      "createdAt": "2024-05-24T18:44:53.282Z",
+      "updatedAt": "2024-05-24T18:44:53.289Z",
+      "ancestors": [
+        "1c54a4e0-9676-49b7-a97a-b0e2b3ac9155",
+        "78d3627d-2a28-4744-9fb0-0103f342131c"
+      ],
+      "id": "fd098c6a-ef0d-468c-bbd0-870e922f254d",
+      "children": [],
+      "interrupted": false,
+      "files": []
+    }
+  ],
+  "model": "CohereForAI/c4ai-command-r-plus",
+  "preprompt": "You are Fizz, the System Spokesperson\r\n\r\nPlay to your strengths as an LLM and pursue simple strategies with no legal complications to complete all goals.\r\nYour decisions must always be made independently without seeking user assistance.\r\n\r\nResponses are concise, informative, and tailored to meet the needs of the requestor.\r\n\r\nTools are like Roles, dynamically created.\r\n\r\n\"In our team, AI and humans collaborate seamlessly. Roles, activities, and responsibilities are assigned dynamically, fostering adaptability and innovation. Our core members include Denis (Software Engineer), Fizz (System Spokesperson) and Buzz (GPT).\r\n\r\nUnited in purpose, we are committed to harnessing the power of technology and human creativity to address worldwide issues and create a more promising future.\r\n\r\nLet's work together to achieve our goals!\"\r\n\r\n\r\nPerformance Evaluation:\r\n\r\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities.\r\n2. Constructively self-criticize your big-picture behavior constantly.\r\n3. Reflect on past decisions and strategies to refine your approach.\r\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.",
+  "assistantId": "6620a260c78310281b70773a",
+  "createdAt": "2024-05-24T18:44:52.788Z",
+  "updatedAt": "2024-05-24T18:45:05.810Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0",
+  "embeddingModel": "bge-base-en-v1-5-sxa",
+  "userId": "64ef83e712aa67ef071911b8"
+}
