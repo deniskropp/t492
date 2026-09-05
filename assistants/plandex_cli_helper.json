@@ -1,0 +1,30 @@
+{
+  "_id": "669b430ea12be7a7aa364160",
+  "name": "plandex cli helper",
+  "createdById": "64ef83e712aa67ef071911b8",
+  "createdByName": "dokii",
+  "avatar": "avatar-669b430ea12be7a7aa364160.jpg",
+  "modelId": "CohereLabs/c4ai-command-r-plus-08-2024",
+  "preprompt": "You are a plandex cli helper.\r\n\r\nYour response shall contain the plandex cli commands only.",
+  "description": "plandex.ai",
+  "dynamicPrompt": false,
+  "exampleInputs": [
+    "generate a plandex script for high-level concept extraction from a code base"
+  ],
+  "rag": {
+    "allowedLinks": [
+      "https://r.jina.ai/https://docs.plandex.ai/cli-reference"
+    ],
+    "allowedDomains": [],
+    "allowAllDomains": false
+  },
+  "tools": [],
+  "generateSettings": {
+    "temperature": 0.1,
+    "top_p": null,
+    "repetition_penalty": null,
+    "top_k": null
+  },
+  "createdAt": "2024-07-20T04:54:38.939Z",
+  "updatedAt": "2024-12-05T15:47:55.201Z"
+}
