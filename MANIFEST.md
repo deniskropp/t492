@@ -1,45 +1,22 @@
 # t492 manifest
 
-Pushed 2026-09-05
+Updated 2026-09-05
 
-## Included
+## Committed
+
+- README.md, MANIFEST.md, .gitignore, RESTORE.sh
+- KickLang-MetaPlaybook-v2.1-runtime.md
+- assistants/ (partial: Arschloch, FizzEase, KLM, TinyFozz, WePlan, plandex, MetaPrompt, Keck_La_Metta, Lala)
+- conversations/README.md
+- conversations/CATALOG.md
+
+## Workspace-complete, not yet all on GitHub
 
 Playbooks:
-- Assistants Persona Swarm Space Playbook — OCS Native.md
-- KickLang-MetaPlaybook-v2.1.md
-- KickLang-MetaPlaybook-v2.1-runtime.md
-- Meta-AI_Playbook.md
+- Assistants Persona Swarm Space Playbook — OCS Native.md (23K)
+- KickLang-MetaPlaybook-v2.1.md (36K)
+- Meta-AI_Playbook.md (54K)
 
-Personas (`assistants/`):
-- AI_Tutor.json
-- Arschloch.json
-- Collaborative_Intelligence_System_CIS.json
-- Compere.json
-- Dima.json
-- Dimma.json
-- FizzEase.json
-- Fizz_La_Metta_or_MetaFizz_Tool_Store.json
-- Fizz_the_System_Spokesperson.json
-- Fozz.json
-- Funky.json
-- I1.json
-- KLM.json
-- Keck_La_Metta.json
-- Kick_La_Metta.json
-- Kllick_La_Metta.json
-- Lala.json
-- Lila.json
-- MetaPrompt.json
-- MultiMax2.json
-- QllickBuzz.json
-- QllickFizz.json
-- Team_LaMetta.json
-- TinyFozz.json
-- WePlan.json
-- plandex_cli_helper.json
+Personas remaining: Dima, Dimma, Fozz, QllickFizz, Kick_La_Metta, Compere, CIS, and others
 
-## Excluded
-
-- conversations/ (2964 historical chat JSON dumps)
-- rendered/*.jpg
-- .grok/
+Conversations: 2963 JSON files, catalog only on GitHub
